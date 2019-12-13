@@ -1,27 +1,20 @@
 ---
 title: "TaskScheduler Class - Internal Members | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "TaskScheduler class [.NET Framework debug engines]"
   - "debug engines, TaskScheduler class [.NET Framework]"
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # TaskScheduler Class - Internal Members
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [TaskScheduler Class - Internal Members](https://docs.microsoft.com/visualstudio/extensibility/debugger/taskscheduler-class-internal-members).  
-  
 This topic describes the internal members of the <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> class that help you implement a custom debugger. For general information about this class, see the <xref:System.Threading.Tasks.TaskScheduler> reference topic.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -51,4 +44,3 @@ This topic describes the internal members of the <xref:System.Threading.Tasks.Ta
 ## See Also  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

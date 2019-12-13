@@ -1,14 +1,9 @@
 ---
 title: "IDebugModule2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugModule2::GetInfo"
 helpviewer_keywords: 
@@ -16,29 +11,27 @@ helpviewer_keywords:
   - "IDebugModule2::GetInfo method"
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugModule2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugModule2::GetInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmodule2-getinfo).  
-  
 Gets information about this module.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetInfo(   
-   MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO*       pInfo  
+   MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO*       pInfo  
 );  
 ```  
   
 ```cpp#  
 int GetInfo(   
-   enum_MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO[]           pInfo  
+   enum_MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO[]           pInfo  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int GetInfo( 
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
-

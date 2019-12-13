@@ -1,14 +1,9 @@
 ---
 title: "IDebugPendingBreakpoint2::GetState | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPendingBreakpoint2::GetState"
 helpviewer_keywords: 
@@ -16,27 +11,25 @@ helpviewer_keywords:
   - "IDebugPendingBreakpoint2::GetState method"
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPendingBreakpoint2::GetState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPendingBreakpoint2::GetState](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-getstate).  
-  
 Gets the state of the pending breakpoint.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetState(   
-   PENDING_BP_STATE_INFO* pState  
+   PENDING_BP_STATE_INFO* pState  
 );  
 ```  
   
 ```csharp  
 int GetState(   
-   PENDING_BP_STATE_INFO[] pState  
+   PENDING_BP_STATE_INFO[] pState  
 );  
 ```  
   
@@ -50,4 +43,3 @@ int GetState( 
 ## See Also  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
-

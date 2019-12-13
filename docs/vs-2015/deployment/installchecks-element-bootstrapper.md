@@ -1,14 +1,9 @@
 ---
 title: "&lt;InstallChecks&gt; Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -20,13 +15,11 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;InstallChecks&gt; Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;InstallChecks&gt; Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/installchecks-element-bootstrapper).  
-  
 The `InstallChecks` element supports starting a variety of tests against the local computer to make sure that all of the appropriate prerequisites for an application have been installed.  
   
 ## Syntax  
@@ -180,12 +173,9 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 ```  
 <!-- Block install on Windows 95 -->  
-    <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
+    <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
 ```  
   
 ## See Also  
  [\<Commands> Element](../deployment/commands-element-bootstrapper.md)   
  [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)
-
-
-

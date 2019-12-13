@@ -1,41 +1,34 @@
 ---
 title: "IDebugPortNotify2::RemoveProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPortNotify2::RemoveProgramNode"
 helpviewer_keywords: 
   - "IDebugPortNotify2::RemoveProgramNode"
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPortNotify2::RemoveProgramNode](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportnotify2-removeprogramnode).  
-  
 Unregisters a program that can be debugged from the port it is running on.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT RemoveProgramNode(   
-   IDebugProgramNode2* pProgramNode  
+   IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
 ```csharp  
 int RemoveProgramNode(   
-   IDebugProgramNode2 pProgramNode  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   
@@ -53,4 +46,3 @@ int RemoveProgramNode( 
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
-

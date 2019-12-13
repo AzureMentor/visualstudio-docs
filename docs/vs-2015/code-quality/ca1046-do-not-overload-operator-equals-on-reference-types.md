@@ -1,14 +1,9 @@
 ---
 title: "CA1046: Do not overload operator equals on reference types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotOverloadOperatorEqualsOnReferenceTypes"
   - "CA1046"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotOverloadOperatorEqualsOnReferenceTypes"
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1046: Do not overload operator equals on reference types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1046: Do not overload operator equals on reference types](https://docs.microsoft.com/visualstudio/code-quality/ca1046-do-not-overload-operator-equals-on-reference-types).
 
 |||
 |-|-|
@@ -66,7 +59,4 @@ The latest version of this topic can be found at [CA1046: Do not overload operat
 
 ## See Also
  <xref:System.Object.Equals%2A?displayProperty=fullName>
- [Equality Operators](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-
+ [Equality Operators](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

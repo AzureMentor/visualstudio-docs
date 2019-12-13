@@ -1,14 +1,9 @@
 ---
 title: "Assertion Failed Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.assertions"
 dev_langs: 
@@ -23,15 +18,13 @@ helpviewer_keywords:
   - "Assertion Failed dialog box"
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Assertion Failed Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Assertion Failed Dialog Box](https://docs.microsoft.com/visualstudio/debugger/assertion-failed-dialog-box).  
-  
 An assertion statement specifies a condition that you expect to hold true at some particular point in your program. If that condition does not hold true, the assertion fails, execution of your program is interrupted, and this dialog box appears.  
   
 |Click|To|  
@@ -42,6 +35,3 @@ An assertion statement specifies a condition that you expect to hold true at som
   
 ## See Also  
  [C/C++ Assertions](../debugger/c-cpp-assertions.md)
-
-
-

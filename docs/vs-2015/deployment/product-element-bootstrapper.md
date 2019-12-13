@@ -1,14 +1,9 @@
 ---
 title: "&lt;Product&gt; Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -20,13 +15,11 @@ ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;Product&gt; Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;Product&gt; Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/product-element-bootstrapper).  
-  
 The `Product` element is the top-level XML element inside of a product file.  
   
 ## Syntax  
@@ -255,6 +248,3 @@ ProductCode
   
 ## See Also  
  [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)
-
-
-

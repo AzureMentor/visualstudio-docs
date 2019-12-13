@@ -1,34 +1,27 @@
 ---
 title: "Breakpoint-Related Methods | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "debugging [Debugging SDK], breakpoint methods"
   - "breakpoints, methods"
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Breakpoint-Related Methods
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Breakpoint-Related Methods](https://docs.microsoft.com/visualstudio/extensibility/debugger/breakpoint-related-methods).  
-  
 A debug engine (DE) must support the setting of breakpoints. Visual Studio debugging supports the following types of breakpoints:  
   
--   Bound  
+- Bound  
   
      Requested through the UI and successfully bound to a specified code location  
   
--   Pending  
+- Pending  
   
      Requested through the UI but not yet bound to actual instructions  
   
@@ -87,4 +80,3 @@ A debug engine (DE) must support the setting of breakpoints. Visual Studio debug
   
 ## See Also  
  [Execution Control and State Evaluation](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

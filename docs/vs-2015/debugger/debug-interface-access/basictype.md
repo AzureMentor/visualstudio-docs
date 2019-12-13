@@ -1,53 +1,46 @@
 ---
 title: "BasicType | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "BasicType enumeration"
 ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [BasicType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/basictype).  
-  
 Specifies the symbol's basic type.  
   
 ## Syntax  
   
 ```cpp#  
 enum BasicType {   
-   btNoType   = 0,  
-   btVoid     = 1,  
-   btChar     = 2,  
-   btWChar    = 3,  
-   btInt      = 6,  
-   btUInt     = 7,  
-   btFloat    = 8,  
-   btBCD      = 9,  
-   btBool     = 10,  
-   btLong     = 13,  
-   btULong    = 14,  
-   btCurrency = 25,  
-   btDate     = 26,  
-   btVariant  = 27,  
-   btComplex  = 28,  
-   btBit      = 29,  
-   btBSTR     = 30,  
-   btHresult  = 31  
+   btNoType   = 0,  
+   btVoid     = 1,  
+   btChar     = 2,  
+   btWChar    = 3,  
+   btInt      = 6,  
+   btUInt     = 7,  
+   btFloat    = 8,  
+   btBCD      = 9,  
+   btBool     = 10,  
+   btLong     = 13,  
+   btULong    = 14,  
+   btCurrency = 25,  
+   btDate     = 26,  
+   btVariant  = 27,  
+   btComplex  = 28,  
+   btBit      = 29,  
+   btBSTR     = 30,  
+   btHresult  = 31  
 };  
 ```  
   
@@ -116,6 +109,3 @@ enum BasicType { 
  [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
-
-
-

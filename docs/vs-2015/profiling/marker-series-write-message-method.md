@@ -1,29 +1,22 @@
 ---
 title: "marker_series::write_message Method | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "cvmarkersobj/Concurrency::diagnostic::marker_series::write_message"
 helpviewer_keywords: 
   - "Concurrency::diagnostic::marker_series::write_message method"
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # marker_series::write_message Method
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [marker_series::write_message Method](https://docs.microsoft.com/visualstudio/profiling/marker-series-write-message-method).  
-  
 Writes a message to the Concurrency Visualizer trace file.  
   
 ## Syntax  
@@ -68,6 +61,3 @@ void write_message(
   
 ## See Also  
  [marker_series Class](../profiling/marker-series-class.md)
-
-
-

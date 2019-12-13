@@ -1,29 +1,22 @@
 ---
 title: "DA0017: High rates of paging active memory to disk | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.performance.17"
   - "vs.performance.rules.DA0017"
   - "vs.performance.DA0017"
 ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # DA0017: High rates of paging active memory to disk
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DA0017: High rates of paging active memory to disk](https://docs.microsoft.com/visualstudio/profiling/da0017-high-rates-of-paging-active-memory-to-disk).  
-  
 Rule Id|DA0017|  
 |Category|Memory and Paging|  
 |Profiling method|All|  
@@ -38,7 +31,7 @@ Rule Id|DA0017|
 ## Rule Description  
   
 > [!NOTE]
->  This informational rule fires when levels of paging of active memory reach a significant amount. When an extremely high level of paging occurs, the warning rule [DA0014: Extremely high rates of paging active memory to disk](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) fires instead.  
+> This informational rule fires when levels of paging of active memory reach a significant amount. When an extremely high level of paging occurs, the warning rule [DA0014: Extremely high rates of paging active memory to disk](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) fires instead.  
   
  Excessive paging to disk can be caused by a shortage of physical memory. If paging operations dominate use of the physical disk where the paging file resides, they can slow down other application-oriented disk operations to the same disk.  
   
@@ -50,6 +43,3 @@ Rule Id|DA0017|
  If you are gathering profile data for an ASP.NET application in a load testing scenario, try running the load test again on a machine configured with additional physical memory (or RAM).  
   
  Consider reducing memory allocations by revising algorithms and avoiding memory-intensive APIs such as String.Concat and String.Substring.
-
-
-

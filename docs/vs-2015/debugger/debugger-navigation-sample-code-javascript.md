@@ -1,14 +1,9 @@
 ---
 title: "Debugger navigation sample code (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -16,15 +11,13 @@ dev_langs:
   - "C++"
 ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debugger navigation sample code (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debugger navigation sample code (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/debugger-navigation-sample-code-javascript).  
-  
 The code in this topic is the sample file for the [Control execution in a debug session (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) topic.  
   
 ## default.js sample code  
@@ -109,9 +102,9 @@ The code in this topic is the sample file for the [Control execution in a debug 
         var b = 4;  
         var a = example4_a(2);  
         callTrack += "->example4";  
-        var multilpyByA = multiClosure(a);  
+        var multiplyByA = multiClosure(a);  
         a = 20;  
-        var x = multilpyByA(b);  
+        var x = multiplyByA(b);  
         return x;  
     }  
   
@@ -122,11 +115,11 @@ The code in this topic is the sample file for the [Control execution in a debug 
   
     function multiClosure(num) {  
         var a = num;  
-        function mulitplyXby(b) {  
-            callTrack += "->mulitplyXby";  
+        function multiplyXby(b) {  
+            callTrack += "->multiplyXby";  
             return a * b;  
         }  
-        return mulitplyXby;  
+        return multiplyXby;  
     }  
   
     function example5() {  
@@ -173,6 +166,3 @@ The code in this topic is the sample file for the [Control execution in a debug 
  })();  
   
 ```
-
-
-

@@ -1,27 +1,20 @@
 ---
 title: "KeyBinding Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "VSCT XML schema elements, KeyBindings"
   - "KeyBinding element (VSCT XML schema)"
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # KeyBinding Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [KeyBinding Element](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element).  
-  
 The KeyBinding element specifies keyboard shortcuts for the commands.  
   
  Commands can have both single and dual key bindings associated with them. An example of a single key binding is CTRL+S for the **Save** command. Dual key bindings require two successive key combinations to trigger a command. An example of a dual key binding is CTRL+K,CTRL+K to set a bookmark.  
@@ -66,14 +59,13 @@ The KeyBinding element specifies keyboard shortcuts for the commands.
   
 ```  
 <KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
+    editor="guidWidgetEditor" key1="VK_F5"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
 </KeyBindings>  
 ```  
   
 ## See Also  
  [KeyBindings Element](../extensibility/keybindings-element.md)   
  [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

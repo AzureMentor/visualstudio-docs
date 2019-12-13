@@ -1,14 +1,9 @@
 ---
 title: "CA2219: Do not raise exceptions in exception clauses | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotRaiseExceptionsInExceptionClauses"
   - "CA2219"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2219"
 ms.assetid: 7b9b0bee-4e8e-49a4-8c40-52142b49061f
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2219: Do not raise exceptions in exception clauses
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2219: Do not raise exceptions in exception clauses](https://docs.microsoft.com/visualstudio/code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses).
 
 |||
 |-|-|
@@ -54,6 +47,3 @@ The latest version of this topic can be found at [CA2219: Do not raise exception
 
 ## See Also
  [Design Warnings](../code-quality/design-warnings.md)
-
-
-

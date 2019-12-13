@@ -1,39 +1,32 @@
 ---
 title: "SccEnumChangedFiles Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccEnumChangedFiles"
 helpviewer_keywords: 
   - "SccEnumChangedFiles function"
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccEnumChangedFiles Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccEnumChangedFiles Function](https://docs.microsoft.com/visualstudio/extensibility/sccenumchangedfiles-function).  
-  
 Given a list of local files, this function determines which files are different from the corresponding versions in the source code control database.  
   
 ## Syntax  
   
 ```cpp  
 SCCRTN SccEnumChangedFiles(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LONG    cFiles,  
-   LPCSTR* lpFileNames,  
-   LONG*   plIsFileDifferent  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LONG    cFiles,  
+   LPCSTR* lpFileNames,  
+   LONG*   plIsFileDifferent  
 );  
 ```  
   
@@ -63,4 +56,3 @@ SCCRTN SccEnumChangedFiles(
   
 ## See Also  
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
-

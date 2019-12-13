@@ -1,54 +1,47 @@
 ---
 title: "Resources in VSPackages | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "managed VSPackages, resources in"
   - "resources, managed VSPackages"
   - "VSPackages, managed resources"
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Resources in VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Resources in VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/resources-in-vspackages).  
-  
 You can embed localized resources in native satellite UI DLLs, managed satellite DLLs, or in a managed VSPackage itself.  
   
  Some resources cannot be embedded in VSPackages. The following managed types can be embedded:  
   
--   Strings  
+- Strings  
   
--   Package load keys (which are also strings)  
+- Package load keys (which are also strings)  
   
--   Tool window icons  
+- Tool window icons  
   
--   Compiled Command Table Output (CTO) files  
+- Compiled Command Table Output (CTO) files  
   
--   CTO bitmaps  
+- CTO bitmaps  
   
--   Command-line Help  
+- Command-line Help  
   
--   About dialog box data  
+- About dialog box data  
   
- Resources in a managed package are selected by resource ID. An exception is the CTO file, which must be named CTMENU. The CTO file must appear in the resource table as a `byte[]`. All other resource items are identified by type.  
+  Resources in a managed package are selected by resource ID. An exception is the CTO file, which must be named CTMENU. The CTO file must appear in the resource table as a `byte[]`. All other resource items are identified by type.  
   
- You can use the <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribute to indicate to [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] that managed resources are available.  
+  You can use the <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribute to indicate to [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] that managed resources are available.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Setting <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> in this manner indicates that [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] should ignore unmanaged satellite DLLs when it searches for resources, for example, by using <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. If [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encounters two or more resources that have the same resource ID, it uses the first resource it finds.  
+  Setting <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> in this manner indicates that [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] should ignore unmanaged satellite DLLs when it searches for resources, for example, by using <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. If [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encounters two or more resources that have the same resource ID, it uses the first resource it finds.  
   
 ## Example  
  The following example is a managed representation of a tool window icon.  
@@ -91,6 +84,5 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## See Also  
  [Managed VSPackages](../../misc/managed-vspackages.md)   
  [Managing VSPackages](../../extensibility/managing-vspackages.md)   
- [Localized Resources in MFC Applications: Satellite DLLs](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Localized Resources in MFC Applications: Satellite DLLs](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [Managed VSPackages](../../misc/managed-vspackages.md)
-

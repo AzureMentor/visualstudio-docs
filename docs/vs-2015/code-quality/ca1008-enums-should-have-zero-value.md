@@ -1,14 +1,9 @@
 ---
 title: "CA1008: Enums should have zero value | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1008"
   - "EnumsShouldHaveZeroValue"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "EnumsShouldHaveZeroValue"
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1008: Enums should have zero value
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1008: Enums should have zero value](https://docs.microsoft.com/visualstudio/code-quality/ca1008-enums-should-have-zero-value).
 
 |||
 |-|-|
@@ -67,6 +60,3 @@ The latest version of this topic can be found at [CA1008: Enums should have zero
 
 ## See Also
  <xref:System.Enum?displayProperty=fullName>
-
-
-

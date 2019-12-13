@@ -1,14 +1,9 @@
 ---
 title: "CA1725: Parameter names should match base declaration | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "ParameterNamesShouldMatchBaseDeclaration"
   - "CA1725"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "ParameterNamesShouldMatchBaseDeclaration"
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1725: Parameter names should match base declaration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1725: Parameter names should match base declaration](https://docs.microsoft.com/visualstudio/code-quality/ca1725-parameter-names-should-match-base-declaration).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA1725: Parameter names should
 
 ## When to Suppress Warnings
  Do not suppress a warning from this rule except for COM visible methods in libraries that have previously shipped.
-
-
-

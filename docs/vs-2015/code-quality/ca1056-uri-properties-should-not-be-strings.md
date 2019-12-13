@@ -1,14 +1,9 @@
 ---
 title: "CA1056: URI properties should not be strings | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "UriPropertiesShouldNotBeStrings"
   - "CA1056"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1056"
 ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1056: URI properties should not be strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1056: URI properties should not be strings](https://docs.microsoft.com/visualstudio/code-quality/ca1056-uri-properties-should-not-be-strings).
 
 |||
 |-|-|
@@ -60,6 +53,3 @@ The latest version of this topic can be found at [CA1056: URI properties should 
  [CA2234: Pass System.Uri objects instead of strings](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
  [CA1057: String URI overloads call System.Uri overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
-
-
-

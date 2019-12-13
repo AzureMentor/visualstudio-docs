@@ -1,48 +1,40 @@
 ---
 title: "Walkthrough: Using MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "MSBuild, tutorial"
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Walkthrough: Using MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Walkthrough: Using MSBuild](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild).  
-  
-  
 MSBuild is the build platform for Microsoft and Visual Studio. This walkthrough introduces you to the building blocks of MSBuild and shows you how to write, manipulate, and debug MSBuild projects. You will learn about:  
   
--   Creating and manipulating a project file.  
+- Creating and manipulating a project file.  
   
--   How to use build properties  
+- How to use build properties  
   
--   How to use build items.  
+- How to use build items.  
   
- You can run MSBuild from Visual Studio, or from the Command Window. In this walkthrough, you create an MSBuild project file using Visual Studio. You edit the project file in Visual Studio, and use a Command Window to build the project and examine the results.  
+  You can run MSBuild from Visual Studio, or from the Command Window. In this walkthrough, you create an MSBuild project file using Visual Studio. You edit the project file in Visual Studio, and use a Command Window to build the project and examine the results.  
   
 ## Creating an MSBuild Project  
  The Visual Studio project system is based on MSBuild. This makes it easy to create a new project file using Visual Studio. In this section, you create a Visual C# project file. You can choose to create a Visual Basic project file instead. In the context of this walkthrough, the difference between the two project files is minor.  
   
 #### To create a project file  
   
-1.  Open Visual Studio.  
+1. Open Visual Studio.  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2. On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  In the **New Project** dialog box, select the Visual C# project type, and then select the **Windows Forms Application** template. In the **Name** box, type `BuildApp`. Enter a **Location** for the solution, for example, `D:\`. Accept the defaults for **Create directory for solution** (selected), **Add to Source Control** (not selected), and **Solution Name** (`BuildApp`).  
+3. In the **New Project** dialog box, select the Visual C# project type, and then select the **Windows Forms Application** template. In the **Name** box, type `BuildApp`. Enter a **Location** for the solution, for example, `D:\`. Accept the defaults for **Create directory for solution** (selected), **Add to Source Control** (not selected), and **Solution Name** (`BuildApp`).  
   
      Click **OK** to create the project file.  
   
@@ -51,13 +43,13 @@ MSBuild is the build platform for Microsoft and Visual Studio. This walkthrough 
   
 #### To examine the project file  
   
-1.  In **Solution Explorer**, click the project node BuildApp.  
+1. In **Solution Explorer**, click the project node BuildApp.  
   
-2.  In the **Properties** browser, notice that the **Project File** property is BuildApp.csproj. All project files are named with the suffix "proj". If you had created a Visual Basic project, the project file name would be BuildApp.vbproj.  
+2. In the **Properties** browser, notice that the **Project File** property is BuildApp.csproj. All project files are named with the suffix "proj". If you had created a Visual Basic project, the project file name would be BuildApp.vbproj.  
   
-3.  Right-click the project node, then click **Unload Project**.  
+3. Right-click the project node, then click **Unload Project**.  
   
-4.  Right-click the project node again, then click **Edit BuildApp.csproj**.  
+4. Right-click the project node again, then click **Edit BuildApp.csproj**.  
   
      The project file appears in the code editor.  
   
@@ -73,20 +65,20 @@ MSBuild is the build platform for Microsoft and Visual Studio. This walkthrough 
   
  The work of building an application is done with [Target](../msbuild/target-element-msbuild.md) and [Task](../msbuild/task-element-msbuild.md) elements.  
   
--   A task is the smallest unit of work, in other words, the "atom" of a build. Tasks are independent executable components which may have inputs and outputs. There are no tasks currently referenced or defined in the project file. You add tasks to the project file in the sections below. For more information, see the [Tasks](../msbuild/msbuild-tasks.md) topic.  
+- A task is the smallest unit of work, in other words, the "atom" of a build. Tasks are independent executable components which may have inputs and outputs. There are no tasks currently referenced or defined in the project file. You add tasks to the project file in the sections below. For more information, see the [Tasks](../msbuild/msbuild-tasks.md) topic.  
   
--   A target is a named sequence of tasks. There are two targets at the end of the project file that are currently enclosed in HTML comments: BeforeBuild and AfterBuild.  
+- A target is a named sequence of tasks. There are two targets at the end of the project file that are currently enclosed in HTML comments: BeforeBuild and AfterBuild.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     For more information, see the [Targets](../msbuild/msbuild-targets.md) topic.  
+   For more information, see the [Targets](../msbuild/msbuild-targets.md) topic.  
   
- The Project node has an optional DefaultTargets attribute that selects the default target to build, in this case Build.  
+  The Project node has an optional DefaultTargets attribute that selects the default target to build, in this case Build.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -107,48 +99,48 @@ MSBuild is the build platform for Microsoft and Visual Studio. This walkthrough 
   
 #### To add a target and a task  
   
-1.  Add these lines to the project file, just after the Import statement:  
+1. Add these lines to the project file, just after the Import statement:  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     This creates a target named HelloWorld. Notice that you have Intellisense support while editing the project file.  
+    This creates a target named HelloWorld. Notice that you have Intellisense support while editing the project file.  
   
-2.  Add lines to the HelloWorld target, so that the resulting section looks like this:  
+2. Add lines to the HelloWorld target, so that the resulting section looks like this:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  Save the project file.  
+3. Save the project file.  
   
- The Message task is one of the many tasks that ships with MSBuild. For a complete list of available tasks and usage information, see [Task Reference](../msbuild/msbuild-task-reference.md).  
+   The Message task is one of the many tasks that ships with MSBuild. For a complete list of available tasks and usage information, see [Task Reference](../msbuild/msbuild-task-reference.md).  
   
- The Message task takes the string value of the Text attribute as input and displays it on the output device. The HelloWorld target executes the Message task twice: first to display "Hello", and then to display "World".  
+   The Message task takes the string value of the Text attribute as input and displays it on the output device. The HelloWorld target executes the Message task twice: first to display "Hello", and then to display "World".  
   
 ## Building the Target  
  Run MSBuild from the **Visual Studio Command Prompt** to build the HelloWorld target defined above. Use the /target or /t command line switch to select the target.  
   
 > [!NOTE]
->  We will refer to the **Visual Studio Command Prompt** as the **Command Window** in the sections below.  
+> We will refer to the **Visual Studio Command Prompt** as the **Command Window** in the sections below.  
   
 #### To build the target  
   
-1.  Click **Start**, then click **All Programs**. Locate and click the **Visual Studio Command Prompt** in the **Visual Studio Tools** folder.  
+1. Click **Start**, then click **All Programs**. Locate and click the **Visual Studio Command Prompt** in the **Visual Studio Tools** folder.  
   
-2.  From the command window, navigate to the folder containing the project file, in this case, D:\BuildApp\BuildApp.  
+2. From the command window, navigate to the folder containing the project file, in this case, D:\BuildApp\BuildApp.  
   
-3.  Run msbuild with the command switch /t:HelloWorld. This selects and builds the HelloWorld target:  
+3. Run msbuild with the command switch /t:HelloWorld. This selects and builds the HelloWorld target:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Examine the output in the **Command window**. You should see the two lines "Hello" and "World":  
+4. Examine the output in the **Command window**. You should see the two lines "Hello" and "World":  
   
     ```  
     Hello  
@@ -156,12 +148,12 @@ MSBuild is the build platform for Microsoft and Visual Studio. This walkthrough 
     ```  
   
 > [!NOTE]
->  If instead you see `The target "HelloWorld" does not exist in the project` then you probably forgot to save the project file in the code editor. Save the file and try again.  
+> If instead you see `The target "HelloWorld" does not exist in the project` then you probably forgot to save the project file in the code editor. Save the file and try again.  
   
  By alternating between the code editor and the command window, you can change the project file and quickly see the results.  
   
 > [!NOTE]
->  If you run msbuild without the /t command switch, msbuild builds the target given by the DefaultTarget attribute of the Project element, in this case "Build". This builds the Windows Forms application BuildApp.exe.  
+> If you run msbuild without the /t command switch, msbuild builds the target given by the DefaultTarget attribute of the Project element, in this case "Build". This builds the Windows Forms application BuildApp.exe.  
   
 ## Build Properties  
  Build properties are name-value pairs that guide the build. Several build properties are already defined at the top of the project file:  
@@ -204,7 +196,7 @@ $(PropertyName)
   
 #### To examine a property value  
   
-1.  From the code editor, replace the HelloWorld target with this code:  
+1. From the code editor, replace the HelloWorld target with this code:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -213,15 +205,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Examine the output. You should see these two lines (your .NET Framework version may differ):  
+4. Examine the output. You should see these two lines (your .NET Framework version may differ):  
   
     ```  
     Configuration is Debug  
@@ -229,7 +221,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  If you don't see these lines then you probably forgot to save the project file in the code editor. Save the file and try again.  
+> If you don't see these lines then you probably forgot to save the project file in the code editor. Save the file and try again.  
   
 ### Conditional Properties  
  Many properties like Configuration are defined conditionally, that is, the Condition attribute appears in the property element. Conditional properties are defined or redefined only if the condition evaluates to "true". Note that undefined properties are given the default value of an empty string. For example,  
@@ -253,19 +245,19 @@ $(PropertyName)
   
 #### To set a property value from the command line  
   
-1.  From the **Command Window**, enter and execute this line:  
+1. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  Examine the output. You should see this line:  
+2. Examine the output. You should see this line:  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild creates the Configuration property and gives it the value "Release".  
+   MSBuild creates the Configuration property and gives it the value "Release".  
   
 ## Special Characters  
  Certain characters have special meaning in MSBuild project files. Examples of these characters include semicolons (;) and asterisks (*). In order to use these special characters as literals in a project file, they must be specified by using the syntax %xx, where xx represents the ASCII hexadecimal value of the character.  
@@ -274,27 +266,27 @@ $(PropertyName)
   
 #### To use special characters in the Message task  
   
-1.  From the code editor, replace both Message tasks with this line:  
+1. From the code editor, replace both Message tasks with this line:  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine the output. You should see this line:  
+4. Examine the output. You should see this line:  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- For more information, see [MSBuild Special Characters](../msbuild/msbuild-special-characters.md).  
+   For more information, see [MSBuild Special Characters](../msbuild/msbuild-special-characters.md).  
   
 ## Build Items  
  An item is a piece of information, typically a file name, that is used as an input to the build system. For example, a collection of items representing source files might be passed to a task named Compile to compile them into an assembly.  
@@ -321,7 +313,7 @@ $(PropertyName)
  For more information, see [Items](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  File paths are relative to the folder containing the MSBuild project file.  
+> File paths are relative to the folder containing the MSBuild project file.  
   
 ## Examining Item Type Values  
  To get the values of an item type, use the following syntax, where ItemType is the name of the item type:  
@@ -334,31 +326,31 @@ $(PropertyName)
   
 #### To examine item type values  
   
-1.  From the code editor, replace the HelloWorld target task with this code:  
+1. From the code editor, replace the HelloWorld target task with this code:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine the output. You should see this long line:  
+4. Examine the output. You should see this long line:  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- The values of an item type are separated with semicolons by default.  
+   The values of an item type are separated with semicolons by default.  
   
- To change the separator of an item type, use the following syntax, where ItemType is the item type and Separator is a string of one or more separating characters:  
+   To change the separator of an item type, use the following syntax, where ItemType is the item type and Separator is a string of one or more separating characters:  
   
 ```  
 @(ItemType, Separator)  
@@ -368,19 +360,19 @@ $(PropertyName)
   
 #### To display item type values one per line  
   
-1.  From the code editor, replace the Message task with this line:  
+1. From the code editor, replace the Message task with this line:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Examine the output. You should see these lines:  
+4. Examine the output. You should see these lines:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -438,13 +430,13 @@ $(PropertyName)
   
 ##### To include and exclude items  
   
-1.  From the code editor, replace the Message task with this line:  
+1. From the code editor, replace the Message task with this line:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Add this item group just after the Import element:  
+2. Add this item group just after the Import element:  
   
     ```  
     <ItemGroup>  
@@ -452,15 +444,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Save the project file.  
+3. Save the project file.  
   
-4.  From the **Command Window**, enter and execute this line:  
+4. From the **Command Window**, enter and execute this line:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Examine the output. You should see this line:  
+5. Examine the output. You should see this line:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
@@ -487,62 +479,62 @@ $(PropertyName)
   
 #### To examine item metadata  
   
-1.  From the code editor, replace the Message task with this line:  
+1. From the code editor, replace the Message task with this line:  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine the output. You should see these lines:  
+4. Examine the output. You should see these lines:  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- Notice how the phrase "Compile.DependentUpon" appears several times. The use of metadata with this syntax within a target causes "batching". Batching means that the tasks within the target are executed once for each unique metadata value. This is the MSBuild script equivalent of the common "for loop" programming construct. For more information, see [Batching](../msbuild/msbuild-batching.md).  
+   Notice how the phrase "Compile.DependentUpon" appears several times. The use of metadata with this syntax within a target causes "batching". Batching means that the tasks within the target are executed once for each unique metadata value. This is the MSBuild script equivalent of the common "for loop" programming construct. For more information, see [Batching](../msbuild/msbuild-batching.md).  
   
 ### Well-Known Metadata  
  Whenever an item is added to an item list, that item is assigned some well-known metadata. For example, %(Filename) returns the file name of any item. For a complete list of well-known metadata, see [Well-known Item Metadata](../msbuild/msbuild-well-known-item-metadata.md).  
   
 ##### To examine well-known metadata  
   
-1.  From the code editor, replace the Message task with this line:  
+1. From the code editor, replace the Message task with this line:  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine the output. You should see these lines:  
+4. Examine the output. You should see these lines:  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- By comparing the two examples above, you can see that while not every item in the Compile item type has DependentUpon metadata, all items have the well-known Filename metadata.  
+   By comparing the two examples above, you can see that while not every item in the Compile item type has DependentUpon metadata, all items have the well-known Filename metadata.  
   
 ### Metadata Transformations  
  Item lists can be transformed into new item lists. To transform an item list, use the following syntax, where ItemType is the name of the item type and MetadataName is the name of the metadata:  
@@ -555,27 +547,27 @@ $(PropertyName)
   
 ##### To transform items using metadata  
   
-1.  From the code editor, replace the Message task with this line:  
+1. From the code editor, replace the Message task with this line:  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  Save the project file.  
+2. Save the project file.  
   
-3.  From the **Command Window**, enter and execute this line:  
+3. From the **Command Window**, enter and execute this line:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine the output. You should see this line:  
+4. Examine the output. You should see this line:  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- Notice that metadata expressed in this syntax does not cause batching.  
+   Notice that metadata expressed in this syntax does not cause batching.  
   
 ## What's Next?  
  To learn how to create a simple project file one step at a time, try out the [Walkthrough: Creating an MSBuild Project File from Scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
@@ -583,5 +575,3 @@ $(PropertyName)
 ## See Also
 [MSBuild Overview](msbuild.md)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)
-
-

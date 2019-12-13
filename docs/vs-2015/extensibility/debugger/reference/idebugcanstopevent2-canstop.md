@@ -1,41 +1,34 @@
 ---
 title: "IDebugCanStopEvent2::CanStop | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugCanStopEvent2::CanStop"
 helpviewer_keywords: 
   - "IDebugCanStopEvent2::CanStop"
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCanStopEvent2::CanStop
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCanStopEvent2::CanStop](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcanstopevent2-canstop).  
-  
 Notifies the debug engine (DE) whether or not to stop at the current code location or just continue execution.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT CanStop (   
-   BOOL fCanStop  
+   BOOL fCanStop  
 );  
 ```  
   
 ```csharp  
 int CanStop (   
-   int fCanStop  
+   int fCanStop  
 );  
 ```  
   
@@ -56,4 +49,3 @@ int CanStop ( 
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
-

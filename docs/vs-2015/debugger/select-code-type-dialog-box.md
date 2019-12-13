@@ -1,14 +1,9 @@
 ---
 title: "Select Code Type Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.selectengines"
 dev_langs: 
@@ -27,15 +22,13 @@ helpviewer_keywords:
   - "debugging engine selection dialog box"
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Select Code Type Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Select Code Type Dialog Box](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 To open this dialog box, open the **Attach to Process** dialog box, and then click the **Select** button.  
   
  **Automatically determine the type of code to debug**  
@@ -47,6 +40,3 @@ To open this dialog box, open the **Attach to Process** dialog box, and then cli
 ## See Also  
  [Debugger Security](../debugger/debugger-security.md)   
  [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-
-
-

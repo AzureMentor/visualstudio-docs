@@ -11,13 +11,11 @@ helpviewer_keywords:
   - "code visualization [Visual Studio]"
   - "dependencies, visualizing"
   - "dependency graphs"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Map dependencies with code maps
 
@@ -43,7 +41,7 @@ You can map dependencies for code in these languages:
 
 ## Install Code Map and Live Dependency Validation
 
-To create a code map in Visual Studio 2017, first install the **Code Map** and **Live Dependency Validation** components:
+To create a code map in Visual Studio, first install the **Code Map** and **Live Dependency Validation** components:
 
 1. Open **Visual Studio Installer**. You can open it from the Windows Start menu, or within Visual Studio by selecting **Tools** > **Get Tools and Features**.
 
@@ -132,15 +130,15 @@ To see all the dependencies in your solution:
 
 10. Another way to focus in on a complex solution map is to generate a new map containing selected items from an existing map. Hold **Ctrl** while selecting the items you want to focus on, open the shortcut menu, and choose **New Graph from Selection**.
 
-   ![Show selected items on a new code map](../modeling/media/codemapsshowonnewmap.png)
+    ![Show selected items on a new code map](../modeling/media/codemapsshowonnewmap.png)
 
 11. The containing context is carried over to the new map. Hide Solution Folders and any other containers you don't want to see using the **Filters** pane.
 
-   ![Filter the containers to simplify the view](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filter the containers to simplify the view](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Expand the groups and select items in the map to view the relationships.
 
-   ![Select items to view the relationships](../modeling/media/codemapsviewnewrelationships.png)
+    ![Select items to view the relationships](../modeling/media/codemapsviewnewrelationships.png)
 
 Also see:
 
@@ -234,7 +232,7 @@ Suppose you have a code review to perform in some files with pending changes. To
 
 ## See also
 
-- [Video: Understand design from code with Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Video: Understand design from code with Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md)

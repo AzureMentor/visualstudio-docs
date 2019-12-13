@@ -1,36 +1,29 @@
 ---
 title: "Upgrading Projects | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "upgrading VSPackages"
   - "upgrading applications, strategies"
   - "VSPackages, upgrade support"
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Upgrading Projects
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Upgrading Projects](https://docs.microsoft.com/visualstudio/extensibility/internals/upgrading-projects).  
-  
 Changes to the project model from one version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] to the next may require that projects and solutions be upgraded so that they can run on the newer version. The [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] provides interfaces that can be used to implement upgrade support in your own projects.  
   
 ## Upgrade Strategies  
  To support an upgrade, your project system implementation must define and implement an upgrade strategy. In determining your strategy, you can choose to support side-by-side (SxS) backup, copy backup, or both.  
   
--   SxS backup means that a project copies only those files that need upgrading in place, adding a suitable file name suffix, for example, ".old".  
+- SxS backup means that a project copies only those files that need upgrading in place, adding a suitable file name suffix, for example, ".old".  
   
--   Copy backup means that a project copies all project items to a user-provided backup location. The relevant files at the original project location are then upgraded.  
+- Copy backup means that a project copies all project items to a user-provided backup location. The relevant files at the original project location are then upgraded.  
   
 ## How Upgrade Works  
  When a solution created in an earlier version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is opened in a newer version, the IDE checks the solution file to determine if it needs to be upgraded. If upgrading is required, the **Upgrade Wizard** is automatically launched to walk the user through the upgrade process.  
@@ -47,7 +40,7 @@ Changes to the project model from one version of [!INCLUDE[vsprvs](../../include
  After updating all relevant global files, each project factory can choose to instantiate a project. The project implementation must support <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> method is then called to upgrade all relevant project items.  
   
 > [!NOTE]
->  The <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> method does not provide the SVsUpgradeLogger service. This service can be obtained by calling <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> The <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> method does not provide the SVsUpgradeLogger service. This service can be obtained by calling <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## Best Practices  
  Use the <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service to check if you can edit a file before editing it, and can save it before saving it. This will help your backup and upgrade implementations handle project files under source control, files with insufficient permissions, and so forth.  
@@ -60,4 +53,3 @@ Changes to the project model from one version of [!INCLUDE[vsprvs](../../include
  [Projects](../../extensibility/internals/projects.md)   
  [Upgrading Custom Projects](../../misc/upgrading-custom-projects.md)   
  [Upgrading Project Items](../../misc/upgrading-project-items.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "Debug Source Files, Common Properties, Solution Property Pages Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.options.FindSource"
 dev_langs: 
@@ -28,15 +23,13 @@ helpviewer_keywords:
   - "debugger, source files"
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debug Source Files, Common Properties, Solution Property Pages Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debug Source Files, Common Properties, Solution Property Pages Dialog Box](https://docs.microsoft.com/visualstudio/debugger/debug-source-files-common-properties-solution-property-pages-dialog-box).  
-  
 This property page specifies where the debugger will look for source files when debugging the solution.  
   
  To access the **Debug Source Files** property page, right-click on your Solution in **Solution Explorer** and select **Properties** from the shortcut menu. Expand the **Common Properties** folder, and click the **Debug Source Files** page.  
@@ -50,6 +43,3 @@ This property page specifies where the debugger will look for source files when 
 ## See Also  
  [Debugger Security](../debugger/debugger-security.md)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)
-
-
-

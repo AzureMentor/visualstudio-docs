@@ -1,23 +1,16 @@
 ---
 title: "CA2153: Avoid Handling Corrupted State Exceptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: 11/15/2016
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2153: Avoid Handling Corrupted State Exceptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2153: Avoid Handling Corrupted State Exceptions](https://docs.microsoft.com/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions).
 
 |||
 |-|-|
@@ -128,6 +121,3 @@ void TestMethod1()
     }
 }
 ```
-
-
-

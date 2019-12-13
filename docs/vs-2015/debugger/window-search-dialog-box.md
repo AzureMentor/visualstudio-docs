@@ -1,27 +1,20 @@
 ---
 title: "Window Search Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Window Search"
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Window Search Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Window Search Dialog Box](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box).  
-  
 Use this dialog box to find and select the node for a specific window in [Windows View](../debugger/windows-view.md). To display this dialog box, move the focus to the Windows view window. Then choose **Find Window** from the **Search** menu.  
   
  You can use the **Finder Tool** to select a window, or you can enter the window handle, or identify the window by caption and class.  
@@ -67,6 +60,3 @@ Use this dialog box to find and select the node for a specific window in [Window
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-

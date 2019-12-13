@@ -1,36 +1,29 @@
 ---
 title: "IDiaEnumLineNumbers::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaEnumLineNumbers::Clone method"
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaEnumLineNumbers::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaEnumLineNumbers::Clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-clone).  
-  
 Creates an enumerator that contains the same enumeration state as the current enumerator.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone (   
-   IDiaEnumLineNumbers** ppenum  
+   IDiaEnumLineNumbers** ppenum  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT Clone ( 
   
 ## See Also  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
-
-
-

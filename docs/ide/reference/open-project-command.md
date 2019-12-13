@@ -1,8 +1,6 @@
 ---
 title: Open Project command
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
   - file.openproject
@@ -12,9 +10,9 @@ helpviewer_keywords:
   - "File.OpenProject command"
   - "Open Project command"
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---

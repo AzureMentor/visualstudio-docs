@@ -1,26 +1,19 @@
 ---
 title: "IDebugProgram3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "IDebugProgram3 interface"
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgram3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram3).  
-  
 This interface represents a program that is running in a process and extends [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) by providing thread information.  
   
 ## Syntax  
@@ -62,4 +55,3 @@ IDebugProgram3 : IDebugProgram3
  [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "Edit and Continue (Visual C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -21,15 +16,13 @@ helpviewer_keywords:
   - "debugging [C#], Edit and Continue"
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Edit and Continue (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Edit and Continue (Visual C#)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-csharp).  
-  
 With Edit and Continue for C#, you can make changes to your code in break mode while debugging. The changes can be applied without having to stop and restart the debugging session. In run mode, the source editor is read-only.  
   
  Edit and Continue supports most changes you might want to make during a debugging session, but there are some exceptions. For more information, see [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
@@ -43,6 +36,3 @@ With Edit and Continue for C#, you can make changes to your code in break mode w
 ## See Also  
  [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md)
-
-
-

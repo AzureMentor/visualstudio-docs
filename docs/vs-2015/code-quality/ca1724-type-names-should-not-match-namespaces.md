@@ -1,14 +1,9 @@
 ---
 title: "CA1724: Type Names Should Not Match Namespaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "TypeNamesShouldNotMatchNamespaces"
   - "CA1724"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1724"
 ms.assetid: 329af3b5-5600-4101-831d-531ab3eb7060
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1724: Type Names Should Not Match Namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1724: Type Names Should Not Match Namespaces](https://docs.microsoft.com/visualstudio/code-quality/ca1724-type-names-should-not-match-namespaces).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA1724: Type Names Should Not 
 
 ## When to Suppress Warnings
  For new development, no known scenarios occur where you must suppress a warning from this rule. Before you suppress the warning, carefully consider how the users of your library might be confused by the matching name. For shipping libraries, you might have to suppress a warning from this rule.
-
-
-

@@ -1,39 +1,32 @@
 ---
 title: "IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaDataSource::loadAndValidateDataFromPdb method"
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaDataSource::loadAndValidateDataFromPdb](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb).  
-  
 Opens and verifies that the program database (.pdb) file matches the signature information provided, and  prepares the .pdb file as a debug data source.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT loadAndValidateDataFromPdb (   
-   LPCOLESTR pdbPath,  
-   GUID*     pcsig70,  
-   DWORD     sig,  
-   DWORD     age  
+   LPCOLESTR pdbPath,  
+   GUID*     pcsig70,  
+   DWORD     sig,  
+   DWORD     age  
 );  
 ```  
   
@@ -96,6 +89,3 @@ if (FAILED(hr))
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
-
-
-

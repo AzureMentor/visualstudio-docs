@@ -1,27 +1,20 @@
 ---
 title: "Modules View - .NET Memory Instrumentation Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Modules view"
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Modules View - .NET Memory Instrumentation Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Modules View - .NET Memory Instrumentation Data](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-instrumentation-data).  
-  
 The Modules view of .NET memory allocation data collected by using the instrumentation method groups the memory and timing data by the modules that were executed in the profiling run. Profiling data for the functions of the module is listed underneath the module node.  
   
 ## General  
@@ -105,6 +98,3 @@ The Modules view of .NET memory allocation data collected by using the instrumen
  [Modules View - Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modules View](../profiling/modules-view-instrumentation-data.md)   
  [Modules View](../profiling/modules-view-sampling-data.md)
-
-
-

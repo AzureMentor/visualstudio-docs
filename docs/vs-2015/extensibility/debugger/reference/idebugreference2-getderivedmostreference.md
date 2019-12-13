@@ -1,41 +1,34 @@
 ---
 title: "IDebugReference2::GetDerivedMostReference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugReference2::GetDerivedMostReference"
 helpviewer_keywords: 
   - "IDebugReference2::GetDerivedMostReference"
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugReference2::GetDerivedMostReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugReference2::GetDerivedMostReference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-getderivedmostreference).  
-  
 Gets the derived-most reference of a reference. Reserved for future use.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetDerivedMostReference(   
-   IDebugReference2** ppDerivedMost  
+   IDebugReference2** ppDerivedMost  
 );  
 ```  
   
 ```csharp  
 int GetDerivedMostReference(   
-   out IDebugReference2 ppDerivedMost  
+   out IDebugReference2 ppDerivedMost  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetDerivedMostReference( 
   
 ## See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

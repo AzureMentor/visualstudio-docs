@@ -1,14 +1,9 @@
 ---
 title: "CA1600: Do not use idle process priority | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotUseIdleProcessPriority"
   - "CA1600"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotUseIdleProcessPriority"
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1600: Do not use idle process priority
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1600: Do not use idle process priority](https://docs.microsoft.com/visualstudio/code-quality/ca1600-do-not-use-idle-process-priority).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA1600: Do not use idle proces
 
 ## When to Suppress Warnings
  This rule should be suppressed only when Idle process priority is required and mobility considerations can be ignored safely.
-
-
-

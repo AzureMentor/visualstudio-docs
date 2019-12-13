@@ -5,10 +5,10 @@ ms.date: "10/23/2017"
 ms.technology: vs-ide-mobile
 ms.topic: "conceptual"
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
-author: "corob"
-ms.author: "mblome"
-manager: douge
-f1_keywords: 
+author: "corob-msft"
+ms.author: "corob"
+manager: jillfra
+f1_keywords:
   - VC.Project.VCConfiguration.OutputDirectory
   - VC.Project.VCConfiguration.IntermediateDirectory
   - VC.Project.VCConfiguration.TargetName
@@ -20,7 +20,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.DeleteExtensionsOnClean
   - VC.Project.VCConfiguration.UseOfSTL
   - VC.Project.VCConfiguration.ThumbMode
-ms.workload: 
+ms.workload:
   - "xplat-cplusplus"
 ---
 

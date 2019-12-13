@@ -1,14 +1,9 @@
 ---
 title: "CA2120: Secure serialization constructors | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2120"
   - "SecureSerializationConstructors"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2120"
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2120: Secure serialization constructors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2120: Secure serialization constructors](https://docs.microsoft.com/visualstudio/code-quality/ca2120-secure-serialization-constructors).
 
 |||
 |-|-|
@@ -59,6 +52,3 @@ The latest version of this topic can be found at [CA2120: Secure serialization c
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
-
-
-

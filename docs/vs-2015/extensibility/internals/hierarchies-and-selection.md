@@ -1,28 +1,21 @@
 ---
 title: "Hierarchies and Selection | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Visual Studio, hierarchies"
   - "selection"
   - "hierarchies"
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Hierarchies and Selection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Hierarchies and Selection](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-and-selection).  
-  
 When you customize [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], you should understand how [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] handles hierarchies such as projects and how it uses selection context to determine what is displayed to the user. This section discusses the concepts of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hierarchies and selection.  
   
 ## In This Section  
@@ -41,4 +34,3 @@ When you customize [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], you should u
 ## Related Sections  
  [Architecture](../../extensibility/internals/project-types-architecture.md)  
  Provides detailed technical information about project types.
-

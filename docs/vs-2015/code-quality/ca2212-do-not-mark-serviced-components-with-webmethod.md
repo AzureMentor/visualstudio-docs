@@ -1,14 +1,9 @@
 ---
 title: "CA2212: Do not mark serviced components with WebMethod | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2212"
   - "DoNotMarkServicedComponentsWithWebMethod"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotMarkServicedComponentsWithWebMethod"
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2212: Do not mark serviced components with WebMethod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2212: Do not mark serviced components with WebMethod](https://docs.microsoft.com/visualstudio/code-quality/ca2212-do-not-mark-serviced-components-with-webmethod).
 
 |||
 |-|-|
@@ -48,6 +41,3 @@ The latest version of this topic can be found at [CA2212: Do not mark serviced c
 ## See Also
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>
  <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>
-
-
-

@@ -1,26 +1,19 @@
 ---
 title: "Description Element (Visual Studio Templates) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-general"
+ms.topic: reference
 helpviewer_keywords: 
   - "Description element [Visual Studio project templates]"
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Description Element (Visual Studio Templates)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Description Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/description-element-visual-studio-templates).  
-  
 Specifies the description of the template as it appears in either the **New Project** or **Add New Item** dialog box.  
   
  \<VSTemplate>  
@@ -96,4 +89,3 @@ Specifies the description of the template as it appears in either the **New Proj
 ## See Also  
  [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)
-

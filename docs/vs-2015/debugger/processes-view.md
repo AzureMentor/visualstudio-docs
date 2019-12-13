@@ -1,29 +1,22 @@
 ---
 title: "Processes View | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.externaltools.spyplus.processesview"
 helpviewer_keywords: 
   - "Processes view"
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Processes View
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Processes View](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 The Processes view displays a tree of all active processes on your system. The process ID and module name are shown. Use the Processes view if you want to examine a particular system process, which usually corresponds to an executing program. Processes are identified by module names, or they are designated "system processes."  
   
  Microsoft Windows supports multiple processes. Each process can have one or more threads, and each thread can have one or more associated top-level windows. Each top-level window can own a series of windows. A + symbol indicates that a level is collapsed. The collapsed view consists of one line per process. Click the + symbol to expand the level.  
@@ -34,12 +27,12 @@ The Processes view displays a tree of all active processes on your system. The p
   
 #### To open the Processes view  
   
-1.  From the **Spy** menu, choose **Processes**.  
+1. From the **Spy** menu, choose **Processes**.  
   
- ![Spy&#43;&#43; Processes View](../debugger/media/spy-processes.png "Spy++_Processes")  
-Spy++ Processes View  
+   ![Spy&#43;&#43; Processes View](../debugger/media/spy-processes.png "Spy++_Processes")  
+   Spy++ Processes View  
   
- The figure above shows the Processes view with process and thread nodes expanded.  
+   The figure above shows the Processes view with process and thread nodes expanded.  
   
 ### In This Section  
  [Searching for a Process in Processes View](../debugger/how-to-search-for-a-process-in-processes-view.md)  
@@ -63,6 +56,3 @@ Spy++ Processes View
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-

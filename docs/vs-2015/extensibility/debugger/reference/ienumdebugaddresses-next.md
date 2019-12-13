@@ -1,45 +1,38 @@
 ---
 title: "IEnumDebugAddresses::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugAddresses::Next"
 helpviewer_keywords: 
   - "IEnumDebugAddresses::Next method"
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugAddresses::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugAddresses::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-next).  
-  
 This method returns the next set of elements from the enumeration.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG           celt,  
-   IDebugAddress** rgelt,  
-   ULONG*          pceltFetched  
+   ULONG           celt,  
+   IDebugAddress** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
 ```csharp  
 int Next(  
-   uint            celt,  
-   IDebugAddress[] rgelt,  
-   ref uint        pceltFetched  
+   uint            celt,  
+   IDebugAddress[] rgelt,  
+   ref uint        pceltFetched  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int Next(
 ## See Also  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
-

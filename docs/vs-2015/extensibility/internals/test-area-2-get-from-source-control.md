@@ -1,27 +1,20 @@
 ---
 title: "Test Area 2: Get From Source Control | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control plug-ins, getting items from source control"
   - "source control [Visual Studio SDK], getting items from"
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Test Area 2: Get From Source Control
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Test Area 2: Get From Source Control](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control).  
-  
 This test area covers test cases for retrieving items from the version store via the Get command. These test cases can be applied to both local and to Web projects.  
   
 ## Command Menu Access  
@@ -29,13 +22,13 @@ This test area covers test cases for retrieving items from the version store via
   
 ##### Get Latest Version:  
   
--   **File**, **Source Control**, **Get Latest Version**.  
+- **File**, **Source Control**, **Get Latest Version**.  
   
--   **File**, **Get Latest Version**.  
+- **File**, **Get Latest Version**.  
   
--   Shortcut menu, **Get Latest Version**.  
+- Shortcut menu, **Get Latest Version**.  
   
--   Get: **File**, **Source Control**, **Get**.  
+- Get: **File**, **Source Control**, **Get**.  
   
 ## Expected Behavior  
   
@@ -58,4 +51,3 @@ This test area covers test cases for retrieving items from the version store via
   
 ## See Also  
  [Test Guide for Source Control Plug-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

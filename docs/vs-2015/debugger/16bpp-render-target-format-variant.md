@@ -1,25 +1,18 @@
 ---
 title: "16bpp Render Target Format Variant | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # 16bpp Render Target Format Variant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [16bpp Render Target Format Variant](https://docs.microsoft.com/visualstudio/debugger/graphics/16bpp-render-target-format-variant).  
-  
 Sets the pixel format to DXGI_FORMAT_B5G6R5_UNORM for all render targets and back buffers.  
   
 ## Interpretation  
@@ -38,11 +31,11 @@ Sets the pixel format to DXGI_FORMAT_B5G6R5_UNORM for all render targets and bac
 ## Remarks  
  The render target format is reset to DXGI_FORMAT_B5G6R5_UNORM on every call to `ID3D11Device::CreateTexture2D` that creates a render target. Specifically, the format is overridden when the D3D11_TEXTURE2D_DESC object passed in pDesc describes a render target; that is:  
   
--   The BindFlags member has the D3D11_BIND_REDNER_TARGET flag set.  
+- The BindFlags member has the D3D11_BIND_REDNER_TARGET flag set.  
   
--   The BindFlags member has the D3D11_BIND_DEPTH_STENCIL flag cleared.  
+- The BindFlags member has the D3D11_BIND_DEPTH_STENCIL flag cleared.  
   
--   The Usage member is set to D3D11_USAGE_DEFAULT.  
+- The Usage member is set to D3D11_USAGE_DEFAULT.  
   
 ## Restrictions and limitations  
  Because the B5G6R5 format doesn't have an alpha channel, alpha content is not preserved by this variant. If your app's rendering requires an alpha channel in your render target, you can't just switch to the B5G6R5 format.  
@@ -57,6 +50,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

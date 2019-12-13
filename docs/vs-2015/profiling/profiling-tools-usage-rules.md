@@ -1,25 +1,18 @@
 ---
 title: "Profiling Tools Usage Rules | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Profiling Tools Usage Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Profiling Tools Usage Rules](https://docs.microsoft.com/visualstudio/profiling/profiling-tools-usage-rules).  
-  
 Performance rules in the Profiling Tools Usage category provide guidance for using the profiler to collect data most effectively.  
   
 |||  
@@ -31,6 +24,3 @@ Performance rules in the Profiling Tools Usage category provide guidance for usi
 |[DA0026: Excessive kernel CPU time processing](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|A significant amount of time in the profiling run occurred in the processor kernel mode. Consider sampling by using system calls as the metric instead of using time as the metric.|  
 |[DA0029: Unsupported CLR Version](../profiling/da0029-unsupported-clr-version.md)|The profiled binary is using a version of [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] that is not supported by the profiler. The profiler reports cannot resolve symbol names.|  
 |[DA0030: Gather Tier Interaction measurements for database projects](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|A significant number of calls to methods in the <xref:System.Data?displayProperty=fullName> namespace were collected. To include data about the database calls, consider collecting tier interaction data in your profile runs.|
-
-
-

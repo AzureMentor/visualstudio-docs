@@ -1,27 +1,20 @@
 ---
 title: "Legacy Language Service Interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "IVsLanguageInfo interface"
   - "language services, objects"
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Legacy Language Service Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Legacy Language Service Interfaces](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces).  
-  
 For any particular programming language, there can be only one instance of a language service at a time. However, a single language service can serve more than one editor.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] does not associate a language service with any particular editor. Therefore, when you request a language service operation, you must identify the appropriate editor as a parameter.  
@@ -31,15 +24,15 @@ For any particular programming language, there can be only one instance of a lan
   
  You can implement the core language service interfaces on any number of separate classes. However, a common approach is to implement the following interfaces in a single class:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (optional)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (optional)  
   
- The <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface must be implemented on all language services. It provides information about your language service, such as the localized name of the language, the file name extensions associated with the language service, and how to retrieve a colorizer.  
+  The <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface must be implemented on all language services. It provides information about your language service, such as the localized name of the language, the file name extensions associated with the language service, and how to retrieve a colorizer.  
   
 ## Additional Language Service Interfaces  
  Other interfaces can be provided with your language service. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requests a separate instance of these interfaces for each instance of the text buffer. Therefore, you should implement each of these interfaces on its own object. The following table shows interfaces that require one instance per text buffer instance.  
@@ -56,4 +49,3 @@ For any particular programming language, there can be only one instance of a lan
 ## See Also  
  [Developing a Legacy Language Service](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Checklist: Creating a Legacy Language Service](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
-

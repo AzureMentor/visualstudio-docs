@@ -1,14 +1,9 @@
 ---
 title: "Expressions in the Debugger | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.expressions"
 dev_langs: 
@@ -29,15 +24,13 @@ helpviewer_keywords:
   - "debugging [Visual Studio], variable evaluation"
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Expressions in the Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Expressions in the Debugger](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 The Visual Studio debugger includes expression evaluators that work when you enter an expression in the **QuickWatch** dialog box, **Watch** window, or **Immediate** window. The expression evaluators are also at work in the **Breakpoints** window and many other places in the debugger.  
   
  The following sections give details about  expressions in different languages.  
@@ -95,18 +88,18 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Using debugger intrinsic functions to maintain state  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Using debugger intrinsic functions to maintain state  
  The debugger intrinsic functions give you a way to call certain C/C++ functions in expressions without changing the state of the application.  
   
  Debugger intrinsic functions:  
   
--   Are guaranteed to be safe: executing a debugger intrinsic function will not corrupt the process that is being debugged.  
+- Are guaranteed to be safe: executing a debugger intrinsic function will not corrupt the process that is being debugged.  
   
--   Are allowed in all expressions , even in scenarios where side effects and function evaluation are not allowed.  
+- Are allowed in all expressions , even in scenarios where side effects and function evaluation are not allowed.  
   
--   Work in scenarios where the regular function calls are not possible, such as debugging a minidump.  
+- Work in scenarios where the regular function calls are not possible, such as debugging a minidump.  
   
- Debugger intrinsic functions can also make evaluating expressions more convenient. For example, `strncmp(str, “asd”)` is much easier to write in a breakpoint condition than `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Debugger intrinsic functions can also make evaluating expressions more convenient. For example, `strncmp(str, “asd”)` is much easier to write in a breakpoint condition than `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Area|Intrinsic functions|  
 |----------|-------------------------|  
@@ -119,15 +112,15 @@ int main()
   
 ## C++/CLI - Unsupported Expressions  
   
--   Casts that involve pointers, or user-defined casts, are not supported.  
+- Casts that involve pointers, or user-defined casts, are not supported.  
   
--   Object comparison and assignment are not supported.  
+- Object comparison and assignment are not supported.  
   
--   Overloaded operators and overloaded functions are not supported.  
+- Overloaded operators and overloaded functions are not supported.  
   
--   Boxing and unboxing are not supported.  
+- Boxing and unboxing are not supported.  
   
--   `Sizeof` operator is not supported.  
+- `Sizeof` operator is not supported.  
   
 ## C# - Unsupported Expressions  
   
@@ -136,19 +129,19 @@ int main()
   
  The following features of dynamic objects are not supported:  
   
--   The compound operators `+=`, `-=`, `%=`, `/=`, and `*=`  
+- The compound operators `+=`, `-=`, `%=`, `/=`, and `*=`  
   
--   Many casts, including numeric casts and type-argument casts  
+- Many casts, including numeric casts and type-argument casts  
   
--   Method calls with more than two arguments  
+- Method calls with more than two arguments  
   
--   Property getters with more than two arguments  
+- Property getters with more than two arguments  
   
--   Property setters with arguments  
+- Property setters with arguments  
   
--   Assigning to an indexer  
+- Assigning to an indexer  
   
--   Boolean operators `&&` and `||`  
+- Boolean operators `&&` and `||`  
   
 ### Anonymous Methods  
  Creation of new anonymous methods is not supported.  
@@ -160,19 +153,19 @@ int main()
   
  The following features of dynamic objects are not supported:  
   
--   The compound operators `+=`, `-=`, `%=`, `/=`, and `*=`  
+- The compound operators `+=`, `-=`, `%=`, `/=`, and `*=`  
   
--   Many casts, including numeric casts and type-argument casts  
+- Many casts, including numeric casts and type-argument casts  
   
--   Method calls with more than two arguments  
+- Method calls with more than two arguments  
   
--   Property getters with more than two arguments  
+- Property getters with more than two arguments  
   
--   Property setters with arguments  
+- Property setters with arguments  
   
--   Assigning to an indexer  
+- Assigning to an indexer  
   
--   Boolean operators `&&` and `||`  
+- Boolean operators `&&` and `||`  
   
 ### Local Constants  
  Local constants are not supported.  
@@ -185,43 +178,38 @@ int main()
   
 ### Unsupported Keywords  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Namespace or module level keywords, such as `End Sub` or `Module`.  
+- Namespace or module level keywords, such as `End Sub` or `Module`.  
   
 ## See Also  
  [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariables](../debugger/pseudovariables.md)
-
-
-
-
-

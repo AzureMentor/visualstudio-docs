@@ -5,10 +5,10 @@ ms.date: "10/23/2017"
 ms.technology: vs-ide-mobile
 ms.topic: "reference"
 ms.assetid: 3a7ba14f-a628-4c1b-bb89-73b9195769f1
-author: "corob"
-ms.author: "mblome"
-manager: douge
-ms.workload: 
+author: "corob-msft"
+ms.author: "corob"
+manager: jillfra
+ms.workload:
   - "xplat-cplusplus"
 ---
 # C++ cross-platform property page reference

@@ -1,36 +1,29 @@
 ---
 title: "IDiaFrameData::get_relativeVirtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaFrameData::get_relativeVirtualAddress method"
 ms.assetid: de070ef4-6c9d-43ca-911c-5245cbcb8dbe
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaFrameData::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaFrameData::get_relativeVirtualAddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress).  
-  
 Retrieves the relative virtual address (RVA) of the code for the frame.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_relativeVirtualAddress ( 
   
 ## See Also  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

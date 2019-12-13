@@ -1,41 +1,34 @@
 ---
 title: "IDebugPort2::EnumProcesses | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPort2::EnumProcesses"
 helpviewer_keywords: 
   - "IDebugPort2::EnumProcesses"
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPort2::EnumProcesses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPort2::EnumProcesses](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-enumprocesses).  
-  
 Returns a list of all the processes running on a port.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT EnumProcesses(   
-   IEnumDebugProcesses2** ppEnum  
+   IEnumDebugProcesses2** ppEnum  
 );  
 ```  
   
 ```csharp  
 int EnumProcesses(   
-   out IEnumDebugProcesses2 ppEnum  
+   out IEnumDebugProcesses2 ppEnum  
 );  
 ```  
   
@@ -49,4 +42,3 @@ int EnumProcesses( 
 ## See Also  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
-

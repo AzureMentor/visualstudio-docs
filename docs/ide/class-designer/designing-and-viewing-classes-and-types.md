@@ -1,8 +1,6 @@
 ---
 title: Use Class Designer
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
   - "vs.classdesigner.diagram"
@@ -13,9 +11,9 @@ helpviewer_keywords:
   - "classes [Visual Studio], viewing"
   - "class designer"
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---

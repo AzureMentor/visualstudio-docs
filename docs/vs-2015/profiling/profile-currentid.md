@@ -1,27 +1,20 @@
 ---
 title: "PROFILE_CURRENTID | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "PROFILE_CURRENTID"
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # PROFILE_CURRENTID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [PROFILE_CURRENTID](https://docs.microsoft.com/visualstudio/profiling/profile-currentid).  
-  
 The PROFILE_CURRENTID returns the pseudo-token for the thread id or process id, in a call to NameProfile, StartProfile, StopProfile, SuspendProfile, and ResumeProfile functions. Use it to cause the function to operate on the current thread or process, rather than a specifically indicated one.  
   
 ## Example  
@@ -68,6 +61,3 @@ void ExerciseProfileCurrentID()
  [StartProfile](../profiling/startprofile.md)   
  [StopProfile](../profiling/stopprofile.md)   
  [SuspendProfile](../profiling/suspendprofile.md)
-
-
-

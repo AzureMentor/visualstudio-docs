@@ -1,14 +1,12 @@
 ---
 title: "Install test agents and test controllers"
-ms.date: 07/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
   - "configure test agents, test lab"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -20,7 +18,7 @@ You might also consider if it's better to use [build or release management](use-
 
 ## System requirements
 
-The following table shows the system requirements for installing the test agent or test controller for Visual Studio 2017:
+The following table shows the system requirements for installing the test agent or test controller for Visual Studio:
 
 | Item | Requirements |
 | ---- | ------------ |
@@ -30,17 +28,17 @@ The following table shows the system requirements for installing the test agent 
 
 ## Install the test controller and test agents
 
-You can download agents for Visual Studio 2017 from [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Look for *Agents for Visual Studio 2017*, select either *Agent* or *Controller*, and then choose *Download*. Run the downloaded executable to install the test agent or controller.
+You can download agents for Visual Studio from [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Look for *Agents for Visual Studio 2019*, select either *Agent* or *Controller*, and then choose *Download*. Run the downloaded executable to install the test agent or controller.
 
-You can download agents for Visual Studio 2015 and Visual Studio 2013 from the [older downloads](https://visualstudio.microsoft.com/vs/older-downloads/) page.
+You can download agents for Visual Studio 2017, Visual Studio 2015, and Visual Studio 2013 from the [older downloads](https://visualstudio.microsoft.com/vs/older-downloads/) page.
 
 These installers are available as ISO files for easy installation on virtual machines.
 
 ## Compatible versions of TFS, Microsoft Test Manager, the test controller, and test agent
 
-You can mix different versions of TFS, Microsoft Test Manager (MTM), the test controller, and the test agent, according to the following table:
+You can mix different versions of TFS, Microsoft Test Manager, the test controller, and the test agent, according to the following table:
 
-| TFS | MTM with Lab Center | Controller | Agent |
+| TFS | Microsoft Test Manager with Lab Center | Controller | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: upgrade from 2015 or new install | 2017 | 2017 | 2017 |
 | 2017: upgrade from 2015 or new install | 2017 | 2013 Update 5 | 2013 Update 5 |
@@ -49,6 +47,9 @@ You can mix different versions of TFS, Microsoft Test Manager (MTM), the test co
 | 2015: new install | 2013 | 2013 | 2013 |
 | 2015: upgrade from 2013 or new install | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Lab management scenarios in TFS 2018 and Azure DevOps Services are deprecated. For more information see [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## Upgrade from Visual Studio 2013 test agents
 

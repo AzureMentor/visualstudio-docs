@@ -1,14 +1,9 @@
 ---
 title: "CA2233: Operations should not overflow | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "OperationsShouldNotOverflow"
   - "CA2233"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2233"
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2233: Operations should not overflow
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2233: Operations should not overflow](https://docs.microsoft.com/visualstudio/code-quality/ca2233-operations-should-not-overflow).
 
 |||
 |-|-|
@@ -62,9 +55,9 @@ The latest version of this topic can be found at [CA2233: Operations should not 
 ```
 public static void Main()
 {
-    int value = int.MinValue;    // int.MinValue is -2147483648
-    value = Calculator.Decrement(value);
-    Console.WriteLine(value);
+    int value = int.MinValue;    // int.MinValue is -2147483648
+    value = Calculator.Decrement(value);
+    Console.WriteLine(value);
 }
 ```
 
@@ -72,9 +65,9 @@ public static void Main()
 
 ```
 Public Shared Sub Main()
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
-    value = Calculator.Decrement(value)
-    Console.WriteLine(value)
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648
+    value = Calculator.Decrement(value)
+    Console.WriteLine(value)
 End Sub
 ```
 
@@ -108,16 +101,13 @@ End Sub
 
  **To turn on checked arithmetic overflow/underflow in C#**
 
-1.  In **Solution Explorer**, right-click your project and choose **Properties**.
+1. In **Solution Explorer**, right-click your project and choose **Properties**.
 
-2.  Select the **Build** tab and click **Advanced**.
+2. Select the **Build** tab and click **Advanced**.
 
-3.  Select **Check for arithmetic overflow/underflow** and click **OK**.
+3. Select **Check for arithmetic overflow/underflow** and click **OK**.
 
 ## See Also
  <xref:System.OverflowException?displayProperty=fullName>
- [C# Operators](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)
- [Checked and Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-
+ [C# Operators](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)
+ [Checked and Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

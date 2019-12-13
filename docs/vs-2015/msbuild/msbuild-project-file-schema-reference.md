@@ -1,14 +1,9 @@
 ---
 title: "MSBuild Project File Schema Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: reference
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -20,14 +15,11 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # MSBuild Project File Schema Reference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [MSBuild Project File Schema Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference).  
-  
-  
 Provides a table of all the [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML Schema elements with their available attributes and child elements.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] uses project files to instruct the build engine what to build and how to build it. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] project files are XML files that adhere to the [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML schema. This section documents the XML schema definition (.xsd) file for [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
@@ -64,5 +56,3 @@ Provides a table of all the [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.
  [Conditions](../msbuild/msbuild-conditions.md)   
  [MSBuild Reference](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

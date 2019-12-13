@@ -1,36 +1,29 @@
 ---
 title: "IDiaSectionContrib::get_relocationsCrc | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSectionContrib::get_relocationsCrc method"
 ms.assetid: 8c29c91a-062d-4566-a9b7-49251036a15a
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSectionContrib::get_relocationsCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSectionContrib::get_relocationsCrc](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc).  
-  
 Retrieves the cyclic redundancy check (CRC) of the relocation information for the section.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_relocationsCrc (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_relocationsCrc ( 
   
 ## See Also  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

@@ -1,43 +1,36 @@
 ---
 title: "IDebugExpression2::EvaluateAsync | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugExpression2::EvaluateAsync"
 helpviewer_keywords: 
   - "IDebugExpression2::EvaluateAsync"
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugExpression2::EvaluateAsync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugExpression2::EvaluateAsync](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpression2-evaluateasync).  
-  
 This method evaluates the expression asynchronously.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT EvaluateAsync (   
-   EVALFLAGS             dwFlags,  
-   IDebugEventCallback2* pExprCallback  
+   EVALFLAGS             dwFlags,  
+   IDebugEventCallback2* pExprCallback  
 );  
 ```  
   
 ```csharp  
 int EvaluateAsync(  
-   enum_EVALFLAGS       dwFlags,   
-   IDebugEventCallback2 pExprCallback  
+   enum_EVALFLAGS       dwFlags,   
+   IDebugEventCallback2 pExprCallback  
 );  
 ```  
   
@@ -63,15 +56,15 @@ int EvaluateAsync(
   
 ```cpp#  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  
-                                   IDebugEventCallback2* pExprCallback)  
+                                   IDebugEventCallback2* pExprCallback)  
 {  
-    // Set the aborted state to FALSE  
-    // in case the user tries to redo the evaluation after aborting.  
-    m_bAborted = FALSE;  
-    // Post the WM_EVAL_EXPR message in the message queue of the current thread.  
-    // This starts the expression evaluation on a background thread.  
-    PostThreadMessage(GetCurrentThreadId(), WM_EVAL_EXPR, 0, (LPARAM) this);  
-    return S_OK;  
+    // Set the aborted state to FALSE  
+    // in case the user tries to redo the evaluation after aborting.  
+    m_bAborted = FALSE;  
+    // Post the WM_EVAL_EXPR message in the message queue of the current thread.  
+    // This starts the expression evaluation on a background thread.  
+    PostThreadMessage(GetCurrentThreadId(), WM_EVAL_EXPR, 0, (LPARAM) this);  
+    return S_OK;  
 }  
 ```  
   
@@ -80,4 +73,3 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

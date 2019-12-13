@@ -1,44 +1,37 @@
 ---
 title: "IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "GetMetaDataImport"
   - "IDebugSymbolProviderDirect::GetMetaDataImport"
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugSymbolProviderDirect::GetMetaDataImport
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugSymbolProviderDirect::GetMetaDataImport](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport).  
-  
 Retrieves the metadata import information.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetMetaDataImport (  
-    GUID*      guid,  
-    DWORD      appID,  
-    IUnknown** ppImport  
+    GUID*      guid,  
+    DWORD      appID,  
+    IUnknown** ppImport  
 );  
 ```  
   
 ```csharp  
 int GetMetaDataImport (  
-    Guid       guid,  
-    uint       appID,  
-    out object ppImport  
+    Guid       guid,  
+    uint       appID,  
+    out object ppImport  
 );  
 ```  
   
@@ -57,4 +50,3 @@ int GetMetaDataImport (
   
 ## See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
-

@@ -1,43 +1,36 @@
 ---
 title: "IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugDisassemblyStream2::GetCodeContext"
 helpviewer_keywords: 
   - "IDebugDisassemblyStream2::GetCodeContext"
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugDisassemblyStream2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugDisassemblyStream2::GetCodeContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext).  
-  
 Returns a code context object corresponding to a specified code location identifier.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetCodeContext(   
-   UINT64               uCodeLocationId,  
-   IDebugCodeContext2** ppCodeContext  
+   UINT64               uCodeLocationId,  
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
 ```csharp  
 int GetCodeContext(   
-   ulong                  uCodeLocationId,  
-   out IDebugCodeContext2 ppCodeContext  
+   ulong                  uCodeLocationId,  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
@@ -62,4 +55,3 @@ int GetCodeContext( 
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-

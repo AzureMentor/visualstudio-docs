@@ -1,26 +1,19 @@
 ---
 title: "BPREQI_FIELDS90 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "BPREQI_FIELDS90 enumeration"
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # BPREQI_FIELDS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [BPREQI_FIELDS90](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bpreqi-fields90).  
-  
 Enumerates the valid values that specify the information to be retrieved about a breakpoint request. This enumeration extends the [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeration.  
   
 ## Syntax  
@@ -28,25 +21,25 @@ Enumerates the valid values that specify the information to be retrieved about a
 ```cpp#  
 enum enum_BPREQI_FIELDS90  
 {  
-   // VS 8.0 values  
-   BPREQI90_BPLOCATION                = 0x0001,  
-   BPREQI90_LANGUAGE                  = 0x0002,  
-   BPREQI90_PROGRAM                   = 0x0004,  
-   BPREQI90_PROGRAMNAME               = 0x0008,  
-   BPREQI90_THREAD                    = 0x0010,  
-   BPREQI90_THREADNAME                = 0x0020,  
-   BPREQI90_PASSCOUNT                 = 0x0040,  
-   BPREQI90_CONDITION                 = 0x0080,  
-   BPREQI90_FLAGS                     = 0x0100,  
-   BPREQI90_ALLOLDFIELDS              = 0x01ff,  
-   BPREQI90_VENDOR                    = 0x0200,  
-   BPREQI90_CONSTRAINT                = 0x0400,  
-   BPREQI90_TRACEPOINT                = 0x0800,  
+   // VS 8.0 values  
+   BPREQI90_BPLOCATION                = 0x0001,  
+   BPREQI90_LANGUAGE                  = 0x0002,  
+   BPREQI90_PROGRAM                   = 0x0004,  
+   BPREQI90_PROGRAMNAME               = 0x0008,  
+   BPREQI90_THREAD                    = 0x0010,  
+   BPREQI90_THREADNAME                = 0x0020,  
+   BPREQI90_PASSCOUNT                 = 0x0040,  
+   BPREQI90_CONDITION                 = 0x0080,  
+   BPREQI90_FLAGS                     = 0x0100,  
+   BPREQI90_ALLOLDFIELDS              = 0x01ff,  
+   BPREQI90_VENDOR                    = 0x0200,  
+   BPREQI90_CONSTRAINT                = 0x0400,  
+   BPREQI90_TRACEPOINT                = 0x0800,  
   
-   // Values added in VS 9.0  
-   BPREQI90_MACROTRACEPOINT           = 0x1000,  
+   // Values added in VS 9.0  
+   BPREQI90_MACROTRACEPOINT           = 0x1000,  
   
-   BPREQI90_ALLFIELDS                 = 0xffff  
+   BPREQI90_ALLFIELDS                 = 0xffff  
 };  
 typedef DWORD BPREQI_FIELDS90;  
 ```  
@@ -54,25 +47,25 @@ typedef DWORD BPREQI_FIELDS90;
 ```csharp  
 public enum enum_BPREQI_FIELDS90  
 {  
-    // VS 8.0 values  
-    BPREQI90_BPLOCATION                = 0x0001,  
-    BPREQI90_LANGUAGE                  = 0x0002,  
-    BPREQI90_PROGRAM                   = 0x0004,  
-    BPREQI90_PROGRAMNAME               = 0x0008,  
-    BPREQI90_THREAD                    = 0x0010,  
-    BPREQI90_THREADNAME                = 0x0020,  
-    BPREQI90_PASSCOUNT                 = 0x0040,  
-    BPREQI90_CONDITION                 = 0x0080,  
-    BPREQI90_FLAGS                     = 0x0100,  
-    BPREQI90_ALLOLDFIELDS              = 0x01ff,  
-    BPREQI90_VENDOR                    = 0x0200,  
-    BPREQI90_CONSTRAINT                = 0x0400,  
-    BPREQI90_TRACEPOINT                = 0x0800,  
+    // VS 8.0 values  
+    BPREQI90_BPLOCATION                = 0x0001,  
+    BPREQI90_LANGUAGE                  = 0x0002,  
+    BPREQI90_PROGRAM                   = 0x0004,  
+    BPREQI90_PROGRAMNAME               = 0x0008,  
+    BPREQI90_THREAD                    = 0x0010,  
+    BPREQI90_THREADNAME                = 0x0020,  
+    BPREQI90_PASSCOUNT                 = 0x0040,  
+    BPREQI90_CONDITION                 = 0x0080,  
+    BPREQI90_FLAGS                     = 0x0100,  
+    BPREQI90_ALLOLDFIELDS              = 0x01ff,  
+    BPREQI90_VENDOR                    = 0x0200,  
+    BPREQI90_CONSTRAINT                = 0x0400,  
+    BPREQI90_TRACEPOINT                = 0x0800,  
   
-    // Values added in VS 9.0  
-    BPREQI90_MACROTRACEPOINT           = 0x1000,  
+    // Values added in VS 9.0  
+    BPREQI90_MACROTRACEPOINT           = 0x1000,  
   
-    BPREQI90_ALLFIELDS                 = 0xffff  
+    BPREQI90_ALLFIELDS                 = 0xffff  
 };  
 ```  
   
@@ -131,4 +124,3 @@ public enum enum_BPREQI_FIELDS90
   
 ## See Also  
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-

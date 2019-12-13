@@ -1,45 +1,38 @@
 ---
 title: "MACHINE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "MACHINE_INFO"
 helpviewer_keywords: 
   - "MACHINE_INFO structure"
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # MACHINE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [MACHINE_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/machine-info).  
-  
 Describes a particular machine.  
   
 ## Syntax  
   
 ```cpp#  
 typedef struct tagMACHINE_INFO {   
-   MACHINE_INFO_FIELDS Fields;  
-   BSTR                bstrName;  
-   MACHINE_INFO_FLAGS  Flags;  
+   MACHINE_INFO_FIELDS Fields;  
+   BSTR                bstrName;  
+   MACHINE_INFO_FLAGS  Flags;  
 } MACHINE_INFO;  
 ```  
   
 ```csharp  
 public struct MACHINE_INFO {   
-   public uint   Fields;  
-   public string bstrName;  
-   public uint   Flags;  
+   public uint   Fields;  
+   public string bstrName;  
+   public uint   Flags;  
 };  
 ```  
   
@@ -67,4 +60,3 @@ public struct MACHINE_INFO { 
  [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
-

@@ -1,37 +1,30 @@
 ---
 title: "IDiaStackWalkHelper::frameForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaStackWalkHelper2::frameForVA method"
 ms.assetid: f35fc61b-f8dd-473a-b583-82c304059422
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaStackWalkHelper::frameForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaStackWalkHelper::frameForVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper-frameforva).  
-  
 Retrieves the stack frame that contains the specified virtual address.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT frameForVA(   
-   ULONGLONG        va,  
-   IDiaFrameData**  ppFrame  
+   ULONGLONG        va,  
+   IDiaFrameData**  ppFrame  
 );  
 ```  
   
@@ -48,6 +41,3 @@ HRESULT frameForVA( 
 ## See Also  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

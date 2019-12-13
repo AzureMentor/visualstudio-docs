@@ -1,14 +1,9 @@
 ---
 title: "CA1901: P-Invoke declarations should be portable | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1901"
   - "PInvokeDeclarationsShouldBePortable"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "PInvokeDeclarationsShouldBePortable"
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1901: P/Invoke declarations should be portable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1901: P-Invoke declarations should be portable](https://docs.microsoft.com/visualstudio/code-quality/ca1901-p-invoke-declarations-should-be-portable).
 
 |||
 |-|-|
@@ -39,9 +32,9 @@ The latest version of this topic can be found at [CA1901: P-Invoke declarations 
 ## Rule Description
  Either of the following scenarios violates this rule occurs:
 
--   The return value or parameter is typed as a fixed-size integer when it should be typed as an `IntPtr`.
+- The return value or parameter is typed as a fixed-size integer when it should be typed as an `IntPtr`.
 
--   The return value or parameter is typed as an `IntPtr` when it should be typed as a fixed-size integer.
+- The return value or parameter is typed as an `IntPtr` when it should be typed as a fixed-size integer.
 
 ## How to Fix Violations
  You can fix this violation by using `IntPtr` or `UIntPtr` to represent handles instead of `Int32` or `UInt32`.
@@ -55,9 +48,9 @@ The latest version of this topic can be found at [CA1901: P-Invoke declarations 
 ```csharp
 internal class NativeMethods
 {
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,
-        string lpszExeFileName, IntPtr nIconIndex);
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, IntPtr nIconIndex);
 }
 ```
 
@@ -65,7 +58,7 @@ internal class NativeMethods
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
-    UINT nIconIndex);
+    UINT nIconIndex);
 ```
 
 ## Example
@@ -73,14 +66,11 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,
-        string lpszExeFileName, uint nIconIndex);
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, uint nIconIndex);
 }
 ```
 
 ## See Also
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

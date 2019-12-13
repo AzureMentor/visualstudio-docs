@@ -1,26 +1,19 @@
 ---
 title: "Managing Configuration Options | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "configuration options"
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Managing Configuration Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Managing Configuration Options](https://docs.microsoft.com/visualstudio/extensibility/internals/managing-configuration-options).  
-  
 When you create a new project type, you must manage project and solution configuration settings that determine how your project will be built, packaged, deployed, and run. The following topics discuss project and solution configuration.  
   
 ## In This Section  
@@ -48,4 +41,3 @@ When you create a new project type, you must manage project and solution configu
 ## Related Sections  
  [Project Types](../../extensibility/internals/project-types.md)  
  Provides an overview of projects as the basic building blocks of the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE). Links are provided to additional topics that explain how projects control building and compiling code.
-

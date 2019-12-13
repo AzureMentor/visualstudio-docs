@@ -1,43 +1,36 @@
 ---
 title: "IDebugDocumentTextEvents2::onInsertText | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugDocumentTextEvents2::OnInsertText"
 helpviewer_keywords: 
   - "IDebugDocumentTextEvents2::onInsertText"
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugDocumentTextEvents2::onInsertText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugDocumentTextEvents2::onInsertText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext).  
-  
 Notifies the debug package that text has been inserted into the document.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT onInsert(   
-   TEXT_POSITION pos,  
-   DWORD         dwNumToInsert  
+   TEXT_POSITION pos,  
+   DWORD         dwNumToInsert  
 );  
 ```  
   
 ```csharp  
 int onInsert(   
-   enum_TEXT_POSITION pos,  
-   uint               dwNumToInsert  
+   enum_TEXT_POSITION pos,  
+   uint               dwNumToInsert  
 );  
 ```  
   
@@ -54,4 +47,3 @@ int onInsert( 
 ## See Also  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
-

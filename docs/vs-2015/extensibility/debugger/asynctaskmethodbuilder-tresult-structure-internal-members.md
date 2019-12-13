@@ -1,27 +1,20 @@
 ---
 title: "AsyncTaskMethodBuilder&lt;TResult&gt; Structure - Internal Members | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]"
   - "debug engines, AsyncTaskMethodBuilder<TResult> structure [.NET Framework]"
 ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # AsyncTaskMethodBuilder&lt;TResult&gt; Structure - Internal Members
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [AsyncTaskMethodBuilder&lt;TResult&gt; Structure - Internal Members](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members).  
-  
 This topic describes the internal members of the <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> class. For general information about this class, see the <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> reference topic.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
@@ -48,4 +41,3 @@ This topic describes the internal members of the <xref:System.Runtime.CompilerSe
 ## See Also  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
  [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

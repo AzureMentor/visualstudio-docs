@@ -1,14 +1,9 @@
 ---
 title: "CA1307: Specify StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1307"
   - "SpecifyStringComparison"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "SpecifyStringComparison"
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1307: Specify StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1307: Specify StringComparison](https://docs.microsoft.com/visualstudio/code-quality/ca1307-specify-stringcomparison).
 
 |||
 |-|-|
@@ -50,6 +43,3 @@ The latest version of this topic can be found at [CA1307: Specify StringComparis
 ## See Also
  [Globalization Warnings](../code-quality/globalization-warnings.md)
  [CA1309: Use ordinal StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
-
-
-

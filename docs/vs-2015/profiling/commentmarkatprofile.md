@@ -1,37 +1,30 @@
 ---
 title: "CommentMarkAtProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "CommentMarkAtProfile"
   - "CommentMarkAtProfileA"
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [CommentMarkAtProfile](https://docs.microsoft.com/visualstudio/profiling/commentmarkatprofile).  
-  
 The `CommentMarkAtProfile` method inserts a timestamp value, a numeric mark, and a comment string in the .vsp file. The timestamp value can be used to synchronize external events. For the mark and comment to be inserted, profiling for the thread that contains the CommentMarkAtProfile function must be ON.  
   
 ## Syntax  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
-                                   __int64 dnTimestamp,  
-                                   long lMarker,  
-                                   LPCTSTR szComment);  
+                                   __int64 dnTimestamp,  
+                                   long lMarker,  
+                                   LPCTSTR szComment);  
 ```  
   
 #### Parameters  
@@ -64,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  The profiling state for the thread that contains the mark profile function must be on when marks and comments inserted with the Mark command or with API functions (CommentMarkAtProfile, CommentMarkProfile, or MarkProfile). Profile marks are global in scope. For example, a profile mark inserted in one thread can be used to mark the start or end of a data segment in any thread in the .vsp file.  
   
 > [!IMPORTANT]
->  CommentMarkAtProfile methods should be used with instrumentation only.  
+> CommentMarkAtProfile methods should be used with instrumentation only.  
   
 ## .NET Framework Equivalent  
  Microsoft.VisualStudio.Profiler.dll  
@@ -120,6 +113,3 @@ void ExerciseCommentMarkAtProfile(void)
   
 ## See Also  
  [Visual Studio Profiler API Reference (Native)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

@@ -1,42 +1,35 @@
 ---
 title: "IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "AreSymbolsLoaded"
   - "IDebugComPlusSymbolProvider::AreSymbolsLoaded"
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugComPlusSymbolProvider::AreSymbolsLoaded
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugComPlusSymbolProvider::AreSymbolsLoaded](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded).  
-  
 Determines if the debug symbols are loaded for the specified module given the application domain identifier.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT AreSymbolsLoaded (  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule  
+   ULONG32 ulAppDomainID,  
+   GUID    guidModule  
 );  
 ```  
   
 ```csharp  
 int AreSymbolsLoaded (  
-   uint ulAppDomainID,  
-   Guid guidModule  
+   uint ulAppDomainID,  
+   Guid guidModule  
 );  
 ```  
   
@@ -75,4 +68,3 @@ Error:
   
 ## See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
-

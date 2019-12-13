@@ -1,25 +1,18 @@
 ---
 title: "Overviews (Performance Tools) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Overviews (Performance Tools)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Overviews (Performance Tools)](https://docs.microsoft.com/visualstudio/profiling/overviews-performance-tools).  
-  
 This section provides conceptual and terminology overviews for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools, which you can use to measure the performance characteristics of an application under development.  
   
 ## In This Section  
@@ -53,6 +46,3 @@ This section provides conceptual and terminology overviews for [!INCLUDE[vsprvs]
 ## See Also  
  [Getting Started](../profiling/getting-started-with-performance-tools.md)   
  [Performance Explorer](../profiling/performance-explorer.md)
-
-
-

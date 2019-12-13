@@ -1,8 +1,6 @@
 ---
 title: Annotating Function Behavior
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: "conceptual"
 f1_keywords:
   - "_On_failure_"
@@ -19,7 +17,7 @@ f1_keywords:
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
   - "multiple"
 ---
@@ -27,7 +25,7 @@ ms.workload:
 In addition to annotating [function parameters and return values](../code-quality/annotating-function-parameters-and-return-values.md), you can annotate properties of the whole function.
 
 ## Function Annotations
- The following annotations apply to the function as a whole and describe how it behaves or what it expects to be true.
+The following annotations apply to the function as a whole and describe how it behaves or what it expects to be true.
 
 |Annotation|Description|
 |----------------|-----------------|
@@ -40,7 +38,7 @@ In addition to annotating [function parameters and return values](../code-qualit
 |`_Use_decl_annotations_`|May be used on a function definition (also known as a function body) in place of the list of annotations in the header.  When `_Use_decl_annotations_` is used, the annotations that appear on an in-scope header for the same function are used as if they are also present in the definition that has the `_Use_decl_annotations_` annotation.|
 
 ## Success/Failure Annotations
- A function can fail, and when it does, its results may be incomplete or differ from the results when the function succeeds.  The annotations in the following list provide ways to express the failure behavior.  To use these annotations, you must enable them to determine success; therefore, a `_Success_` annotation is required.  Notice that `NTSTATUS` and `HRESULT` already have a `_Success_` annotation built into them; however, if you specify your own `_Success_` annotation on `NTSTATUS` or `HRESULT`, it overrides the built-in annotation.
+A function can fail, and when it does, its results may be incomplete or differ from the results when the function succeeds.  The annotations in the following list provide ways to express the failure behavior.  To use these annotations, you must enable them to determine success; therefore, a `_Success_` annotation is required.  Notice that `NTSTATUS` and `HRESULT` already have a `_Success_` annotation built into them; however, if you specify your own `_Success_` annotation on `NTSTATUS` or `HRESULT`, it overrides the built-in annotation.
 
 |Annotation|Description|
 |----------------|-----------------|
@@ -49,12 +47,13 @@ In addition to annotating [function parameters and return values](../code-qualit
 |`_Return_type_success_(expr)`|May be applied to a typedef. Indicates that all functions that return that type and do not explicitly have `_Success_` are annotated as if they had `_Success_(expr)`. `_Return_type_success_` cannot be used on a function or a function pointer typedef.|
 |`_Success_(expr)`|`expr` is an expression that yields an rvalue. When the `_Success_` annotation is present on a function declaration or definition, each annotation (`anno`) on the function and in post-condition behaves as if it were coded as `_When_(expr, anno)`. The `_Success_` annotation may be used only on a function, not on its parameters or return type. There can be at most one `_Success_` annotation on a function, and it cannot be in any `_When_`, `_At_`, or `_Group_`. For more information, see [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
-## See Also
- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
- [Understanding SAL](../code-quality/understanding-sal.md)
- [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)
- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)
- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)
- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)
- [Intrinsic Functions](../code-quality/intrinsic-functions.md)
- [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)
+## See also
+
+- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Understanding SAL](../code-quality/understanding-sal.md)
+- [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)
+- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)
+- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Intrinsic Functions](../code-quality/intrinsic-functions.md)
+- [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)

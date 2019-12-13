@@ -1,14 +1,9 @@
 ---
 title: "Target Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/msbuild/2003#Target"
 dev_langs: 
@@ -23,14 +18,11 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Target Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Target Element (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/target-element-msbuild).  
-  
-  
 Contains a set of tasks for [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] to execute sequentially.  
   
  \<Project>  
@@ -124,6 +116,3 @@ Contains a set of tasks for [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.
 ## See Also  
  [Targets](../msbuild/msbuild-targets.md)   
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

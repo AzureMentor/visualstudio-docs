@@ -1,41 +1,34 @@
 ---
 title: "IDebugBreakpointRequest2::GetLocationType | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBreakpointRequest2::GetLocationType"
 helpviewer_keywords: 
   - "IDebugBreakpointRequest2::GetLocationType"
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBreakpointRequest2::GetLocationType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBreakpointRequest2::GetLocationType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype).  
-  
 Gets the breakpoint location type of this breakpoint request.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetLocationType(   
-   BP_LOCATION_TYPE* pBPLocationType  
+   BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
 ```csharp  
 int GetLocationType(   
-   out enum_BP_LOCATION_TYPE pBPLocationType  
+   out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  
   
@@ -85,4 +78,3 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
  [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
-

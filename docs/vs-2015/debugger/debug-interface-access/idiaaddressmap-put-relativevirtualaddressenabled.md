@@ -1,36 +1,29 @@
 ---
 title: "IDiaAddressMap::put_relativeVirtualAddressEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaAddressMap::put_relativeVirtualAddressEnabled method"
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaAddressMap::put_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaAddressMap::put_relativeVirtualAddressEnabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled).  
-  
 Allows the client to enable or disable the calculation and use of relative virtual addresses (RVA).  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT put_relativeVirtualAddressEnabled (   
-   BOOL NewVal  
+   BOOL NewVal  
 );  
 ```  
   
@@ -52,6 +45,3 @@ HRESULT put_relativeVirtualAddressEnabled ( 
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
-
-
-

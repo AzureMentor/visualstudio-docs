@@ -1,28 +1,21 @@
 ---
 title: "LocationField Element (Visual Studio Project Templates) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-general"
+ms.topic: reference
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/vstemplate/2005#LocationField"
 helpviewer_keywords: 
   - "LocationField element [Visual Studio project templates]"
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # LocationField Element (Visual Studio Project Templates)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [LocationField Element (Visual Studio Project Templates)](https://docs.microsoft.com/visualstudio/extensibility/locationfield-element-visual-studio-project-templates).  
-  
 Specifies whether or not the **Location** text box in the **New Project** dialog box is enabled, disabled, or hidden for the project template.  
   
  \<VSTemplate>  
@@ -55,11 +48,11 @@ Specifies whether or not the **Location** text box in the **New Project** dialog
   
  Valid text values are:  
   
--   `Enabled`, which specifies that the **Location** box of the **New Project** dialog box is enabled.  
+- `Enabled`, which specifies that the **Location** box of the **New Project** dialog box is enabled.  
   
--   `Disabled`, which specifies that the **Location** box of the **New Project** dialog box is disabled.  
+- `Disabled`, which specifies that the **Location** box of the **New Project** dialog box is disabled.  
   
--   `Hidden`, which specifies that the **Location** box of the **New Project** dialog box is hidden.  
+- `Hidden`, which specifies that the **Location** box of the **New Project** dialog box is hidden.  
   
 ## Remarks  
  The default value is `Enabled`.  
@@ -99,4 +92,3 @@ Specifies whether or not the **Location** text box in the **New Project** dialog
 ## See Also  
  [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)
-

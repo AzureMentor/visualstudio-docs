@@ -1,14 +1,9 @@
 ---
 title: "CA1717: Only FlagsAttribute enums should have plural names | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1717"
   - "OnlyFlagsEnumsShouldHavePluralNames"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1717"
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1717: Only FlagsAttribute enums should have plural names
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1717: Only FlagsAttribute enums should have plural names](https://docs.microsoft.com/visualstudio/code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names).
 
 |||
 |-|-|
@@ -58,7 +51,4 @@ The latest version of this topic can be found at [CA1717: Only FlagsAttribute en
 
 ## See Also
  <xref:System.FlagsAttribute?displayProperty=fullName>
- [Enum Design](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-
+ [Enum Design](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

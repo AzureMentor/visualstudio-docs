@@ -1,26 +1,19 @@
 ---
 title: "Text Buffer Events in the Legacy API | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "editors [Visual Studio SDK], legacy - text buffer events"
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Text Buffer Events in the Legacy API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Text Buffer Events in the Legacy API](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 The text buffer object emits several different events that allow you to respond to different situations.  
   
  When you are using the legacy API, you should implement the following interfaces in order to receive notification of changes to the text buffer. Expose the interfaces to the text buffer using the `IConnectionPointContainer` interface on the text buffer to receive notification of line changes from the buffer. For more information, see [How to: Register for Text Buffer Events with the Legacy API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). In the case of `IVsTextStreamEvents` or `IVsTextLinesEvents` interfaces, changes are returned in either one- or two-dimensional coordinates, respectively.  
@@ -55,4 +48,3 @@ The text buffer object emits several different events that allow you to respond 
 ## See Also  
  [Accessing the Text Buffer by Using the Legacy API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
  [How to: Register for Text Buffer Events with the Legacy API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
-

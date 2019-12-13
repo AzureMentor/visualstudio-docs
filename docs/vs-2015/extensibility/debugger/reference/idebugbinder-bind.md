@@ -1,45 +1,38 @@
 ---
 title: "IDebugBinder::Bind | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBinder::Bind"
 helpviewer_keywords: 
   - "IDebugBinder::Bind method"
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBinder::Bind](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder-bind).  
-  
 This method gets the memory context or object that contains the symbol's current value.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Bind(   
-   IDebugObject*  pContainer,  
-   IDebugField*   pField,  
-   IDebugObject** ppObject  
+   IDebugObject*  pContainer,  
+   IDebugField*   pField,  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
 int Bind(  
-   IDebugObject     pContainer,  
-   IDebugField      pField,  
-   out IDebugObject ppObject  
+   IDebugObject     pContainer,  
+   IDebugField      pField,  
+   out IDebugObject ppObject  
 );  
 ```  
   
@@ -60,4 +53,3 @@ int Bind(
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

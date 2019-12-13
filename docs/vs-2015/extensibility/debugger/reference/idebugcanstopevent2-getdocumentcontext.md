@@ -1,41 +1,34 @@
 ---
 title: "IDebugCanStopEvent2::GetDocumentContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugCanStopEvent2::GetDocumentContext"
 helpviewer_keywords: 
   - "IDebugCanStopEvent2::GetDocumentContext"
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCanStopEvent2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCanStopEvent2::GetDocumentContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext).  
-  
 Gets the document context that describes the location of this event.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetDocumentContext (   
-   IDebugDocumentContext2** ppDocCxt  
+   IDebugDocumentContext2** ppDocCxt  
 );  
 ```  
   
 ```csharp  
 int GetDocumentContext (   
-   out IDebugDocumentContext2 ppDocCxt  
+   out IDebugDocumentContext2 ppDocCxt  
 );  
 ```  
   
@@ -55,4 +48,3 @@ int GetDocumentContext ( 
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)
-

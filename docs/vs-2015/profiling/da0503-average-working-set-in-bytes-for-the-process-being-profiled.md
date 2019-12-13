@@ -1,29 +1,22 @@
 ---
 title: "DA0503: Average Working Set in Bytes for the Process being profiled | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.performance.503"
   - "vs.performance.DA0503"
   - "vs.performance.rules.DA0503"
 ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # DA0503: Average Working Set in Bytes for the Process being profiled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DA0503: Average Working Set in Bytes for the Process being profiled](https://docs.microsoft.com/visualstudio/profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled).  
-  
 Rule Id|DA0503|  
 |Category|Resource Monitoring|  
 |Profiling method|All|  
@@ -41,12 +34,9 @@ Rule Id|DA0503|
   
  The size of the process working set reflects how much virtual memory the process is actively using. It is also affected by the amount of physical memory (or RAM) available to run the application and contention for that physical memory from other running processes. If physical memory is constrained, the value of the process working set is apt to vary significantly as the operating systems tries to balance memory usage across active processes by periodically trimming fairly inactive pages from process working sets.  
   
- For more information about process working sets, see [Working Set](http://go.microsoft.com/fwlink/?LinkId=177830) in the Windows Memory Management documentation of MSDN.  
+ For more information about process working sets, see [Working Set](https://go.microsoft.com/fwlink/?LinkId=177830) in the Windows Memory Management documentation of MSDN.  
   
 ## How to Use Rule Data  
  Use the rule value to compare the performance of different versions or builds of the program or to understand the performance of the application under different profiling scenarios.  
   
  Double-click the message in the Errors List window to navigate to the [Marks View](../profiling/marks-view.md) view of the profiling data. Find the **Process\Working Set** and the **Memory\Pages/sec** columns. Compare the two columns and determine if there are specific phases of program execution that appear to be associated with increased paging IO activity.
-
-
-

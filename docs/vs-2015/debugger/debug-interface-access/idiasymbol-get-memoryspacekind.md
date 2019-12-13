@@ -1,27 +1,20 @@
 ---
 title: "IDiaSymbol::get_memorySpaceKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 ms.assetid: 9a63b298-8577-4c15-8595-530558d41bf1
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_memorySpaceKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_memorySpaceKind](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-memoryspacekind).  
-  
 Retrieves the memory space kind.  
   
 ## Syntax  
@@ -40,6 +33,3 @@ HRESULT get_memorySpaceKind(
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

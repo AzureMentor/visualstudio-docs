@@ -1,14 +1,9 @@
 ---
 title: "MIDL Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords: 
   - "VC.Project.VCMidlTool.ServerStubFile"
   - "VC.Project.VCMidlTool.ApplicationConfigurationMode"
@@ -31,60 +26,57 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # MIDL Task
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [MIDL Task](https://docs.microsoft.com/visualstudio/msbuild/midl-task).  
-  
-  
-Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe. For more information, see "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe. For more information, see "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
 ## Parameters  
  The following table describes the parameters of the **MIDL** task. Most task parameters, and a few sets of parameters, correspond to a command-line option.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Optional **String[]** parameter.  
   
      Adds a directory to the list of directories that are searched for imported IDL files, included header files, and application configuration files (ACF).  
   
-     For more information, see the **/I** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/I** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Optional **String** parameter.  
   
      A list of command-line options. For example, **"**_/option1 /option2 /option#_". Use this parameter to specify command-line options that are not represented by any other MIDL task parameter.  
   
-     For more information, see "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Optional **Boolean** parameter.  
   
      If `true`, lets you use some ACF keywords in the IDL file.  
   
-     For more information, see the **/app_config** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/app_config** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Optional **String** parameter.  
   
      Specifies the name of the client stub file for an RPC interface.  
   
-     For more information, see the **/cstub** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also see the **ServerStubFile** parameter in this table.  
+     For more information, see the **/cstub** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also see the **ServerStubFile** parameter in this table.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Optional **String** parameter.  
   
      Specifies options to pass to the C/C++ preprocessor. Specify a space-delimited list of preprocessor options.  
   
-     For more information, see the **/cpp_opt** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/cpp_opt** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Optional **String** parameter.  
   
@@ -98,17 +90,17 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**Unsigned**|**/char unsigned**|  
     |**Ascii**|**/char ascii7**|  
   
-     For more information, see the **/char** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/char** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Optional **String** parameter.  
   
      Specifies the file name for the generated *dlldata* file for a proxy DLL.  
   
-     For more information, see the **/dlldata** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/dlldata** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Optional **String** parameter.  
   
@@ -122,25 +114,25 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**EnableCustom**|**/error**|  
     |**All**|**/error all**|  
   
-     For more information, see the **/error** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/error** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Optional **Boolean** parameter.  
   
      If `true`, check for out-of-memory errors.  
   
-     For more information, see the **/error allocation** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/error allocation** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Optional **Boolean** parameter.  
   
      If `true`, checks the size of conformant-varying and varying arrays against the transmission length specification.  
   
-     For more information, see the **/error bounds_check** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/error bounds_check** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Optional **Boolean** parameter.  
   
@@ -148,23 +140,23 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
   
      For more information, see the **/error enum** option in command-line help (**/?**) for midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Optional **Boolean** parameter.  
   
      If `true`, check that no null reference pointers are passed to client stubs.  
   
-     For more information, see the **/error ref** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/error ref** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Optional **Boolean** parameter.  
   
      If `true`, generates a stub that catches unmarshaling exceptions on the server side and propagates them back to the client.  
   
-     For more information, see the **/error stub_data** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/error stub_data** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Optional **String** parameter.  
   
@@ -177,9 +169,9 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**None**|**/client none**|  
     |**Stub**|**/client stub**|  
   
-     For more information, see the **/client** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/client** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Optional **String** parameter.  
   
@@ -192,111 +184,111 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**None**|**/server none**|  
     |**Stub**|**/server stub**|  
   
-     For more information, see the **/server** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/server** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Optional **Boolean** parameter.  
   
      If `true`, generates fully interpreted stubs together with stubless proxies for object interfaces.  
   
-     For more information, see the **/Oicf** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/Oicf** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Optional **Boolean** parameter.  
   
      If `true`, a type library (.tlb) file is not generated.  
   
-     For more information, see the **/notlb** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/notlb** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Optional **String** parameter.  
   
      Specifies the name of the generated header file.  
   
-     For more information, see the **/h** or **/header** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/h** or **/header** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Optional **Boolean** parameter.  
   
      If `true`, the MIDL task searches only the directories specified by using the **AdditionalIncludeDirectories** switch, and ignores the current directory and the directories specified by the INCLUDE environment variable.  
   
-     For more information, see the **/no_def_idir** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/no_def_idir** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Optional **String** parameter.  
   
      Specifies the name of the *interface identifier file* for a COM interface. This overrides the default name obtained by adding "_i.c" to the IDL file name.  
   
-     For more information, see the **/iid** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/iid** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Optional **int** parameter.  
   
      Specifies the *locale identifier* that enables the use of international characters in input files, file names, and directory paths. Specify a decimal locale identifier.  
   
-     For more information, see the **/lcid** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also see "Locale IDs Assigned by Microsoft" at MSDN.  
+     For more information, see the **/lcid** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also see "Locale IDs Assigned by Microsoft" at MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Optional **Boolean** parameter.  
   
      If `true`, requires the format of the input file to be compatible with mktyplib.exe version 2.03.  
   
-     For more information, see the **/mktyplib203** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see "ODL File Syntax" on the MSDN Web site.  
+     For more information, see the **/mktyplib203** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see "ODL File Syntax" on the MSDN Web site.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Optional **String** parameter.  
   
      Specifies the default directory where the MIDL task writes output files.  
   
-     For more information, see the **/out** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/out** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Optional **String[]** parameter.  
   
      Specifies one or more *defines*; that is, a name and an optional value to be passed to the C preprocessor as if by a `#define` directive. The form of each define is, *name[=value]*.  
   
-     For more information, see the **/D** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **UndefinePreprocessorDefinitions** parameter in this table.  
+     For more information, see the **/D** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **UndefinePreprocessorDefinitions** parameter in this table.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Optional **String** parameter.  
   
      Specifies the name of the interface proxy file for a COM interface.  
   
-     For more information, see the **/proxy** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/proxy** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Optional **String** parameter.  
   
      Redirects output, such as error messages and warnings, from standard output to the specified file.  
   
-     For more information, see the **/o** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/o** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Optional **String** parameter.  
   
      Specifies the name of the server stub file for an RPC interface.  
   
-     For more information, see the **/sstub** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **ClientStubFile** parameter in this table.  
+     For more information, see the **/sstub** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **ClientStubFile** parameter in this table.  
   
--   **Source**  
+- **Source**  
   
      Required `ITaskItem[]` parameter.  
   
      Specifies a list of source files separated by spaces.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Optional **String** parameter.  
   
@@ -312,25 +304,25 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     For more information, see the **/Zp** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. The **/Zp** option is equivalent to the **/pack** option and the older **/align** option.  
+     For more information, see the **/Zp** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. The **/Zp** option is equivalent to the **/pack** option and the older **/align** option.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Optional **Boolean** parameter.  
   
      If `true`, suppresses warning messages from the MIDL task.  
   
-     For more information, see the **/no_warn** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/no_warn** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Optional `Boolean` parameter.  
   
      If `true`, prevents the display of the copyright and version number message when the task starts.  
   
-     For more information, see the **/nologo** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/nologo** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Optional **String** parameter.  
   
@@ -345,15 +337,15 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     For more information, see the **/env** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/env** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Optional `String` parameter.  
   
      Specifies the intermediate directory where tracking logs for this task are stored.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Optional **String** parameter.  
   
@@ -366,33 +358,33 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     For more information, see the **/newtlb** and **/oldtlb** options in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/newtlb** and **/oldtlb** options in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Optional **String** parameter.  
   
      Specifies the name of the type library file.  
   
-     For more information, see the **/tlb** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/tlb** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Optional **String[]** parameter.  
   
      Removes any previous definition of a name by passing the name to the C preprocessor as if by a `#undefine` directive. Specify one or more previously defined names.  
   
-     For more information, see the **/U** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **PreprocessorDefinitions** parameter in this table.  
+     For more information, see the **/U** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **PreprocessorDefinitions** parameter in this table.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Optional `Boolean` parameter.  
   
      If `true`, generates additional error-checking information that is used to perform integrity checks at run time. If `false`, the error-checking information is not generated.  
   
-     For more information, see the **/robust** and **/no_robust** options in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site.  
+     For more information, see the **/robust** and **/no_robust** options in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site.  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Optional `Boolean` parameter.  
   
@@ -400,9 +392,9 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
   
      If the **WarningLevel** MIDL task parameter is not specified, warnings at the default level, level 1, are treated as errors.  
   
-     For more information, see the **/WX** options in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **WarningLevel** parameter in this table.  
+     For more information, see the **/WX** options in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **WarningLevel** parameter in this table.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Optional **String** parameter.  
   
@@ -418,12 +410,9 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     For more information, see the **/W** option in "MIDL Command-Line Reference" on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **WarnAsError** parameter in this table.  
+     For more information, see the **/W** option in "MIDL Command-Line Reference" on the [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) Web site. Also, see the **WarnAsError** parameter in this table.  
   
 ## Remarks  
   
 ## See Also  
  [Task Reference](../msbuild/msbuild-task-reference.md)
-
-
-

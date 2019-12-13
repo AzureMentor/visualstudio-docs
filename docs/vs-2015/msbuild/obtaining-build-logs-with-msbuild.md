@@ -1,14 +1,9 @@
 ---
 title: "Obtaining Build Logs with MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "MSBuild, logging"
   - "logging [MSBuild]"
@@ -16,31 +11,28 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Obtaining Build Logs with MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Obtaining Build Logs with MSBuild](https://docs.microsoft.com/visualstudio/msbuild/obtaining-build-logs-with-msbuild).  
-  
-  
 By using switches with MSBuild, you can specify how much build data you want to review and whether you want to save build data to one or more files. You can also specify a custom logger to collect build data. For information about MSBuild command-line switches that this topic doesn't cover, see [Command-Line Reference](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  If you build projects by using the Visual Studio IDE, you can troubleshoot those builds by reviewing build logs. For more information, see [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> If you build projects by using the Visual Studio IDE, you can troubleshoot those builds by reviewing build logs. For more information, see [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## Setting the level of detail  
  When you build a project by using MSBuild without specifying a level of detail, the following information appears in the output log:  
   
--   Errors, warnings, and messages that are categorized as highly important.  
+- Errors, warnings, and messages that are categorized as highly important.  
   
--   Some status events.  
+- Some status events.  
   
--   A summary of the build.  
+- A summary of the build.  
   
- By using the **/verbosity** (**/v**) switch, you can control how much data appears in the output log. For troubleshooting, use a verbosity level of either `detailed` (`d`) or `diagnostic` (`diag`), which provides the most information.  
+  By using the **/verbosity** (**/v**) switch, you can control how much data appears in the output log. For troubleshooting, use a verbosity level of either `detailed` (`d`) or `diagnostic` (`diag`), which provides the most information.  
   
- The build process may be slower when you set the **/verbosity** to `detailed` and even slower when you set the **/verbosity** to `diagnostic`.  
+  The build process may be slower when you set the **/verbosity** to `detailed` and even slower when you set the **/verbosity** to `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  
@@ -84,6 +76,3 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  [Logging in a Multi-Processor Environment](../msbuild/logging-in-a-multi-processor-environment.md)   
  [Creating Forwarding Loggers](../msbuild/creating-forwarding-loggers.md)   
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)
-
-
-

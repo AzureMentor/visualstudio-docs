@@ -1,14 +1,9 @@
 ---
 title: "IDebugBoundBreakpoint2::Delete | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBoundBreakpoint2::Delete"
 helpviewer_keywords: 
@@ -16,21 +11,19 @@ helpviewer_keywords:
   - "IDebugBoundBreakpoint2::Delete method"
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBoundBreakpoint2::Delete
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBoundBreakpoint2::Delete](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-delete).  
-  
 Deletes the breakpoint.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Delete(   
-   void   
+   void   
 );  
 ```  
   
@@ -71,4 +64,3 @@ HRESULT CBoundBreakpoint::Delete(void)
 ## See Also  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "CA2111: Pointers should not be visible | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "PointersShouldNotBeVisible"
   - "CA2111"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "PointersShouldNotBeVisible"
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2111: Pointers should not be visible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2111: Pointers should not be visible](https://docs.microsoft.com/visualstudio/code-quality/ca2111-pointers-should-not-be-visible).
 
 |||
 |-|-|
@@ -60,6 +53,3 @@ The latest version of this topic can be found at [CA2111: Pointers should not be
 ## See Also
  <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
-
-
-

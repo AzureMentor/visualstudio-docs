@@ -1,26 +1,19 @@
 ---
 title: "Strings Used as Keys for Finding a Source Control Plug-in | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control plug-ins, strings used for finding"
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Strings Used as Keys for Finding a Source Control Plug-in
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Strings Used as Keys for Finding a Source Control Plug-in](https://docs.microsoft.com/visualstudio/extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in).  
-  
 The following strings are the keys for accessing the registry to find information about the source control plug-in.  
   
  `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, and `STR_SCCPROVIDERNAME` are registry keys or values used to register a DLL as a source control plug-in for Visual Studio.  
@@ -53,4 +46,3 @@ The following strings are the keys for accessing the registry to find informatio
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)   
  [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [MSSCCPRJ.SCC File](../extensibility/mssccprj-scc-file.md)
-

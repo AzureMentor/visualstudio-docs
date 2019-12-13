@@ -1,43 +1,36 @@
 ---
 title: "IDebugObject::IsEqual | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugObject::IsEqual"
 helpviewer_keywords: 
   - "IDebugObject::IsEqual method"
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugObject::IsEqual
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugObject::IsEqual](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-isequal).  
-  
 Compares an object with this object.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT IsEqual(   
-   IDebugObject* pObject,  
-   BOOL*         pfIsEqual  
+   IDebugObject* pObject,  
+   BOOL*         pfIsEqual  
 );  
 ```  
   
 ```csharp  
 int IsEqual(  
-   IDebugObject pObject,  
-   out int      pfIsEqual  
+   IDebugObject pObject,  
+   out int      pfIsEqual  
 );  
 ```  
   
@@ -56,4 +49,3 @@ int IsEqual(
   
 ## See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
-

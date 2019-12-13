@@ -1,41 +1,34 @@
 ---
 title: "IDebugProcess3::GetHostingProcessLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProcess3::GetHostingProcessLanguage"
 helpviewer_keywords: 
   - "IDebugProcess3::GetHostingProcessLanguage"
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProcess3::GetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProcess3::GetHostingProcessLanguage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage).  
-  
 This method returns a `GUID` representing the language of this process as set by a call to [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetHostingProcessLanguage(  
-   GUID* pguidLang  
+   GUID* pguidLang  
 );  
 ```  
   
 ```csharp  
 int GetHostingProcessLanguage(  
-   out Guid pguidLang  
+   out Guid pguidLang  
 );  
 ```  
   
@@ -49,4 +42,3 @@ int GetHostingProcessLanguage(
 ## See Also  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)
-

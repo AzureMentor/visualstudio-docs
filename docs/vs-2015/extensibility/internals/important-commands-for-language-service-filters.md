@@ -1,33 +1,26 @@
 ---
 title: "Important Commands for Language Service Filters | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "language services, filters"
   - "language services, commands to support"
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Important Commands for Language Service Filters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Important Commands for Language Service Filters](https://docs.microsoft.com/visualstudio/extensibility/internals/important-commands-for-language-service-filters).  
-  
 If you want to create a fully featured language service filter, consider handling the following commands. The full list of command identifiers is defined in the <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeration for managed code and the Stdidcmd.h header file for unmanaged [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] code. You can find the Stdidcmd.h file in *Visual Studio SDK installation path*\VisualStudioIntegration\Common\Inc.  
   
 ## Commands to Handle  
   
 > [!NOTE]
->  It is not mandatory to filter for every command in the following table.  
+> It is not mandatory to filter for every command in the following table.  
   
 |Command|Description|  
 |-------------|-----------------|  
@@ -43,4 +36,3 @@ If you want to create a fully featured language service filter, consider handlin
   
 ## See Also  
  [Developing a Legacy Language Service](../../extensibility/internals/developing-a-legacy-language-service.md)
-

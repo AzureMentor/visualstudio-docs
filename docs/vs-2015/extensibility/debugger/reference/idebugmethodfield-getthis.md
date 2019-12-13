@@ -1,41 +1,34 @@
 ---
 title: "IDebugMethodField::GetThis | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugMethodField::GetThis"
 helpviewer_keywords: 
   - "IDebugMethodField::GetThis method"
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugMethodField::GetThis
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugMethodField::GetThis](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-getthis).  
-  
 Gets the `this` (`Me` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) pointer of the object containing the method.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetThis(   
-   IDebugClassField** ppClass  
+   IDebugClassField** ppClass  
 );  
 ```  
   
 ```csharp  
 int GetThis(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
@@ -52,4 +45,3 @@ int GetThis(
 ## See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
-

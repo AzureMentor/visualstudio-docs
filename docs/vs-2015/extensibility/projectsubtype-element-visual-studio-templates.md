@@ -1,14 +1,9 @@
 ---
 title: "ProjectSubType Element (Visual Studio Templates) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-general"
+ms.topic: reference
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType"
 helpviewer_keywords: 
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "<ProjectSubType> element [Visual Studio Templates]"
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # ProjectSubType Element (Visual Studio Templates)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ProjectSubType Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/projectsubtype-element-visual-studio-templates).  
-  
 Classifies the template into a subcategory of the value specified in the `ProjectType` element.  
   
  \<VSTemplate>  
@@ -61,15 +54,15 @@ Classifies the template into a subcategory of the value specified in the `Projec
   
  The `ProjectSubType` element provides a subcategory to the [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) element. This value can include:  
   
--   `SmartDevice-NETCFv1`: Specifies that the template targets the [!INCLUDE[Compact](../includes/compact-md.md)] version 1.0.  
+- `SmartDevice-NETCFv1`: Specifies that the template targets the [!INCLUDE[Compact](../includes/compact-md.md)] version 1.0.  
   
--   `SmartDevice-NETCFv2`: Specifies that the tempalate targets the [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
+- `SmartDevice-NETCFv2`: Specifies that the tempalate targets the [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
   
- If a template contains a `ProjectType` element with a value of `Web`, the `ProjectSubType` element specifies the programming language of the template. This element can have the following values:  
+  If a template contains a `ProjectType` element with a value of `Web`, the `ProjectSubType` element specifies the programming language of the template. This element can have the following values:  
   
--   `CSharp`: Specifies that the template creates a [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web project or item.  
+- `CSharp`: Specifies that the template creates a [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web project or item.  
   
--   `VisualBasic`: Specifies that the template creates a [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web project or item.  
+- `VisualBasic`: Specifies that the template creates a [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web project or item.  
   
 ## Example  
  The following example shows the metadata for a project template for a [!INCLUDE[csprcs](../includes/csprcs-md.md)] device application targeting the [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
@@ -103,4 +96,3 @@ Classifies the template into a subcategory of the value specified in the `Projec
  [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)   
  [ProjectType Element (Visual Studio Templates)](../extensibility/projecttype-element-visual-studio-templates.md)
-

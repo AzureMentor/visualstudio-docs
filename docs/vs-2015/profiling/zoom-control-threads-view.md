@@ -1,29 +1,22 @@
 ---
 title: "Zoom Control (Threads View) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.cv.threads.tools.zoom"
 helpviewer_keywords: 
   - "Concurrency Visualizer, Zoom Control (Threads View)"
 ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Zoom Control (Threads View)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Zoom Control (Threads View)](https://docs.microsoft.com/visualstudio/profiling/zoom-control-threads-view).  
-  
 The zoom control is a slider that helps you to zoom in and out on the timeline so that you can focus on areas of particular interest. Because this control zooms in on the center of the timeline view, center the area of interest before you zoom in.  
   
 ## Zooming in By Dragging in the Timeline View  
@@ -37,6 +30,3 @@ The zoom control is a slider that helps you to zoom in and out on the timeline s
  [Measure Mode On/Off](../profiling/measure-mode-on-off.md)   
  [Threads View](../profiling/threads-view-parallel-performance.md)   
  [Utilization Navigator](../profiling/utilization-navigator.md)
-
-
-

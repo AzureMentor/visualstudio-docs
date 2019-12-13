@@ -1,14 +1,9 @@
 ---
 title: "Visualizer Architecture | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -16,24 +11,22 @@ dev_langs:
   - "C++"
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Visualizer Architecture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Visualizer Architecture](https://docs.microsoft.com/visualstudio/debugger/visualizer-architecture).  
-  
 The architecture of a debugger visualizer has two parts:  
   
--   The *debugger side* runs within the Visual Studio debugger. The debugger-side code creates and displays the user interface for your visualizer.  
+- The *debugger side* runs within the Visual Studio debugger. The debugger-side code creates and displays the user interface for your visualizer.  
   
--   The *debuggee side* runs within the process Visual Studio is debugging (the *debuggee*).  
+- The *debuggee side* runs within the process Visual Studio is debugging (the *debuggee*).  
   
- A visualizer is a debugger component that enables the debugger to display (*visualize*) the contents of a data object in a meaningful, understandable form. Some visualizers support editing of the data object also. By writing custom visualizers, you can extend the debugger to handle your own custom data types.  
+  A visualizer is a debugger component that enables the debugger to display (*visualize*) the contents of a data object in a meaningful, understandable form. Some visualizers support editing of the data object also. By writing custom visualizers, you can extend the debugger to handle your own custom data types.  
   
- The data object to be visualized resides within the process you are debugging (the *debuggee* process). The user interface that will display the data is created within the Visual Studio debugger process:  
+  The data object to be visualized resides within the process you are debugging (the *debuggee* process). The user interface that will display the data is created within the Visual Studio debugger process:  
   
 |Debugger Process|Debuggee Process|  
 |----------------------|----------------------|  
@@ -95,6 +88,3 @@ The architecture of a debugger visualizer has two parts:
  [Walkthrough: Writing a Visualizer in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Walkthrough: Writing a Visualizer in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [Visualizer Security Considerations](../debugger/visualizer-security-considerations.md)
-
-
-

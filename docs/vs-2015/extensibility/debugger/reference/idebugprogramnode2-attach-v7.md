@@ -1,14 +1,9 @@
 ---
 title: "IDebugProgramNode2::Attach_V7 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgramNode2::Attach"
 helpviewer_keywords: 
@@ -16,31 +11,29 @@ helpviewer_keywords:
   - "IDebugProgramNode2::Attach"
 ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgramNode2::Attach_V7](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-attach-v7).  
-  
 DEPRECATED. DO NOT USE.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Attach_V7 (   
-   IDebugProgram2*       pMDMProgram,  
-   IDebugEventCallback2* pCallback,  
-   DWORD                 dwReason  
+   IDebugProgram2*       pMDMProgram,  
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason  
 );  
 ```  
   
 ```csharp  
 int Attach_V7 (   
-   IDebugProgram2       pMDMProgram,  
-   IDebugEventCallback2 pCallback,  
-   uint                 dwReason  
+   IDebugProgram2       pMDMProgram,  
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason  
 );  
 ```  
   
@@ -60,7 +53,7 @@ int Attach_V7 ( 
 ## Remarks  
   
 > [!WARNING]
->  As of [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], this method is no longer used and should always return `E_NOTIMPL`. See the [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interface for an alternative approach if the program node needs to indicate it cannot be attached to or if the program node is simply setting the program `GUID`. Otherwise, implement the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) method.  
+> As of [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], this method is no longer used and should always return `E_NOTIMPL`. See the [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interface for an alternative approach if the program node needs to indicate it cannot be attached to or if the program node is simply setting the program `GUID`. Otherwise, implement the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) method.  
   
 ## Prior to Visual Studio 2005  
  This method needs to be implemented only if the DE runs in the address space of the program being debugged. Otherwise, this method should return `S_FALSE`.  
@@ -80,4 +73,3 @@ int Attach_V7 ( 
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)   
  [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)   
  [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)
-

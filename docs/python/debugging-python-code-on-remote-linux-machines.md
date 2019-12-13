@@ -1,14 +1,13 @@
 ---
-title: Debugging Python code on remote Linux computers
-description: How to use Visual Studio to debug Python code running on remote Linux computers, including necessary configuration steps, security, and troubleshooting.
-ms.date: 09/03/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+title: Debug Python code on remote Linux computers
+description: Use Visual Studio to debug Python code running on remote Linux computers, including necessary configuration steps, security, and troubleshooting.
+ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload: 
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
+ms.custom: seodec18
+ms.workload:
   - python
   - data-science
 ---
@@ -61,7 +60,7 @@ For details on creating a firewall rule for an Azure VM, see [Open ports to a VM
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Install the `ptvsd` package into your environment using `pip3 install ptvsd`. 
+1. Install the `ptvsd` package into your environment using `pip3 install ptvsd`.
    >[!NOTE]
    >It's a good idea to record the version of ptvsd that's installed in case you need it for troubleshooting; the [ptvsd listing](https://pypi.python.org/pypi/ptvsd) also shows available versions.
 
@@ -69,10 +68,8 @@ For details on creating a firewall rule for an Azure VM, see [Open ports to a VM
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   The first argument passed to `enable_attach` (called "secret") restricts access to the running script, and you enter this secret when attaching the remote debugger. (Though not recommended, you can allow anyone to connect, use `enable_attach(secret=None)`.)
 
 1. Save the file and run `python3 guessing-game.py`. The call to `enable_attach` runs in the background and waits for incoming connections as you otherwise interact with the program. If desired, the `wait_for_attach` function can be called after `enable_attach` to block the program until the debugger attaches.
 
@@ -91,10 +88,7 @@ In these steps, we set a simple breakpoint to stop the remote process.
 
 1. In the **Attach to Process** dialog that appears, set **Connection Type** to **Python remote (ptvsd)**. (On older versions of Visual Studio these commands are named **Transport** and **Python remote debugging**.)
 
-1. In the **Connection Target** field (**Qualifier** on older versions), enter `tcp://<secret>@<ip_address>:5678` where `<secret>` is the string passed `enable_attach` in the Python code, `<ip_address>` is that of the remote computer (which can be either an explicit address or a name like myvm.cloudapp.net), and `:5678` is the remote debugging port number.
-
-    > [!Warning]
-    > If you're making a connection over the public internet, you should be using `tcps` instead and following the instruction below to [Secure the debugger connection with SSL](#secure-the-debugger-connection-with-ssl).
+1. In the **Connection Target** field (**Qualifier** on older versions), enter `tcp://<ip_address>:5678` where `<ip_address>` is that of the remote computer (which can be either an explicit address or a name like myvm.cloudapp.net), and `:5678` is the remote debugging port number.
 
 1. Press **Enter** to populate the list of available ptvsd processes on that computer:
 
@@ -106,7 +100,7 @@ In these steps, we set a simple breakpoint to stop the remote process.
 
 1. Visual Studio then switches into debugging mode while the script continues to run on the remote computer, providing all the usual [debugging](debugging-python-in-visual-studio.md) capabilities. For example, set a breakpoint on the `if guess < number:` line, then switch over to the remote computer and enter another guess. After you do so, Visual Studio on your local computer stops at that breakpoint, shows local variables, and so on:
 
-    ![Breakpoint is hit](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio pauses debugging when breakpoint is hit](media/remote-debugging-breakpoint-hit.png)
 
 1. When you stop debugging, Visual Studio detaches from the program, which continues to run on the remote computer. ptvsd also continues listening for attaching debuggers, so you can reattach to the process again at any time.
 
@@ -116,7 +110,7 @@ In these steps, we set a simple breakpoint to stop the remote process.
 1. Check that the secret in the **Connection Target** (or **Qualifier**) exactly matches the secret in the remote code.
 1. Check that the IP address in the **Connection Target** (or **Qualifier**) matches that of the remote computer.
 1. Check that you're opened the remote debugging port on the remote computer, and that you've included the port suffix in the connection target, such as `:5678`.
-    - If you need to use a different port, you can specify it in the `enable_attach` call using the `address` argument, as in `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. In this case, open that specific port in the firewall.
+    - If you need to use a different port, you can specify it in the `enable_attach` call using the `address` argument, as in `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. In this case, open that specific port in the firewall.
 1. Check that the version of ptvsd installed on the remote computer as returned by `pip3 list` matches that used by the version of the Python tools you're using in Visual Studio in the table below. If necessary, update ptvsd on the remote computer.
 
     | Visual Studio version | Python tools/ptvsd version |
@@ -131,9 +125,15 @@ In these steps, we set a simple breakpoint to stop the remote process.
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## Secure the debugger connection with SSL
+## Using ptvsd 3.x
 
-By default, the connection to the ptvsd remote debug server is secured only by the secret and all data is passed in plain text. For a more secure connection, ptvsd supports SSL, which you set up as follows:
+The following information applies only to remote debugging with ptvsd 3.x, which contains certain features that were removed in ptvsd 4.x.
+
+1. With ptvsd 3.x, the `enable_attach` function required that you pass a "secret" as the first argument that restricts access to the running script. You enter this secret when attaching the remote debugger. Though not recommended, you can allow anyone to connect, use `enable_attach(secret=None)`.
+
+1. The connection target URL is `tcp://<secret>@<ip_address>:5678` where `<secret>` is the string passed `enable_attach` in the Python code.
+
+By default, the connection to the ptvsd 3.x remote debug server is secured only by the secret and all data is passed in plain text. For a more secure connection, ptvsd 3.x supports SSL using the `tcsp` protocol, which you set up as follows:
 
 1. On the remote computer, generate separate self-signed certificate and key files using openssl:
 
@@ -166,17 +166,12 @@ By default, the connection to the ptvsd remote debug server is secured only by t
 
     ![Choosing the remote debugging transport with SSL](media/remote-debugging-qualifier-ssl.png)
 
-### Warnings
+1. Visual Studio prompts you about potential certificate issues when connecting over SSL. You may ignore the warnings and proceed, but although the channel is still encrypted against eavesdropping it can be open to man-in-the-middle attacks.
 
-Visual Studio prompts you about potential certificate issues when connecting over SSL as described below. You may ignore the warnings and proceed, but although the channel is still encrypted against eavesdropping it can be open to man-in-the-middle attacks.
+    1. If you see the **remote certificate is not trusted** warning below, it means you did not properly add the certificate to the Trusted Root CA. Check those steps and try again.
 
-1. If you see the **remote certificate is not trusted** warning below, it means you did not properly add the certificate to the Trusted Root CA. Check those steps and try again.
+        ![SSL certificate trusted warning](media/remote-debugging-ssl-warning.png)
 
-    ![SSL certificate trusted warning](media/remote-debugging-ssl-warning.png)
+    1. If you see the **remote certificate name does not match hostname** warning below, it means you did not use the proper hostname or IP address as the **Common Name** when creating the certificate.
 
-1. If you see the **remote certificate name does not match hostname** warning below, it means you did not use the proper hostname or IP address as the **Common Name** when creating the certificate.
-
-    ![SSL certificate hostname warning](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> At present, Visual Studio 2017 hangs when you ignore these warnings. Be sure to correct all problems before attempting to connect.
+        ![SSL certificate hostname warning](media/remote-debugging-ssl-warning2.png)

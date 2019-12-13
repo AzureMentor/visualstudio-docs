@@ -1,14 +1,9 @@
 ---
 title: "Just-In-Time, Debugging, Options Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "VS.ToolsOptionsPages.Debugger.JIT"
   - "vs.debug.options.JIT"
@@ -26,26 +21,24 @@ helpviewer_keywords:
   - "Options dialog box, debugging"
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Just-In-Time, Debugging, Options Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Just-In-Time, Debugging, Options Dialog Box](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-options-dialog-box).  
-  
 To access the **Just-In-Time** page, go to the **Tools** menu and click **Options**. In the **Options** dialog box, expand the **Debugging** node and select **Just-In-Time**. This page allows you to enable Just-In-Time debugging for managed code, native code, and script. For more information, see [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  You can enable Just-In-Time debugging for these program types:  
   
--   Managed  
+- Managed  
   
--   Native  
+- Native  
   
--   Script  
+- Script  
   
- Just-In-Time debugging is a technique for debugging a program that is started outside [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. You can run a program created in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] outside of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] environment. If you have enabled Just-in-time debugging, a crash will display a dialog box that asks if you want to debug.  
+  Just-In-Time debugging is a technique for debugging a program that is started outside [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. You can run a program created in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] outside of the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] environment. If you have enabled Just-in-time debugging, a crash will display a dialog box that asks if you want to debug.  
   
 ## Associated Warnings  
  When you visit this page of the **Options** dialog box, you might see a warning message like this:  
@@ -65,6 +58,3 @@ To access the **Just-In-Time** page, go to the **Tools** menu and click **Option
 ## See Also  
  [Debugging, Options Dialog Box](../debugger/debugging-options-dialog-box.md)   
  [How to: Specify Debugger Settings](../debugger/how-to-specify-debugger-settings.md)
-
-
-

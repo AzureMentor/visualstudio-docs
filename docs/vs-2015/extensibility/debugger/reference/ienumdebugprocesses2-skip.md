@@ -1,41 +1,34 @@
 ---
 title: "IEnumDebugProcesses2::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugProcesses2::Skip"
 helpviewer_keywords: 
   - "IEnumDebugProcesses2::Skip"
 ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugProcesses2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugProcesses2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprocesses2-skip).  
-  
 Skips over the specified number of elements.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Skip(  
-   ULONG celt  
+   ULONG celt  
 );  
 ```  
   
 ```csharp  
 int Skip(  
-   uint celt  
+   uint celt  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int Skip(
   
 ## See Also  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
-

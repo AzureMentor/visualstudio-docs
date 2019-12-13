@@ -1,16 +1,15 @@
 ---
 title: "Collecting Performance Statistics by Using Sampling | Microsoft Docs"
-ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: "vs-ide-debug"
 ms.topic: "conceptual"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Profiling Tools,sampling"
   - "sampling profiling method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: douge
-ms.workload: 
+manager: jillfra
+monikerRange: 'vs-2017'
+ms.workload:
   - "multiple"
 ---
 # Collect performance statistics by using sampling
@@ -32,7 +31,7 @@ You can specify additional options in the _Performance Session_**Property Pages*
 
 - In **Performance Explorer**, right-click the performance session name, and then click **Properties**.
 
- The tasks in the following table describe options that you can specify in the _Performance Session_**Property Pages** dialog box when you profile by using the sampling method.
+  The tasks in the following table describe options that you can specify in the _Performance Session_**Property Pages** dialog box when you profile by using the sampling method.
 
 |Task|Related Content|
 |----------|---------------------|

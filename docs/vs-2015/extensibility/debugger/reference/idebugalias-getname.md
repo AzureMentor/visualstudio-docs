@@ -1,41 +1,34 @@
 ---
 title: "IDebugAlias::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugAlias::GetName"
 helpviewer_keywords: 
   - "IDebugAlias::GetName method"
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugAlias::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugalias-getname).  
-  
 Gets the name of this alias.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetName(  
-   BSTR* pbstrName  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
 int GetName(  
-   out string pbstrName  
+   out string pbstrName  
 );  
 ```  
   
@@ -48,4 +41,3 @@ int GetName(
   
 ## See Also  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-

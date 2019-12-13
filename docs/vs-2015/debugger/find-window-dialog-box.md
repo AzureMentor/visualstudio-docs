@@ -1,28 +1,21 @@
 ---
 title: "Find Window Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Spy++, finding windows"
   - "finding windows with Spy++"
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Find Window Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Find Window Dialog Box](https://docs.microsoft.com/visualstudio/debugger/find-window-dialog-box).  
-  
 Use this dialog box to select a window and display its properties or messages. To display this dialog box, choose **Find Window** from the **Spy** menu.  
   
  The following settings are available:  
@@ -72,6 +65,3 @@ Use this dialog box to select a window and display its properties or messages. T
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-

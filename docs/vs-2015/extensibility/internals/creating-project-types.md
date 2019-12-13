@@ -1,27 +1,20 @@
 ---
 title: "Creating Project Types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "project types, new"
   - "projects [Visual Studio SDK], new project types"
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Creating Project Types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Creating Project Types](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-types).  
-  
 You can extend [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by creating a new project type. To create a new project type, you must understand several concepts and complete a number of steps. The following topics provide an overview of how to create project types.  
   
 ## In This Section  
@@ -61,4 +54,3 @@ You can extend [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by creating a new
   
  [Project Types](../../extensibility/internals/project-types.md)  
  Discusses how to use projects to modify code, compile and build code, and run and debug code, and provides links to detailed topics about how to create project types.
-

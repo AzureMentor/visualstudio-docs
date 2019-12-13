@@ -1,28 +1,21 @@
 ---
 title: "IDebugEngineLaunch2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugEngineLaunch2"
 helpviewer_keywords: 
   - "IDebugEngineLaunch2 interface"
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugEngineLaunch2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugEngineLaunch2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2).  
-  
 Used by a debug engine (DE) to launch and terminate programs.  
   
 ## Syntax  
@@ -56,4 +49,3 @@ IDebugEngineLaunch2 : IDebugEngine2
   
 ## See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-

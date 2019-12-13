@@ -1,14 +1,9 @@
 ---
 title: "CA2243: Attribute string literals should parse correctly | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2243"
   - "AttributeStringLiteralsShouldParseCorrectly"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2243"
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2243: Attribute string literals should parse correctly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2243: Attribute string literals should parse correctly](https://docs.microsoft.com/visualstudio/code-quality/ca2243-attribute-string-literals-should-parse-correctly).
 
 |||
 |-|-|
@@ -56,14 +49,11 @@ The latest version of this topic can be found at [CA2243: Attribute string liter
 
  The rule is triggered by the following:
 
--   Parameters that contain ‘version’ and cannot be parsed to System.Version.
+- Parameters that contain ‘version’ and cannot be parsed to System.Version.
 
--   Parameters that contain ‘guid’ and cannot be parsed to System.Guid.
+- Parameters that contain ‘guid’ and cannot be parsed to System.Guid.
 
--   Parameters that contain ‘uri’, 'urn', or ‘url’ and cannot be parsed to System.Uri.
+- Parameters that contain ‘uri’, 'urn', or ‘url’ and cannot be parsed to System.Uri.
 
 ## See Also
  [CA1054: URI parameters should not be strings](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-
-
-

@@ -1,36 +1,29 @@
 ---
 title: "IDiaSectionContrib::get_notPaged | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSectionContrib::get_notPaged method"
 ms.assetid: bb6baa40-fece-4a4c-aba9-f4b41f418f8b
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSectionContrib::get_notPaged
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSectionContrib::get_notPaged](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-notpaged).  
-  
 Retrieves a flag that indicates whether the section cannot be paged out of memory.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_notPaged (   
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_notPaged ( 
   
 ## See Also  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

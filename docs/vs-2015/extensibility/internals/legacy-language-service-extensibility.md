@@ -1,27 +1,20 @@
 ---
 title: "Legacy Language Service Extensibility | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "language services"
   - "Visual Studio, language services"
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 caps.latest.revision: 43
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Legacy Language Service Extensibility
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Legacy Language Service Extensibility](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-extensibility).  
-  
 A language service provides language-specific support for editing source code in the IDE.  
   
  Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more about the new way to implement a language service, see [Editor and Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).  
@@ -53,4 +46,3 @@ A language service provides language-specific support for editing source code in
   
  [Language Service Support for Debugging](../../extensibility/internals/language-service-support-for-debugging.md)  
  Provides information about and a link to the Visual Studio Debugging SDK, which contains the information that is required to create and customize debugger components used to debug programs.
-

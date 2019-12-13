@@ -1,27 +1,20 @@
 ---
 title: "VSCT XML Schema Conditional Attributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "VSCT XML schema elements, conditional attributes"
   - "conditional attributes (VSCT XML schema)"
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # VSCT XML Schema Conditional Attributes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [VSCT XML Schema Conditional Attributes](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-conditional-attributes).  
-  
 Conditional attributes may be applied to all lists and items. Logical operators and symbol expansion expressions evaluate to true or false. If true, the associated list or item is included in the resulting output.  
   
  Token expansions can be tested against other token expansions or constants. The function Defined() is used to test whether a particular name has been defined, even if it has no value.  
@@ -51,27 +44,26 @@ Conditional attributes may be applied to all lists and items. Logical operators 
 </Menu>  
   
 <Menus Condition="Defined(DEBUG)">  
-    <Menu …  
-    </Menu>  
+    <Menu …  
+    </Menu>  
 </Menus>  
   
 <Menus Condition="Defined(DEMO_SKU)">  
-    <Menus Condition="!Defined(DEBUG)">  
-        <Menu …  
-        </Menu>  
-    </Menus>  
+    <Menus Condition="!Defined(DEBUG)">  
+        <Menu …  
+        </Menu>  
+    </Menus>  
   
-    <Menu …  
-    </Menu>  
+    <Menu …  
+    </Menu>  
 </Menus>  
   
 <Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))   
 and !Defined(DEBUG)">  
-    <Menu …  
-    </Menu>  
+    <Menu …  
+    </Menu>  
 </Menus>  
 ```  
   
 ## See Also  
  [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

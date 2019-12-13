@@ -1,14 +1,9 @@
 ---
 title: "Error: SQL Can&#39;t Find SSDEBUGPS | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.debug.error.sqlde_cant_find_ssdebugps"
 dev_langs: 
@@ -19,15 +14,13 @@ dev_langs:
   - "SQL"
 ms.assetid: 596425c8-14c7-4c05-8823-e1c52f420f5e
 caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Error: SQL Can&#39;t Find SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Error: SQL Can&#39;t Find SSDEBUGPS](https://docs.microsoft.com/visualstudio/debugger/error-sql-can-t-find-ssdebugps).  
-  
 SSDEBUGPS.dll is the SQL Server Debugging Host component.  
   
  This error occurs when you are trying to start debugging, and indicates that the specified file is not present on the [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] machine. Possible causes are that either Remote Debugging setup was never run, or that somehow this file got deleted.  
@@ -40,13 +33,10 @@ SSDEBUGPS.dll is the SQL Server Debugging Host component.
   
 ### To copy SSDEBUGPS.dll onto the SQL Server 2005 machine  
   
-1.  Copy the file to the directory with the same name and path on the [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] machine.  
+1. Copy the file to the directory with the same name and path on the [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] machine.  
   
-2.  Register it by opening a **Command Prompt**, and running the following command:  
+2. Register it by opening a **Command Prompt**, and running the following command:  
   
     ```  
-    regsrv32 ssdebugps.dll  
+    regsvr32 ssdebugps.dll  
     ```
-
-
-

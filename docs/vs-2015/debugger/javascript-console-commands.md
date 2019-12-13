@@ -1,14 +1,9 @@
 ---
 title: "JavaScript Console commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -20,23 +15,21 @@ helpviewer_keywords:
   - "debugging JavaScript, console [Windows Store apps]"
 ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [JavaScript Console commands](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- You can use commands to send messages and perform other tasks in the JavaScript Console window of Visual Studio. For examples that show how to use that window, see [QuickStart: Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). The information in this topic applies to Windows Store apps, Windows Phone Store apps, and apps created using Visual Studio Tools for Apache Cordova. For info on supported console commands in Cordova apps, see [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). For info on using the console in Internet Explorer F12 tools, see [this topic](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ You can use commands to send messages and perform other tasks in the JavaScript Console window of Visual Studio. For examples that show how to use that window, see [QuickStart: Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). The information in this topic applies to Windows Store apps, Windows Phone Store apps, and apps created using Visual Studio Tools for Apache Cordova. For info on supported console commands in Cordova apps, see [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). For info on using the console in Internet Explorer F12 tools, see [this topic](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  If the JavaScript Console window is closed, you can open it while you're debugging in Visual Studio by choosing **Debug** > **Windows** > **JavaScript Console**.  
   
 > [!NOTE]
->  If the window is not available during a debugging session, make sure that the debugger type is set to **Script** in the Debug properties for the project.  
+> If the window is not available during a debugging session, make sure that the debugger type is set to **Script** in the Debug properties for the project.  
   
 ## console object commands  
  This table shows the syntax for the `console` object commands that you can use in the JavaScript Console window, or that you can use to send messages to the console from your code. This object provides a number of forms so that you can distinguish between informational messages and error messages, if you want to.  
@@ -44,7 +37,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
  You can use the longer command form `window.console.[command]` if you need to avoid possible confusion with local objects named console.  
   
 > [!TIP]
->  Older versions of Visual Studio do not support the complete set of commands. Use IntelliSense on the console object to get quick information about supported commands.  
+> Older versions of Visual Studio do not support the complete set of commands. Use IntelliSense on the console object to get quick information about supported commands.  
   
 |Command|Description|Example|  
 |-------------|-----------------|-------------|  
@@ -86,7 +79,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 ```javascript  
 if (console && console.log) {  
-    console.log("msg");  
+    console.log("msg");  
 }  
   
 ```  
@@ -94,7 +87,7 @@ if (console && console.log) {
 ## Examining objects in the JavaScript Console window  
  You can interact with any object that's in scope when you use the JavaScript Console window. To inspect an out-of-scope object in the console window, use `console.log` , `console.dir`, or other commands from your code. Alternatively, you can interact with the object from the console window while it is in scope by setting a breakpoint in your code (**Breakpoint** > **Insert Breakpoint**).  
   
-##  <a name="ConsoleLog"></a> Formatting console.log output  
+## <a name="ConsoleLog"></a> Formatting console.log output  
  If you pass multiple arguments to `console.log`, the console will treat the arguments as an array and concatenate the output.  
   
 ```javascript  
@@ -112,16 +105,16 @@ console.log(user.first, user.last);
   
  The following substitution patterns are supported:  
   
--   %s - string  
-     %i - integer  
-     %d - integer  
-     %f - float  
-     %o - object  
-     %b - binary  
-     %x - hexadecimal  
-     %e - exponent  
+- %s - string  
+   %i - integer  
+   %d - integer  
+   %f - float  
+   %o - object  
+   %b - binary  
+   %x - hexadecimal  
+   %e - exponent  
   
- Here are some examples of using substitution patterns in `console.log`:  
+  Here are some examples of using substitution patterns in `console.log`:  
   
 ```javascript  
 var user = new Object();  
@@ -141,6 +134,3 @@ console.log("%s is %f years old!", user.first, user.age);
 ## See Also  
  [QuickStart: Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

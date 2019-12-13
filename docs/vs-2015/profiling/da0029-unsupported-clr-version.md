@@ -1,14 +1,9 @@
 ---
 title: "DA0029: Unsupported CLR Version | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.performance.29"
   - "vs.performance.rules.DA0029"
@@ -18,15 +13,13 @@ helpviewer_keywords:
   - "vs.performance.rules.DA0029"
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # DA0029: Unsupported CLR Version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DA0029: Unsupported CLR Version](https://docs.microsoft.com/visualstudio/profiling/da0029-unsupported-clr-version).  
-  
 Rule Id|DA0029|  
 |Category|Profiling Tools Usage|  
 |Profiling method|Profiling from the command line|  
@@ -41,6 +34,3 @@ Rule Id|DA0029|
   
 ## How to Fix Violations  
  None.
-
-
-

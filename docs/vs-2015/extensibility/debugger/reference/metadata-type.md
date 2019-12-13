@@ -1,45 +1,38 @@
 ---
 title: "METADATA_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "METADATA_TYPE"
 helpviewer_keywords: 
   - "METADATA_TYPE structure"
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [METADATA_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-type).  
-  
 This structure specifies information about a field type taken from metadata.  
   
 ## Syntax  
   
 ```cpp#  
 typedef struct _tagTYPE_METADATA {  
-   ULONG32  ulAppDomainID;  
-   GUID     guidModule;  
-   _mdToken tokClass;  
+   ULONG32  ulAppDomainID;  
+   GUID     guidModule;  
+   _mdToken tokClass;  
 } METADATA_TYPE;  
 ```  
   
 ```csharp  
 public struct METADATA_TYPE {  
-   public uint ulAppDomainID;  
-   public Guid guidModule;  
-   public int  tokClass;  
+   public uint ulAppDomainID;  
+   public Guid guidModule;  
+   public int  tokClass;  
 };  
 ```  
   
@@ -71,4 +64,3 @@ public struct METADATA_TYPE {
  [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
-

@@ -1,29 +1,22 @@
 ---
 title: "Common Patterns for Poorly-Behaved Multithreaded Applications | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.cv.threads.tools.gallery"
 helpviewer_keywords: 
   - "Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications"
 ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Common Patterns for Poorly-Behaved Multithreaded Applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Common Patterns for Poorly-Behaved Multithreaded Applications](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications).  
-  
 The Concurrency Visualizer helps developers to visualize the behavior of a multithreaded application. This tool includes a gallery of common patterns for multithreaded applications that behave badly. The gallery includes typical and recognizable visual patterns that are exposed through the tool, together with an explanation of the behavior that is represented by each pattern, the likely result of that behavior, and the most common approach to resolve it.  
   
 ## Lock Contention and Serialized Execution  
@@ -33,7 +26,7 @@ The Concurrency Visualizer helps developers to visualize the behavior of a multi
   
  As shown in the following illustration, the Concurrency Visualizer can also expose this symptom in the CPU Utilization View, where, despite the presence of multiple threads, the application consumes only one logical core.  
   
- For more information, see "Performance Pattern 1: Identifying Lock Contention" in Hazim Shafi's [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blog on the MSDN blog Web site.  
+ For more information, see "Performance Pattern 1: Identifying Lock Contention" in Hazim Shafi's [Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569) blog on the MSDN blog Web site.  
   
  ![Lock Contention](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -53,9 +46,9 @@ The Concurrency Visualizer helps developers to visualize the behavior of a multi
   
  You should consider the following when you evaluate this problem:  
   
--   The overall system may be oversubscribed. Consider that other processes on the system may be preempting your threads. When you pause over a preemption segment in the threads view, a tooltip will identify the thread and the process that preempted the thread. This process is not necessarily the one that executed during the whole time that your process was preempted, but it provides a hint about what created the preemption pressure against your process.  
+- The overall system may be oversubscribed. Consider that other processes on the system may be preempting your threads. When you pause over a preemption segment in the threads view, a tooltip will identify the thread and the process that preempted the thread. This process is not necessarily the one that executed during the whole time that your process was preempted, but it provides a hint about what created the preemption pressure against your process.  
   
--   Evaluate how your process determines the appropriate number of threads for execution during this phase of work. If your process directly calculates the number of active parallel threads, consider modifying that algorithm to better account for the number of available logical cores on the system. If you use the Concurrency Runtime, the Task Parallel Library, or PLINQ, these libraries perform the work of calculating the number of threads.  
+- Evaluate how your process determines the appropriate number of threads for execution during this phase of work. If your process directly calculates the number of active parallel threads, consider modifying that algorithm to better account for the number of available logical cores on the system. If you use the Concurrency Runtime, the Task Parallel Library, or PLINQ, these libraries perform the work of calculating the number of threads.  
   
 ## Inefficient I/O  
  ![Inefficient I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  
@@ -69,6 +62,3 @@ The Concurrency Visualizer helps developers to visualize the behavior of a multi
   
 ## See Also  
  [Threads View](../profiling/threads-view-parallel-performance.md)
-
-
-

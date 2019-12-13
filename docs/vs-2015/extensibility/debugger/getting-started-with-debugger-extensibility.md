@@ -1,28 +1,21 @@
 ---
 title: "Getting Started with Debugger Extensibility | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "getting started, Debugging SDK"
   - "debugging [Debugging SDK], getting started"
   - "Debugging SDK, getting started"
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Getting Started with Debugger Extensibility
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Getting Started with Debugger Extensibility](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility).  
-  
 The [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] provides the information that you must have to create and customize debugger components used to debug programs from within the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environment.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugging has added improvements derived from the extensive usability testing performed on previous [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debuggers. You can use [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugging to step through a multi-language application, or you can implement on-the-fly editing of variables while debugging applications and multi-language solutions.  
@@ -31,11 +24,11 @@ The [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] provides the information t
   
  To best use the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], you should be familiar with the following:  
   
--   The [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE)  
+- The [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE)  
   
--   The C++ programming language  
+- The C++ programming language  
   
--   ATL COM  
+- ATL COM  
   
 ## In This Section  
  [Roadmap for Extending the Debugger](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
@@ -52,4 +45,3 @@ The [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] provides the information t
   
  [Debugging Tasks](../../extensibility/debugger/debugging-tasks.md)  
  Contains links to various debugging tasks, such as launching a program and evaluating expressions.
-

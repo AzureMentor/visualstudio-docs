@@ -1,36 +1,29 @@
 ---
 title: "IDiaSession::get_globalScope | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSession::get_globalScope method"
 ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSession::get_globalScope
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSession::get_globalScope](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-get-globalscope).  
-  
 Retrieves a reference to the global scope.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_globalScope (   
-   IDiaSymbol** pRetVal  
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
@@ -45,6 +38,3 @@ HRESULT get_globalScope ( 
  [Exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

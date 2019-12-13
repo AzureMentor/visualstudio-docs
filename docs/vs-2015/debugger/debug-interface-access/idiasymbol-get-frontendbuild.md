@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_frontEndBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_frontEndBuild method"
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_frontEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_frontEndBuild](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-frontendbuild).  
-  
 Retrieves the front end build number.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_frontEndBuild (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_frontEndBuild ( 
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means that the property is not available for the symbol.  
+> A return value of `S_FALSE` means that the property is not available for the symbol.  
   
 ## Remarks  
  A compiler is typically composed of two primary elements: the front end (the parser), which handles parsing the source code into an intermediate form, and a back end (code generator), which converts the intermediate form into assembly. It is not uncommon for the front end to have a different version than the back end.  
@@ -58,6 +51,3 @@ HRESULT get_frontEndBuild ( 
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

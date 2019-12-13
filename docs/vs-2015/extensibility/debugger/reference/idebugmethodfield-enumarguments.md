@@ -1,41 +1,34 @@
 ---
 title: "IDebugMethodField::EnumArguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugMethodField::EnumArguments"
 helpviewer_keywords: 
   - "IDebugMethodField::EnumArguments method"
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugMethodField::EnumArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugMethodField::EnumArguments](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-enumarguments).  
-  
 Creates an enumerator for the type of each argument required to call the method.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT EnumArguments(   
-   IEnumDebugFields** ppParams  
+   IEnumDebugFields** ppParams  
 );  
 ```  
   
 ```csharp  
 int EnumArguments(  
-   out IEnumDebugFields ppParams  
+   out IEnumDebugFields ppParams  
 );  
 ```  
   
@@ -56,4 +49,3 @@ int EnumArguments(
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "Debugging and the Hosting Process | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -19,15 +14,13 @@ helpviewer_keywords:
   - "hosting process"
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debugging and the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debugging and the Hosting Process](https://docs.microsoft.com/visualstudio/debugger/debugging-and-the-hosting-process).  
-  
 The Visual Studio hosting process improves debugger performance and enables new debugger features, such as partial-trust debugging and design-time expression evaluation. You can disable the hosting process if you need to. For more information, see [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md). The following sections describe some differences between debugging with and without the hosting process.  
   
 ## Partial-Trust Debugging and Click-Once Security  
@@ -46,6 +39,3 @@ The Visual Studio hosting process improves debugger performance and enables new 
  [Hosting Process (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [How to: Debug a Partial Trust Application](../debugger/how-to-debug-a-partial-trust-application.md)   
  [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)
-
-
-

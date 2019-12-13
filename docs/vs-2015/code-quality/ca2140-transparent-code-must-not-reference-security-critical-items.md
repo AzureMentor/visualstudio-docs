@@ -1,14 +1,9 @@
 ---
 title: "CA2140: Transparent code must not reference security critical items | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2129"
   - "SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode"
@@ -19,14 +14,12 @@ helpviewer_keywords:
   - "CA2129"
 ms.assetid: 251a12da-0557-47f5-a4f7-0229d590ae7b
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2140: Transparent code must not reference security critical items
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2140: Transparent code must not reference security critical items](https://docs.microsoft.com/visualstudio/code-quality/ca2140-transparent-code-must-not-reference-security-critical-items).
 
 |||
 |-|-|
@@ -38,21 +31,21 @@ The latest version of this topic can be found at [CA2140: Transparent code must 
 ## Cause
  A transparent method:
 
--   handles a security critical security exception type
+- handles a security critical security exception type
 
--   has a parameter that is marked as a security critical type
+- has a parameter that is marked as a security critical type
 
--   has a generic parameter with a security critical constraints
+- has a generic parameter with a security critical constraints
 
--   has a local variable of a security critical type
+- has a local variable of a security critical type
 
--   references a type that is marked as security critical
+- references a type that is marked as security critical
 
--   calls a method that is marked as security critical
+- calls a method that is marked as security critical
 
--   references a field that is marked as security critical
+- references a field that is marked as security critical
 
--   returns a type that is marked as security critical
+- returns a type that is marked as security critical
 
 ## Rule Description
  A code element that is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute is security critical. A transparent method cannot use a security critical element. If a transparent type attempts to use a security critical type a <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , or <xref:System.FieldAccessException> is raised.
@@ -60,11 +53,11 @@ The latest version of this topic can be found at [CA2140: Transparent code must 
 ## How to Fix Violations
  To fix a violation of this rule, do one of the following:
 
--   Mark the code element that uses the security critical code with the <xref:System.Security.SecurityCriticalAttribute> attribute
+- Mark the code element that uses the security critical code with the <xref:System.Security.SecurityCriticalAttribute> attribute
 
      \- or -
 
--   Remove the <xref:System.Security.SecurityCriticalAttribute> attribute from the code elements that are marked as security critical and instead mark them with the <xref:System.Security.SecuritySafeCriticalAttribute> or <xref:System.Security.SecurityTransparentAttribute> attribute.
+- Remove the <xref:System.Security.SecurityCriticalAttribute> attribute from the code elements that are marked as security critical and instead mark them with the <xref:System.Security.SecuritySafeCriticalAttribute> or <xref:System.Security.SecurityTransparentAttribute> attribute.
 
 ## When to Suppress Warnings
  Do not suppress a warning from this rule.
@@ -80,6 +73,3 @@ The latest version of this topic can be found at [CA2140: Transparent code must 
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
  <xref:System.Security?displayProperty=fullName>
-
-
-

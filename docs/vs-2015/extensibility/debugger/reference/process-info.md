@@ -1,57 +1,50 @@
 ---
 title: "PROCESS_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "PROCESS_INFO"
 helpviewer_keywords: 
   - "PROCESS_INFO structure"
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # PROCESS_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [PROCESS_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/process-info).  
-  
 Contains information about a process.  
   
 ## Syntax  
   
 ```cpp#  
 typedef struct tagPROCESS_INFO {   
-   PROCESS_INFO_FIELDS Fields;  
-   BSTR                bstrFileName;  
-   BSTR                bstrBaseName;  
-   BSTR                bstrTitle;  
-   AD_PROCESS_ID       ProcessId;  
-   DWORD               dwSessionId;  
-   BSTR                bstrAttachedSessionName;  
-   FILETIME            CreationTime;  
-   PROCESS_INFO_FLAGS  Flags;  
+   PROCESS_INFO_FIELDS Fields;  
+   BSTR                bstrFileName;  
+   BSTR                bstrBaseName;  
+   BSTR                bstrTitle;  
+   AD_PROCESS_ID       ProcessId;  
+   DWORD               dwSessionId;  
+   BSTR                bstrAttachedSessionName;  
+   FILETIME            CreationTime;  
+   PROCESS_INFO_FLAGS  Flags;  
 } PROCESS_INFO;  
 ```  
   
 ```csharp  
 public struct PROCESS_INFO {   
-   public uint          Fields;  
-   public string        bstrFileName;  
-   public string        bstrBaseName;  
-   public string        bstrTitle;  
-   public AD_PROCESS_ID ProcessId;  
-   public uint          dwSessionId;  
-   public string        bstrAttachedSessionName;  
-   public FILETIME      CreationTime;  
-   public uint          Flags;  
+   public uint          Fields;  
+   public string        bstrFileName;  
+   public string        bstrBaseName;  
+   public string        bstrTitle;  
+   public AD_PROCESS_ID ProcessId;  
+   public uint          dwSessionId;  
+   public string        bstrAttachedSessionName;  
+   public FILETIME      CreationTime;  
+   public uint          Flags;  
 };  
 ```  
   
@@ -101,4 +94,3 @@ public struct PROCESS_INFO { 
  [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)   
  [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
  [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
-

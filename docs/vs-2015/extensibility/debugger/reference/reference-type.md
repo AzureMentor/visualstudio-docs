@@ -1,44 +1,37 @@
 ---
 title: "REFERENCE_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "REFERENCE_TYPE"
 helpviewer_keywords: 
   - "REFERENCE_TYPE enumeration"
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # REFERENCE_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [REFERENCE_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/reference-type).  
-  
 Specifies the reference type.  
   
 ## Syntax  
   
 ```cpp#  
 enum enum_REFERENCE_TYPE {   
-   REF_TYPE_WEAK   = 0x0001,  
-   REF_TYPE_STRONG = 0x0002  
+   REF_TYPE_WEAK   = 0x0001,  
+   REF_TYPE_STRONG = 0x0002  
 };  
 typedef DWORD REFERENCE_TYPE;  
 ```  
   
 ```csharp  
 public enum enum_REFERENCE_TYPE {   
-   REF_TYPE_WEAK   = 0x0001,  
-   REF_TYPE_STRONG = 0x0002  
+   REF_TYPE_WEAK   = 0x0001,  
+   REF_TYPE_STRONG = 0x0002  
 };  
 ```  
   
@@ -65,4 +58,3 @@ public enum enum_REFERENCE_TYPE { 
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
-

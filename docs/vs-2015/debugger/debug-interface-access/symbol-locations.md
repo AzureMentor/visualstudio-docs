@@ -1,14 +1,9 @@
 ---
 title: "Symbol Locations | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -16,15 +11,13 @@ helpviewer_keywords:
   - "symbols [DIA SDK], locations"
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Symbol Locations
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Symbol Locations](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbol-locations).  
-  
 Most symbols have a defined location within the image file. A symbol's location is specified with a value from the [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md) enumeration. The symbol may support additional properties depending on its location.  
   
  The following table shows the most commonly used location types and their additional properties.  
@@ -58,6 +51,3 @@ Most symbols have a defined location within the image file. A symbol's location 
  [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
  [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md)   
  [Symbols and Symbol Tags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
-
-
-

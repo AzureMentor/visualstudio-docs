@@ -1,14 +1,9 @@
 ---
 title: "CA1019: Define accessors for attribute arguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1019"
   - "DefineAccessorsForAttributeArguments"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DefineAccessorsForAttributeArguments"
 ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1019: Define accessors for attribute arguments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1019: Define accessors for attribute arguments](https://docs.microsoft.com/visualstudio/code-quality/ca1019-define-accessors-for-attribute-arguments).
 
 |||
 |-|-|
@@ -78,7 +71,4 @@ The latest version of this topic can be found at [CA1019: Define accessors for a
  [CA1813: Avoid unsealed attributes](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## See Also
- [Attributes](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
-
-
-
+ [Attributes](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

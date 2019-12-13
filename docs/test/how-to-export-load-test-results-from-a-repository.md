@@ -1,5 +1,5 @@
 ---
-title: "Export Load Test Results in Visual Studio"
+title: "Export Load Test Results"
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,11 +8,9 @@ helpviewer_keywords:
   - "Load Test Results Repository"
   - "load test results, exporting"
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
-author: gewarren
-ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # How to: Export load test results from a repository
 
@@ -20,27 +18,29 @@ When you run a load test, information gathered during the run is stored in the L
 
 You can manage load test results from the Load Test Editor by using the **Open and Manage Load Test Results** dialog box. You can open, import, export, and remove load test results.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## To export results from a repository
 
-1.  From a web performance and load test project, open a load test.
+1. From a web performance and load test project, open a load test.
 
-2.  On the embedded toolbar, choose **Open and Manage Results**.
+2. On the embedded toolbar, choose **Open and Manage Results**.
 
      The **Open and Manage Load Test Results** dialog box is displayed.
 
-3.  In **Enter a controller name to find load test results**, select a controller. Select **\<Local - No controller>** to access results stored locally.
+3. In **Enter a controller name to find load test results**, select a controller. Select **\<Local - No controller>** to access results stored locally.
 
-4.  In **Show results for the following load test**, select the load test whose results you want to view. Select **\<Show results for all tests>** to see all results for all tests.
+4. In **Show results for the following load test**, select the load test whose results you want to view. Select **\<Show results for all tests>** to see all results for all tests.
 
      If load test results are available, they appear in the **Load test results** list. The columns are **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description**. **Test** contains the name of the test, and **Description** contains the optional description that is added before the test is run. The **Description** column displays the short descriptions that were entered in the **Analysis Comments** for this test result.
 
-5.  In the **Load test results** list, choose a result. You can use the **Shift** key, the **Ctrl** key, or both to select more than one result, and export them to a single file.
+5. In the **Load test results** list, choose a result. You can use the **Shift** key, the **Ctrl** key, or both to select more than one result, and export them to a single file.
 
-6.  Choose **Export**.
+6. Choose **Export**.
 
      The **Export Load Test Results** dialog box appears.
 
-7.  In the **File name** box, type a name, and then choose **Save**.
+7. In the **File name** box, type a name, and then choose **Save**.
 
      The results are exported to an archive file.
 

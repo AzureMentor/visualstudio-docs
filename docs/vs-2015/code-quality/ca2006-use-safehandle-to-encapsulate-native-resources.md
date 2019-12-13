@@ -1,14 +1,9 @@
 ---
 title: "CA2006: Use SafeHandle to encapsulate native resources | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2006"
   - "UseSafeHandleToEncapsulateNativeResources"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2006"
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2006: Use SafeHandle to encapsulate native resources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2006: Use SafeHandle to encapsulate native resources](https://docs.microsoft.com/visualstudio/code-quality/ca2006-use-safehandle-to-encapsulate-native-resources).
 
 |||
 |-|-|
@@ -51,6 +44,3 @@ The latest version of this topic can be found at [CA2006: Use SafeHandle to enca
 
 ## See Also
  <xref:System.IDisposable>
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "CA1309: Use ordinal StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "UseOrdinalStringComparison"
   - "CA1309"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1309"
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1309: Use ordinal StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1309: Use ordinal StringComparison](https://docs.microsoft.com/visualstudio/code-quality/ca1309-use-ordinal-stringcomparison).
 
 |||
 |-|-|
@@ -50,6 +43,3 @@ The latest version of this topic can be found at [CA1309: Use ordinal StringComp
 ## See Also
  [Globalization Warnings](../code-quality/globalization-warnings.md)
  [CA1307: Specify StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
-
-
-

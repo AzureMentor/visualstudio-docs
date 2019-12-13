@@ -1,5 +1,5 @@
 ---
-title: "Analyzing Load Test Results and Errors in Visual Studio"
+title: "Analyzing Load Test Results and Errors"
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +18,15 @@ helpviewer_keywords:
   - "Load Test Viewer, tables"
   - "load tests, results tables"
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # Analyze load test results and errors in the Tables view of the Load Test Analyzer
 
 When you view the results of a load test run, you can display different panes that provide you with different ways to analyze the data. You can view the data as a graph, to see how it changes over time, or you can view the data as detailed tables.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 To switch to table view, choose **Tables** on the **load test** toolbar. To switch between the different tables, use the **Table** drop-down list on the toolbar above the table grid. In table view, you can view up to four tables at a time. For more information, see [Tile load test tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in this topic.
 
@@ -35,17 +35,17 @@ Most numeric values displayed in a table for performance counters are cumulative
 > [!NOTE]
 > Columns named **Last** are available only while a load test is executing. After a load test is completed, these columns are not available.
 
- You can sort most tables by choosing the title of the column that you want to sort on. By default, some tables do not display all available columns. You can add columns to tables, if columns are available. To add columns, right-click the table and then choose **Add/Remove Columns**.
+You can sort most tables by choosing the title of the column that you want to sort on. By default, some tables do not display all available columns. You can add columns to tables, if columns are available. To add columns, right-click the table and then choose **Add/Remove Columns**.
 
 > [!NOTE]
 > You can copy the data from a table into other applications such as Excel for additional analysis.
 
 ## The load test tables
 
- The following table lists the tables that are available to analyze load test runs.
+The following table lists the tables that are available to analyze load test runs.
 
 |Table Name|Description|
-|----------------|-----------------|
+|-|-|
 |Errors|Displays a list of errors that occurred during the load test run. For more information, see [The Errors table](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in this topic, and [Analyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Displays a list of pages accessed during a load test run. Some data in this table is available only after a load test has completed. For more information, see [How to: View web page response](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requests|Displays details for individual requests issued during a load test. This includes all HTTP requests, and dependent requests such as images. For more information, see [The Requests table](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in this topic.|
@@ -58,16 +58,16 @@ Most numeric values displayed in a table for performance counters are cumulative
 
 ## Collect percentile data
 
- Some load test tables can contain additional columns, which include percentile data and response times broken into groups based on network emulation. By default, this data is not collected. Percentile data is only available when you save results to a database, and not when you save locally. For more information, see [Managing load test results in the Load Test Results Repository](../test/manage-load-test-results-in-the-load-test-results-repository.md). Additionally, to collect this data, in the **Load Test Editor**, under the **Run Settings** node, select the specific run setting node to change. In the **Properties** window, for the **Timing Details Storage** property, select **StatisticsOnly** or **AllIndividualDetails**. For more information, see [How to: View web page response](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Some load test tables can contain additional columns, which include percentile data and response times broken into groups based on network emulation. By default, this data is not collected. Percentile data is only available when you save results to a database, and not when you save locally. For more information, see [Managing load test results in the Load Test Results Repository](../test/manage-load-test-results-in-the-load-test-results-repository.md). Additionally, to collect this data, in the **Load Test Editor**, under the **Run Settings** node, select the specific run setting node to change. In the **Properties** window, for the **Timing Details Storage** property, select **StatisticsOnly** or **AllIndividualDetails**. For more information, see [How to: View web page response](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## The Requests table
 
- The **Requests** table displays details for individual requests issued during a load test. This includes all HTTP requests, and dependent requests such as images. The table lists requests by test and scenario, because one request can be included in many tests and scenarios.
+The **Requests** table displays details for individual requests issued during a load test. This includes all HTTP requests, and dependent requests such as images. The table lists requests by test and scenario, because one request can be included in many tests and scenarios.
 
- The following table lists the columns in the **Requests** table:
+The following table lists the columns in the **Requests** table:
 
 |Column|Description|Visible by Default|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Request**|The URL of the request. For example, *home.html*, or *orange-arrow.gif*.|Yes|
 |**Scenario**|The name of the scenario.|Yes|
 |**Test**|The name of the test.|Yes|
@@ -84,12 +84,12 @@ Most numeric values displayed in a table for performance counters are cumulative
 
 ## The Tests table
 
- The **Tests** table displays details for individual tests run during a load test. The table lists tests by test and scenario, because one test can be included in many scenarios.
+The **Tests** table displays details for individual tests run during a load test. The table lists tests by test and scenario, because one test can be included in many scenarios.
 
- The following table lists the columns in the **Tests** table.
+The following table lists the columns in the **Tests** table.
 
 |Column|Description|Visible by Default|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|The name of the test.|Yes|
 |**Scenario**|The name of the scenario.|Yes|
 |**Total**|The total number of times the test was run in the scenario. This includes the number of times the test passed and failed.|Yes|
@@ -105,15 +105,15 @@ Most numeric values displayed in a table for performance counters are cumulative
 
 ## The Transactions table
 
- The **Transactions** table displays a list of transactions that occurred during a load test run. Transactions refer to either transactions defined in a web performance test, or timers defined in a unit test. Transaction does not refer to database transactions.
+The **Transactions** table displays a list of transactions that occurred during a load test run. Transactions refer to either transactions defined in a web performance test, or timers defined in a unit test. Transaction does not refer to database transactions.
 
- The following table lists the columns in the **Transactions** table.
+The following table lists the columns in the **Transactions** table.
 
 > [!NOTE]
 > To view all columns, you must enable the Timing Details Storage property that is associated with the active run setting. For more information, see [How to: Specify the Timing Details Storage property](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Column|Description|Visible without timing details|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transaction**|The name of the transaction.|Yes|
 |**Scenario**|The name of the scenario.|Yes|
 |**Test**|The name of the test.|Yes|
@@ -132,20 +132,20 @@ Most numeric values displayed in a table for performance counters are cumulative
 
 ## The Errors table
 
- When you run a load test, you can analyze errors that occur. Analyzing errors and adjusting your tests are an important part of the load test process. If any errors occurred, an **errors** hyperlink appears on the load test status bar and specifies the number of errors that occurred. To display the errors table, you choose the hyperlink.
+When you run a load test, you can analyze errors that occur. Analyzing errors and adjusting your tests are an important part of the load test process. If any errors occurred, an **errors** hyperlink appears on the load test status bar and specifies the number of errors that occurred. To display the errors table, you choose the hyperlink.
 
- The errors table groups the errors that occurred during a load test by the type and subtype of the error. There is also a **total** line in the table that specifies the total count of all the errors that occurred.
+The errors table groups the errors that occurred during a load test by the type and subtype of the error. There is also a **total** line in the table that specifies the total count of all the errors that occurred.
 
- The errors table contains the following columns:
+The errors table contains the following columns:
 
 |Column|Description|Visible by default|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Type|The type of the error. For example, HttpError.|Yes|
 |SubType|The subtype of the error. For example, LoadTestException.|Yes|
 |Count|The number of errors of this type that occurred during the load test. The entries in this column appear as hyperlinks. You can choose any hyperlink to view a list of the individual errors.|Yes|
 |Last Message|A message that describes the error. For example, 404 - NotFound.|Yes|
 
- For more information, see [Working with load test tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+For more information, see [Working with load test tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### Drill down to the error list
 
@@ -157,7 +157,7 @@ The errors table groups the errors by the type and subtype of the error. To view
 The **Load Test Errors** table contains the following columns:
 
 |Column|Description|
-|------------|-----------------|
+|-|-|
 |**Time**|The time during the load test at which the error occurred.|
 |**Agent**|The name of the agent computer on which the error occurred. This is important when you run load tests using test controllers and test agents. For more information, see [Install and configure test agents](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|The name of the web performance test in which the error occurred.|

@@ -1,27 +1,20 @@
 ---
 title: "IDiaSymbol::get_isMatrixRowMajor | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 ms.assetid: 36b1e881-ea76-48b0-b67f-e9eb0d19bec7
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_isMatrixRowMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_isMatrixRowMajor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor).  
-  
 Specifies whether the matrix is row major.  
   
 ## Syntax  
@@ -40,6 +33,3 @@ HRESULT get_isMatrixRowMajor(
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

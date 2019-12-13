@@ -6,9 +6,9 @@ ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
   - "FxCopCmd errors"
-ms.author: gewarren
-author: gewarren
-manager: douge
+ms.author: jillfra
+author: jillre
+manager: jillfra
 ms.workload:
   - "multiple"
 ---

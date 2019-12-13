@@ -1,43 +1,36 @@
 ---
 title: "IDebugBinder3::FindAlias | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBinder3::FindAlias"
 helpviewer_keywords: 
   - "IDebugBinder3::FindAlias method"
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBinder3::FindAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBinder3::FindAlias](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder3-findalias).  
-  
 This method locates an alias, given a name. This will search all aliases in the program.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT FindAlias(  
-   LPCOLESTR     pcstrName,  
-   IDebugAlias** ppAlias  
+   LPCOLESTR     pcstrName,  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
 int FindAlias(  
-   string          pcstrName,  
-   out IDebugAlias ppAlias  
+   string          pcstrName,  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
@@ -57,4 +50,3 @@ int FindAlias(
 ## See Also  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-

@@ -1,37 +1,30 @@
 ---
 title: "IDiaPropertyStorage::ReadBOOL | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaPropertyStorage::ReadBOOL"
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaPropertyStorage::ReadBOOL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaPropertyStorage::ReadBOOL](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiapropertystorage-readbool).  
-  
 Reads `BOOL` values in a property set.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
+   PROPID id,  
+   BOOL*  pValue  
 );  
 ```  
   
@@ -50,6 +43,3 @@ HRESULT ReadBOOL ( 
   
 ## See Also  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "Debugger Project Settings | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -22,15 +17,13 @@ helpviewer_keywords:
   - "debugging [Visual Studio], project settings"
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debugger Project Settings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debugger Project Settings](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings).  
-  
 Certain project settings also affect debugging. These settings determine such things as what directories the debugger looks at, the command and command arguments used to launch the program, and the type of debug information created for the program. You can change these settings in the **Property Pages** dialog box.  
   
  This section describes what options are available, and how to set them.  
@@ -66,6 +59,3 @@ Certain project settings also affect debugging. These settings determine such th
   
 ## See Also  
  [Debugger Security](../debugger/debugger-security.md)
-
-
-

@@ -1,48 +1,41 @@
 ---
 title: "SccGetProjPath Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccGetProjPath"
 helpviewer_keywords: 
   - "SccGetProjPath function"
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccGetProjPath Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccGetProjPath Function](https://docs.microsoft.com/visualstudio/extensibility/sccgetprojpath-function).  
-  
 This function prompts the user for a project path, which is a string that is meaningful only to the source control plug-in. It is called when the user is:  
   
--   Creating a new project  
+- Creating a new project  
   
--   Adding an existing project to version control  
+- Adding an existing project to version control  
   
--   Attempting to find an existing version control project  
+- Attempting to find an existing version control project  
   
 ## Syntax  
   
 ```cpp#  
 SCCRTN SccGetProjPath (  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPSTR  lpProjName,  
-   LPSTR  lpLocalPath,  
-   LPSTR  lpAuxProjPath,  
-   BOOL   bAllowChangePath,  
-   LPBOOL pbNew  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPSTR  lpProjName,  
+   LPSTR  lpLocalPath,  
+   LPSTR  lpAuxProjPath,  
+   BOOL   bAllowChangePath,  
+   LPBOOL pbNew  
 );  
 ```  
   
@@ -100,7 +93,7 @@ SCCRTN SccGetProjPath (
  For `lpUser`, the IDE may pass in a user name, or it may simply pass in a pointer to an empty string. If there is a user name, the source control plug-in should use it as a default. However, if no name was passed or if the login failed with the given name, the plug-in should prompt the user for a login and pass the name back in `lpUser` when it receives a valid login. Because the plug-in may change this string, the IDE will always allocate a buffer of size (`SCC_USER_LEN`+1).  
   
 > [!NOTE]
->  The first action that the IDE performs may be a call to either the `SccOpenProject` function or the `SccGetProjPath` function. Hence, both of them have an identical `lpUser` parameter, which enables the source control plug-in to log the user in at either time. Even if the return from the function indicates a failure, the plug-in must fill this string with a valid login name.  
+> The first action that the IDE performs may be a call to either the `SccOpenProject` function or the `SccGetProjPath` function. Hence, both of them have an identical `lpUser` parameter, which enables the source control plug-in to log the user in at either time. Even if the return from the function indicates a failure, the plug-in must fill this string with a valid login name.  
   
  `lpLocalPath` is the directory where the user keeps the project. It may be an empty string. If there is no directory currently defined (as in the case of a user attempting to download a project from the source control system) and if `bAllowChangePath` is `TRUE`, the source control plug-in can prompt the user for input or use some other method to place its own string into `lpLocalPath`. If `bAllowChangePath` is `FALSE`, the plug-in should not change the string, because the user is already working in the specified directory.  
   
@@ -111,4 +104,3 @@ SCCRTN SccGetProjPath (
 ## See Also  
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

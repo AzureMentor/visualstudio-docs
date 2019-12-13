@@ -1,45 +1,38 @@
 ---
 title: "IEnumDebugReferenceInfo2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugReferenceInfo2::Next"
 helpviewer_keywords: 
   - "IEnumDebugReferenceInfo2::Next"
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugReferenceInfo2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugReferenceInfo2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugreferenceinfo2-next).  
-  
 Returns the next set of elements from the enumeration.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG                   celt,  
-   DEBUG_REFERENCE_INFO ** rgelt,  
-   ULONG*                  pceltFetched  
+   ULONG                   celt,  
+   DEBUG_REFERENCE_INFO ** rgelt,  
+   ULONG*                  pceltFetched  
 );  
 ```  
   
 ```csharp  
 int Next(  
-   uint                   celt,  
-   DEBUG_REFERENCE_INFO[] rgelt,  
-   ref uint               pceltFetched  
+   uint                   celt,  
+   DEBUG_REFERENCE_INFO[] rgelt,  
+   ref uint               pceltFetched  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int Next(
 ## See Also  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
-

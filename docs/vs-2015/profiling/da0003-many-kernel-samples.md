@@ -1,14 +1,9 @@
 ---
 title: "DA0003: Many kernel samples | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.performance.rules.DA0003"
   - "vs.performance.DA0003"
@@ -16,15 +11,13 @@ f1_keywords:
   - "vs.performance.rules.DAManyKernelSamples"
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # DA0003: Many kernel samples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DA0003: Many kernel samples](https://docs.microsoft.com/visualstudio/profiling/da0003-many-kernel-samples).  
-  
 Rule Id|DA0003|  
 |Category|Profiling Tools Usage|  
 |Profiling methods|Sampling|  
@@ -42,9 +35,6 @@ Rule Id|DA0003|
 ## How to Fix Violations  
  Consider profiling your application again using one of the following options:  
   
--   Profile by using the instrumentation method.  
+- Profile by using the instrumentation method.  
   
--   Increase the sampling rate to try to collect more samples in user mode.
-
-
-
+- Increase the sampling rate to try to collect more samples in user mode.

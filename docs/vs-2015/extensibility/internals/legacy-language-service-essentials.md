@@ -1,14 +1,9 @@
 ---
 title: "Legacy Language Service Essentials | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "languages, integrating into Visual Studio"
   - "language services, integrating programming languages"
@@ -16,20 +11,18 @@ helpviewer_keywords:
   - "programming languages, integrating into Visual Studio"
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Legacy Language Service Essentials
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Legacy Language Service Essentials](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-essentials).  
-  
 You must provide a language service to integrate a programming language into Visual Studio. This topic explains the features available in legacy language services.  
   
  Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more about the new way to implement a language service, see [Editor and Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
+> We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
  Legacy language services  provide the following features:  
   
@@ -49,4 +42,3 @@ You must provide a language service to integrate a programming language into Vis
 |-------------|-----------------|  
 |Expression evaluators|Supports the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger by validating breakpoints and supplying a list of expressions to be displayed in the **Autos** debug window.<br /><br /> For more information, see [Language Service Support for Debugging](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Symbol-browsing tools|Supports **Object Browser**, **Class View**, **Call Browser**, and **Find Symbol Results**.|
-

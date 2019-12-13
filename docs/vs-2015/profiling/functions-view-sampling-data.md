@@ -1,32 +1,25 @@
 ---
 title: "Functions View - Sampling Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "sampling profiling method,Functions View"
   - "Functions view"
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Functions View - Sampling Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Functions View - Sampling Data](https://docs.microsoft.com/visualstudio/profiling/functions-view-sampling-data).  
-  
 The Functions report view for the sampling profile method lists the functions that were sampled during the profiling run.  
   
 > [!NOTE]
->  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Column|Description|  
 |------------|-----------------|  
@@ -48,6 +41,3 @@ The Functions report view for the sampling profile method lists the functions th
  [Functions View - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Functions View - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Functions View](../profiling/functions-view-instrumentation-data.md)
-
-
-

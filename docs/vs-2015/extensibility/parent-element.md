@@ -1,27 +1,20 @@
 ---
 title: "Parent Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "VSCT XML schema elements, Parent"
   - "Parent element (VSCT XML schema)"
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Parent Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Parent Element](https://docs.microsoft.com/visualstudio/extensibility/parent-element).  
-  
 The parent of a button or combo box may only be a group. The parent of a menu or group may be any other menu or group. In a [CommandPlacement Element](../extensibility/commandplacement-element.md), this element is required; in all other instances it is optional. If this element is omitted, the parent of `Group_Undefined:0` will be implied.  
   
 ## Syntax  
@@ -54,4 +47,3 @@ The parent of a button or combo box may only be a group. The parent of a menu or
   
 ## See Also  
  [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

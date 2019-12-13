@@ -1,41 +1,34 @@
 ---
 title: "IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBreakpointResolution2::GetBreakpointType"
 helpviewer_keywords: 
   - "IDebugBreakpointResolution2::GetBreakpointType"
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBreakpointResolution2::GetBreakpointType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBreakpointResolution2::GetBreakpointType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype).  
-  
 Gets the type of the breakpoint represented by this resolution.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetBreakpointType(   
-   BP_TYPE* pBPType  
+   BP_TYPE* pBPType  
 );  
 ```  
   
 ```csharp  
 int GetBreakpointType(   
-   out enum_ BP_TYPE pBPType  
+   out enum_ BP_TYPE pBPType  
 );  
 ```  
   
@@ -89,4 +82,3 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
-

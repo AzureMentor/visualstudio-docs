@@ -1,51 +1,44 @@
 ---
 title: "IDebugErrorEvent2::GetErrorMessage | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugErrorEvent2::GetErrorMessage"
 helpviewer_keywords: 
   - "IDebugErrorEvent2::GetErrorMessage"
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugErrorEvent2::GetErrorMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugErrorEvent2::GetErrorMessage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugerrorevent2-geterrormessage).  
-  
 Returns information that allows construction of a human-readable error message.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetErrorMessage(  
-   MESSAGETYPE* pMessageType,  
-   BSTR*        pbstrErrorFormat,  
-   HRESULT*     hrErrorReason,  
-   DWORD*       pdwType,  
-   BSTR*        pbstrHelpFileName,  
-   DWORD*       pdwHelpId  
+   MESSAGETYPE* pMessageType,  
+   BSTR*        pbstrErrorFormat,  
+   HRESULT*     hrErrorReason,  
+   DWORD*       pdwType,  
+   BSTR*        pbstrHelpFileName,  
+   DWORD*       pdwHelpId  
 );  
 ```  
   
 ```csharp  
 int GetErrorMessage(  
-   out enum_MESSAGETYPE   pMessageType,  
-   out string             pbstrErrorFormat,  
-   out int                phrErrorReason,  
-   out uint               pdwType,  
-   out string             pbstrHelpFileName,  
-   out uint               pdwHelpId  
+   out enum_MESSAGETYPE   pMessageType,  
+   out string             pbstrErrorFormat,  
+   out int                phrErrorReason,  
+   out uint               pdwType,  
+   out string             pbstrHelpFileName,  
+   out uint               pdwHelpId  
 );  
 ```  
   
@@ -77,4 +70,3 @@ int GetErrorMessage(
 ## See Also  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
-

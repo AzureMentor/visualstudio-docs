@@ -1,14 +1,9 @@
 ---
 title: "IDebugCustomAttributeQuery2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugCustomAttributeQuery2"
 helpviewer_keywords: 
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "IDebugCustomAttributeQuery2 interface"
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCustomAttributeQuery2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCustomAttributeQuery2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattributequery2).  
-  
 Determines the existence of a custom attribute for this field and, if it exists, returns the attribute information.  
   
 ## Syntax  
@@ -36,7 +29,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
  A symbol provider implements this interface on the same object that implements [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) in order to support custom attributes.  
   
 ## Notes for Callers  
- Use [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) to obtain this interface from the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
+ Use [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) to obtain this interface from the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
   
 ## Methods in Vtable Order  
  The following table shows the methods of the **IDebugCustomAttributeQuery** interface.  
@@ -66,4 +59,3 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
  [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
-

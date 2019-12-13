@@ -1,14 +1,9 @@
 ---
 title: "CA2112: Secured types should not expose fields | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2112"
   - "SecuredTypesShouldNotExposeFields"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2112"
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2112: Secured types should not expose fields
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2112: Secured types should not expose fields](https://docs.microsoft.com/visualstudio/code-quality/ca2112-secured-types-should-not-expose-fields).
 
 |||
 |-|-|
@@ -34,7 +27,7 @@ The latest version of this topic can be found at [CA2112: Secured types should n
 |Breaking Change|Breaking|
 
 ## Cause
- A public or protected type contains public fields and is secured by a [Link Demands](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
+ A public or protected type contains public fields and is secured by a [Link Demands](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## Rule Description
  If code has access to an instance of a type that is secured by a link demand, the code does not have to satisfy the link demand to access the type's fields.
@@ -72,8 +65,5 @@ The latest version of this topic can be found at [CA2112: Secured types should n
  [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## See Also
- [Link Demands](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
- [Data and Modeling](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-
+ [Link Demands](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [Data and Modeling](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

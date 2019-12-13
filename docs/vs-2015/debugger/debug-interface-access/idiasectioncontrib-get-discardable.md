@@ -1,36 +1,29 @@
 ---
 title: "IDiaSectionContrib::get_discardable | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSectionContrib::get_discardable method"
 ms.assetid: 30ca88d4-3198-4b0f-b30e-2e54b3607fe9
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSectionContrib::get_discardable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSectionContrib::get_discardable](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-discardable).  
-  
 Retrieves a flag that indicates whether the section can be discarded.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_discardable (   
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_discardable ( 
   
 ## See Also  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

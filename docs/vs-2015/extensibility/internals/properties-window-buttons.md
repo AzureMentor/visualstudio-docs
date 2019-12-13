@@ -1,26 +1,19 @@
 ---
 title: "Properties Window Buttons | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Properties window, buttons"
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Properties Window Buttons
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Properties Window Buttons](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons).  
-  
 Depending on the development language and the product type, certain buttons are displayed by default on the toolbar for the **Properties** window. In all cases, the **Categorized**, **Alphabetized**, **Properties**, and **Property Pages** buttons are displayed. In Visual C# and Visual Basic, the **Events** button is also displayed. In certain Visual C++ projects, the **VC++ Messages** and the **VC Overrides** buttons are displayed. Additional buttons may be displayed for other project types. For more information about buttons in the **Properties** window, see [Properties Window](../../ide/reference/properties-window.md).  
   
 ## Implementation of Properties Window Buttons  
@@ -37,8 +30,7 @@ Depending on the development language and the product type, certain buttons are 
  The **Property Pages** button is unavailable if `ISpecifyPropertyPages` is not implemented for the selected object. Property pages display configuration-dependent properties that are typically associated with solutions and projects, but they can be also be associated with project items (for example, in Visual C++).  
   
 > [!NOTE]
->  You cannot add toolbar buttons to the **Properties** window by using unmanaged code. To add a toolbar button, you must create a managed object that derives from <xref:System.Windows.Forms.Design.PropertyTab>.  
+> You cannot add toolbar buttons to the **Properties** window by using unmanaged code. To add a toolbar button, you must create a managed object that derives from <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## See Also  
  [Extending Properties](../../extensibility/internals/extending-properties.md)
-

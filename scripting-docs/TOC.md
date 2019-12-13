@@ -1,2 +1,2 @@
-# [JavaScript in Visual Studio 2017](javascript/javascript-in-vs-2017.md)
-# [Tools for Node.js](/visualstudio/javascript/tutorial-nodejs.md)
+# [JavaScript in Visual Studio 2017](/visualstudio/javascript/javascript-in-vs-2017)
+# [Tools for Node.js](/visualstudio/javascript/tutorial-nodejs)

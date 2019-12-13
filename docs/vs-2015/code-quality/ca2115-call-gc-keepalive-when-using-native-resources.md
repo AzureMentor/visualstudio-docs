@@ -1,14 +1,9 @@
 ---
 title: "CA2115: Call GC.KeepAlive when using native resources | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CallGCKeepAliveWhenUsingNativeResources"
   - "CA2115"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CallGCKeepAliveWhenUsingNativeResources"
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2115: Call GC.KeepAlive when using native resources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2115: Call GC.KeepAlive when using native resources](https://docs.microsoft.com/visualstudio/code-quality/ca2115-call-gc-keepalive-when-using-native-resources).
 
 |||
 |-|-|
@@ -47,17 +40,17 @@ The latest version of this topic can be found at [CA2115: Call GC.KeepAlive when
 ## When to Suppress Warnings
  This rule makes some assumptions that can lead to false positives. You can safely suppress a warning from this rule if:
 
--   The finalizer does not free the contents of the <xref:System.IntPtr> or <xref:System.UIntPtr> field referenced by the method.
+- The finalizer does not free the contents of the <xref:System.IntPtr> or <xref:System.UIntPtr> field referenced by the method.
 
--   The method does not pass the <xref:System.IntPtr> or <xref:System.UIntPtr> field to unmanaged code.
+- The method does not pass the <xref:System.IntPtr> or <xref:System.UIntPtr> field to unmanaged code.
 
- Carefully review other messages before excluding them. This rule detects errors that are difficult to reproduce and debug.
+  Carefully review other messages before excluding them. This rule detects errors that are difficult to reproduce and debug.
 
 ## Example
  In the following example, `BadMethod` does not include a call to `GC.KeepAlive` and therefore violates the rule. `GoodMethod` contains the corrected code.
 
 > [!NOTE]
->  This example is pseudo-code Although the code compiles and runs, the warning is not fired because an unmanaged resource is not created or freed.
+> This example is pseudo-code Although the code compiles and runs, the warning is not fired because an unmanaged resource is not created or freed.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
@@ -66,7 +59,4 @@ The latest version of this topic can be found at [CA2115: Call GC.KeepAlive when
  <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
- [Dispose Pattern](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ [Dispose Pattern](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

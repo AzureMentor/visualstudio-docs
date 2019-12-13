@@ -1,14 +1,9 @@
 ---
 title: "CA1506: Avoid excessive class coupling | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "AvoidExcessiveClassCoupling"
   - "CA1506"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1506"
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1506: Avoid excessive class coupling
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1506: Avoid excessive class coupling](https://docs.microsoft.com/visualstudio/code-quality/ca1506-avoid-excessive-class-coupling).
 
 |||
 |-|-|
@@ -50,6 +43,3 @@ The latest version of this topic can be found at [CA1506: Avoid excessive class 
 ## See Also
  [Maintainability Warnings](../code-quality/maintainability-warnings.md)
  [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

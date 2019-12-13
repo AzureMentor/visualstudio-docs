@@ -1,28 +1,21 @@
 ---
 title: "Wizard (.Vsz) File | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - ".vsz files"
   - "vsz files"
   - "wizards, files"
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Wizard (.Vsz) File
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Wizard (.Vsz) File](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file).  
-  
 The integrated development environment (IDE) uses .vsz files to start wizards. These .vsz files contain information that the IDE uses to determine which wizard to call and what information to pass to the wizard.  
   
  A .vsz file is a version of an .ini-formatted text file that has no sections. Information known to the IDE is stored at the beginning of the file. This provides a link between the wizard that the IDE calls and the parameters that are in the .vsz file to be passed to the IDE. The rest of the file provides parameters that are specific to the wizard and that are to be collected by the IDE and passed to the specific wizard.  
@@ -44,7 +37,7 @@ Param="WIZARDUI = FALSE"
 |Wizard|This field contains the OLE ProgID of the wizard, or alternatively a GUID string representation of the CLSID of the wizard that is cocreated by the IDE.|  
 |Param|These parts are optional. You can add as many as needed.|  
   
- The parameters enable the .vsz file to pass additional custom parameters to the wizard. Each value is passed as a string element in an array of variants to the wizard. For more information, see [Custom Parameters](../../extensibility/internals/custom-parameters.md). For information about how to use a .vsz file in the development of custom wizards, see [.Vsz File (Project Control)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ The parameters enable the .vsz file to pass additional custom parameters to the wizard. Each value is passed as a string element in an array of variants to the wizard. For more information, see [Custom Parameters](../../extensibility/internals/custom-parameters.md). For information about how to use a .vsz file in the development of custom wizards, see [.Vsz File (Project Control)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  To add a default locale ID to your .vsz file, specify `FALLBACK_LCID`=xxxx, where xxxx is the locale ID, for example, 1033 for English. When `FALLBACK_LCID` parameter is defined, the wizard uses the supplied fallback locale ID if the current ID is not found.  
   
@@ -52,4 +45,3 @@ Param="WIZARDUI = FALSE"
  [Custom Parameters](../../extensibility/internals/custom-parameters.md)   
  [Wizards](../../extensibility/internals/wizards.md)   
  [Template Directory Description (.Vsdir) Files](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "ClickOnce Deployment Manifest | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -20,13 +15,11 @@ ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # ClickOnce Deployment Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ClickOnce Deployment Manifest](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-manifest).  
-  
 A deployment manifest is an XML file that describes a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, including the identification of the current [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application version to deploy.  
   
  Deployment manifests have the following elements and attributes.  
@@ -123,6 +116,3 @@ A deployment manifest is an XML file that describes a [!INCLUDE[ndptecclick](../
   
 ## See Also  
  [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)
-
-
-

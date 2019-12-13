@@ -1,36 +1,29 @@
 ---
 title: "IDiaSectionContrib::get_addressOffset | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSectionContrib::get_addressOffset method"
 ms.assetid: 4d569323-0e11-456d-9f92-a218bf292ecf
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSectionContrib::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSectionContrib::get_addressOffset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-addressoffset).  
-  
 Retrieves the offset part of the contribution's address.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_addressOffset (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_addressOffset ( 
   
 ## See Also  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

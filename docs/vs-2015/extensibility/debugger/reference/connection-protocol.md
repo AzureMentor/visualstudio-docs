@@ -1,53 +1,46 @@
 ---
 title: "CONNECTION_PROTOCOL | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "CONNECTION_PROTOCOL"
 helpviewer_keywords: 
   - "CONNECTION_PROTOCOL enumeration"
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [CONNECTION_PROTOCOL](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/connection-protocol).  
-  
 Indicates the protocol being used to communicate between a debug server and the debug package (DE).  
   
 ## Syntax  
   
 ```cpp  
 typedef enum tagCONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
 } CONNECTION_PROTOCOL;  
 ```  
   
 ```csharp  
 public enum CONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
 };  
 ```  
   
@@ -86,4 +79,3 @@ public enum CONNECTION_PROTOCOL {
 ## See Also  
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "CA1041: Provide ObsoleteAttribute message | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1041"
   - "ProvideObsoleteAttributeMessage"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1041"
 ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1041: Provide ObsoleteAttribute message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1041: Provide ObsoleteAttribute message](https://docs.microsoft.com/visualstudio/code-quality/ca1041-provide-obsoleteattribute-message).
 
 |||
 |-|-|
@@ -54,6 +47,3 @@ The latest version of this topic can be found at [CA1041: Provide ObsoleteAttrib
 
 ## See Also
  <xref:System.ObsoleteAttribute?displayProperty=fullName>
-
-
-

@@ -1,41 +1,34 @@
 ---
 title: "IDebugProperty2::GetParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProperty2::GetParent"
 helpviewer_keywords: 
   - "IDebugProperty2::GetParent"
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProperty2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProperty2::GetParent](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getparent).  
-  
 Gets the parent property of a property.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetParent (   
-   IDebugProperty2** ppParent  
+   IDebugProperty2** ppParent  
 );  
 ```  
   
 ```csharp  
 int GetParent (   
-   out IDebugProperty2 ppParent  
+   out IDebugProperty2 ppParent  
 );  
 ```  
   
@@ -48,4 +41,3 @@ int GetParent ( 
   
 ## See Also  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

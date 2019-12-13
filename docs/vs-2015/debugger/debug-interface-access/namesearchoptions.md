@@ -1,48 +1,41 @@
 ---
 title: "NameSearchOptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "NameSearchOptions enumeration"
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [NameSearchOptions](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/namesearchoptions).  
-  
 Specifies the search options for symbol and file names.  
   
 ## Syntax  
   
 ```cpp#  
 enum NameSearchOptions {   
-   nsNone,  
-   nsfCaseSensitive     = 0x1,  
-   nsfCaseInsensitive   = 0x2,  
-   nsfFNameExt          = 0x4,  
-   nsfRegularExpression = 0x8,  
-   nsfUndecoratedName   = 0x10,  
+   nsNone,  
+   nsfCaseSensitive     = 0x1,  
+   nsfCaseInsensitive   = 0x2,  
+   nsfFNameExt          = 0x4,  
+   nsfRegularExpression = 0x8,  
+   nsfUndecoratedName   = 0x10,  
   
 // For backward compatibility:  
-   nsCaseSensitive           = nsfCaseSensitive,  
-   nsCaseInsensitive         = nsfCaseInsensitive,  
-   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
-   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
-   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
+   nsCaseSensitive           = nsfCaseSensitive,  
+   nsCaseInsensitive         = nsfCaseInsensitive,  
+   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
+   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
+   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
 };  
 ```  
   
@@ -68,11 +61,11 @@ enum NameSearchOptions { 
 ## Remarks  
  The values from this enumeration are passed to the following methods:  
   
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
   
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## Requirements  
  Header: dia2.h  
@@ -82,6 +75,3 @@ enum NameSearchOptions { 
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-
-
-

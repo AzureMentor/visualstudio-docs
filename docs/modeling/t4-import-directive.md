@@ -2,13 +2,11 @@
 title: T4 Import Directive
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # T4 Import Directive
 
@@ -35,16 +33,16 @@ The file contains: <#=  fileContent #>
 ## Standard Imports
  The following namespace is imported automatically, so that you do not need to write an import directive for it:
 
--   `System`
+- `System`
 
- In addition, if you use a custom directive, the directive processor might import some namespaces automatically.
+  In addition, if you use a custom directive, the directive processor might import some namespaces automatically.
 
- For example, if you write templates for a domain-specific language (DSL), you do not need to write import directives for the following namespaces:
+  For example, if you write templates for a domain-specific language (DSL), you do not need to write import directives for the following namespaces:
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   Your DSL's namespace
+- Your DSL's namespace
 
-## See Also
+## See also
 
 - [T4 Assembly Directive](../modeling/t4-assembly-directive.md)

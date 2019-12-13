@@ -1,36 +1,29 @@
 ---
 title: "IDiaFrameData::get_type | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaFrameData::get_type method"
 ms.assetid: efca38b5-c479-4d0a-a164-f903f25c5509
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaFrameData::get_type](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-type).  
-  
 Retrieves the compiler-specific frame type.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_type (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -44,6 +37,3 @@ HRESULT get_type ( 
 ## See Also  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [StackFrameTypeEnum Enumeration](../../debugger/debug-interface-access/stackframetypeenum.md)
-
-
-

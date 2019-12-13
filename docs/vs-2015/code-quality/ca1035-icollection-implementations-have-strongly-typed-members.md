@@ -1,14 +1,9 @@
 ---
 title: "CA1035: ICollection implementations have strongly typed members | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "ICollectionImplementationsHaveStronglyTypedMembers"
   - "CA1035"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "ICollectionImplementationsHaveStronglyTypedMembers"
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1035: ICollection implementations have strongly typed members
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1035: ICollection implementations have strongly typed members](https://docs.microsoft.com/visualstudio/code-quality/ca1035-icollection-implementations-have-strongly-typed-members).
 
 |||
 |-|-|
@@ -64,6 +57,3 @@ The latest version of this topic can be found at [CA1035: ICollection implementa
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

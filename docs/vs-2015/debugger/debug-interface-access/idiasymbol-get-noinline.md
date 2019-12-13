@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_noInline | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_noInline method"
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_noInline](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-noinline).  
-  
-Retrieves a flag that specifies whether the function has been marked as being not inline (using the [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribute).  
+Retrieves a flag that specifies whether the function has been marked as being not inline (using the [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribute).  
   
 ## Syntax  
   
 ```cpp  
 HRESULT get_noInline(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_noInline(
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means the property is not available for the symbol.  
+> A return value of `S_FALSE` means the property is not available for the symbol.  
   
 ## Requirements  
   
@@ -53,7 +46,4 @@ HRESULT get_noInline(
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)
-
-
-
+ [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)

@@ -1,39 +1,32 @@
 ---
 title: "IDiaSession::findSymbolByRVAEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSession::findSymbolByRVAEx method"
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSession::findSymbolByRVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSession::findSymbolByRVAEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyrvaex).  
-  
 Retrieves a specified symbol type that contains, or is closest to, a specified relative virtual address (RVA) and offset.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT findSymbolByRVAEx (   
-   DWORD        rva,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol,  
-   LONG*        displacement  
+   DWORD        rva,  
+   SymTagEnum   symtag,  
+   IDiaSymbol** ppSymbol,  
+   LONG*        displacement  
 );  
 ```  
   
@@ -65,6 +58,3 @@ pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

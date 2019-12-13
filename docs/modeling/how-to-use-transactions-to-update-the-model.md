@@ -2,13 +2,11 @@
 title: "How to: Use Transactions to Update the Model"
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # How to: Use Transactions to Update the Model
 Transactions make sure that changes that were made to the store are treated as a group. Changes that are grouped can be committed or rolled back as a single unit.
@@ -53,9 +51,9 @@ catch (Exception ex)
 ## Rolling back a transaction
  To ensure that the Store remains in or reverts to its state before the transaction, you can use either of these tactics:
 
-1.  Raise an exception that is not caught inside the scope of the transaction.
+1. Raise an exception that is not caught inside the scope of the transaction.
 
-2.  Explicitly roll back the transaction:
+2. Explicitly roll back the transaction:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();
@@ -95,5 +93,4 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 
 ```csharp
 if (!this.Store.InSerializationTransaction) {...}
-
 ```

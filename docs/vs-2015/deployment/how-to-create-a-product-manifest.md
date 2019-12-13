@@ -1,14 +1,9 @@
 ---
 title: "How to: Create a Product Manifest | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -23,13 +18,11 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # How to: Create a Product Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [How to: Create a Product Manifest](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-product-manifest).  
-  
 To deploy prerequisites for your application, you can create a bootstrapper package. A bootstrapper package contains a single product manifest file but a package manifest for each locale. The package manifest contains localization-specific aspects of your package. This includes strings, end-user license agreements, and the language packs.  
   
  For more information about product manifests, see [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md).  
@@ -38,11 +31,11 @@ To deploy prerequisites for your application, you can create a bootstrapper pack
   
 #### To create the product manifest  
   
-1.  Create a directory for the bootstrapper package. This example uses C:\package.  
+1. Create a directory for the bootstrapper package. This example uses C:\package.  
   
-2.  In Visual Studio, create a new XML file called `product.xml`, and save it to the C:\package folder.  
+2. In Visual Studio, create a new XML file called `product.xml`, and save it to the C:\package folder.  
   
-3.  Add the following XML to describe the XML namespace and product code for the package. Replace the product code with a unique identifier for the package.  
+3. Add the following XML to describe the XML namespace and product code for the package. Replace the product code with a unique identifier for the package.  
   
     ```  
     <Product  
@@ -50,7 +43,7 @@ To deploy prerequisites for your application, you can create a bootstrapper pack
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Add XML to specify that the package has a dependency. This example uses a dependency on Microsoft Windows Installer 3.1.  
+4. Add XML to specify that the package has a dependency. This example uses a dependency on Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -58,7 +51,7 @@ To deploy prerequisites for your application, you can create a bootstrapper pack
       </RelatedProducts>  
     ```  
   
-5.  Add XML to list all the files that are in the bootstrapper package. This example uses the package file name CorePackage.msi.  
+5. Add XML to list all the files that are in the bootstrapper package. This example uses the package file name CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -66,16 +59,16 @@ To deploy prerequisites for your application, you can create a bootstrapper pack
     </PackageFiles>  
     ```  
   
-6.  Copy or move the CorePackage.msi file to the C:\package folder.  
+6. Copy or move the CorePackage.msi file to the C:\package folder.  
   
-7.  Add XML to install the package by using bootstrapper commands. The bootstrapper automatically adds the **/qn** flag to the .msi file, which will install silently. If the file is an .exe, the bootstrapper runs the .exe file by using the shell. The following XML shows no arguments to CorePackage.msi, but you can put command line argument into the Arguments attribute.  
+7. Add XML to install the package by using bootstrapper commands. The bootstrapper automatically adds the **/qn** flag to the .msi file, which will install silently. If the file is an .exe, the bootstrapper runs the .exe file by using the shell. The following XML shows no arguments to CorePackage.msi, but you can put command line argument into the Arguments attribute.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Add the following XML to check if this bootstrapper package is installed. Replace the product code with the GUID for the redistributable component.  
+8. Add the following XML to check if this bootstrapper package is installed. Replace the product code with the GUID for the redistributable component.  
   
     ```  
     <InstallChecks>  
@@ -164,6 +157,3 @@ To deploy prerequisites for your application, you can create a bootstrapper pack
   
 ## See Also  
  [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)
-
-
-

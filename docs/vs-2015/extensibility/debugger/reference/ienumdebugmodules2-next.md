@@ -1,45 +1,38 @@
 ---
 title: "IEnumDebugModules2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugModules2::Next"
 helpviewer_keywords: 
   - "IEnumDebugModules2::Next"
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugModules2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugModules2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2-next).  
-  
 Returns the next set of elements from the enumeration.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG           celt,  
-   IDebugModule2** rgelt,  
-   ULONG*          pceltFetched  
+   ULONG           celt,  
+   IDebugModule2** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
 ```csharp  
 int Next(  
-   uint            celt,  
-   IDebugModule2[] rgelt,  
-   ref uint        pceltFetched  
+   uint            celt,  
+   IDebugModule2[] rgelt,  
+   ref uint        pceltFetched  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int Next(
 ## See Also  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
-

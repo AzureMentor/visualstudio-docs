@@ -1,27 +1,20 @@
 ---
 title: "Creating Parent Container Folders for Solutions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "solutions, creating parent containers"
   - "source control plug-ins, creating parent containers"
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Creating Parent Container Folders for Solutions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Creating Parent Container Folders for Solutions](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 In the Source Control Plug-in API version 1.2, a user can specify a single root source control destination for all Web projects within the solution. This single root is called a Super Unified Root (SUR).  
   
  In the Source Control Plug-in API version 1.1, if the user added a multiproject solution to source control, the user was prompted to specify one source control destination for each Web project.  
@@ -38,15 +31,15 @@ In the Source Control Plug-in API version 1.2, a user can specify a single root 
   
  The [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE almost always creates an SUR folder when adding a solution to source control. Specifically, it does so in the following cases:  
   
--   The project is a file share Web project.  
+- The project is a file share Web project.  
   
--   There are different drives for the project and the solution file.  
+- There are different drives for the project and the solution file.  
   
--   There are different shares for the project and the solution file.  
+- There are different shares for the project and the solution file.  
   
--   Projects were added separately (in a source-controlled solution).  
+- Projects were added separately (in a source-controlled solution).  
   
- In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] it is suggested that the name for the SUR folder be the same as the solution name without the extension. The following table summarizes the behavior in the two versions.  
+  In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] it is suggested that the name for the SUR folder be the same as the solution name without the extension. The following table summarizes the behavior in the two versions.  
   
 |Feature|tSource Control Plug-in API Version 1.1|Source Control Plug-in API Version 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
@@ -69,4 +62,3 @@ In the Source Control Plug-in API version 1.2, a user can specify a single root 
   
 ## See Also  
  [What's New in the Source Control Plug-in API Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "CA2239: Provide deserialization methods for optional fields | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2239"
   - "ProvideDeserializationMethodsForOptionalFields"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2239"
 ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2239: Provide deserialization methods for optional fields
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2239: Provide deserialization methods for optional fields](https://docs.microsoft.com/visualstudio/code-quality/ca2239-provide-deserialization-methods-for-optional-fields).
 
 |||
 |-|-|
@@ -65,6 +58,3 @@ The latest version of this topic can be found at [CA2239: Provide deserializatio
  [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
  [CA2120: Secure serialization constructors](../code-quality/ca2120-secure-serialization-constructors.md)
-
-
-

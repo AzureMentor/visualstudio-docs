@@ -1,14 +1,9 @@
 ---
 title: "CA1401: P-Invokes should not be visible | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "PInvokesShouldNotBeVisible"
   - "CA1401"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "PInvokesShouldNotBeVisible"
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1401: P/Invokes should not be visible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1401: P-Invokes should not be visible](https://docs.microsoft.com/visualstudio/code-quality/ca1401-p-invokes-should-not-be-visible).
 
 |||
 |-|-|
@@ -50,6 +43,3 @@ The latest version of this topic can be found at [CA1401: P-Invokes should not b
 
  [!code-csharp[FxCop.Interoperability.DllImports#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DllImports/cs/FxCop.Interoperability.DllImports.cs#1)]
  [!code-vb[FxCop.Interoperability.DllImports#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DllImports/vb/FxCop.Interoperability.DllImports.vb#1)]
-
-
-

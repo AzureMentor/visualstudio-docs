@@ -1,14 +1,9 @@
 ---
 title: "IDE Constants | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "IDE, errors"
   - "logical views"
@@ -19,14 +14,12 @@ helpviewer_keywords:
   - "physical views"
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDE Constants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDE Constants](https://docs.microsoft.com/visualstudio/extensibility/ide-constants).  
-  
 The <xref:Microsoft.VisualStudio.VSConstants> class provides constants that are specific to the integrated development environment (IDE) and that were previously defined only in header files.  
   
 ## Logical and Physical Views  
@@ -120,4 +113,3 @@ The <xref:Microsoft.VisualStudio.VSConstants> class provides constants that are 
   
 ## See Also  
  [IDE-Defined Commands for Extending Project Systems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

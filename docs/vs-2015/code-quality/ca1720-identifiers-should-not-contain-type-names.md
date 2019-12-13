@@ -1,14 +1,9 @@
 ---
 title: "CA1720: Identifiers should not contain type names | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1720"
   - "IdentifiersShouldNotContainTypeNames"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1720"
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1720: Identifiers should not contain type names
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1720: Identifiers should not contain type names](https://docs.microsoft.com/visualstudio/code-quality/ca1720-identifiers-should-not-contain-type-names).
 
 |||
 |-|-|
@@ -45,89 +38,89 @@ The latest version of this topic can be found at [CA1720: Identifiers should not
 
  Each discrete token in the name of the parameter or member is checked against the following language-specific data type names, in a case-insensitive manner:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   Integer
+- Integer
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Unsigned
+- Unsigned
 
--   Signed
+- Signed
 
--   Float
+- Float
 
--   Float32
+- Float32
 
--   Float64
+- Float64
 
- In addition, the names of a parameter are also checked against the following language-independent data type names, in a case-insensitive manner:
+  In addition, the names of a parameter are also checked against the following language-independent data type names, in a case-insensitive manner:
 
--   Object
+- Object
 
--   Obj
+- Obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   Ptr
+- Ptr
 
--   Pointer
+- Pointer
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- Decimal
 
--   Guid
+- Guid
 
 ## How to Fix Violations
  **If fired against a parameter:**
@@ -149,6 +142,3 @@ The latest version of this topic can be found at [CA1720: Identifiers should not
  [CA1707: Identifiers should not contain underscores](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1719: Parameter names should not match member names](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-

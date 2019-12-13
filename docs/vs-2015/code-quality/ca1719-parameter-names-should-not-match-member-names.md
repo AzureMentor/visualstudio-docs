@@ -1,14 +1,9 @@
 ---
 title: "CA1719: Parameter names should not match member names | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "ParameterNamesShouldNotMatchMemberNames"
   - "CA1719"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "ParameterNamesShouldNotMatchMemberNames"
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1719: Parameter names should not match member names
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1719: Parameter names should not match member names](https://docs.microsoft.com/visualstudio/code-quality/ca1719-parameter-names-should-not-match-member-names).
 
 |||
 |-|-|
@@ -51,6 +44,3 @@ The latest version of this topic can be found at [CA1719: Parameter names should
  [CA1708: Identifiers should differ by more than case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Identifiers should not contain underscores](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-
-
-

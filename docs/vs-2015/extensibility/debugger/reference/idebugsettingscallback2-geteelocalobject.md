@@ -1,45 +1,38 @@
 ---
 title: "IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "IDebugSettingsCallback2::GetEELocalObject"
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugSettingsCallback2::GetEELocalObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugSettingsCallback2::GetEELocalObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject).  
-  
 Retrieves a expression evaluator local object given the metric name.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetEELocalObject(  
-   REFGUID     guidLang,  
-   REFGUID     guidVendor,  
-   LPCWSTR     pszMetric,  
-   IUnknown ** ppUnk  
+   REFGUID     guidLang,  
+   REFGUID     guidVendor,  
+   LPCWSTR     pszMetric,  
+   IUnknown ** ppUnk  
 );  
 ```  
   
 ```csharp  
 private int GetEELocalObject(  
-   ref Guid          guidLang,  
-   ref Guid          guidVendor,  
-   string            pszMetric,  
-   out System.Object ppUnk  
+   ref Guid          guidLang,  
+   ref Guid          guidVendor,  
+   string            pszMetric,  
+   out System.Object ppUnk  
 );  
 ```  
   
@@ -61,4 +54,3 @@ private int GetEELocalObject(
   
 ## See Also  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
-

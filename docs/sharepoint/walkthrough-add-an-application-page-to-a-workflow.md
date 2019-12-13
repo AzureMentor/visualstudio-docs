@@ -1,9 +1,6 @@
 ---
 title: "Walkthrough: Add an Application Page to a Workflow | Microsoft Docs"
-ms.custom: ""
 ms.date: "02/02/2017"
-ms.technology:
-  - "office-development"
 ms.topic: "conceptual"
 dev_langs:
   - "VB"
@@ -13,9 +10,9 @@ dev_langs:
 helpviewer_keywords:
   - "SharePoint development in Visual Studio, adding applications page to workflow"
   - "application page [SharePoint development in Visual Studio]"
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
   - "office"
 ---
@@ -24,33 +21,33 @@ ms.workload:
 
  This walkthrough demonstrates the following tasks:
 
--   Adding an ASPX application page to a SharePoint workflow project.
+- Adding an ASPX application page to a SharePoint workflow project.
 
--   Obtaining data from the workflow project and manipulating it.
+- Obtaining data from the workflow project and manipulating it.
 
--   Displaying data in a table on the application page.
+- Displaying data in a table on the application page.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
 
--   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint.
+- Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   You also have to complete the project in the topic [Walkthrough: Create a workflow with association and initiation forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- You also have to complete the project in the topic [Walkthrough: Create a workflow with association and initiation forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## Ammend the workflow code
  First, add a line of code to the workflow to set the value of the Outcome column to the amount of the expense report. This value is used later in the expense report summary calculation.
 
 #### To set the value of the outcome column in the workflow
 
-1.  Load the completed project from the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Load the completed project from the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Open the code for *Workflow1.cs* or *Workflow1.vb* (depending on your programming language).
+2. Open the code for *Workflow1.cs* or *Workflow1.vb* (depending on your programming language).
 
-3.  To the bottom of the `createTask1_MethodInvoking` method, add the following code:
+3. To the bottom of the `createTask1_MethodInvoking` method, add the following code:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -67,11 +64,11 @@ ms.workload:
 
 #### To add an application page to the project
 
-1.  Choose the ExpenseReport project, and then, on the menu bar, choose **Project** > **Add New Item**.
+1. Choose the ExpenseReport project, and then, on the menu bar, choose **Project** > **Add New Item**.
 
-2.  In the **Templates** pane, choose the **Application Page** template, use the default name for the project item (**ApplicationPage1.aspx**), and choose the **Add** button.
+2. In the **Templates** pane, choose the **Application Page** template, use the default name for the project item (**ApplicationPage1.aspx**), and choose the **Add** button.
 
-3.  In the [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] of ApplicationPage1.aspx, replace the `PlaceHolderMain` section with the following:
+3. In the [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] of ApplicationPage1.aspx, replace the `PlaceHolderMain` section with the following:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -85,7 +82,7 @@ ms.workload:
 
      This code adds a table to the page together with a title.
 
-4.  Add a title to the application page by replacing the `PlaceHolderPageTitleInTitleArea` section with the following:
+4. Add a title to the application page by replacing the `PlaceHolderPageTitleInTitleArea` section with the following:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -98,9 +95,9 @@ ms.workload:
 
 #### To code the application page
 
-1.  Choose the **ApplicationPage1.aspx** node, and then, on the menu bar, choose **View** > **Code** to display the code behind the application page.
+1. Choose the **ApplicationPage1.aspx** node, and then, on the menu bar, choose **View** > **Code** to display the code behind the application page.
 
-2.  Replace the **using** or **Import** statements (depending on your programming language) at the top of the class with the following:
+2. Replace the **using** or **Import** statements (depending on your programming language) at the top of the class with the following:
 
     ```vb
     Imports System
@@ -128,7 +125,7 @@ ms.workload:
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Add the following code to the `Page_Load` method:
+3. Add the following code to the `Page_Load` method:
 
     ```vb
     Try
@@ -292,30 +289,30 @@ ms.workload:
     ```
 
     > [!WARNING]
-    >  Be sure to replace "TestServer" in the code with the name of a valid server that's running SharePoint.
+    > Be sure to replace "TestServer" in the code with the name of a valid server that's running SharePoint.
 
 ## Test the application page
  Next, determine whether the application page displays the expense data correctly.
 
 #### To test the application page
 
-1.  Choose the **F5** key to run and deploy the project to SharePoint.
+1. Choose the **F5** key to run and deploy the project to SharePoint.
 
-2.  Choose the **Home** button, and then choose the **Shared Documents** link on the QuickLaunch bar to display the Shared Documents list on the SharePoint site.
+2. Choose the **Home** button, and then choose the **Shared Documents** link on the QuickLaunch bar to display the Shared Documents list on the SharePoint site.
 
-3.  To represent expense reports for this example, upload some new documents into the Documents list by choosing the **Documents** link on the **LibraryTools** tab at the top of the page and then choosing the **Upload Document** button on the tool ribbon.
+3. To represent expense reports for this example, upload some new documents into the Documents list by choosing the **Documents** link on the **LibraryTools** tab at the top of the page and then choosing the **Upload Document** button on the tool ribbon.
 
-4.  After you upload some documents, instantiate the workflow by choosing the **Library** link on the **LibraryTools** tab at the top of the page and then choosing the **Library Settings** button on the tool ribbon.
+4. After you upload some documents, instantiate the workflow by choosing the **Library** link on the **LibraryTools** tab at the top of the page and then choosing the **Library Settings** button on the tool ribbon.
 
-5.  In the **Document Library Settings** page, choose the **Workflow Settings** link in the **Permissions and Management** section.
+5. In the **Document Library Settings** page, choose the **Workflow Settings** link in the **Permissions and Management** section.
 
-6.  In the **Workflow Settings** page, choose the **Add a workflow** link.
+6. In the **Workflow Settings** page, choose the **Add a workflow** link.
 
-7.  In the **Add a Workflow** page, choose the **ExpenseReport - Workflow1** workflow, enter a name for the workflow, such as **ExpenseTest**, and then choose the **Next** button.
+7. In the **Add a Workflow** page, choose the **ExpenseReport - Workflow1** workflow, enter a name for the workflow, such as **ExpenseTest**, and then choose the **Next** button.
 
-     The workflow Association form appears. Use it to report the expense limit amount.
+    The workflow Association form appears. Use it to report the expense limit amount.
 
-8.  In the Association form, enter **1000** into the **Auto Approval Limit** box, and then choose the **Associate Workflow** button.
+8. In the Association form, enter **1000** into the **Auto Approval Limit** box, and then choose the **Associate Workflow** button.
 
 9. Choose the **Home** button to return to the SharePoint home page.
 
@@ -331,7 +328,7 @@ ms.workload:
 
 14. Repeat steps 11 - 13 with other documents in the Shared Documents list. (The exact number of documents is not important.)
 
-15. Display the expense report summary application page by opening the following URL in a Web browser: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Display the expense report summary application page by opening the following URL in a Web browser: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      The expense report summary page lists all of the expense reports that exceeded the allocated amount, the amount they exceeded it by, and the total amount for all reports.
 
@@ -340,9 +337,9 @@ ms.workload:
 
  You can learn more about how to design SharePoint page content by using the Visual Web Designer in Visual Studio from these topics:
 
--   [Create web parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Create web parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Create reusable controls for web parts or application pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Create reusable controls for web parts or application pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## See also
 

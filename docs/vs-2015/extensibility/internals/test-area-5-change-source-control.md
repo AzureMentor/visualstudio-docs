@@ -1,42 +1,35 @@
 ---
 title: "Test Area 5: Change Source Control | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control [Visual Studio SDK], changing"
   - "source control plug-ins, changing source control"
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Test Area 5: Change Source Control
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Test Area 5: Change Source Control](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 This source-control plug-in test area covers changing the source control via the **Change Source Control** command.  
   
  **Change Source Control** command provides four basic functions for the user:  
   
--   **Bind:**  
+- **Bind:**  
   
-     Allows a user to establish or reestablish a source control link between a solution/project and the version store.  
+   Allows a user to establish or reestablish a source control link between a solution/project and the version store.  
   
--   **Unbind:**  
+- **Unbind:**  
   
-     Removes a project/solution from source control on a per-connection basis.  
+   Removes a project/solution from source control on a per-connection basis.  
   
--   **Connect/Disconnect:**  
+- **Connect/Disconnect:**  
   
- Toggles connected or offline state of the controlled solution, which is covered in Area 3. For more information, see [Test Area 3: Check Out/Undo Checkout](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Toggles connected or offline state of the controlled solution, which is covered in Area 3. For more information, see [Test Area 3: Check Out/Undo Checkout](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## Command Menu Access  
  The following [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment menu path is used in the test cases.  
@@ -77,4 +70,3 @@ This source-control plug-in test area covers changing the source control via the
   
 ## See Also  
  [Test Guide for Source Control Plug-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "QUERYCHANGESFUNC | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 f1_keywords: 
   - "QUERYCHANGESFUNC"
 helpviewer_keywords: 
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "QUERYCHANGESDATA structure"
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [QUERYCHANGESFUNC](https://docs.microsoft.com/visualstudio/extensibility/querychangesfunc).  
-  
 This is a callback function used by the [SccQueryChanges](../extensibility/sccquerychanges-function.md) operation to enumerate a collection of file names and determine each file's status.  
   
  The `SccQueryChanges` function is given a list of files and a pointer to the `QUERYCHANGESFUNC` callback. The source control plug-in enumerates over the given list and provides status (via this callback) for each file in the list.  
@@ -32,8 +25,8 @@ This is a callback function used by the [SccQueryChanges](../extensibility/sccqu
   
 ```cpp#  
 typedef BOOL (*QUERYCHANGESFUNC)(  
-   LPVOID pvCallerData,  
-   QUERYCHANGESDATA * pChangesData  
+   LPVOID pvCallerData,  
+   QUERYCHANGESDATA * pChangesData  
 );  
 ```  
   
@@ -53,7 +46,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|Stop processing.|  
 |SCC_E_xxx|Any appropriate SCC error should stop processing.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA Structure  
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA Structure  
  The structure passed in for each file looks like the following:  
   
 ```cpp#  
@@ -105,4 +98,3 @@ struct QUERYCHANGESDATA_W
  [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [Error Codes](../extensibility/error-codes.md)
-

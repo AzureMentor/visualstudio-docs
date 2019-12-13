@@ -1,40 +1,33 @@
 ---
 title: "IDebugProcess3::DisableENC | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProcess3::DisableENC"
 helpviewer_keywords: 
   - "IDebugProcess3::DisableENC"
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProcess3::DisableENC](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-disableenc).  
-  
 This method explicitly disables Edit and Continue on this process (and all programs it contains). A custom port supplier should always return `E_NOTIMPL`.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT DisableENC(  
-   EncUnavailableReason reason  
+   EncUnavailableReason reason  
 );  
 ```  
   
 ```csharp  
-   EncUnavailableReason reason  
+   EncUnavailableReason reason  
 );  
 ```  
   
@@ -46,7 +39,7 @@ HRESULT DisableENC(
  If successful, returns `S_OK`; otherwise, returns error code.  
   
 > [!NOTE]
->  A custom port supplier should always return `E_NOTIMPL`.  
+> A custom port supplier should always return `E_NOTIMPL`.  
   
 ## Remarks  
  Once Edit and Continue is disabled for a process, it can be re-enabled only by restarting the process.  
@@ -54,4 +47,3 @@ HRESULT DisableENC(
 ## See Also  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)
-

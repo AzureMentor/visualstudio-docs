@@ -1,14 +1,9 @@
 ---
 title: "CA1407: Avoid static members in COM visible types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1407"
   - "AvoidStaticMembersInComVisibleTypes"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "AvoidStaticMembersInComVisibleTypes"
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1407: Avoid static members in COM visible types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1407: Avoid static members in COM visible types](https://docs.microsoft.com/visualstudio/code-quality/ca1407-avoid-static-members-in-com-visible-types).
 
 |||
 |-|-|
@@ -52,13 +45,13 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 namespace Samples
 {
-    [ComVisible(true)]
-    public class MyClass
-    {
-        public static void DoSomething()
-        {
-        }
-    }
+    [ComVisible(true)]
+    public class MyClass
+    {
+        public static void DoSomething()
+        {
+        }
+    }
 }
 ```
 
@@ -97,7 +90,4 @@ namespace Samples
  [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## See Also
- [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
-
-
-
+ [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

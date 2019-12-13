@@ -1,47 +1,40 @@
 ---
 title: "IDebugReference2::SetValueAsReference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugReference2::SetValueAsReference"
 helpviewer_keywords: 
   - "IDebugReference2::SetValueAsReference"
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugReference2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugReference2::SetValueAsReference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-setvalueasreference).  
-  
 Sets the value of a reference from another reference. Reserved for future use.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT SetValueAsReference (   
-   IDebugReference2** rgpArgs,  
-   DWORD              dwArgCount,  
-   IDebugReference2*  pValue,  
-   DWORD              dwTimeout  
+   IDebugReference2** rgpArgs,  
+   DWORD              dwArgCount,  
+   IDebugReference2*  pValue,  
+   DWORD              dwTimeout  
 );  
 ```  
   
 ```cpp#  
 int SetValueAsReference (   
-   IDebugReference2[] rgpArgs,  
-   uint               dwArgCount,  
-   IDebugReference2   pValue,  
-   uint               dwTimeout  
+   IDebugReference2[] rgpArgs,  
+   uint               dwArgCount,  
+   IDebugReference2   pValue,  
+   uint               dwTimeout  
 );  
 ```  
   
@@ -63,4 +56,3 @@ int SetValueAsReference ( 
   
 ## See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

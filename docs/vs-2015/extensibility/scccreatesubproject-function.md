@@ -1,41 +1,34 @@
 ---
 title: "SccCreateSubProject Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccCreateSubProject"
 helpviewer_keywords: 
   - "SccCreateSubProject function"
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccCreateSubProject Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccCreateSubProject Function](https://docs.microsoft.com/visualstudio/extensibility/scccreatesubproject-function).  
-  
 This function creates a subproject with the given name under an existing parent project specified by the `lpParentProjPath` argument.  
   
 ## Syntax  
   
 ```cpp#  
 SCCRTN SccCreateSubProject(  
-   LPVOID pContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPCSTR lpParentProjPath,  
-   LPCSTR lpSubProjName,  
-   LPSTR  lpAuxProjPath,  
-   LPSTR  lpSubProjPath  
+   LPVOID pContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPCSTR lpParentProjPath,  
+   LPCSTR lpSubProjName,  
+   LPSTR  lpAuxProjPath,  
+   LPSTR  lpSubProjPath  
 );  
 ```  
   
@@ -98,4 +91,3 @@ SCCRTN SccCreateSubProject(
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

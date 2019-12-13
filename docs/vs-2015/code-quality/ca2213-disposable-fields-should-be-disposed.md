@@ -1,14 +1,9 @@
 ---
 title: "CA2213: Disposable fields should be disposed | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DisposableFieldsShouldBeDisposed"
   - "CA2213"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DisposableFieldsShouldBeDisposed"
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2213: Disposable fields should be disposed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2213: Disposable fields should be disposed](https://docs.microsoft.com/visualstudio/code-quality/ca2213-disposable-fields-should-be-disposed).
 
 |||
 |-|-|
@@ -46,7 +39,7 @@ The latest version of this topic can be found at [CA2213: Disposable fields shou
  It is safe to suppress a warning from this rule if you are not responsible for releasing the resource held by the field, or if the call to <xref:System.IDisposable.Dispose%2A> occurs at a deeper calling level than the rule checks.
 
 ## Example
- The following example shows a type `TypeA` that implements <xref:System.IDisposable> (`FT` in the previosu discussion).
+ The following example shows a type `TypeA` that implements <xref:System.IDisposable> (`FT` in the previous discussion).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
@@ -57,7 +50,4 @@ The latest version of this topic can be found at [CA2213: Disposable fields shou
 
 ## See Also
  <xref:System.IDisposable?displayProperty=fullName>
- [Dispose Pattern](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ [Dispose Pattern](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_arrayIndexType | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_arrayIndexType method"
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_arrayIndexType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-arrayindextype).  
-  
 Retrieves the symbol interface of the array index type of the symbol.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_arrayIndexType (   
-   IDiaSymbol** pRetVal  
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_arrayIndexType ( 
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means the property is not available for the symbol.  
+> A return value of `S_FALSE` means the property is not available for the symbol.  
   
 ## Remarks  
  Some languages can specify the type used as an index to an array. The symbol returned from this method specifies that type.  
@@ -56,6 +49,3 @@ HRESULT get_arrayIndexType ( 
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

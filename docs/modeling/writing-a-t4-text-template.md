@@ -6,13 +6,11 @@ helpviewer_keywords:
   - "text templates, syntax"
   - "text templates, guide"
   - "text templates, functions that generate text"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Writing a T4 Text Template
 A text template contains the text that will be generated from it. For example, a template that creates a web page will contain "\<html>..." and all the other standard parts of an HTML page. Inserted into the template are *control blocks*, which are fragments of program code. Control blocks provide varying values and allow parts of the text to be conditional and repeated.
@@ -21,11 +19,11 @@ A text template contains the text that will be generated from it. For example, a
 
  Text templates are composed of the following parts:
 
--   **Directives** - elements that control how the template is processed.
+- **Directives** - elements that control how the template is processed.
 
--   **Text blocks** - content that is copied directly to the output.
+- **Text blocks** - content that is copied directly to the output.
 
--   **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.
+- **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.
 
 To try the examples in this topic, copy them into a template file as described in [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md). After editing the template file, save it, and then inspect the output **.txt** file.
 
@@ -90,7 +88,7 @@ Hello!
  You can insert a text block wherever a `Write();` statement would be allowed in the code.
 
 > [!NOTE]
->  When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.
+> When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.
 
 ### Expression control blocks
  An expression control block evaluates an expression and converts it to a string. This is inserted into the output file.
@@ -232,7 +230,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Load a file as a navigable model**. A more powerful method is to read the data as a model, which your text template code can navigate. For example, you can load an XML file and navigate it with XPath expressions. You could also use [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) to create a set of classes with which you can read the XML data.
+ **Load a file as a navigable model**. A more powerful method is to read the data as a model, which your text template code can navigate. For example, you can load an XML file and navigate it with XPath expressions. You could also use [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) to create a set of classes with which you can read the XML data.
 
  **Edit the model file in a diagram or form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] provides tools that let you edit a model as a diagram or Windows form. This makes it easier to discuss the model with users of the generated application. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] also creates a set of strongly-typed classes that reflect the structure of the model. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
@@ -249,10 +247,9 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
-You can also obtain other services that are provided by the host. For more information, see [Accessing Visual Studio or other Hosts from a Template](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+You can also obtain other services that are provided by the host. For more information, see [Accessing Visual Studio or other Hosts from a Template](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ### Design-time Text Templates run in a separate AppDomain
 
@@ -266,7 +263,7 @@ You can also obtain other services that are provided by the host. For more infor
 ## Related topics
 
 |Task|Topic|
-|----------|-----------|
+|-|-|
 |Writing a template.|[Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generate text by using program code.|[Text Template Structure](../modeling/writing-a-t4-text-template.md)|
 |Generate files in a Visual Studio solution.|[Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

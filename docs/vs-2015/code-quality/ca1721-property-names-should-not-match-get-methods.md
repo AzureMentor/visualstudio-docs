@@ -1,14 +1,9 @@
 ---
 title: "CA1721: Property names should not match get methods | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1721"
   - "PropertyNamesShouldNotMatchGetMethods"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "PropertyNamesShouldNotMatchGetMethods"
 ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1721: Property names should not match get methods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1721: Property names should not match get methods](https://docs.microsoft.com/visualstudio/code-quality/ca1721-property-names-should-not-match-get-methods).
 
 |||
 |-|-|
@@ -48,7 +41,7 @@ The latest version of this topic can be found at [CA1721: Property names should 
  Do not suppress a warning from this rule.
 
 > [!NOTE]
->  This warning may be excluded if the Get method is caused by implementing IExtenderProvider interface.
+> This warning may be excluded if the Get method is caused by implementing IExtenderProvider interface.
 
 ## Example
  The following example contains a method and property that violate this rule.
@@ -58,6 +51,3 @@ The latest version of this topic can be found at [CA1721: Property names should 
 
 ## Related Rules
  [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-

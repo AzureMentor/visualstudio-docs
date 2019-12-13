@@ -1,15 +1,13 @@
 ---
 title: Image Editor
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
   - "vs.graphics.designer.imageeditor"
   - "vs.graphics.imageeditor"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -24,7 +22,7 @@ You can use the **Image Editor** to work with the kinds of rich texture and imag
 The **Image Editor** supports the following image formats:
 
 |Format name|File Name Extension|
-|-----------------|-------------------------|
+|-----------------| - |
 |Portable Network Graphics|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Direct Draw Surface|*.dds*|
@@ -239,7 +237,7 @@ The following table describes tool properties:
 ## Keyboard shortcuts
 
 |Command|Keyboard shortcuts|
-|-------------|------------------------|
+|-------------| - |
 |Switch to **Select** mode|**S**|
 |Switch to **Zoom** mode|**Z**|
 |Switch to **Pan** mode|**K**|

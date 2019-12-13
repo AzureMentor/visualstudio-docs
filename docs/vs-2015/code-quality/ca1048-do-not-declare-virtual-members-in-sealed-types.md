@@ -1,14 +1,9 @@
 ---
 title: "CA1048: Do not declare virtual members in sealed types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotDeclareVirtualMembersInSealedTypes"
   - "CA1048"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1048"
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1048: Do not declare virtual members in sealed types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1048: Do not declare virtual members in sealed types](https://docs.microsoft.com/visualstudio/code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types).
 
 |||
 |-|-|
@@ -51,6 +44,3 @@ The latest version of this topic can be found at [CA1048: Do not declare virtual
  The following example shows a type that violates this rule.
 
  [!code-cpp[FxCop.Design.SealedVirtual#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.SealedVirtual/cpp/FxCop.Design.SealedVirtual.cpp#1)]
-
-
-

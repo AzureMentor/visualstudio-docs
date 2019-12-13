@@ -1,39 +1,32 @@
 ---
 title: "IDebugCodeContext3::GetModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "IDebugCodeContext3::GetModule"
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCodeContext3::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCodeContext3::GetModule](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcodecontext3-getmodule).  
-  
 Retrieves a reference to the interface of the debug module.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetModule(   
-   IDebugModule2 **ppModule  
+   IDebugModule2 **ppModule  
 );  
 ```  
   
 ```csharp  
 public int GetModule(   
-   out IDebugModule2 ppModule  
+   out IDebugModule2 ppModule  
 );  
 ```  
   
@@ -67,4 +60,3 @@ Error:
   
 ## See Also  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
-

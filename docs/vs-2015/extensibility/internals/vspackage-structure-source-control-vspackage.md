@@ -1,27 +1,20 @@
 ---
 title: "VSPackage Structure (Source Control VSPackage) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "VSPackages, structure"
   - "source control packages, VSPackage overview"
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # VSPackage Structure (Source Control VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [VSPackage Structure (Source Control VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 The Source Control Package SDK provides guidelines for creating a VSPackage that allow a source control implementer to integrate his or her source control functionality with the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environment. A VSPackage is a COM component that is typically loaded on demand by the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE) based on the services that are advertised by the package in its registry entries. Every VSPackage must implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. A VSPackage typically consumes services offered by the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE and proffers some services of its own.  
   
  A VSPackage declares its menu items and establishes a default item state via the .vsct file. The [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE displays the menu items in this state until the VSPackage is loaded. Subsequently, the VSPackage's implementation of the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> method is called to enable or disable menu items.  
@@ -31,23 +24,23 @@ The Source Control Package SDK provides guidelines for creating a VSPackage that
   
  The VSPackage semantics include:  
   
--   Interface to be implemented by virtue of being a VSPackage (the `IVsPackage` interface)  
+- Interface to be implemented by virtue of being a VSPackage (the `IVsPackage` interface)  
   
--   UI Command implementation (.vsct file and implementation of the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
+- UI Command implementation (.vsct file and implementation of the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
   
--   Registration of the VSPackage with [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Registration of the VSPackage with [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- The source control VSPackage must communicate with these other [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entities:  
+  The source control VSPackage must communicate with these other [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entities:  
   
--   Projects  
+- Projects  
   
--   Editors  
+- Editors  
   
--   Solutions  
+- Solutions  
   
--   Windows  
+- Windows  
   
--   The running document table  
+- The running document table  
   
 ### Visual Studio Environment Services That May Be Consumed  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
@@ -78,4 +71,3 @@ The Source Control Package SDK provides guidelines for creating a VSPackage that
 ## See Also  
  [Design Elements](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [Related Services and Interfaces](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
-

@@ -1,26 +1,19 @@
 ---
 title: "Event Sources (Visual Studio SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "debugging [Debugging SDK], event sources"
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Event Sources (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Event Sources (Visual Studio SDK)](https://docs.microsoft.com/visualstudio/extensibility/debugger/event-sources-visual-studio-sdk).  
-  
 There are two sources of events: the debug engine (DE) and the session debug manager (SDM). Events sent from a DE have a non-NULL engine, while events sent from the SDM have a NULL engine.  
   
 ## Example  
@@ -77,4 +70,3 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ## See Also  
  [Sending Events](../../extensibility/debugger/sending-events.md)
-

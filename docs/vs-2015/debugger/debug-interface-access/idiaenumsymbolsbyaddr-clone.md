@@ -1,36 +1,29 @@
 ---
 title: "IDiaEnumSymbolsByAddr::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaEnumSymbolsByAddr::Clone method"
 ms.assetid: f4582c69-bc3f-4a26-bcca-b641102b85fe
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaEnumSymbolsByAddr::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaEnumSymbolsByAddr::Clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone).  
-  
 Makes a copy of an object.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone (   
-   IDiaEnumSymbolsByAddr** ppenum  
+   IDiaEnumSymbolsByAddr** ppenum  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT Clone ( 
   
 ## See Also  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
-
-
-

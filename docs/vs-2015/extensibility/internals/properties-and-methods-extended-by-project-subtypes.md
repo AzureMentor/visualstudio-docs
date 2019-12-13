@@ -1,27 +1,20 @@
 ---
 title: "Properties and Methods Extended by Project Subtypes | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "project subtypes, extended methods"
   - "project subtypes, extended properties"
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Properties and Methods Extended by Project Subtypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Properties and Methods Extended by Project Subtypes](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-and-methods-extended-by-project-subtypes).  
-  
 A project subtype has a lot of power to influence the behavior of the project because it is constructed as an aggregator of a base project. This section summarizes some of the features that can be enhanced or modified by project subtypes.  
   
 ## Features Gained by Aggregation  
@@ -53,4 +46,3 @@ A project subtype has a lot of power to influence the behavior of the project be
   
 ## See Also  
  [Project Subtypes Design](../../extensibility/internals/project-subtypes-design.md)
-

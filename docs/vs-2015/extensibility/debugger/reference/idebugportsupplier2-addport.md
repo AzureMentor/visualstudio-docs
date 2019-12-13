@@ -1,43 +1,36 @@
 ---
 title: "IDebugPortSupplier2::AddPort | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPortSupplier2::AddPort"
 helpviewer_keywords: 
   - "IDebugPortSupplier2::AddPort"
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPortSupplier2::AddPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPortSupplier2::AddPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier2-addport).  
-  
 Adds a port.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT AddPort(   
-   IDebugPortRequest2* pRequest,  
-   IDebugPort2**       ppPort  
+   IDebugPortRequest2* pRequest,  
+   IDebugPort2**       ppPort  
 );  
 ```  
   
 ```csharp  
 int AddPort(   
-   IDebugPortRequest2 pRequest,  
-   out IDebugPort2    ppPort  
+   IDebugPortRequest2 pRequest,  
+   out IDebugPort2    ppPort  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int AddPort( 
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)
-

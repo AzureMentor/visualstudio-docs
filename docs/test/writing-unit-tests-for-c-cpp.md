@@ -1,11 +1,10 @@
 ---
-title: "Write unit tests for C/C++ in Visual Studio"
-ms.date: 11/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+title: "Write unit tests for C/C++"
+description: Write C++ unit tests in Visual Studio using various test frameworks including CTest, Boost.Test and Google Test.
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: "mblome"
-manager: douge
+manager: markl
 ms.workload:
   - "cplusplus"
 author: mikeblome
@@ -26,13 +25,17 @@ Visual Studio includes these C++ test frameworks with no additional downloads re
 
 In addition to the installed frameworks, you can write your own test adapter for whatever framework you would like to use within Visual Studio. A test adapter can integrate unit tests with the **Test Explorer** window. Several third-party adapters are available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com). For more information, see [Install third-party unit test frameworks](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 version 15.5**
+**Visual Studio 2017 and later (Professional and Enterprise)**
 
-- **Google Test Adapter** is included as a default component of the **Desktop development with C++** workload. It has a project template that you can add to a solution via the  **Add New Project** context menu on the solution node in **Solution Explorer**, and options you can configure via **Tools** > **Options**. For more information, see [How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
+C++ unit test projects support [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-- **Boost.Test** is included as a default component of the **Desktop development with C++** workload. It is integrated with **Test Explorer** but currently does not have project template, therefore it must be manually configured. For more information, see [How to: use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
+**Visual Studio 2017 and later (all editions)**
 
-- **CTest** support is included with the [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) component which is part of the **Desktop development with C++** workload. However, CTest is not yet fully integrated with **Test Explorer**. For more information, see [How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
+- **Google Test Adapter** is included as a default component of the **Desktop development with C++** workload. It has a project template that you can add to a solution via the **Add New Project** right-click menu on the solution node in **Solution Explorer**, and options you can configure via **Tools** > **Options**. For more information, see [How to: Use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
+
+- **Boost.Test** is included as a default component of the **Desktop development with C++** workload. It is integrated with **Test Explorer** but currently does not have project template, therefore it must be manually configured. For more information, see [How to: Use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
+
+- **CTest** support is included with the **C++ CMake tools** component, which is part of the **Desktop development with C++** workload. However, CTest is not yet fully integrated with **Test Explorer**. For more information, see [How to: Use CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 and earlier**
 
@@ -42,11 +45,25 @@ You can download the Google Test adapter and Boost.Test Adapter extensions on th
 
 The following sections show the basic steps to get you started with C++ unit testing. The basic configuration is very similar for the Microsoft and Google Test frameworks. Boost.Test requires that you manually create a test project.
 
-### Create a test project
+::: moniker range="vs-2019"
+
+### Create a test project in Visual Studio 2019
+
+You define and run tests inside one or more test projects that are in the same solution as the code you want to test. To add a new test project to an existing solution, right-click on the Solution node in **Solution Explorer** and choose **Add** > **New Project**. Set **Language** to C++ and type "test" into the search box. The following illustration shows the test projects that are available when the **Desktop Development with C++** and the **UWP Development** workload are installed:
+
+![C++ Test Projects in VIsual Studio 2019](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### Create a test project in Visual Studio 2017
 
 You define and run tests inside one or more test projects that are in the same solution as the code you want to test. To add a new test project to an existing solution, right-click on the Solution node in **Solution Explorer** and choose **Add** > **New Project**. Then in the left pane choose **Visual C++ Test** and choose one of the project types from the center pane. The following illustration shows the test projects that are available when the **Desktop Development with C++** workload is installed:
 
 ![C++ Test Projects](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### Create references to other projects in the solution
 
@@ -54,16 +71,22 @@ To enable your test code to access the functions in the project to be tested, ad
 
 ![Add reference](media/cpp-add-ref-test-project.png)
 
+### Link to object or library files
+
+If the test code doesn't export the functions that you want to test, you can add the output .obj or .lib files to the dependencies of the test project. See [To link the tests to the object or library files](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
+
 ### Add #include directives for header files
 
 Next, in your unit test *.cpp* file, add an `#include` directive for any header files that declare the types and functions you want to test. Type `#include "` and then IntelliSense will activate to help you choose. Repeat for any additional headers.
 
 ![Add include directives](media/cpp-add-includes-test-project.png)
 
+To avoid having to type the full path in each include statement in the source file, you can add the required folders in **Project** > **Properties** > **C/C++** > **General** > **Additional Include Directories**.
+
 ### Write test methods
 
 > [!NOTE]
-> This section shows syntax for the Microsoft Unit Testing Framework for C/C++. It is documented here: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). For Google Test documentation, see [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). For Boost.Test, see [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> This section shows syntax for the Microsoft Unit Testing Framework for C/C++. It is documented here: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). For Google Test documentation, see [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). For Boost.Test, see [Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 The *.cpp* file in your test project has a stub class and method defined for you as an example of how to write test code. Note that the signatures use the TEST_CLASS and TEST_METHOD macros, which make the methods discoverable from the **Test Explorer** window.
 
@@ -74,13 +97,14 @@ TEST_CLASS and TEST_METHOD are part of the [Microsoft Native Test Framework](mic
 A TEST_METHOD returns void. To produce a test result, use the static methods in the `Assert` class to test actual results against what is expected. In the following example, assume `MyClass` has a constructor that takes a `std::string`. We can test that the constructor initializes the class as expected like so:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-		{
-			std::string name = "Bill";
-			MyClass mc(name);
-			Assert::AreEqual(name, mc.GetName());
-		}
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 In the previous example, the result of the `Assert::AreEqual` call determines whether the test passes or fails. The Assert class contains many other methods for comparing expected vs. actual results.
 
 You can add *traits* to test methods to specify test owners, priority and other information. You can then use these values to sort and group tests in **Test Explorer**. For more information, see [Run unit tests with Test Explorer](run-unit-tests-with-test-explorer.md).
@@ -106,6 +130,24 @@ For more information about using **Test Explorer**, see [Run unit tests with Tes
 
 For best practices related to unit testing, see [Unit test basics](unit-test-basics.md)
 
+## Use CodeLens
+
+**Visual Studio 2017 and later (Professional and Enterprise editions)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) enables you to quickly see the status of a unit test without leaving the code editor. You can initialize CodeLens for a C++ unit test project in any of these ways:
+
+- Edit and build your test project or solution.
+- Rebuild your project or solution.
+- Run test(s) from the **Test Explorer** window.
+
+After **CodeLens** is initialized, you can see test status icons above each unit test.
+
+![C++ CodeLens Icons](media/cpp-test-codelens-icons.png)
+
+Click on the icon for more information, or to run or debug the unit test:
+
+![C++ CodeLens Run and Debug](media/cpp-test-codelens-run-debug.png)
+
 ## See also
 
-[Unit test your code](unit-test-your-code.md)
+- [Unit test your code](unit-test-your-code.md)

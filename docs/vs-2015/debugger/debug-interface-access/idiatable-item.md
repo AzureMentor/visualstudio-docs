@@ -1,37 +1,30 @@
 ---
 title: "IDiaTable::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaTable::Item method"
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaTable::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaTable::Item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiatable-item).  
-  
 Retrieves a reference to the specified entry in the table.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Item (   
-   DWORD      index,  
-   IUnknown** element  
+   DWORD      index,  
+   IUnknown** element  
 );  
 ```  
   
@@ -55,6 +48,3 @@ HRESULT Item ( 
  [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

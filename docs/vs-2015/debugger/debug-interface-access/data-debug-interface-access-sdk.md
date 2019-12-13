@@ -1,14 +1,9 @@
 ---
 title: "Data (Debug Interface Access SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -18,15 +13,13 @@ helpviewer_keywords:
   - "Data symbol"
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Data (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Data (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/data-debug-interface-access-sdk).  
-  
 All variables, such as parameters, local variables, global variables, and class members, are identified by `SymTagData` symbols. Constant values (`LocIsConstant`) are also identified with this type.  
   
 ## Properties  
@@ -71,6 +64,3 @@ All variables, such as parameters, local variables, global variables, and class 
  [Lexical Hierarchy of Symbol Types](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md)   
  [Symbol Locations](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

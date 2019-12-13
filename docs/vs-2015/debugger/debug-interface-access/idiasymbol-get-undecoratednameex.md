@@ -1,37 +1,30 @@
 ---
 title: "IDiaSymbol::get_undecoratedNameEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_undecoratedNameEx method"
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_undecoratedNameEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-undecoratednameex).  
-  
 Retrieves part or all of an undecorated name for a C++ decorated (linkage) name.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_undecoratedNameEx(   
-   DWORD undecorateOptions,  
-   BSTR* pRetval  
+   DWORD undecorateOptions,  
+   BSTR* pRetval  
 );  
 ```  
   
@@ -46,13 +39,13 @@ HRESULT get_undecoratedNameEx( 
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means the property is not available for the symbol.  
+> A return value of `S_FALSE` means the property is not available for the symbol.  
   
 ## Remarks  
  The `undecorateOptions` can be a combination of the following flags.  
   
 > [!NOTE]
->  The flag names are not defined in the DIA SDK, so you need to either add the declarations to your code or use the raw values.  
+> The flag names are not defined in the DIA SDK, so you need to either add the declarations to your code or use the raw values.  
   
 |Flag|Value|Description|  
 |----------|-----------|-----------------|  
@@ -79,6 +72,3 @@ HRESULT get_undecoratedNameEx( 
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

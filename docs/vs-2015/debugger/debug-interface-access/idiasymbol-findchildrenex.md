@@ -1,39 +1,32 @@
 ---
 title: "IDiaSymbol::findChildrenEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::findChildrenEx"
 ms.assetid: 6e045045-da8c-4338-9423-81a1ca20c405
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::findChildrenEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenex).  
-  
 Retrieves the children of the symbol. The local symbols that are returned include live range information, if the program is compiled with optimization on.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT findChildrenEx (   
-   enum SymTagEnum   symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   IDiaEnumSymbols** ppResult  
+   enum SymTagEnum   symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
@@ -69,6 +62,3 @@ HRESULT findChildrenEx ( 
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions Enumeration](../../debugger/debug-interface-access/namesearchoptions.md)
-
-
-

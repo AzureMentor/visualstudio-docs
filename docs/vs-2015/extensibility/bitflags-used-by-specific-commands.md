@@ -1,26 +1,19 @@
 ---
 title: "Bitflags Used by Specific Commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control plug-ins, bitflags used by specific commands"
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Bitflags Used by Specific Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Bitflags Used by Specific Commands](https://docs.microsoft.com/visualstudio/extensibility/bitflags-used-by-specific-commands).  
-  
 The behavior of a number of functions in the Source Control Plug-in API can be modified by setting one or more bits in a single value. These values are known as bitflags. The various bitflags used by the Source Control Plug-in API are detailed here, grouped by the function that uses them.  
   
 ## Checked Out Flag  
@@ -110,4 +103,3 @@ The behavior of a number of functions in the Source Control Plug-in API can be m
   
 ## See Also  
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
-

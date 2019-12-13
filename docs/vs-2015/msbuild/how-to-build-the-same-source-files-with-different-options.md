@@ -1,14 +1,9 @@
 ---
 title: "How to: Build the Same Source Files with Different Options | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source files, building with different options"
   - "MSBuild, properties"
@@ -18,14 +13,11 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # How to: Build the Same Source Files with Different Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [How to: Build the Same Source Files with Different Options](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-the-same-source-files-with-different-options).  
-  
-  
 When you build projects, you frequently compile the same components with different build options. For example, you can create a debug build with symbol information or a release build with no symbol information but with optimizations enabled. Or you can build a project to run on a specific platform, such as x86 or [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. In all these cases, most of the build options stay the same; only a few options are changed to control the build configuration. With [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], you use properties and conditions to create the different build configurations.  
   
 ## Using Properties to Modify Projects  
@@ -35,7 +27,7 @@ When you build projects, you frequently compile the same components with differe
   
 #### To set a group of properties based on another property  
   
--   Use a `Condition` attribute in a `PropertyGroup` element similar to the following:  
+- Use a `Condition` attribute in a `PropertyGroup` element similar to the following:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -46,7 +38,7 @@ When you build projects, you frequently compile the same components with differe
   
 #### To define a property based on another property  
   
--   Use a `Condition` attribute in a `Property` element similar to the following:  
+- Use a `Condition` attribute in a `Property` element similar to the following:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -57,13 +49,13 @@ When you build projects, you frequently compile the same components with differe
   
 #### To set a project property at the command line  
   
--   Use the **/property** switch with the property and property value. For example:  
+- Use the **/property** switch with the property and property value. For example:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - or -  
+     \- or -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -71,23 +63,23 @@ When you build projects, you frequently compile the same components with differe
   
 #### To specify more than one project property at the command line  
   
--   Use the **/property** or **/p** switch multiple times with the property and property values, or use one **/property** or **/p** switch and separate multiple properties with semicolons (;). For example:  
+- Use the **/property** or **/p** switch multiple times with the property and property values, or use one **/property** or **/p** switch and separate multiple properties with semicolons (;). For example:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - or-  
+   \- or-  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Environment variables are also treated as properties and are automatically incorporated by [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. For more information about using environment variables, see [How to: Use Environment Variables in a Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Environment variables are also treated as properties and are automatically incorporated by [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. For more information about using environment variables, see [How to: Use Environment Variables in a Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- The property value that is specified on the command line takes precedence over any value that is set for the same property in the project file, and that value in the project file takes precedence over the value in an environment variable.  
+  The property value that is specified on the command line takes precedence over any value that is set for the same property in the project file, and that value in the project file takes precedence over the value in an environment variable.  
   
- You can change this behavior by using the `TreatAsLocalProperty` attribute in a project tag. For property names that are listed with that attribute, the property value that's specified on the command line doesn't take precedence over the value in the project file. You can find an example later in this topic.  
+  You can change this behavior by using the `TreatAsLocalProperty` attribute in a project tag. For property names that are listed with that attribute, the property value that's specified on the command line doesn't take precedence over the value in the project file. You can find an example later in this topic.  
   
 ## Example  
  The following code example, the "Hello World" project, contains two new property groups that can be used to create a Debug build and a Release build.  
@@ -192,5 +184,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
  [MSBuild Reference](../msbuild/msbuild-reference.md)   
  [Project Element (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

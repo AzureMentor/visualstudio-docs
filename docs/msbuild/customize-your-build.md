@@ -1,17 +1,15 @@
 ---
 title: "Customize your build | Microsoft Docs"
-ms.custom: ""
-ms.date: "06/14/2017"
-ms.technology: msbuild
+ms.date: "06/13/2019"
 ms.topic: "conceptual"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MSBuild, transforms"
   - "transforms [MSBuild]"
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.workload: 
+manager: jillfra
+ms.workload:
   - "multiple"
 ---
 # Customize your build
@@ -28,6 +26,11 @@ Prior to MSBuild version 15, if you wanted to provide a new, custom property to 
 
 However, now you can add a new property to every project in one step by defining it in a single file called *Directory.Build.props* in the root folder that contains your source. When MSBuild runs, *Microsoft.Common.props* searches your directory structure for the *Directory.Build.props* file (and *Microsoft.Common.targets* looks for *Directory.Build.targets*). If it finds one, it imports the property. *Directory.Build.props* is a user-defined file that provides customizations to projects under a directory.
 
+> [!NOTE]
+> Linux-based file systems are case-sensitive. Make sure the casing of the Directory.Build.props filename matches exactly, or it won't be detected during the build process.
+>
+> See [this GitHub issue](https://github.com/dotnet/core/issues/1991#issue-368441031) for more information.
+
 ### Directory.Build.props example
 
 For example, if you wanted to enable all of your projects to access the new Roslyn **/deterministic** feature (which is exposed in the Roslyn `CoreCompile` target by the property `$(Deterministic)`), you could do the following.
@@ -35,13 +38,14 @@ For example, if you wanted to enable all of your projects to access the new Rosl
 1. Create a new file in the root of your repo called *Directory.Build.props*.
 2. Add the following XML to the file.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
+
 3. Run MSBuild. Your project’s existing imports of *Microsoft.Common.props* and *Microsoft.Common.targets* find the file and import it.
 
 ### Search scope
@@ -98,6 +102,36 @@ A summary of MSBuild's general approach is as follows:
 
 Or more simply: the first *Directory.Build.props* that doesn't import anything is where MSBuild stops.
 
+### Choose between adding properties to a .props or .targets file
+
+MSBuild is import-order dependent, and the last definition of a property (or a `UsingTask` or target) is the definition used.
+
+When using explicit imports, you can import from a *.props* or *.targets* file at any point. Here is the widely used convention:
+
+- *.props* files are imported early in the import order.
+
+- *.targets*  files are imported late in the build order.
+
+This convention is enforced by `<Project Sdk="SdkName">` imports (that is, the import of *Sdk.props* comes first, before all of the contents of the file, then *Sdk.targets* comes last, after all of the contents of the file).
+
+When deciding where to put the properties, use the following general guidelines:
+
+- For many properties, it doesn't matter where they're defined, because they're not overwritten and will be read only at execution time.
+
+- For behavior that might be customized in an individual project, set defaults in *.props* files.
+
+- Avoid setting dependent properties in *.props* files by reading the value of a possibly customized property, because the customization won't happen until MSBuild reads the user's project.
+
+- Set dependent properties in *.targets* files, because they'll pick up customizations from individual projects.
+
+- If you need to override properties, do it in a *.targets* file, after all user-project customizations have had a chance to take effect. Be cautious when using derived properties; derived properties may need to be overridden as well.
+
+- Include items in *.props* files (conditioned on a property). All properties are considered before any item, so user-project property customizations get picked up, and this gives the user's project the opportunity to `Remove` or `Update` any item brought in by the import.
+
+- Define targets in *.targets* files. However, if the *.targets* file is imported by an SDK, remember that this scenario makes overriding the target more difficult because the user's project doesn't have a place to override it by default.
+
+- If possible, prefer customizing properties at evaluation time over changing properties inside a target. This guideline makes it easier to load a project and understand what it's doing.
+
 ## MSBuildProjectExtensionsPath
 
 By default, *Microsoft.Common.props* imports `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` and *Microsoft.Common.targets* imports `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. The default value of `MSBuildProjectExtensionsPath` is `$(BaseIntermediateOutputPath)`, `obj/`. NuGet uses this mechanism to refer to build logic delivered with packages; that is, at restore time, it creates `{project}.nuget.g.props` files that refer to the package contents.
@@ -128,7 +162,7 @@ before their contents, and
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-afterward. This allows installed SDKs to augment the build logic of common project types.
+afterward. This convention allows installed SDKs to augment the build logic of common project types.
 
 The same directory structure is searched in `$(MSBuildUserExtensionsPath)`, which is the per-user folder *%LOCALAPPDATA%\Microsoft\MSBuild*. Files placed in that folder will be imported for all builds of the corresponding project type run under that user's credentials. You can disable the user extensions by setting properties named after the importing file in the pattern `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. For example, setting `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` to `false` would prevent importing `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
@@ -151,6 +185,6 @@ For example, you could define a new target to write a custom log message after b
 
 ## See also
 
-[MSBuild concepts](../msbuild/msbuild-concepts.md)
+- [MSBuild concepts](../msbuild/msbuild-concepts.md)
 
-[MSBuild reference](../msbuild/msbuild-reference.md)
+- [MSBuild reference](../msbuild/msbuild-reference.md)

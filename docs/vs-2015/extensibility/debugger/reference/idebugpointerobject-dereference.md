@@ -1,43 +1,36 @@
 ---
 title: "IDebugPointerObject::Dereference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPointerObject::Dereference"
 helpviewer_keywords: 
   - "IDebugPointerObject::Dereference method"
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPointerObject::Dereference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPointerObject::Dereference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpointerobject-dereference).  
-  
 Gets the object pointed to.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT DeReference(   
-   DWORD          dwIndex,  
-   IDebugObject** ppObject  
+   DWORD          dwIndex,  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
 int Dereference(  
-   uint             dwIndex,   
-   out IDebugObject ppObject  
+   uint             dwIndex,   
+   out IDebugObject ppObject  
 );  
 ```  
   
@@ -56,4 +49,3 @@ int Dereference(
   
 ## See Also  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-

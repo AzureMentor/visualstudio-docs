@@ -1,29 +1,22 @@
 ---
 title: "Cores View Legend | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.cv.cores.legend"
 helpviewer_keywords: 
   - "Concurrency Visualizer, Cores View Legend"
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Cores View Legend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Cores View Legend](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend).  
-  
 The Cores View legend identifies each thread by color and name. It includes columns that show counts for cross-core context switches, total context switches, and the percent of context switches that cross cores. Rows in the legend are sorted by the number of cross-core context switches, in decreasing order.  
   
  You can select rows in the legend to filter the threads that are displayed in the timeline. Only the selected threads are shown in the timeline. If no rows are selected, all rows are shown in the timeline.  
@@ -41,6 +34,3 @@ The Cores View legend identifies each thread by color and name. It includes colu
   
 ## See Also  
  [Cores View](../profiling/cores-view.md)
-
-
-

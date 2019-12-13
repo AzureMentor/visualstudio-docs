@@ -1,10 +1,7 @@
 ---
-title: "Troubleshooting network-related errors when you install or use Visual Studio"
+title: "Troubleshoot network or proxy errors"
 description: "Find solutions for network- or proxy-related errors that you might encounter when you install or use Visual Studio behind a firewall or a proxy server."
-ms.custom: ""
-ms.date: 02/12/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
   - "network installation, Visual Studio"
@@ -15,11 +12,13 @@ helpviewer_keywords:
 ms.assetid:
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
   - "multiple"
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 ---
-# Troubleshooting network-related errors when you install or use Visual Studio
+# Troubleshoot network-related errors when you install or use Visual Studio
 
 We've got solutions for the most typical network- or proxy-related errors that you might encounter when you install or use Visual Studio behind a firewall or a proxy server.
 
@@ -31,39 +30,61 @@ This error generally occurs when users are connected to the internet through a p
 
 - Restart Visual Studio. A proxy authentication dialog box should appear. Enter your credentials when prompted in the dialog.
 
-- If restarting Visual Studio does not solve the problem, it might be that your proxy server does not prompt for credentials for http:&#47;&#47;go.microsoft.com addresses but does so for &#42;.visualStudio.com addresses. For these servers, consider whitelisting the following URLs to unblock all sign-in scenarios in Visual Studio:
+- If restarting Visual Studio does not solve the problem, it might be that your proxy server does not prompt for credentials for http:&#47;&#47;go.microsoft.com addresses but does so for &#42;.visualStudio.microsoft.com addresses. For these servers, consider adding the following URLs to an allow list to unblock all sign-in scenarios in Visual Studio:
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
-- You can otherwise remove the http:&#47;&#47;go.microsoft.com address from the whitelist so that the proxy authentication dialog shows up for both the http:&#47;&#47;go.microsoft.com address and the server endpoints when Visual Studio is restarted.
+- You can otherwise remove the http:&#47;&#47;go.microsoft.com address from the allow list so that the proxy authentication dialog shows up for both the http:&#47;&#47;go.microsoft.com address and the server endpoints when Visual Studio is restarted.
 
-    OR
+  -OR-
 
 - If you want to use your default credentials with your proxy, you can perform the following actions:
 
-    1. Find **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** or **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+::: moniker range="vs-2017"
 
-    1. In the configuration file, find the `<system.net>` block, and then add this code:
+  1. Find **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** or **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+  2. In the configuration file, find the `<system.net>` block, and then add this code:
 
-        You must insert the correct proxy address for your network in `proxyaddress="<http://<yourproxy:port#>`.
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-    OR
+      You must insert the correct proxy address for your network in `proxyaddress="<http://<yourproxy:port#>`.
 
-- You can also follow the instructions in the [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) blog post, which shows you how to add code that will allow you to use the proxy.
+     > [!NOTE]
+     > For more information, see the [&lt;defaultProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) and [&lt;proxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) pages.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  1. Find **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** or **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
+
+  2. In the configuration file, find the `<system.net>` block, and then add this code:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      You must insert the correct proxy address for your network in `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > For more information, see the [&lt;defaultProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) and [&lt;proxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) pages.
+
+::: moniker-end
 
 ## Error: “The underlying connection was closed”
 
@@ -93,7 +114,7 @@ Enable connections for the following URLs:
 
 - &#42;.azurewebsites.net (for Azure connections)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (hosts content delivery network, or CDN, content)
 
@@ -103,13 +124,26 @@ Enable connections for the following URLs:
 
 - &#42;.nuget.org (for NuGet connections)
 
- > [!NOTE]
- > Privately owned NuGet server URLs may not be included in this list. You can check for the NuGet servers that you are using in %APPData%\Nuget\NuGet.Config.
+  > [!NOTE]
+  > Privately owned NuGet server URLs may not be included in this list. You can check for the NuGet servers that you are using in %APPData%\Nuget\NuGet.Config.
+
+## Error: "Failed to parse ID from parent process"
+
+You might encounter this error message when you use a Visual Studio bootstrapper and a response.json file on a network drive. The error's source is the User Account Control (UAC) in Windows.
+
+Here's why this error can happen: A mapped network drive or [UNC](/dotnet/standard/io/file-path-formats#unc-paths) share is linked to a user's access token. When UAC is enabled, two user [access tokens](/windows/win32/secauthz/access-tokens) are created: One *with* administrator access, and one *without* administrator access. When a network drive or share is created, the user's current access token is linked to it. Because the bootstrapper must be run as administrator, it won't be able to access the network drive or share if either the drive or the share isn't linked to a user access token that has administrator access.
+
+### To fix this error
+
+You can use the `net use` command or you can change the UAC Group Policy setting. For more information about these workarounds and how to implement them, see the following Microsoft support articles:
+
+* [Mapped drives are not available from an elevated prompt when UAC is configured to "Prompt for credentials" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Programs may be unable to access some network locations after you turn on User Account Control in Windows operating systems](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## See also
 
 * [Install and use Visual Studio behind a firewall or proxy server](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Visual Studio Administrator Guide](visual-studio-administrator-guide.md)
-* [Install Visual Studio 2017](install-visual-studio.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Install Visual Studio](install-visual-studio.md)

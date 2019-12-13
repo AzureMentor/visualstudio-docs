@@ -1,41 +1,34 @@
 ---
 title: "IDebugStackFrame2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugStackFrame2::GetName"
 helpviewer_keywords: 
   - "IDebugStackFrame2::GetName"
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugStackFrame2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugStackFrame2::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getname).  
-  
 Gets the name of the stack frame.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetName (   
-   BSTR* pbstrName  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
 int GetName (   
-   out string pbstrName  
+   out string pbstrName  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetName ( 
   
 ## See Also  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "ClickOnce Security and Deployment | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -22,24 +17,22 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # ClickOnce Security and Deployment
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ClickOnce Security and Deployment](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment).  
-  
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is a deployment technology that enables you to create self-updating Windows-based applications that can be installed and run with minimal user interaction. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provides full support for publishing and updating applications deployed with ClickOnce technology if you have developed your projects with Visual Basic and Visual C#. For information about deploying Visual C++ applications, see [ClickOnce Deployment for Visual C++ Applications](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] is a deployment technology that enables you to create self-updating Windows-based applications that can be installed and run with minimal user interaction. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] provides full support for publishing and updating applications deployed with ClickOnce technology if you have developed your projects with Visual Basic and Visual C#. For information about deploying Visual C++ applications, see [ClickOnce Deployment for Visual C++ Applications](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment overcomes three major issues in deployment:  
   
--   **Difficulties in updating applications.** With Microsoft Windows Installer deployment, whenever an application is updated, the user can install an update, an msp file, and apply it to the installed product; with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, you can provide updates automatically. Only those parts of the application that have changed are downloaded, and then the full, updated application is reinstalled from a new side-by-side folder.  
+- **Difficulties in updating applications.** With Microsoft Windows Installer deployment, whenever an application is updated, the user can install an update, an msp file, and apply it to the installed product; with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, you can provide updates automatically. Only those parts of the application that have changed are downloaded, and then the full, updated application is reinstalled from a new side-by-side folder.  
   
--   **Impact to the user's computer.** With Windows Installer deployment, applications often rely on shared components, with the potential for versioning conflicts; with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, each application is self-contained and cannot interfere with other applications.  
+- **Impact to the user's computer.** With Windows Installer deployment, applications often rely on shared components, with the potential for versioning conflicts; with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment, each application is self-contained and cannot interfere with other applications.  
   
--   **Security permissions.** Windows Installer deployment requires administrative permissions and allows only limited user installation; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment enables non-administrative users to install and grants only those Code Access Security permissions necessary for the application.  
+- **Security permissions.** Windows Installer deployment requires administrative permissions and allows only limited user installation; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment enables non-administrative users to install and grants only those Code Access Security permissions necessary for the application.  
   
- In the past, these issues sometimes caused developers to decide to create Web applications instead of Windows-based applications, sacrificing a rich user interface for ease of installation. By using applications deployed using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], you can have the best of both technologies.  
+  In the past, these issues sometimes caused developers to decide to create Web applications instead of Windows-based applications, sacrificing a rich user interface for ease of installation. By using applications deployed using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], you can have the best of both technologies.  
   
 ## What Is a ClickOnce Application?  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application is any Windows Presentation Foundation (.xbap), Windows Forms (.exe), console application (.exe), or Office solution (.dll) published using [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technology. You can publish a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application in three different ways: from a Web page, from a network file share, or from media such as a CD-ROM. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application can be installed on an end user's computer and run locally even when the computer is offline, or it can be run in an online-only mode without permanently installing anything on the end user's computer. For more information, see [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
@@ -79,13 +72,13 @@ The latest version of this topic can be found at [ClickOnce Security and Deploym
  The application can be added to the user's **Start** menu and to the **Add or Remove Programs** group in the **Control Panel**. Unlike other deployment technologies, nothing is added to the **Program Files** folder or the registry, and no administrative rights are required for installation  
   
 > [!NOTE]
->  It is also possible to prevent the application from being added to the **Start** menu and **Add or Remove Programs** group, in effect making it behave like a Web application. For more information, see [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+> It is also possible to prevent the application from being added to the **Start** menu and **Add or Remove Programs** group, in effect making it behave like a Web application. For more information, see [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
 ### Updating ClickOnce Applications  
  When the application developers create an updated version of the application, they generate a new application manifest and copy files to a deployment location—usually a sibling folder to the original application deployment folder. The administrator updates the deployment manifest to point to the location of the new version of the application.  
   
 > [!NOTE]
->  The **Publish Wizard** in Visual Studio can be used to perform these steps.  
+> The **Publish Wizard** in Visual Studio can be used to perform these steps.  
   
  In addition to the deployment location, the deployment manifest also contains an update location (a Web page or network file share) where the application checks for updated versions. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Publish** properties are used to specify when and how often the application should check for updates. Update behavior can be specified in the deployment manifest, or it can be presented as user choices in the application's user interface by means of the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] APIs. In addition, **Publish** properties can be employed to make updates mandatory or to roll back to an earlier version. For more information, see [Choosing a ClickOnce Update Strategy](../deployment/choosing-a-clickonce-update-strategy.md).  
   
@@ -99,8 +92,8 @@ The latest version of this topic can be found at [ClickOnce Security and Deploym
 |----------|-----------------|  
 |[Security Page, Project Designer](../ide/reference/security-page-project-designer.md)|Signs the application and deployment manifests.|  
 |[Publish Page, Project Designer](../ide/reference/publish-page-project-designer.md)|Generates and edits the application and deployment manifests for Visual Basic and Visual C# applications.|  
-|[Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generates the application and deployment manifests for Visual Basic, Visual C#, and Visual C++ applications.<br /><br /> Signs and re-signs the application and deployment manifests.<br /><br /> Can be run from batch scripts and the command prompt.|  
-|[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generates and edits the application and deployment manifests.<br /><br /> Signs and re-signs the application and deployment manifests.|  
+|[Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Generates the application and deployment manifests for Visual Basic, Visual C#, and Visual C++ applications.<br /><br /> Signs and re-signs the application and deployment manifests.<br /><br /> Can be run from batch scripts and the command prompt.|  
+|[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Generates and edits the application and deployment manifests.<br /><br /> Signs and re-signs the application and deployment manifests.|  
 |[GenerateApplicationManifest Task](../msbuild/generateapplicationmanifest-task.md)|Generates the application manifest.<br /><br /> Can be run from MSBuild. For more information, see [MSBuild Reference](../msbuild/msbuild-reference.md).|  
 |[GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md)|Generates the deployment manifest.<br /><br /> Can be run from MSBuild. For more information, see [MSBuild Reference](../msbuild/msbuild-reference.md).|  
 |[SignFile Task](../msbuild/signfile-task.md)|Signs the application and deployment manifests.<br /><br /> Can be run from MSBuild. For more information, see [MSBuild Reference](../msbuild/msbuild-reference.md).|  
@@ -120,6 +113,3 @@ The latest version of this topic can be found at [ClickOnce Security and Deploym
  [Deploying COM Components with ClickOnce](../deployment/deploying-com-components-with-clickonce.md)   
  [Building ClickOnce Applications from the Command Line](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [Debugging ClickOnce Applications That Use System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

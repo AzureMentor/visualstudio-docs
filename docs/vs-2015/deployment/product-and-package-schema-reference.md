@@ -1,14 +1,9 @@
 ---
 title: "Product and Package Schema Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: reference
 f1_keywords: 
   - "MSBuild.GenerateBootstrapper.CircularIncludes"
   - "MSBuild.ResolveManifestFiles.PublishFileNotFound"
@@ -30,13 +25,11 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # Product and Package Schema Reference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Product and Package Schema Reference](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 A *product file* is an XML manifest that describes all of the external dependencies required by a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Examples of external dependencies include the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] and the Microsoft Data Access Components (MDAC). A package file is similar to a product file but is used to install the culture-dependent components of a dependency, such as localized assemblies, license agreements, and documentation.  
   
  The product and packages file consists of either a top-level `Product` or `Package` element, each of which contains the following elements.  
@@ -164,6 +157,3 @@ A *product file* is an XML manifest that describes all of the external dependenc
 ## See Also  
  [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Understand build platforms
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -13,9 +12,9 @@ f1_keywords:
 helpviewer_keywords:
   - "build platforms [Visual Studio]"
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -25,11 +24,11 @@ You can store different versions of solution and project properties that apply t
 
 ## In this section
 
- [How to: Configure projects to target platforms](../ide/how-to-configure-projects-to-target-platforms.md)
- Explains how to configure a project to target a specific platform.
+[How to: Configure projects to target platforms](../ide/how-to-configure-projects-to-target-platforms.md)\
+Explains how to configure a project to target a specific platform.
 
- [How to: Configure projects to target multiple platforms](../ide/how-to-configure-projects-to-target-multiple-platforms.md)
- Explains how to configure a project to target multiple platforms.
+[How to: Configure projects to target multiple platforms](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Explains how to configure a project to target multiple platforms.
 
 ## See also
 

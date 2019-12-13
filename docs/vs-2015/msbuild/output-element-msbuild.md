@@ -1,14 +1,9 @@
 ---
 title: "Output Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/msbuild/2003#Output"
 dev_langs: 
@@ -23,14 +18,11 @@ ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Output Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Output Element (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/output-element-msbuild).  
-  
-  
 Stores task output values in items and properties.  
   
  \<Project>  
@@ -90,6 +82,3 @@ Stores task output values in items and properties.
 ## See Also  
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)   
  [Tasks](../msbuild/msbuild-tasks.md)
-
-
-

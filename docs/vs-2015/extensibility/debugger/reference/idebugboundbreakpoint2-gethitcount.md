@@ -1,14 +1,9 @@
 ---
 title: "IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBoundBreakpoint2::GetHitCount"
 helpviewer_keywords: 
@@ -16,27 +11,25 @@ helpviewer_keywords:
   - "IDebugBoundBreakpoint2::GetHitCount method"
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBoundBreakpoint2::GetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBoundBreakpoint2::GetHitCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount).  
-  
 Gets the current hit count for this bound breakpoint.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetHitCount(   
-   DWORD* pdwHitCount  
+   DWORD* pdwHitCount  
 );  
 ```  
   
 ```csharp  
 int GetHitCount(   
-   out uint pdwHitCount  
+   out uint pdwHitCount  
 );  
 ```  
   
@@ -53,4 +46,3 @@ int GetHitCount( 
 ## See Also  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "COM and ActiveX Debugging | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.com"
 dev_langs: 
@@ -24,15 +19,13 @@ helpviewer_keywords:
   - "ActiveX controls, debugging"
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # COM and ActiveX Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [COM and ActiveX Debugging](https://docs.microsoft.com/visualstudio/debugger/com-and-activex-debugging).  
-  
 This section provides tips on debugging COM applications and ActiveX controls.  
   
 ## In This Section  
@@ -51,9 +44,6 @@ This section provides tips on debugging COM applications and ActiveX controls.
   
 ## See Also  
  [Debugger Security](../debugger/debugger-security.md)   
- [Introduction to COM](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
- [ActiveX Controls](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Introduction to COM](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
+ [ActiveX Controls](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI Server Applications](../debugger/sdi-server-applications.md)
-
-
-

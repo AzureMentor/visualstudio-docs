@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_notReached | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_notReached method"
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_notReached
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_notReached](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-notreached).  
-  
 Retrieves a flag that specifies whether the function or label is never reached.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT get_notReached(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_notReached(
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means the property is not available for the symbol.  
+> A return value of `S_FALSE` means the property is not available for the symbol.  
   
 ## Requirements  
   
@@ -53,6 +46,3 @@ HRESULT get_notReached(
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

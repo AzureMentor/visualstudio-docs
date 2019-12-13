@@ -1,28 +1,21 @@
 ---
 title: "Implementing Single-File Generators | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "custom tools, implementing"
   - "projects [Visual Studio SDK], extensibility"
   - "projects [Visual Studio SDK], managed custom tools"
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Implementing Single-File Generators
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Implementing Single-File Generators](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-single-file-generators).  
-  
 A custom tool — sometimes referred to as a single file generator — can be used to extend the [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] and [!INCLUDE[csprcs](../../includes/csprcs-md.md)] project systems in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. A custom tool is a COM component that implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. Using this interface, a custom tool transforms a single input file into a single output file. The result of the transformation may be source code, or any other output that is useful. Two examples of custom tool-generated code files are code generated in response to changes in a visual designer and files generated using Web Services Description Language (WSDL).  
   
  When a custom tool is loaded, or the input file is saved, the project system calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> method, and passes a reference to a <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> callback interface, whereby the tool can report its progress to the user.  
@@ -34,4 +27,3 @@ A custom tool — sometimes referred to as a single file generator — can be us
 ## See Also  
  [Determining the Default Namespace of a Project](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposing Types to Visual Designers](../../extensibility/internals/exposing-types-to-visual-designers.md)
-

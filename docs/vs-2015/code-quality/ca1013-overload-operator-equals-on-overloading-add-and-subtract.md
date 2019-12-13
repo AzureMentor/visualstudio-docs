@@ -1,14 +1,9 @@
 ---
 title: "CA1013: Overload operator equals on overloading add and subtract | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "OverrideOperatorEqualsOnOverridingAddAndSubtract"
   - "OverrideOperatorEqualsOnOverloadingAddAndSubtract"
@@ -21,14 +16,12 @@ helpviewer_keywords:
   - "OverloadOperatorEqualsOnOverloadingAddAndSubtract"
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1013: Overload operator equals on overloading add and subtract
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1013: Overload operator equals on overloading add and subtract](https://docs.microsoft.com/visualstudio/code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract).
 
 |||
 |-|-|
@@ -83,7 +76,4 @@ return left.Equals(right);
 **Bad type:  {2,2} {9,9} are equal? No**
 **Good type: {3,3} {9,9} are == ?   No**
 ## See Also
- [Equality Operators](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-
+ [Equality Operators](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

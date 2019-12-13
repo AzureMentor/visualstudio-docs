@@ -1,30 +1,28 @@
 ---
 title: Go to file, go to symbol, go to line
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
   - "code editor, go to"
   - "code editor, go to line"
   - "go to line"
   - "go to"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
 # Find code using Go To commands
 
-Visual Studio's **Go To** commands perform a focused search of your code to help you quickly find specified items. You can go to a specific line, type, symbol, file, and member from a simple, unified interface. This feature exists in Visual Studio 2017 and later.
+Visual Studio's **Go To** commands perform a focused search of your code to help you quickly find specified items. You can go to a specific line, type, symbol, file, and member from a simple, unified interface.
 
 ## How to use it
 
-Input        | Function
+Input | Function
 ------------ | ---
 **Keyboard** | Press **Ctrl**+**T** or **Ctrl**+**,**
-**Mouse**    | Select **Edit** > **Go To** > **Go To All**
+**Mouse** | Select **Edit** > **Go To** > **Go To All**
 
 A small window is displayed at the top right of your code editor.
 
@@ -50,7 +48,7 @@ To narrow your search to a specific type of code element, you can either specify
 
 Prefix | Icon | Shortcut | Description
 :-: | - | - | -
-:| ![Line icon](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Go to the specified line number
+:| ![Line icon](media/gotoall-line-icon.png) | **Ctrl**+**G** | Go to the specified line number
 f| ![Files icon](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Go to the specified file
 r| ![Recent files icon](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Go to the specified, recently visited file
 t| ![Types icon](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Go to the specified type
@@ -79,8 +77,8 @@ Selecting the gear icon ![Gear icon](media/gotoall_gear.png) lets you change how
 Setting | Description
 ------- | ---
 Use preview tab | Display the selected item immediately in the IDE's preview tab
-Show details    | Display project, file, line, and summary information from documentation comments in the window
-Center window   | Move this window to the top-center of the code editor, instead of the top-right
+Show details | Display project, file, line, and summary information from documentation comments in the window
+Center window | Move this window to the top-center of the code editor, instead of the top-right
 
 ## See also
 

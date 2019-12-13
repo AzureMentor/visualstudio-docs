@@ -1,14 +1,9 @@
 ---
 title: "Supporting Symbol-Browsing Tools | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "symbols, symbol-browsing tools"
   - "browsers, symbol browsers"
@@ -21,14 +16,12 @@ helpviewer_keywords:
   - "libraries, symbol-browsing tools"
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Supporting Symbol-Browsing Tools
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Supporting Symbol-Browsing Tools](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools).  
-  
 **Object Browser**, **Class View**, **Call Browser** and **Find Symbol Results** tools provide symbol browsing capabilities in Visual Studio. These tools display hierarchical tree views of symbols and show the relationships between the symbols in the tree. The symbols may represent namespaces, objects, classes, class members, and other language elements contained in various components. The components include Visual Studio projects, external [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] components and type (.tlb) libraries. For more information, see [Viewing the Structure of Code](../../ide/viewing-the-structure-of-code.md).  
   
 ## Symbol-Browsing Libraries  
@@ -49,10 +42,9 @@ The latest version of this topic can be found at [Supporting Symbol-Browsing Too
  The [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object manager calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> method to determine if a given list item is expandable and has children items. If UI sends a request to expand an element, the object manager requests the child list of symbols by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> method. The process continues with different parts of the tree being built on demand.  
   
 > [!NOTE]
->  To implement a native code symbol provider, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.  
+> To implement a native code symbol provider, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.  
   
 ## See Also  
  [How to: Register a Library with the Object Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [How to: Expose Lists of Symbols Provided by the Library to the Object Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
  [How to: Identify Symbols in a Library](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "&lt;PackageFiles&gt; Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -20,13 +15,11 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;PackageFiles&gt; Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;PackageFiles&gt; Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/packagefiles-element-bootstrapper).  
-  
 The `PackageFiles` element contains `PackageFile` elements, which define the installation packages executed as a result of the `Command` element.  
   
 ## Syntax  
@@ -81,6 +74,3 @@ The `PackageFiles` element contains `PackageFile` elements, which define the ins
  [\<Product> Element](../deployment/product-element-bootstrapper.md)   
  [\<Package> Element](../deployment/package-element-bootstrapper.md)   
  [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)
-
-
-

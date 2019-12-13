@@ -1,16 +1,14 @@
 ---
 title: Model Editor
 ms.date: 04/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
   - "vs.graphics.designer.3dscene"
   - "vs.graphics.modelviewer"
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -25,7 +23,7 @@ You can use **Model Editor** to create basic 3D models from scratch, or to view 
 The **Model Editor** supports several 3D model formats that are used in DirectX app development:
 
 |Format Name|File Extension|Supported Operations (View, Edit, Create)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |AutoDesk FBX Interchange File|*.fbx*|View, Edit, Create|
 |Collada DAE File|*.dae*|View, Edit (Modifications to Collada DAE files are saved by using the FBX format.)|
 |OBJ|*.obj*|View, Edit (Modifications to OBJ files are saved by using the FBX format.)|
@@ -248,7 +246,7 @@ Each of these materials applies one texture on the surface of an object. You can
 To modify how a particular object reacts to the different light sources in the scene, you can change the lighting properties of material independent of other objects that use the material. This table describes common lighting properties:
 
 |Lighting Property|Description|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Ambient**|Describes how the surface is affected by ambient lighting.|
 |**Diffuse**|Describes how the surface is affected by directional and point lights.|
 |**Emissive**|Describes how the surface emits light, independent of other lighting.|
@@ -288,7 +286,7 @@ To remove the parent-child association between two objects, select the child obj
 ## Keyboard shortcuts
 
 |Command|Keyboard shortcuts|
-|-------------|------------------------|
+|-------------| - |
 |Switch to **Select** mode|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Switch to **Zoom** mode|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Switch to **Pan** mode|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|

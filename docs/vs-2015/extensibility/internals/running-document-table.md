@@ -1,14 +1,9 @@
 ---
 title: "Running Document Table | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "read locks"
   - "running document table (RDT), IVsDocumentLockHolder interface"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "document data objects, running document table"
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Running Document Table
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Running Document Table](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table).  
-  
 The IDE maintains the list of all currently open documents in an internal structure called the running document table (RDT). This list includes all open documents in memory, regardless of whether these documents are currently being edited. A document is any item that is persisted, including files in a project or the main project file (for example, a .vcxproj file).  
   
 ## Elements of the Running Document Table  
@@ -55,11 +48,10 @@ The IDE maintains the list of all currently open documents in an internal struct
   
  The IDE also uses the RDT to resurface (bring to the front) an open document, if a user requests that document. For more information, see [Displaying Files By Using the Open File Command](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). To determine whether a file is open in the RDT, do one the following.  
   
--   Query for the document moniker (that is, the full document path) to find out if the item is open.  
+- Query for the document moniker (that is, the full document path) to find out if the item is open.  
   
--   Use the hierarchy or item ID to ask the project system for the full document path, and then look the item up in the RDT.  
+- Use the hierarchy or item ID to ask the project system for the full document path, and then look the item up in the RDT.  
   
 ## See Also  
  [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
  [Persistence and the Running Document Table](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

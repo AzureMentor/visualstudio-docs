@@ -1,41 +1,34 @@
 ---
 title: "IEnumDebugPrograms2::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugPrograms2::GetCount"
 helpviewer_keywords: 
   - "IEnumDebugPrograms2::GetCount"
 ms.assetid: 84832982-fa68-4090-a5b7-b233817876b7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugPrograms2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugPrograms2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2-getcount).  
-  
 Returns the number of elements in the enumeration.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetCount(  
-   ULONG* pcelt  
+   ULONG* pcelt  
 );  
 ```  
   
 ```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetCount(
   
 ## See Also  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
-

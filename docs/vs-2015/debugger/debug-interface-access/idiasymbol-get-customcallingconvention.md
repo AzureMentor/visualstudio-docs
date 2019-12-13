@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_customCallingConvention | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_customCallingConvention method"
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_customCallingConvention](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-customcallingconvention).  
-  
 Retrieves a flag that specifies whether the function has a custom calling convention.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_customCallingConvention(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_customCallingConvention(
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means that the property is not available for the symbol.  
+> A return value of `S_FALSE` means that the property is not available for the symbol.  
   
 ## Requirements  
   
@@ -53,6 +46,3 @@ HRESULT get_customCallingConvention(
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -2,13 +2,11 @@
 title: Remote workspaces for R
 description: How to set up remote R workspaces and connect to it from Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
-ms.workload: 
+manager: jillfra
+ms.workload:
   - data-science
 ---
 
@@ -92,15 +90,20 @@ For benefits and risks of using self-signed certificate see the Windows descript
 To issue a self-signed certificate yourself:
 
 1. SSH or login to your Linux machine.
-1. Install `ssl-cert` package:
+2. Install `ssl-cert` package:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Run `make-ssl-cert` to generate the default self-signed SSL certificate:
+
+3. Run `make-ssl-cert` to generate the default self-signed SSL certificate:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Convert the generated key and PEM files to PFX. The generated PFX should be in your home folder:
+
+4. Convert the generated key and PEM files to PFX. The generated PFX should be in your home folder:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -130,12 +133,12 @@ To run R code, the remote computer must have an R interpreter installed as follo
 
 1. Download and install one of the following:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Both have identical functionality, but Microsoft R Open benefits from additional hardware accelerated linear algebra libraries courtesy of the [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Both have identical functionality, but Microsoft R Open benefits from additional hardware accelerated linear algebra libraries courtesy of the [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Run the [R Services installer](https://aka.ms/rtvs-services) and reboot when prompted. The installer does the following:
+2. Run the [R Services installer](https://aka.ms/rtvs-services) and reboot when prompted. The installer does the following:
 
     - Create a folder in *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* and copy all the required binaries.
     - Install `RHostBrokerService` and `RUserProfileService` and configure to start automatically.
@@ -155,12 +158,12 @@ To run R code, the remote computer must have an R interpreter installed as follo
 
 1. Download and install one of the following:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Both have identical functionality, but Microsoft R Open benefits from additional hardware accelerated linear algebra libraries courtesy of the [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Both have identical functionality, but Microsoft R Open benefits from additional hardware accelerated linear algebra libraries courtesy of the [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Follow the instructions on [Remote R Service for Linux](setting-up-remote-r-service-on-linux.md), which covers physical Ubuntu computers, Azure Ubuntu VMs, Windows Subsystem for Linux (WSL), and Docker containers, including those running on Azure Container Repository.
+2. Follow the instructions on [Remote R Service for Linux](setting-up-remote-r-service-on-linux.md), which covers physical Ubuntu computers, Azure Ubuntu VMs, Windows Subsystem for Linux (WSL), and Docker containers, including those running on Azure Container Repository.
 
 ## Configure R services
 
@@ -170,7 +173,7 @@ With R services running on the remote computer, you also need to create user acc
 
 1. Firewall rules: By default, the `R Host Broker` listens on TCP port 5444. Therefore, ensure that there are Windows firewall rules enabled for both inbound and outbound traffic (outbound is needed for installing packages and similar scenarios).  The R services installer sets these rules automatically for the built-in Windows firewall. If you're using a third-party firewall, however, open port 5444 for `R Host Broker` manually.
 
-1. Azure configuration: If your remote computer is a virtual machine on Azure, open port 5444 for incoming traffic within Azure networking as well, which is independent of the Windows firewall. For details, see [Filter network traffic with network security group](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) in the Azure documentation.
+1. Azure configuration: If your remote computer is a virtual machine on Azure, open port 5444 for incoming traffic within Azure networking as well, which is independent of the Windows firewall. For details, see [Filter network traffic with network security group](/azure/virtual-network/virtual-networks-nsg) in the Azure documentation.
 
 1. Tell the R Host Broker which SSL certificate to load: If you're installing the certificate on an Intranet server, it is likely that the fully-qualified domain name of your server is the same as its NETBIOS name. In this case, there is nothing that you need to do, as this is the default certificate that is loaded.
 

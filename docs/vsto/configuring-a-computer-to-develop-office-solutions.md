@@ -1,19 +1,16 @@
 ---
 title: "Configure a computer to develop Office solutions"
-ms.custom: ""
 ms.date: "02/02/2017"
-ms.technology: 
-  - "office-development"
 ms.topic: "conceptual"
-dev_langs: 
+dev_langs:
   - "VB"
   - "CSharp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Office development in Visual Studio, installing tools"
-author: TerryGLee
-ms.author: tglee
-manager: douge
-ms.workload: 
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
+ms.workload:
   - "office"
 ---
 # Configure a computer to develop Office solutions
@@ -38,16 +35,15 @@ If you install a supported version of Visual Studio, the .NET Framework, and Mic
 
      To make sure that these tools are installed, start the Visual Studio setup program, and choose the **Modify** button. Select the **Microsoft Office Developer Tools** check box, and then choose the **Update** button.
 
-- Make sure that you're not running a version of Office that was delivered by Click-to-Run. See [How to: Verify whether Outlook is a Click-to-Run application on a computer](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Make sure that you're not running a version of Office that was delivered by Click-to-Run. See [How to: Verify whether Outlook is a Click-to-Run application on a computer](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Ensure that you're running only one version of Microsoft Office.
 
 If you continue to experience problems, see [Additional support for errors in Office solutions](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## See also
-
-[Get started &#40;Office development in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[How to: Configure a computer to develop Office solutions](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[How to: Install the Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[How to: Install Office primary interop assemblies](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Features available by Office application and project type](../vsto/features-available-by-office-application-and-project-type.md)
+- [Get started &#40;Office development in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [How to: Configure a computer to develop Office solutions](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [How to: Install the Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [How to: Install Office primary interop assemblies](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Features available by Office application and project type](../vsto/features-available-by-office-application-and-project-type.md)

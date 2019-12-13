@@ -1,37 +1,30 @@
 ---
 title: "IDiaEnumSectionContribs::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaEnumSectionContribs::Item method"
 ms.assetid: 63a28f23-0ca0-44a7-b11b-ca0206d642a0
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaEnumSectionContribs::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaEnumSectionContribs::Item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsectioncontribs-item).  
-  
 Retrieves section contributions by means of an index.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Item (   
-   DWORD                index,  
-   IDiaSectionContrib** section  
+   DWORD                index,  
+   IDiaSectionContrib** section  
 );  
 ```  
   
@@ -48,6 +41,3 @@ HRESULT Item ( 
 ## See Also  
  [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
-
-
-

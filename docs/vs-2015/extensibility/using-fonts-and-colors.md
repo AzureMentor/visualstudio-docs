@@ -1,14 +1,9 @@
 ---
 title: "Using Fonts and Colors | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "fonts, controlling in IDE"
   - "IDE, controlling text color and fonts"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "text, IDE"
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Using Fonts and Colors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Using Fonts and Colors](https://docs.microsoft.com/visualstudio/extensibility/using-fonts-and-colors).  
-  
 The [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] provides support for using fonts and colors to display text.  
   
 ## In This Section  
@@ -76,4 +69,3 @@ The [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] provides support for using fo
   
  [Extending Other Parts of Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Explains how to use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services to create UI elements that match the rest of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
-

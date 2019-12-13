@@ -1,41 +1,34 @@
 ---
 title: "IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
 helpviewer_keywords: 
   - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
 ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint).  
-  
 Gets the pending breakpoint that is being bound.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBP  
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
 ```cpp#  
 int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBP  
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
@@ -78,4 +71,3 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 ## See Also  
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
-

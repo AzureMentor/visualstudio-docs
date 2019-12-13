@@ -1,51 +1,44 @@
 ---
 title: "IDebugReference2::EnumChildren | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugReference2::EnumChildren"
 helpviewer_keywords: 
   - "IDebugReference2::EnumChildren"
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugReference2::EnumChildren
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugReference2::EnumChildren](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-enumchildren).  
-  
 Get a list of selected children of a reference. Reserved for future use.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT EnumChildren (   
-   DEBUGREF_INFO_FLAGS        dwFields,  
-   DWORD                      dwRadix,  
-   DBG_ATTRIB_FLAGS           dwAttribFilter,  
-   LPCOLESTR                  pszNameFilter,  
-   DWORD                      dwTimeout,  
-   IEnumDebugReferenceInfo2** ppEnum  
+   DEBUGREF_INFO_FLAGS        dwFields,  
+   DWORD                      dwRadix,  
+   DBG_ATTRIB_FLAGS           dwAttribFilter,  
+   LPCOLESTR                  pszNameFilter,  
+   DWORD                      dwTimeout,  
+   IEnumDebugReferenceInfo2** ppEnum  
 );  
 ```  
   
 ```csharp  
 int EnumChildren (   
-   enum_DEBUGREF_INFO_FLAGS     dwFields,  
-   uint                         dwRadix,  
-   enum_DBG_ATTRIB_FLAGS        dwAttribFilter,  
-   string                       pszNameFilter,  
-   uint                         dwTimeout,  
-   out IEnumDebugReferenceInfo2 ppEnum  
+   enum_DEBUGREF_INFO_FLAGS     dwFields,  
+   uint                         dwRadix,  
+   enum_DBG_ATTRIB_FLAGS        dwAttribFilter,  
+   string                       pszNameFilter,  
+   uint                         dwTimeout,  
+   out IEnumDebugReferenceInfo2 ppEnum  
 );  
 ```  
   
@@ -76,4 +69,3 @@ int EnumChildren ( 
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)
-

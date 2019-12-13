@@ -1,39 +1,32 @@
 ---
 title: "MemoryTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "MemoryTypeEnum enumeration"
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # MemoryTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [MemoryTypeEnum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/memorytypeenum).  
-  
 Specifies the type of memory to access.  
   
 ## Syntax  
   
 ```cpp#  
 enum MemoryTypeEnum {  
-   MemTypeCode,  
-   MemTypeData,  
-   MemTypeStack,  
-   MemTypeAny = -1  
+   MemTypeCode,  
+   MemTypeData,  
+   MemTypeStack,  
+   MemTypeAny = -1  
 };  
 ```  
   
@@ -59,6 +52,3 @@ enum MemoryTypeEnum {
 ## See Also  
  [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "CA1009: Declare event handlers correctly | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1009"
   - "DeclareEventHandlersCorrectly"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DeclareEventHandlersCorrectly"
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1009: Declare event handlers correctly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1009: Declare event handlers correctly](https://docs.microsoft.com/visualstudio/code-quality/ca1009-declare-event-handlers-correctly).
 
 |||
 |-|-|
@@ -60,7 +53,4 @@ The latest version of this topic can be found at [CA1009: Declare event handlers
 ## See Also
  <xref:System.EventArgs?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
- [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [NIB: Events and Delegates](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

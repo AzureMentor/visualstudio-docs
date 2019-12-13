@@ -1,27 +1,20 @@
 ---
 title: "Message Search Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "message options, Search"
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Message Search Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Message Search Dialog Box](https://docs.microsoft.com/visualstudio/debugger/message-search-dialog-box).  
-  
 Use this dialog box to find and select the node for a specific message in [Messages View](../debugger/messages-view.md). To display this dialog box, move the focus to a Messages view window. Then choose **Find Message** from the **Search** menu.  
   
  The following settings are available:  
@@ -65,7 +58,3 @@ Use this dialog box to find and select the node for a specific message in [Messa
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-
-

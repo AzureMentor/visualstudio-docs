@@ -1,40 +1,33 @@
 ---
 title: "New Project Generation: Under the Hood, Part One | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "projects [Visual Studio], new project dialog"
   - "projects [Visual Studio], new project generation"
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # New Project Generation: Under the Hood, Part One
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [New Project Generation: Under the Hood, Part One](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one).  
-  
 Ever thought about how to create your own project type? Wonder what actually happens when you create a new project? Let's take a peek under the hood and see what's really going on.  
   
  There are several tasks that Visual Studio coordinates for you:  
   
--   It displays a tree of all available project types.  
+- It displays a tree of all available project types.  
   
--   It displays a list of application templates for each project type and lets you pick one.  
+- It displays a list of application templates for each project type and lets you pick one.  
   
--   It collects project information for the application, such as project name and path.  
+- It collects project information for the application, such as project name and path.  
   
--   It passes this information on to the project factory.  
+- It passes this information on to the project factory.  
   
--   It generates project items and folders in the current solution.  
+- It generates project items and folders in the current solution.  
   
 ## The New Project Dialog Box  
  It all begins when you select a project type for a new project. Let's start by clicking **New Project** on the **File** menu. The **New Project** dialog box appears, looking something like this:  
@@ -117,11 +110,11 @@ devenv /installvstemplates
   
  When the **New Project** dialog box opens, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] traverses the ProjectTemplates folder and recreates its structure in the **Project types** tree with some changes:  
   
--   The root node in the **Project types** tree is determined by the application template.  
+- The root node in the **Project types** tree is determined by the application template.  
   
--   The node name can be localized and can contain special characters.  
+- The node name can be localized and can contain special characters.  
   
--   The sort order can be changed.  
+- The sort order can be changed.  
   
 ##### Finding the Root Node for a Project Type  
  When Visual Studio traverses the ProjectTemplates folders, it opens all .zip files and extracts any .vstemplate files. A .vstemplate file uses XML to describe an application template. For more information, see [New Project Generation: Under the Hood, Part Two](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
@@ -171,35 +164,35 @@ devenv /installvstemplates
 #### A Quick Review  
  Let's modify the **New Project** dialog box and create a new user project template.  
   
-1.  Add a MyProjectNode subfolder to the \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp folder.  
+1. Add a MyProjectNode subfolder to the \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp folder.  
   
-2.  Create a MyProject.vstdir file in the MyProjectNode folder using any text editor.  
+2. Create a MyProject.vstdir file in the MyProjectNode folder using any text editor.  
   
-3.  Add these lines to the .vstdir file:  
+3. Add these lines to the .vstdir file:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Save and close the .vstdir file.  
+4. Save and close the .vstdir file.  
   
-5.  Create a MyProject.vstemplate file in the MyProjectNode folder using any text editor.  
+5. Create a MyProject.vstemplate file in the MyProjectNode folder using any text editor.  
   
-6.  Add these lines to the .vstemplate file:  
+6. Add these lines to the .vstemplate file:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Save the.vstemplate file and close the editor.  
+7. Save the.vstemplate file and close the editor.  
   
-8.  Send the .vstemplate file to a new compressed MyProjectNode\MyProject.zip folder.  
+8. Send the .vstemplate file to a new compressed MyProjectNode\MyProject.zip folder.  
   
 9. From the Visual Studio command window, type:  
   
@@ -207,14 +200,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Open Visual Studio.  
+   Open Visual Studio.  
   
-1.  Open the **New Project** dialog box and expand the **Visual C#** project node.  
+10. Open the **New Project** dialog box and expand the **Visual C#** project node.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** appears as a child node of Visual C# just under the Windows node.  
+    **MyProjectNode** appears as a child node of Visual C# just under the Windows node.  
   
 ## See Also  
  [New Project Generation: Under the Hood, Part Two](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-

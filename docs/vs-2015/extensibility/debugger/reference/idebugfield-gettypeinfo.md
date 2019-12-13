@@ -1,41 +1,34 @@
 ---
 title: "IDebugField::GetTypeInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugField::GetTypeInfo"
 helpviewer_keywords: 
   - "IDebugField::GetTypeInfo method"
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugField::GetTypeInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugField::GetTypeInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-gettypeinfo).  
-  
 This method gets type-independent information about the symbol or type.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetTypeInfo(   
-   TYPE_INFO* pTypeInfo  
+   TYPE_INFO* pTypeInfo  
 );  
 ```  
   
 ```csharp  
 int GetTypeInfo(  
-   TYPE_INFO[] pTypeInfo  
+   TYPE_INFO[] pTypeInfo  
 );  
 ```  
   
@@ -53,4 +46,3 @@ int GetTypeInfo(
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
-

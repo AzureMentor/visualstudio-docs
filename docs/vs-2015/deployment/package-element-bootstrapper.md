@@ -1,14 +1,9 @@
 ---
 title: "&lt;Package&gt; Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -20,13 +15,11 @@ ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;Package&gt; Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;Package&gt; Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/package-element-bootstrapper).  
-  
 The `Package` element is the top-level XML element inside of a package file.  
   
 ## Syntax  
@@ -193,6 +186,3 @@ The `Package` element is the top-level XML element inside of a package file.
   
 ## See Also  
  [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)
-
-
-

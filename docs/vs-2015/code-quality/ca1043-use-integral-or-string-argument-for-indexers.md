@@ -1,14 +1,9 @@
 ---
 title: "CA1043: Use integral or string argument for indexers | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1043"
   - "UseIntegralOrStringArgumentForIndexers"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "UseIntegralOrStringArgumentForIndexers"
 ms.assetid: d7f14b9e-2220-4f80-b6b8-48c655a05701
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1043: Use integral or string argument for indexers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1043: Use integral or string argument for indexers](https://docs.microsoft.com/visualstudio/code-quality/ca1043-use-integral-or-string-argument-for-indexers).
 
 |||
 |-|-|
@@ -56,6 +49,3 @@ The latest version of this topic can be found at [CA1043: Use integral or string
  [CA1023: Indexers should not be multidimensional](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
  [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-

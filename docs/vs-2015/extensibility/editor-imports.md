@@ -1,32 +1,25 @@
 ---
 title: "Editor Imports | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "editors [Visual Studio SDK], new - services"
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Editor Imports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Editor Imports](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 You can import a number of editor services, factories, and brokers that provide your extension with different kinds of access to the core editor. For example, you can import the <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> to provide you with a <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> for a given content type. (This navigator allows you perform different kinds of searches on a text buffer.)  
   
  To use an editor import, you import it as a field or property of a class that exports a Managed Extensibility Framework component part.  
   
 > [!NOTE]
->  For more information about the Managed Extensibility Framework, see [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> For more information about the Managed Extensibility Framework, see [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## Import Syntax  
  The following example shows how to import the editor options factory service.  
@@ -125,4 +118,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## See Also  
  [Language Service and Editor Extension Points](../extensibility/language-service-and-editor-extension-points.md)
-

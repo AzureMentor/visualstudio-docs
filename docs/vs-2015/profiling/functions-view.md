@@ -1,14 +1,9 @@
 ---
 title: "Functions View | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.performance.view.functions"
 helpviewer_keywords: 
@@ -18,15 +13,13 @@ helpviewer_keywords:
   - "profiling tools, Functions view"
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Functions View
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Functions View](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 The Functions view lists the functions that are called during profiling.  
   
  By default, functions are listed by name. To view functions by module, right-click in the Functions View window and then select **Show in Module View**. This will display the Module view.  
@@ -40,6 +33,3 @@ The Functions view lists the functions that are called during profiling.
  [Functions View](../profiling/functions-view-instrumentation-data.md)   
  [Functions View - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Functions View - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)
-
-
-

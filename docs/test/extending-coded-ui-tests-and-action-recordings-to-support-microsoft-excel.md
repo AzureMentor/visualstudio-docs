@@ -1,20 +1,20 @@
 ---
 title: "Extend Coded UI Tests and Action Recordings"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
-ms.author: gewarren
-manager: douge
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-author: gewarren
+author: jillre
 ---
 # Extend coded UI tests and action recordings
 
 The testing framework for coded UI tests and action recordings does not support every possible user interface. It might not support the specific UI that you want to test. For example, you cannot immediately create a coded UI test or an action recording for a Microsoft Excel spreadsheet. However, you can create your own extension to the coded UI test framework that supports your specific UI by taking advantage of the extensibility of the coded UI test framework.
 
 ![UI Test Architecture](../test/media/ui_testarch.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## Sample extension to test Microsoft Excel
 
@@ -27,7 +27,7 @@ This [blog post](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-introduci
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
 - [Best practices for coded UI tests](../test/best-practices-for-coded-ui-tests.md)

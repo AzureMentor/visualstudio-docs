@@ -1,16 +1,13 @@
 ---
 title: "VSPackage Setup Scenarios | Microsoft Docs"
-ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: 
-  - "vs-ide-sdk"
 ms.topic: "conceptual"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "VSPackages, deployment considerations"
-author: "gregvanl"
-ms.author: "gregvanl"
-manager: douge
-ms.workload: 
+author: madskristensen
+ms.author: madsk
+manager: jillfra
+ms.workload:
   - "vssdk"
 ---
 # VSPackage Setup Scenarios
@@ -73,7 +70,7 @@ In this case, the VSPackage is a managed VSPackage installed in the global assem
 
 For more information on deployment of side-by-side assemblies, see [Simplifying Deployment and Solving DLL Hell with the .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
-## See Also
+## See also
 
-[Windows Installer](/windows/desktop/Msi/windows-installer-portal)  
-[Supporting Multiple Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+- [Supporting Multiple Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

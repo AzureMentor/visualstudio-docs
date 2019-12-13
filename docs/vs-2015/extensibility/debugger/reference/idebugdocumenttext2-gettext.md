@@ -1,47 +1,40 @@
 ---
 title: "IDebugDocumentText2::GetText | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugDocumentText2::GetText"
 helpviewer_keywords: 
   - "IDebugDocumentText2::GetText"
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugDocumentText2::GetText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttext2-gettext).  
-  
 Retrieves the text from the specified position in the document.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetText(   
-   TEXT_POSITION pos,  
-   ULONG         cMaxChars,  
-   WCHAR*        pText,  
-   ULONG*        pcNumChars  
+   TEXT_POSITION pos,  
+   ULONG         cMaxChars,  
+   WCHAR*        pText,  
+   ULONG*        pcNumChars  
 );  
 ```  
   
 ```csharp  
 int GetText(   
-   eumn_TEXT_POSITION pos,  
-   uint               cMaxChars,  
-   IntPtr             pText,  
-   out uint           pcNumChars  
+   eumn_TEXT_POSITION pos,  
+   uint               cMaxChars,  
+   IntPtr             pText,  
+   out uint           pcNumChars  
 );  
 ```  
   
@@ -103,4 +96,3 @@ namespace Mynamespace
 ## See Also  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
-

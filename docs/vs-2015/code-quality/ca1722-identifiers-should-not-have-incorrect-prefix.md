@@ -1,14 +1,9 @@
 ---
 title: "CA1722: Identifiers should not have incorrect prefix | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "IdentifiersShouldNotHaveIncorrectPrefix"
   - "CA1722"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "IdentifiersShouldNotHaveIncorrectPrefix"
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1722: Identifiers should not have incorrect prefix
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1722: Identifiers should not have incorrect prefix](https://docs.microsoft.com/visualstudio/code-quality/ca1722-identifiers-should-not-have-incorrect-prefix).
 
 |||
 |-|-|
@@ -51,6 +44,3 @@ The latest version of this topic can be found at [CA1722: Identifiers should not
 
 ## Related Rules
  [CA1715: Identifiers should have correct prefix](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
-
-
-

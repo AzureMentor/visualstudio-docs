@@ -1,16 +1,11 @@
 ---
-title: "Walkthrough: Creating an External List in SharePoint by Using Business Data | Microsoft Docs"
-ms.custom: ""
+title: "Create external list in SharePoint using business data"
 ms.date: "02/02/2017"
-ms.technology: 
-  - "office-development"
 ms.topic: "conceptual"
-dev_langs: 
+dev_langs:
   - "VB"
   - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Business Data Connectivity service [SharePoint development in Visual Studio], business data in a Web Part"
   - "BDC [SharePoint development in Visual Studio], external list"
   - "Business Data Connectivity service [SharePoint development in Visual Studio], business data in a SharePoint list"
@@ -19,10 +14,10 @@ helpviewer_keywords:
   - "BDC [SharePoint development in Visual Studio], entity backed list"
   - "Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list"
   - "Business Data Connectivity service [SharePoint development in Visual Studio], external list"
-author: TerryGLee
-ms.author: tglee
-manager: douge
-ms.workload: 
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
+ms.workload:
   - "office"
 ---
 # Walkthrough: Create an external list in SharePoint by using business data
@@ -45,7 +40,7 @@ You need the following components to complete this walkthrough:
 
 - Supported editions of Windows and SharePoint.
 
-- Access to the AdventureWorks sample database. For more information about how to install the AdventureWorks database, see [SQL Server Sample Databases](http://go.microsoft.com/fwlink/?LinkID=117483).
+- Access to the AdventureWorks sample database. For more information about how to install the AdventureWorks database, see [SQL Server Sample Databases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
 
 ## Create a project that contains a BDC model
 
@@ -79,7 +74,7 @@ You need the following components to complete this walkthrough:
 
 2. Add a connection to the SQL Server AdventureWorks sample database.
 
-     For more information, see [Add/Modify Connection (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     For more information, see [Add/Modify Connection (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. In **Solution Explorer**, choose the project node.
 
@@ -226,12 +221,12 @@ To enable the BDC service to display the contacts in a list, you must add a Find
 
 5. In the `ContactService` class, replace the `ReadList` method with the following code. This code performs the following tasks:
 
-    - Retrieves data from the Contacts table of the AdventureWorks database.
+   - Retrieves data from the Contacts table of the AdventureWorks database.
 
-    - Returns a list of Contact entities to the BDC service.
+   - Returns a list of Contact entities to the BDC service.
 
-    > [!NOTE]
-    > Replace the value of the `ServerName` field with the name of your server.
+     > [!NOTE]
+     > Replace the value of the `ServerName` field with the name of your server.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
@@ -275,7 +270,7 @@ You can learn more about how to design models for the BDC service in SharePoint 
 
 ## See also
 
-[Design a business data connectivity model](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Create a business data connectivity model](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[BDC model design tools overview](../sharepoint/bdc-model-design-tools-overview.md)  
+[Design a business data connectivity model](../sharepoint/designing-a-business-data-connectivity-model.md)
+[Create a business data connectivity model](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC model design tools overview](../sharepoint/bdc-model-design-tools-overview.md)
 [Integrate business data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

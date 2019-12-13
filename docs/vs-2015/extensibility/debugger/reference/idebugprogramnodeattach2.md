@@ -1,28 +1,21 @@
 ---
 title: "IDebugProgramNodeAttach2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgramNodeAttach2"
 helpviewer_keywords: 
   - "IDebugProgramNodeAttach2 interface"
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgramNodeAttach2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgramNodeAttach2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnodeattach2).  
-  
 Allows a program node to be notified of an attempt to attach to the associated program.  
   
 ## Syntax  
@@ -63,4 +56,3 @@ IDebugProgramNodeAttach2 : IUnknown
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)
-

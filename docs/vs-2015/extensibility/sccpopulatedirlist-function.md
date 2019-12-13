@@ -1,40 +1,33 @@
 ---
 title: "SccPopulateDirList Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccPopulateDirList"
 helpviewer_keywords: 
   - "SccPopulateDirList function"
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccPopulateDirList Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccPopulateDirList Function](https://docs.microsoft.com/visualstudio/extensibility/sccpopulatedirlist-function).  
-  
 This function determines which directories and (optionally) files are stored in source control, given a list of directories to examine.  
   
 ## Syntax  
   
 ```cpp  
 SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
+   LPVOID        pContext,  
+   LONG          nDirs,  
+   LPCSTR*       lpDirPaths,  
+   POPDIRLISTFUNCpfnPopulate,  
+   LPVOID        pvCallerData,  
+   LONG          fOptions  
 );  
 ```  
   
@@ -73,4 +66,3 @@ SCCRTN SccPopulateDirList(
  [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Error Codes](../extensibility/error-codes.md)
-

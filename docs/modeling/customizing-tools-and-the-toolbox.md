@@ -8,13 +8,11 @@ f1_keywords:
   - "vs.dsltools.dsldesigner.selectcursordialog"
 helpviewer_keywords:
   - "Domain-Specific Language, toolbox"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Customizing Tools and the Toolbox
 
@@ -34,15 +32,15 @@ Editor
 
 In this part of DSL Explorer, you can:
 
--   Create new tabs. Tabs define the section headings in the toolbox.
+- Create new tabs. Tabs define the section headings in the toolbox.
 
--   Create new tools.
+- Create new tools.
 
--   Copy and paste tools.
+- Copy and paste tools.
 
--   Move tools up or down in the list.
+- Move tools up or down in the list.
 
--   Delete tabs and tools.
+- Delete tabs and tools.
 
 > [!IMPORTANT]
 > To add or paste items in a DSL Explorer, right-click the grandparent of the new node. For example, to add a tool, right-click the tab, and not the **Tools** node. To add a tab, right-click the **Editor** node.
@@ -55,36 +53,36 @@ The **Connection Builder** property of a connection tool refers to a connection 
 
 #### To add a tool to the toolbox
 
-1.  You usually create an element tool after you have created a shape class and mapped it to a domain class.
+1. You usually create an element tool after you have created a shape class and mapped it to a domain class.
 
      You usually create a connector tool after you have created a connector class and mapped it to a reference relationship.
 
-2.  In DSL Explorer, expand the **Editor** node and the **Toolbox Tabs** node.
+2. In DSL Explorer, expand the **Editor** node and the **Toolbox Tabs** node.
 
      Right-click a toolbox tab node, and then click **Add New Element Tool** or **Add New Connection Tool**.
 
-3.  Set the **Toolbox Icon** property to refer to a 16x16 bitmap.
+3. Set the **Toolbox Icon** property to refer to a 16x16 bitmap.
 
      If you want to define a new icon, create a bitmap file in Solution Explorer in the **Dsl\Resources** folder. The file should have the following property values: **Build Action** = **Content**; **Copy to Output Directory** = **Do not copy**.
 
-4.  **For an element tool:** Set the **Class** property of the tool to refer to a concrete domain class that is mapped to a shape.
+4. **For an element tool:** Set the **Class** property of the tool to refer to a concrete domain class that is mapped to a shape.
 
      **For a connector tool:** Set the **Connection Builder** property of the tool to one of the items that are offered in the drop-down list. Connection builders are automatically created when you map a connector to a domain relationship. If you have recently created a connector, you would normally select the associated connection builder.
 
-5.  To test the DSL, press F5 or CTRL+F5, and in the experimental instance of Visual Studio, open a sample model file. The new tool should appear on the toolbox. Drag it onto the diagram to verify that it creates a new element.
+5. To test the DSL, press F5 or CTRL+F5, and in the experimental instance of Visual Studio, open a sample model file. The new tool should appear on the toolbox. Drag it onto the diagram to verify that it creates a new element.
 
      If the tool does not appear, stop the experimental Visual Studio. In the Windows **Start** menu, run **Reset the Microsoft Visual Studio 2010 Experimental Instance**. On the **Build** menu, click **Rebuild Solution**. Then test the DSL again.
 
 ## <a name="customizing"></a> Customizing Element Tools
  By default, the tool will create a single instance of the specified class, but you can vary this in two ways:
 
--   Define Element Merge Directives on other classes, enabling them to accept new instances of this class, and enabling them to create additional links when the new element is created. For example, you could allow the user to drop a Comment onto another element, and thereby create a reference link between the two.
+- Define Element Merge Directives on other classes, enabling them to accept new instances of this class, and enabling them to create additional links when the new element is created. For example, you could allow the user to drop a Comment onto another element, and thereby create a reference link between the two.
 
      These customizations also affect what happens when the user pastes or drags and drops an element.
 
      For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
 
--   Write code to customize the tool so that it can create groups of elements. The tool is initialized by methods in ToolboxHelper.cs that you can override. For more information, see [Creating Groups of Elements from a Tool](#groups).
+- Write code to customize the tool so that it can create groups of elements. The tool is initialized by methods in ToolboxHelper.cs that you can override. For more information, see [Creating Groups of Elements from a Tool](#groups).
 
 ## <a name="groups"></a> Creating Groups of Elements from a Tool
  Each element tool contains a prototype of the elements that it should create. By default, each element tool creates a single element, but it is also possible to create a group of related objects with one tool. To do this, you initialize the tool with an <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> that contains the related items.
@@ -133,7 +131,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
         {
             return base.CreateElementToolPrototype(store, domainClassId);
 }  }    }
-
 ```
 
 ## <a name="connections"></a> Customizing Connection Tools
@@ -161,18 +158,18 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### Custom Code for Connection Builders
  There are four checkboxes in the user interface that define different types of customization of connection builders:
 
--   the **Custom accept** check box on a source or target role directive
+- the **Custom accept** check box on a source or target role directive
 
--   the **Custom connect** check box on a source or target role directive
+- the **Custom connect** check box on a source or target role directive
 
--   the **Uses custom connect** check box on a connect directive
+- the **Uses custom connect** check box on a connect directive
 
--   the **Is Custom** property of the connection builder
+- the **Is Custom** property of the connection builder
 
- You have to provide some program code to make these customizations. To discover what code you must supply, check one of these boxes, click Transform All Templates, and then build your solution. An error report will result. Double-click the error report to see a comment that explains what code you should add.
+  You have to provide some program code to make these customizations. To discover what code you must supply, check one of these boxes, click Transform All Templates, and then build your solution. An error report will result. Double-click the error report to see a comment that explains what code you should add.
 
 > [!NOTE]
->  To add custom code, create a partial class definition in a code file separate from the code files in the GeneratedCode folders. To avoid losing your work, you should not edit the generated code files. For more information, see [Overriding and Extending the Generated Classes](../modeling/overriding-and-extending-the-generated-classes.md).
+> To add custom code, create a partial class definition in a code file separate from the code files in the GeneratedCode folders. To avoid losing your work, you should not edit the generated code files. For more information, see [Overriding and Extending the Generated Classes](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### Creating Custom Connection code
  In each link connect directive, the **Source role directives** tab defines from what types you can drag. Similarly, the **Target role directives** tab defines to what types you can drag. For each type, you can further specify whether to allow the connection (for that link connect directive) by setting the **Custom Accept** flag and then supplying the extra code.
@@ -193,28 +190,28 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Link Connect Directive in DSL Details Window**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![Link connect directive in DSL Details window](../modeling/media/connectionbuilder_4b.png)
 
  You must then provide methods in the ConnectionBuilder class:
 
 ```
-  public partial class ConnectionBuilder
-  {
-    /// <summary>
-    /// OK if this component has children
-    /// </summary>
-    private static bool CanAcceptInPortAsSource(InPort candidate)
-    {
-       return candidate.Component.Children.Count > 0;
-    }
+  public partial class ConnectionBuilder
+  {
+    /// <summary>
+    /// OK if this component has children
+    /// </summary>
+    private static bool CanAcceptInPortAsSource(InPort candidate)
+    {
+       return candidate.Component.Children.Count > 0;
+    }
 
-    /// <summary>
-    /// Only if source is on parent of target.
-    /// </summary>
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)
-    {
-      return sourceInPort.Component == targetInPort.Component.Parent;
-    }
+    /// <summary>
+    /// Only if source is on parent of target.
+    /// </summary>
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)
+    {
+      return sourceInPort.Component == targetInPort.Component.Parent;
+    }
 // And similar for OutPorts...
 ```
 
@@ -229,10 +226,10 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  You use custom code to apply 'hard' constraints, but you should consider whether users should be able to temporarily make invalid connections. If they should, you can modify the constraints so that connections are not validated until users try to save changes.
 
-## See Also
+## See also
 
 - [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md)
 - [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md)
 - [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [Circuit Diagrams sample DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Circuit Diagrams sample DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

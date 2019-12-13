@@ -1,14 +1,9 @@
 ---
 title: "CA1301: Avoid duplicate accelerators | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1301"
   - "AvoidDuplicateAccelerators"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "AvoidDuplicateAccelerators"
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1301: Avoid duplicate accelerators
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1301: Avoid duplicate accelerators](https://docs.microsoft.com/visualstudio/code-quality/ca1301-avoid-duplicate-accelerators).
 
 |||
 |-|-|
@@ -54,7 +47,4 @@ The latest version of this topic can be found at [CA1301: Avoid duplicate accele
 
 ## See Also
  <xref:System.Resources.ResourceManager?displayProperty=fullName>
- [Resources in Desktop Apps](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ [Resources in Desktop Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

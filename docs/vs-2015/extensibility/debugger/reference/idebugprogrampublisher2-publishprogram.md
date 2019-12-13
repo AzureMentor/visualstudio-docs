@@ -1,45 +1,38 @@
 ---
 title: "IDebugProgramPublisher2::PublishProgram | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgramPublisher2::PublishProgram"
 helpviewer_keywords: 
   - "IDebugProgramPublisher2::PublishProgram"
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgramPublisher2::PublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgramPublisher2::PublishProgram](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogrampublisher2-publishprogram).  
-  
 This method makes a program available for debug engines (DEs) and the session debug manager.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   LPCOLESTR        szFriendlyName,  
-   IUnknown*        pDebuggeeInterface  
+   CONST_GUID_ARRAY Engines,  
+   LPCOLESTR        szFriendlyName,  
+   IUnknown*        pDebuggeeInterface  
 );  
 ```  
   
 ```csharp  
 int PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   string           szFriendlyName,  
-   object           pDebuggeeInterface  
+   CONST_GUID_ARRAY Engines,  
+   string           szFriendlyName,  
+   object           pDebuggeeInterface  
 );  
 ```  
   
@@ -62,4 +55,3 @@ int PublishProgram(
 ## See Also  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)
-

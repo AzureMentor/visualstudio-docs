@@ -2,13 +2,11 @@
 title: Structure your modeling solution
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Structure your modeling solution
 
@@ -26,7 +24,7 @@ In a medium or large project, the structure of the team is based on the structur
 
 ### To divide an application into layers
 
-1. Base the structure of your solutions on the structure of your application, such as web application, service application, or desktop application. A variety of common architectures is discussed in [Application Archetypes in the Microsoft Application Architecture Guide](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Base the structure of your solutions on the structure of your application, such as web application, service application, or desktop application. A variety of common architectures is discussed in [Application Archetypes in the Microsoft Application Architecture Guide](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Create a Visual Studio solution, which we'll call the Architecture solution. This solution will be used to create the overall design of the system. It will contain models but no code.
 
@@ -88,7 +86,7 @@ For example, if you frequently use solutions that have Presentation, Business, a
 
 ### To create a solution template
 
-1. [Download and install the Export Template Wizard](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Download and install the Export Template Wizard](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Create the solution structure that you want to use as a starting point for future projects.
 
@@ -100,9 +98,9 @@ For example, if you frequently use solutions that have Presentation, Business, a
 
 ## Watch a video
 
-[Organize and manage Your models](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/)
+[Organize and manage your models](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## See Also
+## See also
 
 - [Use models in your development process](../modeling/use-models-in-your-development-process.md)
 - [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)

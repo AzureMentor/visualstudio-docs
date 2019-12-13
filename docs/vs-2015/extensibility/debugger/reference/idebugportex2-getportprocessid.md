@@ -1,41 +1,34 @@
 ---
 title: "IDebugPortEx2::GetPortProcessId | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPortEx2::GetPortProcessId"
 helpviewer_keywords: 
   - "IDebugPortEx2::GetPortProcessId"
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPortEx2::GetPortProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPortEx2::GetPortProcessId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportex2-getportprocessid).  
-  
 Gets the process ID of the port itself.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetPortProcessId (   
-   DWORD* pdwProcessId  
+   DWORD* pdwProcessId  
 );  
 ```  
   
 ```csharp  
 int GetPortProcessId (   
-   out uint pdwProcessId  
+   out uint pdwProcessId  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetPortProcessId ( 
   
 ## See Also  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
-

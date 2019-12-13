@@ -1,72 +1,65 @@
 ---
 title: "SymTagEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "SymTagEnum enumeration"
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # SymTagEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SymTagEnum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symtagenum).  
-  
 Specifies the type of symbol.  
   
 ## Syntax  
   
 ```cpp#  
 enum SymTagEnum {   
-   SymTagNull,  
-   SymTagExe,  
-   SymTagCompiland,  
-   SymTagCompilandDetails,  
-   SymTagCompilandEnv,  
-   SymTagFunction,  
-   SymTagBlock,  
-   SymTagData,  
-   SymTagAnnotation,  
-   SymTagLabel,  
-   SymTagPublicSymbol,  
-   SymTagUDT,  
-   SymTagEnum,  
-   SymTagFunctionType,  
-   SymTagPointerType,  
-   SymTagArrayType,   
-   SymTagBaseType,   
-   SymTagTypedef,   
-   SymTagBaseClass,  
-   SymTagFriend,  
-   SymTagFunctionArgType,   
-   SymTagFuncDebugStart,   
-   SymTagFuncDebugEnd,  
-   SymTagUsingNamespace,   
-   SymTagVTableShape,  
-   SymTagVTable,  
-   SymTagCustom,  
-   SymTagThunk,  
-   SymTagCustomType,  
-   SymTagManagedType,  
-   SymTagDimension,  
-   SymTagCallSite,  
-   SymTagInlineSite,  
-   SymTagBaseInterface,  
-   SymTagVectorType,  
-   SymTagMatrixType,  
-   SymTagHLSLType  
+   SymTagNull,  
+   SymTagExe,  
+   SymTagCompiland,  
+   SymTagCompilandDetails,  
+   SymTagCompilandEnv,  
+   SymTagFunction,  
+   SymTagBlock,  
+   SymTagData,  
+   SymTagAnnotation,  
+   SymTagLabel,  
+   SymTagPublicSymbol,  
+   SymTagUDT,  
+   SymTagEnum,  
+   SymTagFunctionType,  
+   SymTagPointerType,  
+   SymTagArrayType,   
+   SymTagBaseType,   
+   SymTagTypedef,   
+   SymTagBaseClass,  
+   SymTagFriend,  
+   SymTagFunctionArgType,   
+   SymTagFuncDebugStart,   
+   SymTagFuncDebugEnd,  
+   SymTagUsingNamespace,   
+   SymTagVTableShape,  
+   SymTagVTable,  
+   SymTagCustom,  
+   SymTagThunk,  
+   SymTagCustomType,  
+   SymTagManagedType,  
+   SymTagDimension,  
+   SymTagCallSite,  
+   SymTagInlineSite,  
+   SymTagBaseInterface,  
+   SymTagVectorType,  
+   SymTagMatrixType,  
+   SymTagHLSLType  
 };  
 ```  
   
@@ -189,21 +182,21 @@ enum SymTagEnum { 
   
  The values in this enumeration are passed to the following methods to limit the scope of the search to a specific symbol type:  
   
--   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
+- [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   
--   [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
+- [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
   
--   [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
+- [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
   
--   [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
+- [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
   
--   [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
+- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
   
--   [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
+- [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
   
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## Requirements  
  Header: cvconst.h  
@@ -219,6 +212,3 @@ enum SymTagEnum { 
  [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-
-
-

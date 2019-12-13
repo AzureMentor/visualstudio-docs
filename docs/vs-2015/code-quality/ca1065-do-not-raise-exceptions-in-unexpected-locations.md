@@ -1,14 +1,9 @@
 ---
 title: "CA1065: Do not raise exceptions in unexpected locations | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1065"
   - "DoNotRaiseExceptionsInUnexpectedLocations"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1065"
 ms.assetid: 4e1bade4-4ca2-4219-abc3-c7b2d741e157
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1065: Do not raise exceptions in unexpected locations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1065: Do not raise exceptions in unexpected locations](https://docs.microsoft.com/visualstudio/code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations).
 
 |||
 |-|-|
@@ -39,71 +32,71 @@ The latest version of this topic can be found at [CA1065: Do not raise exception
 ## Rule Description
  Methods that are not expected to throw exceptions can be categorized as follows:
 
--   Property Get Methods
+- Property Get Methods
 
--   Event Accessor Methods
+- Event Accessor Methods
 
--   Equals Methods
+- Equals Methods
 
--   GetHashCode Methods
+- GetHashCode Methods
 
--   ToString Methods
+- ToString Methods
 
--   Static Constructors
+- Static Constructors
 
--   Finalizers
+- Finalizers
 
--   Dispose Methods
+- Dispose Methods
 
--   Equality Operators
+- Equality Operators
 
--   Implicit Cast Operators
+- Implicit Cast Operators
 
- The following sections discuss these method types.
+  The following sections discuss these method types.
 
 ### Property Get Methods
  Properties are basically smart fields. Therefore, they should behave like a field as much as possible. Fields do not throw exceptions and neither should properties. If you have a property that throws an exception, consider making it a method.
 
  The following exceptions are allowed to be thrown from a property get method:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
 
--   <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
+- <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
 
 ### Event Accessor Methods
  Event accessors should be simple operations that do not throw exceptions. An event should not throw an exception when you try to add or remove an event handler.
 
  The following exceptions are allowed to be thrown from an event accesor:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
 
--   <xref:System.ArgumentException> and derivatives
+- <xref:System.ArgumentException> and derivatives
 
 ### Equals Methods
  The following **Equals** methods should not throw exceptions:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
- An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
+  An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
 
 ### GetHashCode Methods
  The following **GetHashCode** methods should usually not throw exceptions:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
+  **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
 
- The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
+  The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
 
 ### ToString Methods
  The debugger uses <xref:System.Object.ToString%2A?displayProperty=fullName> to help display information about objects in string format. Therefore, **ToString** should not change the state of an object and it should not throw exceptions.
@@ -138,6 +131,3 @@ The latest version of this topic can be found at [CA1065: Do not raise exception
 
 ## See Also
  [Design Warnings](../code-quality/design-warnings.md)
-
-
-

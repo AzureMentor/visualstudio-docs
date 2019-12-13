@@ -11,13 +11,11 @@ helpviewer_keywords:
   - "Domain-Specific Language Tools, Show Map Lines"
   - "Domain-Specific Language Tools, Show As Class"
   - "Domain-Specific Language Tools, Bring Tree Here"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Working with the DSL Definition Diagram
 The diagram of a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definition is an important tool for defining the domain-specific language. You can add elements to your domain model and define relationships on the diagram, and you can modify the layout of the diagram to make it more readable.
@@ -66,6 +64,6 @@ The diagram of a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definition is a
 ### Show As Class
  If a domain relationship has derived relationships, or if it has embedding or reference relationships with other domain relationships, you can display the relationship as a class by right-clicking the relationship and then clicking **Show As Class**. The relationship will be displayed with a **Domain Properties** compartment and will show the inheritance and relationships trees.
 
-## See Also
+## See also
 
-- [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

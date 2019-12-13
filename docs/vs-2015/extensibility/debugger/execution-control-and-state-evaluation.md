@@ -1,27 +1,20 @@
 ---
 title: "Execution Control and State Evaluation | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "debugging [Debugging SDK], execution control"
   - "expression evaluation, control of execution"
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Execution Control and State Evaluation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Execution Control and State Evaluation](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation).  
-  
 Debugging an application requires implementing such execution control features as stepping into functions, stopping at breakpoints, and continuing execution. Visual Studio debugging bases its execution control on events sent between debugger components.  
   
 ## In This Section  
@@ -39,4 +32,3 @@ Debugging an application requires implementing such execution control features a
   
  [Control Events](../../extensibility/debugger/control-events.md)  
  Discusses the interface used to send events during the controlled execution of the program.
-

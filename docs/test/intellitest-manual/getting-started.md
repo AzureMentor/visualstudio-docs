@@ -1,16 +1,14 @@
 ---
 title: "Introduction to IntelliTest"
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
   - "IntelliTest, Get started"
-ms.author: gewarren
-manager: douge
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-author: gewarren
+author: jillre
 ---
 # Get started with Microsoft IntelliTest
 
@@ -18,7 +16,7 @@ author: gewarren
   * watch the [Channel 9 video](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * read this [overview on MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
   * read our [documentation](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* Ask your questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
+* Ask your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/intellitest)
 * Read the rest of this reference manual
 * Print this page for quick reference
 
@@ -70,4 +68,4 @@ void StaticHelpers(Foo target) {
 
 ## Got feedback?
 
-Post your ideas and feature requests on [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Post your ideas and feature requests on [Developer Community](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

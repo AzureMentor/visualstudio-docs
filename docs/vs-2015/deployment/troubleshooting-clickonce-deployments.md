@@ -1,14 +1,9 @@
 ---
 title: "Troubleshooting ClickOnce Deployments | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: troubleshooting
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -23,13 +18,11 @@ ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # Troubleshooting ClickOnce Deployments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Troubleshooting ClickOnce Deployments](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments).  
-  
 This topic helps you diagnose and resolve the most common issues with [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployments.  
   
  In most cases, a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application will download to a user's computer and run without any problems. There are some cases, however, where Web server or application configuration issues can cause unforeseen problems.  
@@ -55,6 +48,3 @@ This topic helps you diagnose and resolve the most common issues with [!INCLUDE[
 ## See Also  
  [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

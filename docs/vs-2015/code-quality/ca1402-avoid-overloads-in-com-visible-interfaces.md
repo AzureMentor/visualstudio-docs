@@ -1,14 +1,9 @@
 ---
 title: "CA1402: Avoid overloads in COM visible interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "AvoidOverloadsInComVisibleInterfaces"
   - "CA1402"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1402"
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1402: Avoid overloads in COM visible interfaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1402: Avoid overloads in COM visible interfaces](https://docs.microsoft.com/visualstudio/code-quality/ca1402-avoid-overloads-in-com-visible-interfaces).
 
 |||
 |-|-|
@@ -75,8 +68,5 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## See Also
- [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
- [Long Data Type](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
-
-
-
+ [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Long Data Type](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)

@@ -1,26 +1,19 @@
 ---
 title: "Source Control Integration Overview | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control [Visual Studio SDK], about source control"
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Source Control Integration Overview
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Source Control Integration Overview](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview).  
-  
 This section compares the two ways to integrate into Visual Studio source control; a source control Plug-in and a VSPackage that provides a source control solution and highlights the new source control features. Visual Studio allows for manual switching between source control VSPackages and source control plug-ins as well as automatic solution-based switching.  
   
 ## Source Control Integration  
@@ -33,29 +26,29 @@ This section compares the two ways to integrate into Visual Studio source contro
   
  To implement a source control plug-in using the Source Control Plug-in API, follow these steps:  
   
-1.  Create a DLL that implements the functions specified in [Source Control Plug-ins](../../extensibility/source-control-plug-ins.md).  
+1. Create a DLL that implements the functions specified in [Source Control Plug-ins](../../extensibility/source-control-plug-ins.md).  
   
-2.  Register the DLL by making the appropriate registry entries (described in [How to: Install a Source Control Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Register the DLL by making the appropriate registry entries (described in [How to: Install a Source Control Plug-in](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Create a helper UI and display when prompted by the Source Control Adapter Package (the Visual Studio component that handles source control functionality via source control plug-ins)  
+3. Create a helper UI and display when prompted by the Source Control Adapter Package (the Visual Studio component that handles source control functionality via source control plug-ins)  
   
- In response to a source control command, the Visual Studio IDE presents a standard UI for the basic operations and then passes the information to the source control plug-in via the functions defined in the Source Control Plug-in API. For advanced options, the source control plug-in may be called on to present its own UI, for example, browsing for a source-controlled project. This means that the user may be presented with two possibly different styles of UI when dealing with source control: the UI that Visual Studio presents and the UI that the source control plug-in presents. This is most noticeable with advanced source control operations.  
+   In response to a source control command, the Visual Studio IDE presents a standard UI for the basic operations and then passes the information to the source control plug-in via the functions defined in the Source Control Plug-in API. For advanced options, the source control plug-in may be called on to present its own UI, for example, browsing for a source-controlled project. This means that the user may be presented with two possibly different styles of UI when dealing with source control: the UI that Visual Studio presents and the UI that the source control plug-in presents. This is most noticeable with advanced source control operations.  
   
 ### Drawbacks to Implementing a Source Control Plug-in  
   
--   For advanced features, the user may see two different styles of interfaces, leading to possible confusion.  
+- For advanced features, the user may see two different styles of interfaces, leading to possible confusion.  
   
--   The source control plug-in is confined to the source control model implied by the Source Control Plug-in API.  
+- The source control plug-in is confined to the source control model implied by the Source Control Plug-in API.  
   
--   The Source Control Plug-in API may be too restrictive for some source control scenarios.  
+- The Source Control Plug-in API may be too restrictive for some source control scenarios.  
   
 ### Advantages to Implementing a Source Control Plug-in  
   
--   Visual Studio supplies all the UI for all the basic source control operations so that the source control plug-in does not have to implement potentially complex UI.  
+- Visual Studio supplies all the UI for all the basic source control operations so that the source control plug-in does not have to implement potentially complex UI.  
   
--   Because of the strict API, the source control plug-in can readily interact with external source control programs to provide more extensive functionality; Visual Studio does not care too much how the source control functionality is accomplished, only that it is accomplished according to the Source Control Plug-in API.  
+- Because of the strict API, the source control plug-in can readily interact with external source control programs to provide more extensive functionality; Visual Studio does not care too much how the source control functionality is accomplished, only that it is accomplished according to the Source Control Plug-in API.  
   
--   It is easier to implement a source control plug-in than a source control VSPackage.  
+- It is easier to implement a source control plug-in than a source control VSPackage.  
   
 ## Source Control VSPackage  
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] allows for deep integration into Visual Studio with full control of source control functionality and complete replacement of the Visual Studio-provided source control user interface. A source control VSPackage is registered with Visual Studio and provides source control functionality. Although several source control VSPackages can be registered with Visual Studio, only one of them can be active at any one time. A source control VSPackage has full control over the source control functionality and appearance in Visual Studio while it is active. All other source control VSPackages that may be registered in the system are inactive and will not display any UI at all.  
@@ -64,21 +57,20 @@ This section compares the two ways to integrate into Visual Studio source contro
   
 ### Drawbacks to Implementing a Source Control VSPackage  
   
--   The VSPackage must implement a number of complex interfaces to integrate successfully with Visual Studio.  
+- The VSPackage must implement a number of complex interfaces to integrate successfully with Visual Studio.  
   
--   The VSPackage must supply all the UI required for source control; Visual Studio will provide no assistance in this area.  
+- The VSPackage must supply all the UI required for source control; Visual Studio will provide no assistance in this area.  
   
--   A source control VSPackage is intimately tied to Visual Studio and cannot operate with stand-alone programs, so functionality cannot be as easily shared with an external version of the source control program.  
+- A source control VSPackage is intimately tied to Visual Studio and cannot operate with stand-alone programs, so functionality cannot be as easily shared with an external version of the source control program.  
   
 ### Advantages to Implementing a Source Control VSPackage  
   
--   Because the VSPackage has full control over the source control UI and functionality, the user is presented with a seamless interface for source control.  
+- Because the VSPackage has full control over the source control UI and functionality, the user is presented with a seamless interface for source control.  
   
--   The VSPackage is not confined to a particular source control model.  
+- The VSPackage is not confined to a particular source control model.  
   
 ## See Also  
  [Source Control](../../extensibility/internals/source-control.md)   
  [Creating a Source Control Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Creating a Source Control VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [What's New in Source Control](../../extensibility/internals/what-s-new-in-source-control.md)
-

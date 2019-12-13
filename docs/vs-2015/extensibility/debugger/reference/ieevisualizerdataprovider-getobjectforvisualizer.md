@@ -1,41 +1,34 @@
 ---
 title: "IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEEVisualizerDataProvider::GetObjectForVisualizer"
 helpviewer_keywords: 
   - "IEEVisualizerDataProvider::GetObjectForVisualizer method"
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEEVisualizerDataProvider::GetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEEVisualizerDataProvider::GetObjectForVisualizer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer).  
-  
 This method gets the object that this visualizer represents.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
 int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
+   out IDebugObject ppObject  
 );  
 ```  
   
@@ -53,4 +46,3 @@ int GetObjectForVisualizer(
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
-

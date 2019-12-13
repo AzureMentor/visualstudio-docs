@@ -1,26 +1,19 @@
 ---
 title: "Choosing the Installation Directory for a VSPackage | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "VSPackages, installation directory"
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Choosing the Installation Directory for a VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Choosing the Installation Directory for a VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/choosing-the-installation-directory-for-a-vspackage).  
-  
 A VSPackage and its supporting files must be on a user's file system. The location depends on whether the VSPackage is managed or unmanaged, your side-by-side versioning scheme, and user choice.  
   
 ## Unmanaged VSPackages  
@@ -50,20 +43,19 @@ A VSPackage and its supporting files must be on a user's file system. The locati
   
  [Managing VSPackages](../../extensibility/managing-vspackages.md) indicates that registry entries control where [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actually looks for a VSPackage's satellite DLL. However, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tries to load a satellite DLL in a subdirectory named for an LCID value, in the following order:  
   
-1.  Default LCID (VS LCID for example \1033 for English)  
+1. Default LCID (VS LCID for example \1033 for English)  
   
-2.  Default LCID with the default sublanguage.  
+2. Default LCID with the default sublanguage.  
   
-3.  System default LCID.  
+3. System default LCID.  
   
-4.  System default LCID with the default sublanguage.  
+4. System default LCID with the default sublanguage.  
   
-5.  U.S. English (.\1033 or .\0x409).  
+5. U.S. English (.\1033 or .\0x409).  
   
- If your VSPackage DLL includes resources and the SatelliteDll\DllName registry entry points to it, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attempts to load them in the above order.  
+   If your VSPackage DLL includes resources and the SatelliteDll\DllName registry entry points to it, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attempts to load them in the above order.  
   
 ## See Also  
  [Choosing Between Shared and Versioned VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Managing VSPackages](../../extensibility/managing-vspackages.md)   
- [Managed Package Registration](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Managed Package Registration](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

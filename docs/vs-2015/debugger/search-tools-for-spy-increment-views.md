@@ -1,28 +1,21 @@
 ---
 title: "Search Tools for Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "searching, Spy++"
   - "Spy++, searching"
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Search Tools for Spy++ Views
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Search Tools for Spy++ Views](https://docs.microsoft.com/visualstudio/debugger/search-tools-for-spy-increment-views).  
-  
 Use these dialog boxes to specify what data a Spy++ Views window will display:  
   
 ## In This Section  
@@ -50,6 +43,3 @@ Use these dialog boxes to specify what data a Spy++ Views window will display:
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-

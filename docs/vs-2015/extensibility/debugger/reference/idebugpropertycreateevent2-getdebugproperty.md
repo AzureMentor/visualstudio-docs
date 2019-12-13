@@ -1,41 +1,34 @@
 ---
 title: "IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPropertyCreateEvent2::GetDebugProperty"
 helpviewer_keywords: 
   - "IDebugPropertyCreateEvent2::GetDebugProperty"
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPropertyCreateEvent2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPropertyCreateEvent2::GetDebugProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty).  
-  
 Gets the new property.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
+   IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
 int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
+   out IDebugProperty2 ppProperty  
 );  
 ```  
   
@@ -49,4 +42,3 @@ int GetDebugProperty ( 
 ## See Also  
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

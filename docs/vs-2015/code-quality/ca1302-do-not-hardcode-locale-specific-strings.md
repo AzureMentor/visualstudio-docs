@@ -1,14 +1,9 @@
 ---
 title: "CA1302: Do not hardcode locale specific strings | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotHardcodeLocaleSpecificStrings"
   - "CA1302"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1302"
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1302: Do not hardcode locale specific strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1302: Do not hardcode locale specific strings](https://docs.microsoft.com/visualstudio/code-quality/ca1302-do-not-hardcode-locale-specific-strings).
 
 |||
 |-|-|
@@ -55,6 +48,3 @@ The latest version of this topic can be found at [CA1302: Do not hardcode locale
 
 ## Related Rules
  [CA1303: Do not pass literals as localized parameters](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
-
-
-

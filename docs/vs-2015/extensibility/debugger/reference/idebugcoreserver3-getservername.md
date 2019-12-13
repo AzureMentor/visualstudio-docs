@@ -1,41 +1,34 @@
 ---
 title: "IDebugCoreServer3::GetServerName | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugCoreServer3::GetServerName"
 helpviewer_keywords: 
   - "IDebugCoreServer3::GetServerName"
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCoreServer3::GetServerName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver3-getservername).  
-  
 Retrieves the name of the server.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetServerName(  
-   BSTR* pbstrName  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
 int GetServerName(  
-   out string pbstrName  
+   out string pbstrName  
 );  
 ```  
   
@@ -44,7 +37,7 @@ int GetServerName(
  [out] Returns the name of the server.  
   
 > [!NOTE]
->  The caller is responsible for freeing the string.  
+> The caller is responsible for freeing the string.  
   
 ## Return Value  
  If successful, returns `S_OK`; otherwise, returns error code.  
@@ -55,4 +48,3 @@ int GetServerName(
 ## See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
-

@@ -1,27 +1,20 @@
 ---
 title: "Spy++ Toolbar | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Spy++ toolbar"
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Spy++ Toolbar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Spy++ Toolbar](https://docs.microsoft.com/visualstudio/debugger/spy-increment-toolbar).  
-  
 The toolbar appears under the menu bar in Spy++. To display or hide the toolbar, on the **View** menu, click **Toolbar**.  
   
  The following controls are available on the toolbar.  
@@ -49,6 +42,3 @@ The toolbar appears under the menu bar in Spy++. To display or hide the toolbar,
  [Using Spy++](../debugger/using-spy-increment.md)   
  [Spy++ Views](../debugger/spy-increment-views.md)   
  [Spy++ Reference](../debugger/spy-increment-reference.md)
-
-
-

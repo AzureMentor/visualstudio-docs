@@ -1,27 +1,20 @@
 ---
 title: "Memory Tab, Process Properties Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Process properties for Windows NT"
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Memory Tab, Process Properties Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Memory Tab, Process Properties Dialog Box](https://docs.microsoft.com/visualstudio/debugger/memory-tab-process-properties-dialog-box).  
-  
 Use the **Memory** tab to show how a process uses memory. To display the [Process Properties Dialog Box](../debugger/process-properties-dialog-box.md), move the focus to a [Processes View](../debugger/processes-view.md) window. Select any process node in the tree, then choose **Properties** from the **View** menu.  
   
  The following settings are available on the **Memory** tab:  
@@ -39,6 +32,3 @@ Use the **Memory** tab to show how a process uses memory. To display the [Proces
 |**Reserved Bytes**|The total amount of virtual memory reserved for future use by this process.|  
 |**Free Image Bytes**|The amount of virtual address space that is not in use or reserved by images within this process.|  
 |**Reserved Image Bytes**|The sum of all virtual memory reserved by images run within this process.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "CA1021: Avoid out parameters | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1021"
   - "AvoidOutParameters"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1021"
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1021: Avoid out parameters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1021: Avoid out parameters](https://docs.microsoft.com/visualstudio/code-quality/ca1021-avoid-out-parameters).
 
 |||
 |-|-|
@@ -93,6 +86,3 @@ The latest version of this topic can be found at [CA1021: Avoid out parameters](
 
 ## Related Rules
  [CA1045: Do not pass types by reference](../code-quality/ca1045-do-not-pass-types-by-reference.md)
-
-
-

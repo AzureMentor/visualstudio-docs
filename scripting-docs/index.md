@@ -3,15 +3,17 @@ layout: LandingPage
 title: Create JavaScript apps in Visual Studio | Microsoft Docs
 description: Learn how use Visual Studio 2017 to create applications.
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: "mikejo"
 author: "mikejo5000"
-manager: douge
+manager: jillfra
 ---
 # JavaScript in Visual Studio
 
 Visual Studio provides several different tools to help you create apps using JavaScript or TypeScript.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>Learn to use JavaScript in Visual Studio with 5-minute Quickstarts</h2>
 
@@ -76,6 +78,24 @@ Visual Studio provides several different tools to help you create apps using Jav
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="https://docs.microsoft.com/aspnet/core/client-side/spa/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and a JavaScript framework">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Create an app with ASP.NET and AngularJS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="https://docs.microsoft.com/visualstudio/javascript/tutorial-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
@@ -111,26 +131,7 @@ Visual Studio provides several different tools to help you create apps using Jav
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/aspnet/core/client-side/angular">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_net.svg" alt="Create an app with ASP.NET and AngularJS">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create an app with ASP.NET and AngularJS</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    </li>
-        <li>
+    <li>
         <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/build-your-first-app?view=toolsforcordova-2017">
         <div class="cardSize">
             <div class="cardPadding">
@@ -220,5 +221,3 @@ Visual Studio provides several different tools to help you create apps using Jav
         </a>
     </li>
 </ul><p>
-
----

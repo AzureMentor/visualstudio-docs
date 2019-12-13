@@ -1,41 +1,33 @@
 ---
 title: "Target Build Order | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "msbuild, build order"
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Target Build Order
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Target Build Order](https://docs.microsoft.com/visualstudio/msbuild/target-build-order).  
-  
-  
 Targets must be ordered if the input to one target depends on the output of another target. You can use these attributes to specify the order in which targets are run:  
   
--   `InitialTargets`. This `Project` attribute specifies the targets that will run first, even if targets are specified on the command line or in the `DefaultTargets` attribute.  
+- `InitialTargets`. This `Project` attribute specifies the targets that will run first, even if targets are specified on the command line or in the `DefaultTargets` attribute.  
   
--   `DefaultTargets`. This `Project` atttribute specifies which targets are run if a target is not specified explicitly on the command line.  
+- `DefaultTargets`. This `Project` atttribute specifies which targets are run if a target is not specified explicitly on the command line.  
   
--   `DependsOnTargets`. This `Target` attribute specifies targets that must run before this target can run.  
+- `DependsOnTargets`. This `Target` attribute specifies targets that must run before this target can run.  
   
--   `BeforeTargets` and `AfterTargets`. These `Target` attributes specify that this target should run before or after the specified targets (MSBuild 4.0).  
+- `BeforeTargets` and `AfterTargets`. These `Target` attributes specify that this target should run before or after the specified targets (MSBuild 4.0).  
   
- A target is never run twice during a build, even if a subsequent target in the build depends on it. Once a target has been run, its contribution to the build is complete.  
+  A target is never run twice during a build, even if a subsequent target in the build depends on it. Once a target has been run, its contribution to the build is complete.  
   
- Targets may have a `Condition` attribute. If the specified condition evaluates to `false`, the target isn't executed and has no effect on the build. For more information about conditions, see [Conditions](../msbuild/msbuild-conditions.md).  
+  Targets may have a `Condition` attribute. If the specified condition evaluates to `false`, the target isn't executed and has no effect on the build. For more information about conditions, see [Conditions](../msbuild/msbuild-conditions.md).  
   
 ## Initial Targets  
  The `InitialTargets` attribute of the [Project](../msbuild/project-element-msbuild.md) element specifies targets that will run first, even if targets are specified on the command line or in the `DefaultTargets` attribute. Initial targets are typically used for error checking.  
@@ -109,22 +101,19 @@ Targets must be ordered if the input to one target depends on the output of anot
 ## Determining the Target Build Order  
  MSBuild determines the target build order as follows:  
   
-1.  `InitialTargets` targets are run.  
+1. `InitialTargets` targets are run.  
   
-2.  Targets specified on the command line by the **/target** switch are run. If you specify no targets on the command line, then the `DefaultTargets` targets are run. If neither is present, then the first target encountered is run.  
+2. Targets specified on the command line by the **/target** switch are run. If you specify no targets on the command line, then the `DefaultTargets` targets are run. If neither is present, then the first target encountered is run.  
   
-3.  The `Condition` attribute of the target is evaluated. If the `Condition` attribute is present and evaluates to `false`, the target isn't executed and has no further effect on the build.  
+3. The `Condition` attribute of the target is evaluated. If the `Condition` attribute is present and evaluates to `false`, the target isn't executed and has no further effect on the build.  
   
-4.  Before a target is executed, its `DependsOnTargets` targets are run.  
+4. Before a target is executed, its `DependsOnTargets` targets are run.  
   
-5.  Before a target is executed, any target that lists it in a `BeforeTargets` attribute is run.  
+5. Before a target is executed, any target that lists it in a `BeforeTargets` attribute is run.  
   
-6.  Before a target is executed, its `Inputs` attribute and `Outputs` attribute are compared. If MSBuild determines that any output files are out of date with respect to the corresponding input file or files, then MSBuild executes the target. Otherwise, MSBuild skips the target.  
+6. Before a target is executed, its `Inputs` attribute and `Outputs` attribute are compared. If MSBuild determines that any output files are out of date with respect to the corresponding input file or files, then MSBuild executes the target. Otherwise, MSBuild skips the target.  
   
-7.  After a target is executed or skipped, any target that lists it in an `AfterTargets` attribute is run.  
+7. After a target is executed or skipped, any target that lists it in an `AfterTargets` attribute is run.  
   
 ## See Also  
  [Targets](../msbuild/msbuild-targets.md)
-
-
-

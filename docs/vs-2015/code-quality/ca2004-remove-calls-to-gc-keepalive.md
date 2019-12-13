@@ -1,14 +1,9 @@
 ---
 title: "CA2004: Remove calls to GC.KeepAlive | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "RemoveCallsToGCKeepAlive"
   - "CA2004"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2004"
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2004: Remove calls to GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2004: Remove calls to GC.KeepAlive](https://docs.microsoft.com/visualstudio/code-quality/ca2004-remove-calls-to-gc-keepalive).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA2004: Remove calls to GC.Kee
 
 ## When to Suppress Warnings
  You can suppress this warning only if it is not technically correct to convert to `SafeHandle` usage in your class.
-
-
-

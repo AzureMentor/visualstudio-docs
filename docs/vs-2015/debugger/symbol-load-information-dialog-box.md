@@ -1,14 +1,9 @@
 ---
 title: "Symbol Load Information Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.symbols.loadinfo"
 dev_langs: 
@@ -18,15 +13,13 @@ dev_langs:
   - "C++"
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Symbol Load Information Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Symbol Load Information Dialog Box](https://docs.microsoft.com/visualstudio/debugger/symbol-load-information-dialog-box).  
-  
 The **Symbol Load Information** dialog box opens when you right-click on the **Modules** window and choose **Symbol Load Information**.  
   
 ## UIElement List  
@@ -38,6 +31,3 @@ The **Symbol Load Information** dialog box opens when you right-click on the **M
   
 ## See Also  
  [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

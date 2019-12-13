@@ -1,14 +1,9 @@
 ---
 title: "CA2217: Do not mark enums with FlagsAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotMarkEnumsWithFlags"
   - "CA2217"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA2217"
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2217: Do not mark enums with FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2217: Do not mark enums with FlagsAttribute](https://docs.microsoft.com/visualstudio/code-quality/ca2217-do-not-mark-enums-with-flagsattribute).
 
 |||
 |-|-|
@@ -64,6 +57,3 @@ The latest version of this topic can be found at [CA2217: Do not mark enums with
 
 ## See Also
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

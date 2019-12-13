@@ -1,27 +1,20 @@
 ---
 title: "Summary View - Resource Contention View | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Summary view"
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Summary View - Resource Contention View
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Summary View - Resource Contention View](https://docs.microsoft.com/visualstudio/profiling/summary-view-resource-contention-view).  
-  
 The Summary view displays information about the events in your application in which a thread or process was suspended while it waited for access to a resource.  
   
  For more information, including a description of the Notification Links and Report lists, see [Summary View](../profiling/summary-view.md).  
@@ -49,6 +42,3 @@ The Summary view displays information about the events in your application in wh
 |**ID**|The thread identifier.|  
 |**Name**|The name of the process that owns the thread.|  
 |**Contentions %**|The percentage of all contention events in the profiling data that were contentions over this resource.|
-
-
-

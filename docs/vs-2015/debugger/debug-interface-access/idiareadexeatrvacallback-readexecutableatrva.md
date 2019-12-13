@@ -1,39 +1,32 @@
 ---
 title: "IDiaReadExeAtRVACallback::ReadExecutableAtRVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaReadExeAtRVACallback::ReadExecutableAtRVA method"
 ms.assetid: 3c1e965f-8f05-41a8-86d8-01830b2377c9
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaReadExeAtRVACallback::ReadExecutableAtRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva).  
-  
 Reads the specified number of bytes starting at the specified relative virtual address (RVA) from the executable file.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT ReadExecutableAtRVA (   
-   DWORD  relativeVirtualAddress,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+   DWORD  relativeVirtualAddress,  
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
@@ -56,6 +49,3 @@ HRESULT ReadExecutableAtRVA ( 
 ## See Also  
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
-
-
-

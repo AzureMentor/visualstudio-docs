@@ -1,40 +1,33 @@
 ---
 title: "IDiaStackWalkFrame::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaStackWalkFrame::readMemory method"
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaStackWalkFrame::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaStackWalkFrame::readMemory](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe-readmemory).  
-  
 Reads memory from image.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT readMemory (   
-   MemoryTypeEnum type,  
-   ULONGLONG va,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
+   MemoryTypeEnum type,  
+   ULONGLONG va,  
+   DWORD     cbData,  
+   DWORD*    pcbData,  
+   BYTE      data[]  
 );  
 ```  
   
@@ -59,6 +52,3 @@ HRESULT readMemory ( 
   
 ## See Also  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
-
-
-

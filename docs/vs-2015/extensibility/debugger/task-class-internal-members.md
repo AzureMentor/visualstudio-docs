@@ -1,27 +1,20 @@
 ---
 title: "Task Class - Internal Members | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "debug engines, Task class [.NET Framework]"
   - "Task class [.NET Framework debug engines]"
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Task Class - Internal Members
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Task Class - Internal Members](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-class-internal-members).  
-  
 This topic describes the internal members of the <xref:System.Threading.Tasks.Task?displayProperty=fullName> class that help you implement a custom debugger. For general information about this class, see the <xref:System.Threading.Tasks.Task> reference topic.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -70,19 +63,18 @@ This topic describes the internal members of the <xref:System.Threading.Tasks.Ta
 ## Remarks  
  The following internal methods are useful to a debugger engine because they mark the entrance to <xref:System.Threading.Tasks.Task> code execution:  
   
--   `Execute`  
+- `Execute`  
   
--   `ExecuteEntry`  
+- `ExecuteEntry`  
   
--   `ExecuteWithThreadLocal`  
+- `ExecuteWithThreadLocal`  
   
--   `Finish`  
+- `Finish`  
   
--   `InnerInvoke`  
+- `InnerInvoke`  
   
--   `InternalWait`  
+- `InternalWait`  
   
 ## See Also  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

@@ -1,17 +1,15 @@
 ---
 title: Settings Page, Project Designer
 ms.date: 06/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
 helpviewer_keywords:
   - "Settings page in Project Designer"
   - "Project Designer, Settings page"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---

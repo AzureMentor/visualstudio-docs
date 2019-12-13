@@ -1,43 +1,36 @@
 ---
 title: "SccAddFilesFromSCC Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccAddFilesFromSCC"
 helpviewer_keywords: 
   - "SccAddFilesFromSCC function"
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccAddFilesFromSCC Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccAddFilesFromSCC Function](https://docs.microsoft.com/visualstudio/extensibility/sccaddfilesfromscc-function).  
-  
 This function adds a list of files from source control to the currently opened project.  
   
 ## Syntax  
   
 ```cpp  
 SCCRTN SccAddFilesFromSCC(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LPSTR   lpUser,  
-   LPSTR   lpAuxProjPath,  
-   LONG    cFiles,  
-   LPCSTR* lpFilePaths,  
-   LPCSTR  lpDestination,  
-   LPCSTR  lpComment,  
-   LPBOOL  pbResults  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LPSTR   lpUser,  
+   LPSTR   lpAuxProjPath,  
+   LONG    cFiles,  
+   LPCSTR* lpFilePaths,  
+   LPCSTR  lpDestination,  
+   LPCSTR  lpComment,  
+   LPBOOL  pbResults  
 );  
 ```  
   
@@ -82,4 +75,3 @@ SCCRTN SccAddFilesFromSCC(
   
 ## See Also  
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
-

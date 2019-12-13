@@ -1,41 +1,34 @@
 ---
 title: "IEnumDebugAddresses::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugAddresses::Clone"
 helpviewer_keywords: 
   - "IEnumDebugAddresses::Clone method"
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugAddresses::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugAddresses::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-clone).  
-  
 This method returns a copy of the current enumeration as a separate object.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone(  
-   IEnumDebugAddresses** ppEnum  
+   IEnumDebugAddresses** ppEnum  
 );  
 ```  
   
 ```csharp  
 int Clone(  
-   out IEnumDebugAddresses ppEnum  
+   out IEnumDebugAddresses ppEnum  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int Clone(
   
 ## See Also  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
-

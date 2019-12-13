@@ -1,31 +1,31 @@
 ---
-title: "Collect diagnostic information using test settings in Visual Studio"
+title: "Collect diagnostic information using test settings"
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
   - "load tests, configuring run settings"
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
-author: gewarren
-ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # Collect diagnostic information using test settings
 
 You can use *Test settings* in Visual Studio to collect extra data when you run your tests. For example, you might want to make a video recording as you run your test. There are diagnostic data adapters to:
 
--   Collect each UI action step in text format
+- Collect each UI action step in text format
 
--   Record each UI action for playing back
+- Record each UI action for playing back
 
--   Collect system information
+- Collect system information
 
--   Collect event log data
+- Collect event log data
 
--   Collect IntelliTrace data to help isolate non-reproducible bugs
+- Collect IntelliTrace data to help isolate non-reproducible bugs
 
 Diagnostic data adapters can also be used to change the behavior of a test machine. For example, with a test setting in Visual Studio, you can emulate various network topology bottlenecks to evaluate the performance of your team’s application.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## Use test settings with Visual Studio
 
@@ -36,7 +36,7 @@ To run your unit, coded UI, web performance, or load tests by using Visual Studi
 The following table provides an overview of the various ways that the diagnostic data adapters can be configured for use with local or remote machine roles.
 
 |Diagnostic data adapter that is used in test setting|Manual Tests on local machine|Automated Tests|Manual Tests: Collecting data by using a set of roles and an environment|Notes|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**ASP.NET Client Proxy for IntelliTrace and Test Impact:** This proxy lets you collect information about the http calls from a client to a web server for the IntelliTrace and Test Impact diagnostic data adapters.|Yes|Yes|Yes|-   Use this only when either the IntelliTrace or Test Impact diagnostic data adapters are selected for a client role.|
 |**ASP.NET profiler:** You can create a test setting that includes ASP.NET profiling, which collects performance data on ASP.NET web applications.|No|Yes (See Notes)|No|-   This diagnostic data adapter is supported only when you run load tests from Visual Studio.|
 |**Code coverage:** You can create a test setting that includes code coverage information that is used to investigate how much of your code is covered by tests.|No|Yes (See Notes)|No|-   You can use code coverage only when you run an automated test from Visual Studio or *mstest.exe*, and only from the machine that runs the test. Remote collection is not supported.<br />-   Collecting code coverage data does not work if you also have the test setting configured to collect IntelliTrace information. **Note:**  This diagnostic data adapter is only applicable to Visual Studio test settings. It is not used for test settings in Microsoft Test Manager. Additionally, this adapter is for compatibility with Visual Studio 2010 test projects. **Note:**  For compatibility, the code coverage applies when automated tests are run from Microsoft Test Manager or on a remote Test agent from Visual Studio using the legacy MSTest runner.|

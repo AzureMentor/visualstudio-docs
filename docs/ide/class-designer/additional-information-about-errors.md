@@ -1,8 +1,6 @@
 ---
 title: Class Designer errors
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
   - "vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound"
@@ -25,9 +23,9 @@ helpviewer_keywords:
   - "Class Designer [Visual Studio], errors"
   - "class diagrams, errors"
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -40,7 +38,7 @@ ms.workload:
 You can find assistance with other errors and warnings in the following resources:
 
 - [Work with Visual C++ code](working-with-visual-cpp-code.md) includes troubleshooting information about displaying C++ in a class diagram.
-- [Visual Studio Class Designer forum](http://go.microsoft.com/fwlink/?LinkId=160754) provides a forum for questions about **Class Designer**.
+- [Visual Studio Class Designer forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) provides a forum for questions about **Class Designer**.
 
 ## See also
 

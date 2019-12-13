@@ -1,38 +1,31 @@
 ---
 title: "IDiaLoadCallback::NotifyDebugDir | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaLoadCallback::NotifyDebugDir method"
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaLoadCallback::NotifyDebugDir](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback-notifydebugdir).  
-  
 Called when a debug directory was found in the .exe file.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT NotifyDebugDir (   
-   BOOL  fExecutable,  
-   DWORD cbData,  
-   BYTE  data[]  
+   BOOL  fExecutable,  
+   DWORD cbData,  
+   BYTE  data[]  
 );  
 ```  
   
@@ -59,6 +52,3 @@ HRESULT NotifyDebugDir ( 
 ## See Also  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
-
-
-

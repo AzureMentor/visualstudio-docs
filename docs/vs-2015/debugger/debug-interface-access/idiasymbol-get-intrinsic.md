@@ -1,36 +1,29 @@
 ---
 title: "IDiaSymbol::get_intrinsic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_intrinsic method"
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_intrinsic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_intrinsic](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-intrinsic).  
-  
 Retrieves a flag that specifies whether a class is an intrinsic type.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_intrinsic(   
-   BOOL* pRetVal)  
+   BOOL* pRetVal)  
 );  
 ```  
   
@@ -42,7 +35,7 @@ HRESULT get_intrinsic( 
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means the property is not available for the symbol.  
+> A return value of `S_FALSE` means the property is not available for the symbol.  
   
 ## Remarks  
   
@@ -55,6 +48,3 @@ HRESULT get_intrinsic( 
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

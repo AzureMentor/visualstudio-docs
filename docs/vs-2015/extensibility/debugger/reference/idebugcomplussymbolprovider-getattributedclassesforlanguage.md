@@ -1,27 +1,20 @@
 ---
 title: "IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "GetAttributedClassesForLanguage"
   - "IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage"
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage).  
-  
 Retrieves the classes with the specified attribute that are implemented in the specified programming language.  
   
 ## Syntax  
@@ -29,18 +22,18 @@ Retrieves the classes with the specified attribute that are implemented in the s
 ```  
 [C++]  
 HRESULT GetAttributedClassesForLanguage (  
-   GUID               guidLanguage,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
+   GUID               guidLanguage,  
+   LPOLESTR           pstrAttribute,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAttributedClassesForLanguage (  
-   Guid                 guidLanguage,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
+   Guid                 guidLanguage,  
+   string               pstrAttribute,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
@@ -190,4 +183,3 @@ Error:
   
 ## See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
-

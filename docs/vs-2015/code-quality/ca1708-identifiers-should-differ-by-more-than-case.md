@@ -1,14 +1,9 @@
 ---
 title: "CA1708: Identifiers should differ by more than case | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "IdentifiersShouldDifferByMoreThanCase"
   - "CA1708"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "IdentifiersShouldDifferByMoreThanCase"
 ms.assetid: dac0f01d-dd21-484d-add1-c8cd2bf6969f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1708: Identifiers should differ by more than case
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1708: Identifiers should differ by more than case](https://docs.microsoft.com/visualstudio/code-quality/ca1708-identifiers-should-differ-by-more-than-case).
 
 |||
 |-|-|
@@ -54,6 +47,3 @@ The latest version of this topic can be found at [CA1708: Identifiers should dif
 
 ## Related Rules
  [CA1709: Identifiers should be cased correctly](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-
-
-

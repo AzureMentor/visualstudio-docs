@@ -1,26 +1,19 @@
 ---
 title: "Supporting Source Control | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control [Visual Studio SDK], supporting"
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Supporting Source Control
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Supporting Source Control](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] supports file checkouts, check-ins, and other source control operations for your project or editor. As a source control client, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is designed to interact with a source control package, such as [!INCLUDE[vsvss](../../includes/vsvss-md.md)], which provides archiving, versioning, and control facilities for a dynamically defined set of files.  
   
 ## In This Section  
@@ -58,4 +51,3 @@ The latest version of this topic can be found at [Supporting Source Control](htt
 ## Related Sections  
  [Project Types](../../extensibility/internals/project-types.md)  
  Provides an overview of projects as the basic building blocks of the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE). Links are provided to additional topics that explain how projects control building and compiling code.
-

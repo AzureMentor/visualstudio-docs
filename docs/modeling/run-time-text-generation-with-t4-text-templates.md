@@ -10,13 +10,11 @@ helpviewer_keywords:
   - "TextTemplatingFilePreprocessor custom tool"
   - "text templates, TransformText() method"
   - "text templates, generating files at run time"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Run-Time Text Generation with T4 Text Templates
 

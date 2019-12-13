@@ -1,41 +1,34 @@
 ---
 title: "IDebugPortRequest2::GetPortName | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPortRequest2::GetPortName"
 helpviewer_keywords: 
   - "IDebugPortRequest2::GetPortName"
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPortRequest2::GetPortName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPortRequest2::GetPortName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportrequest2-getportname).  
-  
 Gets the name of the port.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetPortName(   
-   BSTR* pbstrPortName  
+   BSTR* pbstrPortName  
 );  
 ```  
   
 ```csharp  
 int GetPortName(   
-   out string pbstrPortName  
+   out string pbstrPortName  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetPortName( 
   
 ## See Also  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
-

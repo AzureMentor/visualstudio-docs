@@ -1,26 +1,19 @@
 ---
 title: "Properties Window Object List | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Properties window, object list"
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Properties Window Object List
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Properties Window Object List](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-object-list).  
-  
 The object list in the **Properties** window is a drop-down list that allows you to change the selection to other objects available within one or more selected windows. Selecting a different object from within this list triggers a call to <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> to inform the environment that a new object has been selected. The information displayed in the **Properties** window is then changed to show the properties associated with the newly selected object.  
   
 ## The Object List  
@@ -34,4 +27,3 @@ The object list in the **Properties** window is a drop-down list that allows you
   
 ## See Also  
  [Extending Properties](../../extensibility/internals/extending-properties.md)
-

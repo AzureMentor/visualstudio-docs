@@ -1,26 +1,19 @@
 ---
 title: "Web Site Support Attributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "web site projects, registration"
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Web Site Support Attributes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Web Site Support Attributes](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Web site project can be extended to provide support for Web programming languages. The language must register itself with [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] so that project templates can appear in the **New Web Site** dialog box when the language is selected.  
   
  The IronPython Studio sample includes web site support. You can find it with the [VSSDK Samples](../../misc/vssdk-samples.md). It includes the following attribute classes to register IronPython as a codebehind language for new Web projects.  
@@ -60,4 +53,3 @@ The latest version of this topic can be found at [Web Site Support Attributes](h
   
 ## See Also  
  [Web Site Support](../../extensibility/internals/web-site-support.md)
-

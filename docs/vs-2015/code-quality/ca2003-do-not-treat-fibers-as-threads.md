@@ -1,14 +1,9 @@
 ---
 title: "CA2003: Do not treat fibers as threads | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2003"
   - "DoNotTreatFibersAsThreads"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotTreatFibersAsThreads"
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2003: Do not treat fibers as threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2003: Do not treat fibers as threads](https://docs.microsoft.com/visualstudio/code-quality/ca2003-do-not-treat-fibers-as-threads).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA2003: Do not treat fibers as
 
 ## When to Suppress Warnings
  You should not suppress this rule.
-
-
-

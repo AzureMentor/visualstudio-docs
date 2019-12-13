@@ -1,43 +1,36 @@
 ---
 title: "IDebugProperty2::GetExtendedInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProperty2::GetExtendedInfo"
 helpviewer_keywords: 
   - "IDebugProperty2::GetExtendedInfo"
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProperty2::GetExtendedInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getextendedinfo).  
-  
 Gets extended information for the property.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetExtendedInfo (   
-   REFGUID* guidExtendedInfo,  
-   VARIANT* pExtendedInfo  
+   REFGUID* guidExtendedInfo,  
+   VARIANT* pExtendedInfo  
 );  
 ```  
   
 ```csharp  
 int GetExtendedInfo (   
-   ref Guid guidExtendedInfo,  
-   out object pExtendedInfo  
+   ref Guid guidExtendedInfo,  
+   out object pExtendedInfo  
 );  
 ```  
   
@@ -68,4 +61,3 @@ int GetExtendedInfo ( 
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
-

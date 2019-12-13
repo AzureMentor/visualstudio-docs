@@ -1,14 +1,9 @@
 ---
 title: "&lt;RelatedProducts&gt; Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 f1_keywords: 
   - "MSBuild.GenerateBootstrapper.MissingDependency"
   - "MSBuild.GenerateBootstrapper.DuplicateItems"
@@ -26,13 +21,11 @@ ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;RelatedProducts&gt; Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;RelatedProducts&gt; Element (Bootstrapper)](https://docs.microsoft.com/visualstudio/deployment/relatedproducts-element-bootstrapper).  
-  
 The `RelatedProducts` element defines other products that either depend upon or are included in the current product.  
   
 ## Syntax  
@@ -88,6 +81,3 @@ The `RelatedProducts` element defines other products that either depend upon or 
   
 ## See Also  
  [\<Product> Element](../deployment/product-element-bootstrapper.md)
-
-
-

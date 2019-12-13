@@ -1,14 +1,9 @@
 ---
 title: "Managing VSPackages | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "VSPackages, autoloading"
   - "VSPackages, delayed loading"
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "VSPackages, loading"
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Managing VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Managing VSPackages](https://docs.microsoft.com/visualstudio/extensibility/managing-vspackages).  
-  
 In most cases you don’t need to worry about managing VSPackages, since the project and item templates register and load the package automatically. However, in some circumstances you may need to learn a bit more in order to manage your package.  
   
 ## Using the experimental instance  
@@ -46,4 +39,3 @@ In most cases you don’t need to worry about managing VSPackages, since the pro
   
 ## See Also  
  [VSPackages](../extensibility/internals/vspackages.md)
-

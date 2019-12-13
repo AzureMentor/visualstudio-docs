@@ -1,35 +1,34 @@
 ---
-title: "Unit testing in Node.js"
-description: Visual Studio provides support unit testing JavaScript code using the Node.js Tools for Visual Studio
-ms.custom: ""
+title: "Unit testing JavaScript and TypeScript"
+description: Visual Studio provides support unit testing JavaScript and TypeScript code using the Node.js Tools for Visual Studio
 ms.date: "06/06/2018"
-ms.technology: vs-nodejs
 ms.topic: "conceptual"
 ms.devlang: javascript
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: douge
+manager: jillfra
 dev_langs:
   - JavaScript
 ms.workload:
   - "nodejs"
 ---
 
-# Unit testing in Node.js
+# Unit testing JavaScript and TypeScript in Visual Studio
 
 The Node.js Tools For Visual Studio allow you to write and run unit tests using some of the more popular
 JavaScript frameworks without the need to switch to a command prompt.
 
 The supported frameworks are:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (this framework is specific to Node.js Tools for Visual Studio)
 
 > [!WARNING]
 > An issue in Tape currently prevents Tape tests from running. If [PR #361](https://github.com/substack/tape/pull/361) is merged, the issue should be resolved.
 
-If your favorite framework is not supported, see [Add support for a unit test framework](#addingFramework) for information on adding support. 
+If your favorite framework is not supported, see [Add support for a unit test framework](#addingFramework) for information on adding support.
 
 ## Write unit tests
 
@@ -84,7 +83,7 @@ You can run tests in Visual Studio 2017 or from the command line.
 
 ### Run tests in Visual Studio 2017
 
-You can run the tests by clicking the **Run All** link in Test Explorer. Or, you can run tests by selecting one or more tests or groups, right-clicking, and selecting **Run Selected Tests** from the shorcut menu. Tests run in the background, and Test Explorer automatically updates and shows the results. Furthermore, you can also debug selected tests by selecting **Debug Selected Tests**.
+You can run the tests by clicking the **Run All** link in Test Explorer. Or, you can run tests by selecting one or more tests or groups, right-clicking, and selecting **Run Selected Tests** from the shortcut menu. Tests run in the background, and Test Explorer automatically updates and shows the results. Furthermore, you can also debug selected tests by selecting **Debug Selected Tests**.
 
 > [!Warning]
 > Debugging unit tests using Node 8+ currently only works for JavaScript test files,
@@ -130,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> If you get an error indicating that *vstest.console.exe* cannot be found, make sure you've opened the Developer Command Prompt and not a regular command prompt. 
+> If you get an error indicating that *vstest.console.exe* cannot be found, make sure you've opened the Developer Command Prompt and not a regular command prompt.
 
 ## <a name="addingFramework"></a>Add support for a unit test framework
 
@@ -154,7 +153,7 @@ when making changes to the implementation.
 
 ## Unit tests in other project types
 You are not limited to writing unit tests in just your Node.js projects. When you add the TestFramework and
-TestRoot properties to any C# or VB project, those tests will be enumerated and you can run them using
+TestRoot properties to any C# or Visual Basic project, those tests will be enumerated and you can run them using
 the Test Explorer window.
 
 To enable this, right-click the project node in the Solution Explorer, choose **Unload Project**, and then choose **Edit Project**. Then in the project file, add the following two elements to a property group.
@@ -173,5 +172,11 @@ To enable this, right-click the project node in the Solution Explorer, choose **
 Next, add your tests to the test root folder you specified, and they will be available to run in the
 Test Explorer window. If they don't initially appear, you may need to rebuild the project.
 
-> [!NOTE]
-> This currently doesn't work for .NET Standard and .NET Core projects.
+### Unit test .NET Core and .NET Standard
+In addition to the properties above, you will also need to install the NuGet package [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) and set the property:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

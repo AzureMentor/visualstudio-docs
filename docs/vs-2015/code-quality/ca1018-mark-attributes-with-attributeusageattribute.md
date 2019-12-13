@@ -1,14 +1,9 @@
 ---
 title: "CA1018: Mark attributes with AttributeUsageAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1018"
   - "MarkAttributesWithAttributeUsage"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "MarkAttributesWithAttributeUsage"
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1018: Mark attributes with AttributeUsageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1018: Mark attributes with AttributeUsageAttribute](https://docs.microsoft.com/visualstudio/code-quality/ca1018-mark-attributes-with-attributeusageattribute).
 
 |||
 |-|-|
@@ -59,7 +52,4 @@ The latest version of this topic can be found at [CA1018: Mark attributes with A
  [CA1813: Avoid unsealed attributes](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## See Also
- [Attributes](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
-
-
-
+ [Attributes](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

@@ -1,41 +1,34 @@
 ---
 title: "IDebugAddress2::GetProcessID | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugAddress2::GetProcessID"
 helpviewer_keywords: 
   - "IDebugAddress2::GetProcessID method"
 ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugAddress2::GetProcessID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugAddress2::GetProcessID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugaddress2-getprocessid).  
-  
 Retrieves the ID of the process that owns the object represented by this [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) interface.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetProcessID (  
-   DWORD* pProcID  
+   DWORD* pProcID  
 );  
 ```  
   
 ```csharp  
 int GetProcessID (  
-   out uint pProcID  
+   out uint pProcID  
 );  
 ```  
   
@@ -48,4 +41,3 @@ int GetProcessID (
   
 ## See Also  
  [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)
-

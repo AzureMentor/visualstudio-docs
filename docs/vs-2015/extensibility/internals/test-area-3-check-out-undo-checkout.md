@@ -1,14 +1,9 @@
 ---
 title: "Test Area 3: Check Out-Undo Checkout | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control plug-ins, checkout"
   - "source control plug-ins, undo checkout"
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "source control [Visual Studio SDK], undo checkout"
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Test Area 3: Check Out/Undo Checkout
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Test Area 3: Check Out-Undo Checkout](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-3-check-out-undo-checkout).  
-  
 This source-control plug-in test area covers editing and reverting items from the version store via the **Check Out** and **Undo Checkout** commands.  
   
  **Check Out**: Marks an item in the version store as checked out, modifies the local copy to read/write.  
@@ -35,21 +28,21 @@ This source-control plug-in test area covers editing and reverting items from th
   
 ##### Check Out:  
   
--   **File**, **Source Control**, **Check Out**.  
+- **File**, **Source Control**, **Check Out**.  
   
--   **File**, **Check Out**.  
+- **File**, **Check Out**.  
   
--   Shortcut Menu, **Check Out**.  
+- Shortcut Menu, **Check Out**.  
   
--   Undo Checkout: **File**, **Source Control**, **Undo Checkout**.  
+- Undo Checkout: **File**, **Source Control**, **Undo Checkout**.  
   
 ## Common Expected Behavior  
   
--   After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
+- After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
   
--   The version store attributes the checkout to the correct user.  
+- The version store attributes the checkout to the correct user.  
   
--   The time and date of the checkout are correct (per the user's settings).  
+- The time and date of the checkout are correct (per the user's settings).  
   
 ## Test Cases  
  The following are specific test cases for the Checkout/Undo Checkout test area.  
@@ -73,11 +66,11 @@ This source-control plug-in test area covers editing and reverting items from th
   
 #### Expected Behavior  
   
--   Cannot use **Check Out Exclusively** command while disconnected from the version store.  
+- Cannot use **Check Out Exclusively** command while disconnected from the version store.  
   
--   Cannot use **Undo Checkout** command while disconnected from the version store.  
+- Cannot use **Undo Checkout** command while disconnected from the version store.  
   
--   **Shared Check Out** command works.  
+- **Shared Check Out** command works.  
   
 |Action|Test Steps|Expected Results to Verify|  
 |------------|----------------|--------------------------------|  
@@ -88,13 +81,13 @@ This source-control plug-in test area covers editing and reverting items from th
   
 #### Expected Behavior  
   
--   After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
+- After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
   
--   The version store attributes the check out to the correct user.  
+- The version store attributes the check out to the correct user.  
   
--   The time and date of the check out are correct (per the user's settings).  
+- The time and date of the check out are correct (per the user's settings).  
   
--   The local copy of the target file or folder is writeable.  
+- The local copy of the target file or folder is writeable.  
   
 |Action|Test Steps|Expected Results to Verify|  
 |------------|----------------|--------------------------------|  
@@ -107,13 +100,13 @@ This source-control plug-in test area covers editing and reverting items from th
   
 #### Expected Behavior  
   
--   After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
+- After the check out operation, the target file(s) and/or folder(s) are marked as checked out in the version store.  
   
--   The version store attributes the check out to the correct user.  
+- The version store attributes the check out to the correct user.  
   
--   The time and date of the check out is correct (per the user's settings).  
+- The time and date of the check out is correct (per the user's settings).  
   
--   The local copy of the target file or folder is writeable.  
+- The local copy of the target file or folder is writeable.  
   
 |Action|Test Steps|Expected Results to Verify|  
 |------------|----------------|--------------------------------|  
@@ -125,9 +118,9 @@ This source-control plug-in test area covers editing and reverting items from th
   
 #### Expected Behavior  
   
--   The default is based upon the user's **Check out Local Version** setting. If the user has chosen to check out local version, then the default for undo checkout is to always revert to the version checked out.  
+- The default is based upon the user's **Check out Local Version** setting. If the user has chosen to check out local version, then the default for undo checkout is to always revert to the version checked out.  
   
--   Upon acceptance of the undo, the icons in **Solution Explorer** are updated for affected files and the item is removed from the **Pending Checkins** window.  
+- Upon acceptance of the undo, the icons in **Solution Explorer** are updated for affected files and the item is removed from the **Pending Checkins** window.  
   
 |Action|Test Steps|Expected Results to Verify|  
 |------------|----------------|--------------------------------|  
@@ -138,4 +131,3 @@ This source-control plug-in test area covers editing and reverting items from th
   
 ## See Also  
  [Test Guide for Source Control Plug-ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

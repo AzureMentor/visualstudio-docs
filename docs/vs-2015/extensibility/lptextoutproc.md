@@ -1,14 +1,9 @@
 ---
 title: "LPTEXTOUTPROC | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 f1_keywords: 
   - "LPTEXTOUTPROC"
 helpviewer_keywords: 
@@ -19,14 +14,12 @@ helpviewer_keywords:
   - "SccMsgDataOnAfterGetFile structure"
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 When the user executes a source control operation from inside the integrated development environment (IDE), the source control plug-in might want to convey error or status messages relating to the operation. The plug-in can display its own message boxes for this purpose. However, for more seamless integration, the plug-in can pass strings to the IDE, which then displays them in its native way of displaying status information. The mechanism for this is the `LPTEXTOUTPROC` function pointer. The IDE implements this function (described in more detail below) for displaying error and status.  
   
  The IDE passes to the source control plug-in a function pointer to this function, as the `lpTextOutProc` parameter, when calling the [SccOpenProject](../extensibility/sccopenproject-function.md). During an SCC operation, for example, in the middle of a call to the [SccGet](../extensibility/sccget-function.md) involving many files, the plug-in can call the `LPTEXTOUTPROC` function, periodically passing strings to display. The IDE may display these strings on a status bar, in an output window, or in a separate message box, as appropriate. Optionally, the IDE may be able to display certain messages with a **Cancel** button. This enables the user to cancel the operation, and it gives the IDE the ability to pass this information back to the plug-in.  
@@ -36,8 +29,8 @@ When the user executes a source control operation from inside the integrated dev
   
 ```cpp#  
 typedef LONG (*LPTEXTOUTPROC) (  
-   LPSTR display_string,  
-   LONG mesg_type  
+   LPSTR display_string,  
+   LONG mesg_type  
 );  
 ```  
   
@@ -72,47 +65,47 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## Structures  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
-   DWORD dwBackgroundOperationID;  
+   DWORD dwBackgroundOperationID;  
 } SccMsgDataIsCancelled;  
 ```  
   
  This structure is sent with the `SCC_MSG_BACKGROUND_IS_CANCELLED` message. It is used to communicate the ID of the background operation that was canceled.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
-   DWORD dwBackgroundOperationID;  
-   PCSTR szFile;  
+   DWORD dwBackgroundOperationID;  
+   PCSTR szFile;  
 } SccMsgDataOnBeforeGetFile;  
 ```  
   
  This structure is sent with the `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` message. It is used to communicate the name of the file about to be retrieved and the ID of the background operation that is doing the retrieving.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
-   DWORD dwBackgroundOperationID;  
-   PCSTR szFile;  
-   SCCRTN sResult;  
+   DWORD dwBackgroundOperationID;  
+   PCSTR szFile;  
+   SCCRTN sResult;  
 } SccMsgDataOnAfterGetFile;  
 ```  
   
  This structure is sent with the `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` message. It is used to communicate the result of retrieving the specified file as well as the ID of the background operation that did the retrieving. See the return values for the [SccGet](../extensibility/sccget-function.md) for what can be given as a result.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  
 typedef struct {  
-   DWORD dwBackgroundOperationID;  
-   PCSTR szMessage;  
-   BOOL bIsError;  
+   DWORD dwBackgroundOperationID;  
+   PCSTR szMessage;  
+   BOOL bIsError;  
 } SccMsgDataOnMessage;  
 ```  
   
@@ -123,24 +116,23 @@ typedef struct {
   
 ```cpp#  
 LONG SendStatusMessage(  
-    LPTEXTOUTPROC pTextOutProc,  
-    DWORD         dwBackgroundID,  
-    LPCTSTR       pStatusMsg,  
-    BOOL          bIsError)  
+    LPTEXTOUTPROC pTextOutProc,  
+    DWORD         dwBackgroundID,  
+    LPCTSTR       pStatusMsg,  
+    BOOL          bIsError)  
 {  
-    SccMsgDataOnMessage msgData = { 0 };  
-    LONG                result  = 0;  
+    SccMsgDataOnMessage msgData = { 0 };  
+    LONG                result  = 0;  
   
-    msgData.dwBackgroundOperationID = dwBackgroundID;  
-    msgData.szMessage               = pStatusMsg;  
-    msgData.bIsError                = bIsError;  
+    msgData.dwBackgroundOperationID = dwBackgroundID;  
+    msgData.szMessage               = pStatusMsg;  
+    msgData.bIsError                = bIsError;  
   
-    result = pTextOutProc(reinterpret_cast<LPCTSTR>(&msgData), SCC_MSG_BACKGROUND_ON_MESSAGE);  
-    return result;  
+    result = pTextOutProc(reinterpret_cast<LPCTSTR>(&msgData), SCC_MSG_BACKGROUND_ON_MESSAGE);  
+    return result;  
 }  
 ```  
   
 ## See Also  
  [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
-

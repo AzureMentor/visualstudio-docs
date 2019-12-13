@@ -1,27 +1,20 @@
 ---
 title: "Functions View - .NET Memory Instrumentation Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Functions view"
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Functions View - .NET Memory Instrumentation Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Functions View - .NET Memory Instrumentation Data](https://docs.microsoft.com/visualstudio/profiling/functions-view-dotnet-memory-instrumentation-data).  
-  
 The Functions view of .NET memory allocation profiling data that was collected by using the instrumentation method lists the functions that allocated memory during the profiling run. A function row reports the size and number of allocations, and the timing data for the function.  
   
 ## General  
@@ -105,6 +98,3 @@ The Functions view of .NET memory allocation profiling data that was collected b
  [Functions View - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Functions View](../profiling/functions-view-instrumentation-data.md)   
  [Functions View](../profiling/functions-view-sampling-data.md)
-
-
-

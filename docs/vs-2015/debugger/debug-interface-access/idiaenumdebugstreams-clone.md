@@ -1,36 +1,29 @@
 ---
 title: "IDiaEnumDebugStreams::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaEnumDebugStreams::Clone method"
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaEnumDebugStreams::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaEnumDebugStreams::Clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreams-clone).  
-  
 Creates an enumerator that contains the same enumeration state as the current enumerator.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone (   
-   IDiaEnumDebugStreams** ppenum  
+   IDiaEnumDebugStreams** ppenum  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT Clone ( 
   
 ## See Also  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
-
-
-

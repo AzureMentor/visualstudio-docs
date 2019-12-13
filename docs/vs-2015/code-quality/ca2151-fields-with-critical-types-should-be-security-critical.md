@@ -1,24 +1,17 @@
 ---
 title: "CA2151: Fields with critical types should be security critical | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2151: Fields with critical types should be security critical
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2151: Fields with critical types should be security critical](https://docs.microsoft.com/visualstudio/code-quality/ca2151-fields-with-critical-types-should-be-security-critical).
 
 |||
 |-|-|
@@ -40,7 +33,6 @@ The latest version of this topic can be found at [CA2151: Fields with critical t
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
  In this example, `m_field` is a security transparent field of a type that is security critical.
@@ -74,7 +66,6 @@ The latest version of this topic can be found at [CA2151: Fields with critical t
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## When to Suppress Warnings
@@ -84,6 +75,3 @@ The latest version of this topic can be found at [CA2151: Fields with critical t
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2145.transparentmethodsshouldnotusesuppressunmanagedcodesecurity/cs/ca2145.cs#1)]
 
 ### Comments
-
-
-

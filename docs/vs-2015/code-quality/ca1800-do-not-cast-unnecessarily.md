@@ -1,14 +1,9 @@
 ---
 title: "CA1800: Do not cast unnecessarily | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1800"
   - "DoNotCastUnnecessarily"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1800"
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1800: Do not cast unnecessarily
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1800: Do not cast unnecessarily](https://docs.microsoft.com/visualstudio/code-quality/ca1800-do-not-cast-unnecessarily).
 
 |||
 |-|-|
@@ -59,8 +52,5 @@ The latest version of this topic can be found at [CA1800: Do not cast unnecessar
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## See Also
- [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e)
- [is](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
-
-
-
+ [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e)
+ [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

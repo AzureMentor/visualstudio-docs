@@ -1,26 +1,19 @@
 ---
 title: "Wizards | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "projects [Visual Studio SDK], providing wizard support"
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Wizards
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Wizards](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 After you create a wizard, you typically want to add it to the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE) so that others can use it. The added wizard then appears in the **Add New Project** or **Add New Item** dialog boxes. To see the **Add New Project** or **Add New Item** dialog boxes, right-click an open solution in **Solution Explorer**, point to **Add**, and then click **New Project** or **New Item**.  
   
  Wizards can be implemented in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] to let users select from a tree view of available values when they open the **Add New Project** dialog box or the **Add New Item** dialog box, or when they right-click an item in **Solution Explorer**.  
@@ -51,9 +44,8 @@ After you create a wizard, you typically want to add it to the [!INCLUDE[vsprvs]
  [Project Types](../../extensibility/internals/project-types.md)  
  Provides links to additional topics that offer information about how to design new project types.  
   
- [Walkthrough: Creating a Wizard](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
+ [Walkthrough: Creating a Wizard](https://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
  Illustrates how to create a wizard.  
   
  [Extending Projects](../../extensibility/extending-projects.md)  
  Describes how to use [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projects and solutions to organize code files and resource files, and how to implement source control.
-

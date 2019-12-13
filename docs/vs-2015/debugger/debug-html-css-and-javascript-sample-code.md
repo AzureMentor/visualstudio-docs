@@ -1,14 +1,9 @@
 ---
 title: "Debug HTML, CSS, and JavaScript sample code | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 dev_langs: 
   - "FSharp"
   - "VB"
@@ -16,15 +11,13 @@ dev_langs:
   - "C++"
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debug HTML, CSS, and JavaScript sample code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debug HTML, CSS, and JavaScript sample code](https://docs.microsoft.com/visualstudio/debugger/debug-html-css-and-javascript-sample-code).  
-  
 Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  The code in this topic is the sample file for [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md). The errors present by design in the QuickStart are fixed in this version of the code.  
@@ -107,6 +100,3 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 ## See Also  
  [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

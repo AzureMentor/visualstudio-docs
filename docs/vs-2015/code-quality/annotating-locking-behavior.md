@@ -1,14 +1,9 @@
 ---
 title: "Annotating Locking Behavior | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords: 
   - "_Releases_nonreentrant_lock_"
   - "_Lock_kind_mutex_"
@@ -35,15 +30,13 @@ f1_keywords:
   - "_Lock_kind_event_"
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: "corob-msft"
-ms.author: gewarren
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: jillfra
 ---
 # Annotating Locking Behavior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Annotating Locking Behavior](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior).  
-  
 To avoid concurrency bugs in your multithreaded program, always follow an appropriate locking discipline and use SAL annotations.  
   
  Concurrency bugs are notoriously hard to reproduce, diagnose, and debug because they are non-deterministic. Reasoning about thread interleaving is difficult at best, and becomes impractical when you are designing a body of code that has more than a few threads. Therefore, it's good practice to follow a locking discipline in your multithreaded programs. For example, obeying a lock order while acquiring multiple locks helps avoid deadlocks, and acquiring the proper guarding lock before accessing a shared resource helps prevent race conditions.  
@@ -59,11 +52,11 @@ To avoid concurrency bugs in your multithreaded program, always follow an approp
   
  Some thread ownership rules to keep in mind:  
   
--   Spin locks are uncounted locks that have clear thread ownership.  
+- Spin locks are uncounted locks that have clear thread ownership.  
   
--   Mutexes and critical sections are counted locks that have clear thread ownership.  
+- Mutexes and critical sections are counted locks that have clear thread ownership.  
   
--   Semaphores and events are counted locks that do not have clear thread ownership.  
+- Semaphores and events are counted locks that do not have clear thread ownership.  
   
 ## Locking Annotations  
  The following table lists the locking annotations.  
@@ -118,7 +111,4 @@ To avoid concurrency bugs in your multithreaded program, always follow an approp
  [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
  [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)   
- [Code Analysis Team Blog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)

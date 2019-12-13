@@ -1,26 +1,19 @@
 ---
 title: "BP_FLAGS90 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "BP_FLAGS90 enumeration"
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # BP_FLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [BP_FLAGS90](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-flags90).  
-  
 Enumerates valid values for optional flags. The optional flags may be used to specify additional information when you set a breakpoint. This enumeration extends the [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeration.  
   
 ## Syntax  
@@ -28,13 +21,13 @@ Enumerates valid values for optional flags. The optional flags may be used to sp
 ```cpp#  
 enum enum_BP_FLAGS90  
 {  
-   // VS 8.0 values  
-   BP90_FLAG_NONE               = 0x0000,  
-   BP90_FLAG_MAP_DOCPOSITION    = 0x0001,  
-   BP90_FLAG_DONT_STOP          = 0x0002,  
+   // VS 8.0 values  
+   BP90_FLAG_NONE               = 0x0000,  
+   BP90_FLAG_MAP_DOCPOSITION    = 0x0001,  
+   BP90_FLAG_DONT_STOP          = 0x0002,  
   
-   // Values added in VS 9.0  
-   BP90_FLAG_TRACEPOINT_CONTINUE = 0x0004,  
+   // Values added in VS 9.0  
+   BP90_FLAG_TRACEPOINT_CONTINUE = 0x0004,  
 };  
 typedef DWORD BP_FLAGS90;  
 ```  
@@ -42,13 +35,13 @@ typedef DWORD BP_FLAGS90;
 ```csharp  
 public enum enum_BP_FLAGS90  
 {  
-   // VS 8.0 values  
-   BP90_FLAG_NONE                = 0x0000,  
-   BP90_FLAG_MAP_DOCPOSITION     = 0x0001,  
-   BP90_FLAG_DONT_STOP           = 0x0002,  
+   // VS 8.0 values  
+   BP90_FLAG_NONE                = 0x0000,  
+   BP90_FLAG_MAP_DOCPOSITION     = 0x0001,  
+   BP90_FLAG_DONT_STOP           = 0x0002,  
   
-   // Values added in VS 9.0  
-   BP90_FLAG_TRACEPOINT_CONTINUE = 0x0004,  
+   // Values added in VS 9.0  
+   BP90_FLAG_TRACEPOINT_CONTINUE = 0x0004,  
 };  
 ```  
   
@@ -74,4 +67,3 @@ public enum enum_BP_FLAGS90
   
 ## See Also  
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-

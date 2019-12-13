@@ -1,37 +1,30 @@
 ---
 title: "IDiaSession::findFileById | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSession::findFileById method"
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSession::findFileById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSession::findFileById](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findfilebyid).  
-  
 Retrieves a source file by source file identifier.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT findFileById (   
-   DWORD            uniqueId,  
-   IDiaSourceFile** ppResult  
+   DWORD            uniqueId,  
+   IDiaSourceFile** ppResult  
 );  
 ```  
   
@@ -52,6 +45,3 @@ HRESULT findFileById ( 
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
-
-
-

@@ -1,27 +1,20 @@
 ---
 title: "UsedCommand Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "UsedCommands element (VSCT XML schema)"
   - "VSCT XML schema elements, UsedCommands"
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # UsedCommand Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [UsedCommand Element](https://docs.microsoft.com/visualstudio/extensibility/usedcommand-element).  
-  
 Enables a VSPackage to access a command that is defined in another .vsct file. For example, if your VSPackage uses the standard **Copy** command, which is defined by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell, you can add the command to a menu or toolbar without re-implementing it.  
   
 ## Syntax  
@@ -60,13 +53,12 @@ Enables a VSPackage to access a command that is defined in another .vsct file. F
   
 ```  
 <UsedCommands>  
-  <UsedCommand guid="guidVSStd97" id="cmdidCut"/>  
-  <UsedCommand guid="guidVSStd97" id="cmdidCopy"/>  
-  <UsedCommand guid="guidVSStd97" id="cmdidPaste"/>  
+  <UsedCommand guid="guidVSStd97" id="cmdidCut"/>  
+  <UsedCommand guid="guidVSStd97" id="cmdidCopy"/>  
+  <UsedCommand guid="guidVSStd97" id="cmdidPaste"/>  
 </UsedCommands>  
 ```  
   
 ## See Also  
  [UsedCommands Element](../extensibility/usedcommands-element.md)   
  [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

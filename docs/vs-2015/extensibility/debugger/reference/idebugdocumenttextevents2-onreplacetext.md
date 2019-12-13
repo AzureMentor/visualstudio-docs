@@ -1,43 +1,36 @@
 ---
 title: "IDebugDocumentTextEvents2::onReplaceText | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugDocumentTextEvents2::OnReplaceText"
 helpviewer_keywords: 
   - "IDebugDocumentTextEvents2::onReplaceText"
 ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugDocumentTextEvents2::onReplaceText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugDocumentTextEvents2::onReplaceText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext).  
-  
 Notifies the debug package that text has been replaced in the document.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT onReplaceText(   
-   TEXT_POSITION pos,  
-   DWORD         dwNumToReplace  
+   TEXT_POSITION pos,  
+   DWORD         dwNumToReplace  
 );  
 ```  
   
 ```csharp  
 int onReplaceText(   
-   enum_TEXT_POSITION pos,  
-   uint               dwNumToReplace  
+   enum_TEXT_POSITION pos,  
+   uint               dwNumToReplace  
 );  
 ```  
   
@@ -54,4 +47,3 @@ int onReplaceText( 
 ## See Also  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
-

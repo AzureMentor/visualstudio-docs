@@ -1,41 +1,34 @@
 ---
 title: "IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugMethodField::IsCustomAttributeDefined"
 helpviewer_keywords: 
   - "IDebugMethodField::IsCustomAttributeDefined method"
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugMethodField::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugMethodField::IsCustomAttributeDefined](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-iscustomattributedefined).  
-  
 Determines whether a specific custom attribute has been defined.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
 ```csharp  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
@@ -48,4 +41,3 @@ int IsCustomAttributeDefined(
   
 ## See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
-

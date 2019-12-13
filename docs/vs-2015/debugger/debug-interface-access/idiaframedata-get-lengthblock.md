@@ -1,36 +1,29 @@
 ---
 title: "IDiaFrameData::get_lengthBlock | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaFrameData::get_lengthBlock method"
 ms.assetid: 2e54deb7-7744-428e-913c-1d47a2aa89b0
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaFrameData::get_lengthBlock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaFrameData::get_lengthBlock](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-lengthblock).  
-  
 Retrieves the length, in bytes, of the block of code described by the frame.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_lengthBlock (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -47,6 +40,3 @@ HRESULT get_lengthBlock ( 
 ## See Also  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
-
-
-

@@ -1,39 +1,32 @@
 ---
 title: "UdtKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "UdtKind enumeration"
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [UdtKind](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/udtkind).  
-  
 Describes the variety of user-defined type (UDT).  
   
 ## Syntax  
   
 ```cpp#  
 enum UdtKind {   
-   UdtStruct,  
-   UdtClass,  
-   UdtUnion,  
-   UdtInterface  
+   UdtStruct,  
+   UdtClass,  
+   UdtUnion,  
+   UdtInterface  
 };  
 ```  
   
@@ -59,6 +52,3 @@ enum UdtKind { 
 ## See Also  
  [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
-
-
-

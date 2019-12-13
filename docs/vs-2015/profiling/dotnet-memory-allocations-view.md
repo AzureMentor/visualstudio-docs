@@ -1,14 +1,9 @@
 ---
 title: ".NET Memory Allocations View | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.performance.view.allocation"
 helpviewer_keywords: 
@@ -18,29 +13,27 @@ helpviewer_keywords:
   - "profiling tools reports, Allocation view"
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # .NET Memory Allocations View
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [.NET Memory Allocations View](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-allocations-view).  
-  
 The Allocations view lists the types that were created during the profiling run. Each type is the root node of a call tree that displays the function execution paths that resulted in the allocations of the type.  
   
  The data in a type row displays the total number of objects of the type that were created in the profiling run and the total number of bytes allocated for the objects of that type. Inclusive and exclusive values for a type are always the same.  
   
--   Inclusive values are for objects created in the instances of the function and its child functions that were called by the parent function in the call tree.  
+- Inclusive values are for objects created in the instances of the function and its child functions that were called by the parent function in the call tree.  
   
--   Exclusive values are for objects that were created directly by the function when they were called by the parent function. Objects created in child functions are not included.  
+- Exclusive values are for objects that were created directly by the function when they were called by the parent function. Objects created in child functions are not included.  
   
- The data for a function displays the number of objects created and the number of bytes allocated for objects of the parent type.  
+  The data for a function displays the number of objects created and the number of bytes allocated for objects of the parent type.  
   
 ## Highlighting the Execution Hot Path  
  You can find the execution path of the call tree  that created the most objects of the parent type.  
   
--   To display the most active path, right-click the type or function, and then click **Expand Hot Path**.  
+- To display the most active path, right-click the type or function, and then click **Expand Hot Path**.  
   
 |Column|Description|  
 |------------|-----------------|  
@@ -60,6 +53,3 @@ The Allocations view lists the types that were created during the profiling run.
 |**Inclusive Bytes %**|-   For a function, the percentage of all memory allocated in the profiling run that was inclusive allocations of the parent type by the function.<br />-   For a type, the percentage of all memory allocated in the profiling run that was allocated for instances of the type.|  
 |**Exclusive Bytes**|-   For a function, the number of bytes of memory that were allocated by the function for objects of the parent type. This number does not include the memory that was allocated by its child functions.<br />-   For a type, the total number of bytes that were allocated in the profiling run for the instances of the type.|  
 |**Exclusive Bytes %**|-   For a function, the percentage of all memory allocated in the profiling run that was exclusive allocations of the parent type by the function.<br />-   For a type, the percentage of all memory allocated in the profiling run that was allocated for instances of the type.|
-
-
-

@@ -1,26 +1,19 @@
 ---
 title: "Customizing the Isolated Shell | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Visual Studio shell, isolated mode"
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Customizing the Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Customizing the Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).  
-  
 You can customize your Visual Studio isolated shell application by changing different aspects of the Visual Studio user interface and by restricting the commands and features included in your specialized application.  
   
 ## Using the Application.pkgdef file  
@@ -129,4 +122,3 @@ DisableStartPage=dword:00000000
   
 ##### The Help/About window  
  In the isolated shell template there is a separate project you can use to customize the Help/About box for your application. For more details, see [Walkthrough: Creating a Basic Isolated Shell Application](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-

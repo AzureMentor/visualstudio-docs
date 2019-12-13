@@ -2,13 +2,11 @@
 title: T4 Parameter Directive
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # T4 Parameter Directive
 
@@ -34,7 +32,6 @@ In a Visual Studio text template, the `parameter` directive declares properties 
 <# for (int i = 0; i < TimesToRepeat; i++) { #>
 Line <#= i #>
 <# } #>
-
 ```
 
 ## Passing parameter values to a template
@@ -53,7 +50,6 @@ session["TimesToRepeat"] = 5;
 // Process a text template:
 string result = t4.ProcessTemplate("MyTemplateFile.t4",
   System.IO.File.ReadAllText("MyTemplateFile.t4"));
-
 ```
 
 ## Passing values in the Call Context
@@ -78,7 +74,6 @@ string result = t4.ProcessTemplate("",
 
 // Result value is:
 //     Test 32 test
-
 ```
 
 ## Passing values to a Run-Time (Preprocessed) Text Template
@@ -93,10 +88,9 @@ t.Session["TimesToRepeat"] = 5;
 // Add other parameter values to t.Session here.
 t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
-
 ```
 
 ## Obtaining arguments from TextTemplate.exe
 
 > [!IMPORTANT]
->  The `parameter` directive does not retrieve values set in the `-a` parameter of the `TextTransform.exe` utility. To get those values, set `hostSpecific="true"` in the `template` directive, and use `this.Host.ResolveParameterValue("","","argName")`.
+> The `parameter` directive does not retrieve values set in the `-a` parameter of the `TextTransform.exe` utility. To get those values, set `hostSpecific="true"` in the `template` directive, and use `this.Host.ResolveParameterValue("","","argName")`.

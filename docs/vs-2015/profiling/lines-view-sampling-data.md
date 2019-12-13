@@ -1,49 +1,42 @@
 ---
 title: "Lines View - Sampling Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Lines view"
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Lines View - Sampling Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Lines View - Sampling Data](https://docs.microsoft.com/visualstudio/profiling/lines-view-sampling-data).  
-  
 The Lines view of sampling data lists performance data for the statements that were executing when the samples were collected in the profiling run.  
   
 > [!NOTE]
->  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  In a source file, a statement can span more than one line in a source file, and a single line can include more than one statement. A statement is identified by the following:  
   
--   The source file that contains the function statement.  
+- The source file that contains the function statement.  
   
--   The function that contains the statement.  
+- The function that contains the statement.  
   
--   The source line at which the statement begins.  
+- The source line at which the statement begins.  
   
--   The character in the source line at which the statement starts.  
+- The character in the source line at which the statement starts.  
   
--   The source line at which the statement ends.  
+- The source line at which the statement ends.  
   
--   The character in the source line at which the statement ends.  
+- The character in the source line at which the statement ends.  
   
- The Line Name column provides a sortable concatenation of the identifier data.  
+  The Line Name column provides a sortable concatenation of the identifier data.  
   
- By definition, a statement does not call other functions. Therefore, only exclusive values are listed.  
+  By definition, a statement does not call other functions. Therefore, only exclusive values are listed.  
   
 |Column|Description|  
 |------------|-----------------|  
@@ -65,6 +58,3 @@ The Lines view of sampling data lists performance data for the statements that w
   
 ## See Also  
  [Lines View - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)
-
-
-

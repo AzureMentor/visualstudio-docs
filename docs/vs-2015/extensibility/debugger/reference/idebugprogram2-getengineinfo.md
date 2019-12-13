@@ -1,43 +1,36 @@
 ---
 title: "IDebugProgram2::GetEngineInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgram2::GetEngineInfo"
 helpviewer_keywords: 
   - "IDebugProgram2::GetEngineInfo"
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgram2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgram2::GetEngineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getengineinfo).  
-  
 Gets the name and GUID of the debug engine (DE) running this program.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetEngineInfo(   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
+   BSTR* pbstrEngine,  
+   GUID* pguidEngine  
 );  
 ```  
   
 ```csharp  
 int GetEngineInfo(   
-   out string pbstrEngine,  
-   out GUID   pguidEngine  
+   out string pbstrEngine,  
+   out GUID   pguidEngine  
 );  
 ```  
   
@@ -56,4 +49,3 @@ int GetEngineInfo( 
   
 ## See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

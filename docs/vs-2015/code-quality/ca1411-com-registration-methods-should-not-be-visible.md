@@ -1,14 +1,9 @@
 ---
 title: "CA1411: COM registration methods should not be visible | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1411"
   - "ComRegistrationMethodsShouldNotBeVisible"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1411"
 ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1411: COM registration methods should not be visible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1411: COM registration methods should not be visible](https://docs.microsoft.com/visualstudio/code-quality/ca1411-com-registration-methods-should-not-be-visible).
 
 |||
 |-|-|
@@ -56,8 +49,5 @@ The latest version of this topic can be found at [CA1411: COM registration metho
 
 ## See Also
  <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
- [Registering Assemblies with COM](http://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551)
- [Regasm.exe (Assembly Registration Tool)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
-
-
-
+ [Registering Assemblies with COM](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551)
+ [Regasm.exe (Assembly Registration Tool)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

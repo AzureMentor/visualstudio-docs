@@ -1,14 +1,14 @@
 ---
-title: Tutorial - Learn Django in Visual Studio, step 1
+title: Learn Django tutorial in Visual Studio, step 1, Django basics
+titleSuffix: ""
 description: A walkthrough of Django basics in the context of Visual Studio projects, demonstrating the support Visual Studio provides for Django development.
-ms.date: 08/13/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload: 
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
+ms.custom: seodec18
+ms.workload:
   - python
   - data-science
 ---
@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- Visual Studio 2017 on Windows with the following options:
+- Visual Studio 2017 or later on Windows with the following options:
   - The **Python development** workload (**Workload** tab in the installer). For instructions, see [Install Python support in Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git for Windows** and **GitHub Extension for Visual Studio** on the **Individual components** tab under **Code tools**.
 
@@ -60,7 +60,7 @@ When working with Django from the command line, you typically start a project by
     - **Solution**: leave this control set to default **Create new solution** option.
     - **Solution name**: set to **LearningDjango**, which is appropriate for the solution as a container for multiple projects in this tutorial.
     - **Create directory for solution**: Leave set (the default).
-    - **Create new Git repository**: Select this option (which is clear by default) so that Visual Studio creates a local Git repository when it creates the solution. If you don't see this option, run the Visual Studio 2017 installer and add the **Git for Windows** and **GitHub Extension for Visual Studio** on the **Individual components** tab under **Code tools**.
+    - **Create new Git repository**: Select this option (which is clear by default) so that Visual Studio creates a local Git repository when it creates the solution. If you don't see this option, run the Visual Studio installer and add the **Git for Windows** and **GitHub Extension for Visual Studio** on the **Individual components** tab under **Code tools**.
 
 1. After a moment, Visual Studio prompts you with a dialog saying **This project requires external packages** (shown below). This dialog appears because the template includes a *requirements.txt* file referencing the latest Django 1.x package. (Select **Show required packages** to see the exact dependencies.)
 
@@ -158,16 +158,16 @@ Once project creation completes, examine the boilerplate Django project code (wh
 
     ![Django commands on a Python project context menu](media/django/step01-django-commands-menu.png)
 
-1. In your project is a folder named the same as the project. It contains the basic Django project files:
+2. In your project is a folder named the same as the project. It contains the basic Django project files:
 
-    - *__init.py*: an empty file that tells Python that this folder is a Python package.
-    - *wsgi.py*: an entry point for WSGI-compatible web servers to serve your project. You typically leave this file as-is as it provides the hooks for production web servers.
-    - *settings.py*: contains settings for Django project, which you modify in the course of developing a web app.
-    - *urls.py*: contains a table of contents for the Django project, which you also modify in the course of development.
+   - *__init.py*: an empty file that tells Python that this folder is a Python package.
+   - *wsgi.py*: an entry point for WSGI-compatible web servers to serve your project. You typically leave this file as-is as it provides the hooks for production web servers.
+   - *settings.py*: contains settings for Django project, which you modify in the course of developing a web app.
+   - *urls.py*: contains a table of contents for the Django project, which you also modify in the course of development.
 
-    ![Django project files in Solution Explorer](media/django/step01-django-project-in-solution-explorer.png)
+     ![Django project files in Solution Explorer](media/django/step01-django-project-in-solution-explorer.png)
 
-1. As noted earlier, the Visual Studio template also adds a *requirements.txt* file to your project specifying the Django package dependency. The presence of this file is what invites you to create a virtual environment when first creating the project.
+3. As noted earlier, the Visual Studio template also adds a *requirements.txt* file to your project specifying the Django package dependency. The presence of this file is what invites you to create a virtual environment when first creating the project.
 
 ### Question: Can Visual Studio generate a requirements.txt file from a virtual environment after I install other packages?
 

@@ -1,14 +1,9 @@
 ---
 title: "CA1045: Do not pass types by reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1045"
   - "DoNotPassTypesByReference"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotPassTypesByReference"
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1045: Do not pass types by reference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1045: Do not pass types by reference](https://docs.microsoft.com/visualstudio/code-quality/ca1045-do-not-pass-types-by-reference).
 
 |||
 |-|-|
@@ -46,7 +39,7 @@ The latest version of this topic can be found at [CA1045: Do not pass types by r
  Although return values are commonplace and heavily used, the correct application of `out` and `ref` parameters requires intermediate design and coding skills. Library architects who design for a general audience should not expect users to master working with `out` or `ref` parameters.
 
 > [!NOTE]
->  When you work with parameters that are large structures, the additional resources that are required to copy these structures could cause a performance effect when you pass by value. In these cases, you might consider using `ref` or `out` parameters.
+> When you work with parameters that are large structures, the additional resources that are required to copy these structures could cause a performance effect when you pass by value. In these cases, you might consider using `ref` or `out` parameters.
 
 ## How to Fix Violations
  To fix a violation of this rule that is caused by a value type, have the method return the object as its return value. If the method must return multiple values, redesign it to return a single instance of an object that holds the values.
@@ -88,6 +81,3 @@ The latest version of this topic can be found at [CA1045: Do not pass types by r
 **12345 ABCDE**
 ## Related Rules
  [CA1021: Avoid out parameters](../code-quality/ca1021-avoid-out-parameters.md)
-
-
-

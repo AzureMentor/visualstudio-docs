@@ -1,14 +1,9 @@
 ---
 title: "Common MSBuild Project Items | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -20,14 +15,11 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Common MSBuild Project Items
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Common MSBuild Project Items](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items).  
-  
-  
 In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], an item is a named reference to one or more files. Items contain metadata such as file names, paths, and version numbers. All project types in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] have several items in common. These items are defined in the file microsoft.build.commontypes.xsd.  
   
 ## Common Items  
@@ -146,6 +138,3 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], an item is a named 
   
 ## See Also  
  [Common MSBuild Project Properties](../msbuild/common-msbuild-project-properties.md)
-
-
-

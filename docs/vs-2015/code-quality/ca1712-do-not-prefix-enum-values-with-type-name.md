@@ -1,14 +1,9 @@
 ---
 title: "CA1712: Do not prefix enum values with type name | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1712"
   - "DoNotPrefixEnumValuesWithTypeName"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotPrefixEnumValuesWithTypeName"
 ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1712: Do not prefix enum values with type name
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1712: Do not prefix enum values with type name](https://docs.microsoft.com/visualstudio/code-quality/ca1712-do-not-prefix-enum-values-with-type-name).
 
 |||
 |-|-|
@@ -63,6 +56,3 @@ The latest version of this topic can be found at [CA1712: Do not prefix enum val
 
 ## See Also
  <xref:System.Enum?displayProperty=fullName>
-
-
-

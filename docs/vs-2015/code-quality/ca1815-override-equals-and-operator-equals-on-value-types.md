@@ -1,14 +1,9 @@
 ---
 title: "CA1815: Override equals and operator equals on value types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1815"
   - "OverrideEqualsAndOperatorEqualsOnValueTypes"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1815"
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1815: Override equals and operator equals on value types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1815: Override equals and operator equals on value types](https://docs.microsoft.com/visualstudio/code-quality/ca1815-override-equals-and-operator-equals-on-value-types).
 
 |||
 |-|-|
@@ -70,6 +63,3 @@ The latest version of this topic can be found at [CA1815: Override equals and op
 
 ## See Also
  <xref:System.Object.Equals%2A?displayProperty=fullName>
-
-
-

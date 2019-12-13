@@ -1,28 +1,21 @@
 ---
 title: "Controlling Data Collection | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "advanced tasks for profiling tools"
   - "profiling tools, advanced tasks"
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Controlling Data Collection
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Controlling Data Collection](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools enable you to control when profiling data is collected during a performance session and to specify the functions that are profiled. This section describes how to start and stop data collection from the **Performance Explorer** and **Data Collection Control** windows and how to limit the objects for which profiling data is collected.  
   
 ## Common Tasks  
@@ -37,6 +30,3 @@ The latest version of this topic can be found at [Controlling Data Collection](h
   
 ## See Also  
  [Performance Explorer](../profiling/performance-explorer.md)
-
-
-

@@ -1,27 +1,20 @@
 ---
 title: "Bitmaps Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "VSCT XML schema elements, Bitmaps"
   - "Bitmaps element (VSCT XML schema)"
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Bitmaps Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Bitmaps Element](https://docs.microsoft.com/visualstudio/extensibility/bitmaps-element).  
-  
 Groups [Bitmap Element](../extensibility/bitmap-element.md) elements.  
   
 ## Syntax  
@@ -59,13 +52,12 @@ Groups [Bitmap Element](../extensibility/bitmap-element.md) elements.
   
 ```  
 <Bitmaps>  
-  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />  
-  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"  
-    usedList="1, 2, 3, 4"/>  
+  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />  
+  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"  
+    usedList="1, 2, 3, 4"/>  
 </Bitmaps>  
 ```  
   
 ## See Also  
  [How VSPackages Add User Interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)
-

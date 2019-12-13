@@ -1,14 +1,9 @@
 ---
 title: "CA1034: Nested types should not be visible | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "NestedTypesShouldNotBeVisible"
   - "CA1034"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1034"
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1034: Nested types should not be visible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1034: Nested types should not be visible](https://docs.microsoft.com/visualstudio/code-quality/ca1034-nested-types-should-not-be-visible).
 
 |||
 |-|-|
@@ -57,6 +50,3 @@ The latest version of this topic can be found at [CA1034: Nested types should no
  [!code-cpp[FxCop.Design.NestedTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/cpp/FxCop.Design.NestedTypes.cpp#1)]
  [!code-csharp[FxCop.Design.NestedTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/cs/FxCop.Design.NestedTypes.cs#1)]
  [!code-vb[FxCop.Design.NestedTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.NestedTypes/vb/FxCop.Design.NestedTypes.vb#1)]
-
-
-

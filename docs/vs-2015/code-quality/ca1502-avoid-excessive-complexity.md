@@ -1,14 +1,9 @@
 ---
 title: "CA1502: Avoid excessive complexity | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "AvoidExcessiveComplexity"
   - "CA1502"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "AvoidExcessiveComplexity"
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1502: Avoid excessive complexity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1502: Avoid excessive complexity](https://docs.microsoft.com/visualstudio/code-quality/ca1502-avoid-excessive-complexity).
 
 |||
 |-|-|
@@ -56,11 +49,11 @@ The latest version of this topic can be found at [CA1502: Avoid excessive comple
 ## How Cyclomatic Complexity is Calculated
  The cyclomatic complexity is calculated by adding 1 to the following:
 
--   Number of branches (such as `if`, `while`, and `do`)
+- Number of branches (such as `if`, `while`, and `do`)
 
--   Number of `case` statements in a `switch`
+- Number of `case` statements in a `switch`
 
- The following examples show methods that have varying cyclomatic complexities.
+  The following examples show methods that have varying cyclomatic complexities.
 
 ## Example
  **Cyclomatic Complexity of 1**
@@ -95,6 +88,3 @@ The latest version of this topic can be found at [CA1502: Avoid excessive comple
 
 ## See Also
  [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

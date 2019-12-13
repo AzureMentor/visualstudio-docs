@@ -1,14 +1,9 @@
 ---
 title: "CA2228: Do not ship unreleased resource formats | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotShipUnreleasedResourceFormats"
   - "CA2228"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotShipUnreleasedResourceFormats"
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2228: Do not ship unreleased resource formats
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2228: Do not ship unreleased resource formats](https://docs.microsoft.com/visualstudio/code-quality/ca2228-do-not-ship-unreleased-resource-formats).
 
 |||
 |-|-|
@@ -44,6 +37,3 @@ The latest version of this topic can be found at [CA2228: Do not ship unreleased
 
 ## When to Suppress Warnings
  Do not suppress a warning from this rule.
-
-
-

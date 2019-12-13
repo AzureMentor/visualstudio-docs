@@ -1,26 +1,19 @@
 ---
 title: "Language Services and the Core Editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "editors [Visual Studio SDK], legacy - language services"
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Language Services and the Core Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Language Services and the Core Editor](https://docs.microsoft.com/visualstudio/extensibility/language-services-and-the-core-editor).  
-  
 Editors in Visual Studio are frequently associated with a language service. Among other things, a language service provides syntax coloring, statement completion, IntelliSense, and text formatting.  
   
 ## Core Editors and Document Data Objects  
@@ -48,4 +41,3 @@ Core editor and language service objects
  [IntelliSense Hosting](../extensibility/intellisense-hosting.md)   
  [Contained Languages](../extensibility/contained-languages.md)   
  [Developing a Legacy Language Service](../extensibility/internals/developing-a-legacy-language-service.md)
-

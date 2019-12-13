@@ -1,8 +1,6 @@
 ---
 title: Use the Task List
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
   - "TaskListWindow"
@@ -11,15 +9,18 @@ f1_keywords:
 helpviewer_keywords:
   - "task list"
   - "Visual Studio, task list"
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
 # Use the Task List
 
 Use **Task List** to track code comments that use tokens such as `TODO` and `HACK`, or custom tokens, and to manage shortcuts that take you directly to a predefined location in code. Click on the item in the list to go to its location in the source code.
+
+> [!NOTE]
+> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Task comments (Visual Studio for Mac)](/visualstudio/mac/task-comments).
 
 ## The Task List window
 
@@ -57,6 +58,9 @@ A comment in your code preceded by a comment marker and a predefined token also 
 
 Because `TODO` is a predefined token, this comment appears as a `TODO` task in the list.
 
+> [!NOTE]
+> Default tokens are only available for the C/C++, C#, and VB languages. For other languages, see the **Custom tokens** section.
+
 ### Custom tokens
 
 By default, Visual Studio includes the following tokens: `HACK`, `TODO`, `UNDONE`, and `UnresolvedMergeConflict`. They are not case-sensitive. You can also create your own custom tokens.
@@ -76,6 +80,9 @@ To create a custom token:
 4. In the **Priority** drop-down list, choose a default priority for the new token.
 
 5. Choose **Add**.
+
+> [!TIP]
+> The **Add** button becomes enabled after you enter a name. You must enter a name before clicking **Add**.
 
 ### C++ TODO comments
 
@@ -98,3 +105,4 @@ To navigate through the shortcuts in the code, choose a shortcut in the list, an
 ## See also
 
 - [Task List, Environment, Options dialog box](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Task comments (Visual Studio for Mac)](/visualstudio/mac/task-comments)

@@ -1,41 +1,34 @@
 ---
 title: "IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgramPublisher2::UnpublishProgram"
 helpviewer_keywords: 
   - "IDebugProgramPublisher2::UnpublishProgram"
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgramPublisher2::UnpublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgramPublisher2::UnpublishProgram](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram).  
-  
 Makes a program unavailable to be debugged.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT UnpublishProgram(  
-   IUnknown* pDebuggeeInterface  
+   IUnknown* pDebuggeeInterface  
 );  
 ```  
   
 ```csharp  
 int UnpublishProgram(  
-   object pDebuggeeInterface  
+   object pDebuggeeInterface  
 );  
 ```  
   
@@ -52,4 +45,3 @@ int UnpublishProgram(
 ## See Also  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
-

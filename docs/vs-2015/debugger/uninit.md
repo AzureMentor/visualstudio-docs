@@ -1,25 +1,18 @@
 ---
 title: "UnInit | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # UnInit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [UnInit](https://docs.microsoft.com/visualstudio/debugger/graphics/uninit).  
-  
 Finalizes the graphics log file, closes it, and frees resources that were used while the app was actively recording graphics information.  
   
 ## Syntax  
@@ -35,6 +28,3 @@ void UnInit();
   
 ## See Also  
  [Init](../debugger/init.md)
-
-
-

@@ -1,48 +1,41 @@
 ---
 title: "DISASSEMBLY_STREAM_SCOPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "DISASSEMBLY_STREAM_SCOPE"
 helpviewer_keywords: 
   - "DISASSEMBLY_STREAM_SCOPE enumeration"
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # DISASSEMBLY_STREAM_SCOPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DISASSEMBLY_STREAM_SCOPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/disassembly-stream-scope).  
-  
 Specifies the scope of the disassembly stream.  
   
 ## Syntax  
   
 ```cpp#  
 enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 typedef DWORD DISASSEMBLY_STREAM_SCOPE;  
 ```  
   
 ```csharp  
 public enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 ```  
   
@@ -75,4 +68,3 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE { 
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
-

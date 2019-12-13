@@ -1,14 +1,9 @@
 ---
 title: "CA2119: Seal methods that satisfy private interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "SealMethodsThatSatisfyPrivateInterfaces"
   - "CA2119"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "SealMethodsThatSatisfyPrivateInterfaces"
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2119: Seal methods that satisfy private interfaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2119: Seal methods that satisfy private interfaces](https://docs.microsoft.com/visualstudio/code-quality/ca2119-seal-methods-that-satisfy-private-interfaces).
 
 |||
 |-|-|
@@ -42,15 +35,15 @@ The latest version of this topic can be found at [CA2119: Seal methods that sati
 ## How to Fix Violations
  To fix a violation of this rule, prevent the method from being overridden outside the assembly by using one of the following:
 
--   Make the declaring type `sealed` (`NotInheritable` in Visual Basic).
+- Make the declaring type `sealed` (`NotInheritable` in Visual Basic).
 
--   Change the accessibility of the declaring type to `internal` (`Friend` in Visual Basic).
+- Change the accessibility of the declaring type to `internal` (`Friend` in Visual Basic).
 
--   Remove all public constructors from the declaring type.
+- Remove all public constructors from the declaring type.
 
--   Implement the method without using the `virtual` modifier.
+- Implement the method without using the `virtual` modifier.
 
--   Implement the method explicitly.
+- Implement the method explicitly.
 
 ## When to Suppress Warnings
  It is safe to suppress a warning from this rule if, after careful review, no security issues exist that might be exploitable if the method is overridden outside the assembly.
@@ -70,8 +63,5 @@ The latest version of this topic can be found at [CA2119: Seal methods that sati
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## See Also
- [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
- [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-
+ [Interfaces](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
+ [Interfaces](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

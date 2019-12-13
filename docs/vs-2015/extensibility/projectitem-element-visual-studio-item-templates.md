@@ -1,14 +1,9 @@
 ---
 title: "ProjectItem Element (Visual Studio Item Templates) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-general"
+ms.topic: reference
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem"
 helpviewer_keywords: 
@@ -16,18 +11,16 @@ helpviewer_keywords:
   - "ProjectItem element [Visual Studio item templates]"
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # ProjectItem Element (Visual Studio Item Templates)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ProjectItem Element (Visual Studio Item Templates)](https://docs.microsoft.com/visualstudio/extensibility/projectitem-element-visual-studio-item-templates).  
-  
 Specifies a file that is included in the item template.  
   
 > [!NOTE]
->  The `ProjectItem` element accepts different attributes depending on whether the template is for a project or an item. This topic explains the `ProjectItem` element for item. For an explanation of the `ProjectItem` element for project templates, see [ProjectItem Element (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+> The `ProjectItem` element accepts different attributes depending on whether the template is for a project or an item. This topic explains the `ProjectItem` element for item. For an explanation of the `ProjectItem` element for project templates, see [ProjectItem Element (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
  \<TemplateContent>  
@@ -108,4 +101,3 @@ Specifies a file that is included in the item template.
  [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)   
  [How to: Create Multi-file Item Templates](../ide/how-to-create-multi-file-item-templates.md)   
  [Template Parameters](../ide/template-parameters.md)
-

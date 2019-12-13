@@ -1,27 +1,20 @@
 ---
 title: "Callback Functions Implemented by the IDE | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "source control plug-ins, callback functions"
   - "callback functions, source control plug-ins"
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Callback Functions Implemented by the IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Callback Functions Implemented by the IDE](https://docs.microsoft.com/visualstudio/extensibility/callback-functions-implemented-by-the-ide).  
-  
 To make integration with the integrated development environment (IDE) as seamless as possible and to provide a unified end-user experience, the source control plug-in can use callback functions that are implemented by the IDE. The plug-in can call these functions at appropriate times during a source control operation to pass information to the IDE; the IDE can then display this information as embedded elements in its native UI. The user has a less fragmented experience in this scenario than if the plug-in employed its own UI.  
   
  The required header file is scc.h. The default location is \Program Files\VSIP 8.0\EnvSDK\common\inc\\. It is also in the VSIP folder that has the source control plug-in sample at \Program Files\VSIP 8.0\MSSCCI\\.  
@@ -60,4 +53,3 @@ To make integration with the integrated development environment (IDE) as seamles
   
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)  
  Describes the contents of the reference section of the Source Control Plug-in SDK.
-

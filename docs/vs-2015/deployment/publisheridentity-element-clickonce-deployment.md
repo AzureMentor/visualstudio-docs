@@ -1,14 +1,9 @@
 ---
 title: "&lt;publisherIdentity&gt; Element (ClickOnce Deployment) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: conceptual
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -21,13 +16,11 @@ ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # &lt;publisherIdentity&gt; Element (ClickOnce Deployment)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [&lt;publisherIdentity&gt; Element (ClickOnce Deployment)](https://docs.microsoft.com/visualstudio/deployment/publisheridentity-element-clickonce-deployment).  
-  
 Contains information about the publisher that signed this deployment manifest.  
   
 ## Syntax  
@@ -58,6 +51,3 @@ Contains information about the publisher that signed this deployment manifest.
 ## Requirements  
   
 ## Subhead
-
-
-

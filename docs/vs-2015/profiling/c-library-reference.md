@@ -1,31 +1,24 @@
 ---
 title: "C Library Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 helpviewer_keywords: 
   - "Concurrency Visualizer SDK, C Library Reference"
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # C Library Reference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [C Library Reference](https://docs.microsoft.com/visualstudio/profiling/c-library-reference).  
-  
 This section contains reference information for the Concurrency Visualizer SDK.  
   
 > [!NOTE]
->  The C language standard reserves the use of identifiers that begin with an underscore (`_`) character for implementations such as libraries. Do not use names beginning with an underscore in your code. The behavior of code elements whose names follow this convention are not guaranteed and are subject to change in future releases. For these reasons, such code elements are omitted from this documentation.  
+> The C language standard reserves the use of identifiers that begin with an underscore (`_`) character for implementations such as libraries. Do not use names beginning with an underscore in your code. The behavior of code elements whose names follow this convention are not guaranteed and are subject to change in future releases. For these reasons, such code elements are omitted from this documentation.  
   
 ## In This Section  
  [CvCreateDefaultMarkerSeriesOfDefaultProvider Function](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
@@ -51,6 +44,3 @@ This section contains reference information for the Concurrency Visualizer SDK.
  [CvWriteFlag Function](../profiling/cvwriteflag-function.md)  
   
  [CvWriteMessage Function](../profiling/cvwritemessage-function.md)
-
-
-

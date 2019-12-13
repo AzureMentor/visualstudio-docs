@@ -1,29 +1,22 @@
 ---
 title: "Channels (Threads View) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.cv.threads.timeline.channelnames"
 helpviewer_keywords: 
   - "Concurrency Visualizer, Channels (Threads View)"
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Channels (Threads View)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Channels (Threads View)](https://docs.microsoft.com/visualstudio/profiling/channels-threads-view).  
-  
 The Concurrency Visualizer shows four kinds of channels: thread channels, disk channels, marker channels, and GPU channels.  
   
 ## Thread Channels  
@@ -53,6 +46,3 @@ The Concurrency Visualizer shows four kinds of channels: thread channels, disk c
   
 ## See Also  
  [Threads View](../profiling/threads-view-parallel-performance.md)
-
-
-

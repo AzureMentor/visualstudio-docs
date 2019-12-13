@@ -1,28 +1,21 @@
 ---
 title: "IDebugMemoryContext2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugMemoryContext2"
 helpviewer_keywords: 
   - "IDebugMemoryContext2 interface"
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugMemoryContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugMemoryContext2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmemorycontext2).  
-  
 This interface represents a position in the address space of the machine running the program being debugged.  
   
 ## Syntax  
@@ -64,4 +57,3 @@ IDebugMemoryContext2 : IUnknown
  [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)   
  [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)   
  [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)
-

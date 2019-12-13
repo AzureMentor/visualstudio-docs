@@ -1,45 +1,38 @@
 ---
 title: "IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "IDebugSettingsCallback2::GetMetricGuid"
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugSettingsCallback2::GetMetricGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugSettingsCallback2::GetMetricGuid](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-getmetricguid).  
-  
 Retrieves the unique identifier of a metric given its name.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetMetricGuid(  
-   LPCWSTR pszType,  
-   REFGUID guidSection,  
-   LPCWSTR pszMetric,  
-   GUID*   pguidValue  
+   LPCWSTR pszType,  
+   REFGUID guidSection,  
+   LPCWSTR pszMetric,  
+   GUID*   pguidValue  
 );  
 ```  
   
 ```csharp  
 private int GetMetricGuid(  
-   string   pszType,  
-   ref Guid guidSection,  
-   string   pszMetric,  
-   out Guid pguidValue  
+   string   pszType,  
+   ref Guid guidSection,  
+   string   pszMetric,  
+   out Guid pguidValue  
 );  
 ```  
   
@@ -61,4 +54,3 @@ private int GetMetricGuid(
   
 ## See Also  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
-

@@ -1,14 +1,9 @@
 ---
 title: "CA2201: Do not raise reserved exception types | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotRaiseReservedExceptionTypes"
   - "CA2201"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotRaiseReservedExceptionTypes"
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2201: Do not raise reserved exception types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2201: Do not raise reserved exception types](https://docs.microsoft.com/visualstudio/code-quality/ca2201-do-not-raise-reserved-exception-types).
 
 |||
 |-|-|
@@ -39,31 +32,31 @@ The latest version of this topic can be found at [CA2201: Do not raise reserved 
 ## Rule Description
  The following exception types are too general to provide sufficient information to the user:
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- The following exception types are reserved and should be thrown only by the common language runtime:
+  The following exception types are reserved and should be thrown only by the common language runtime:
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **Do Not Throw General Exceptions**
+  **Do Not Throw General Exceptions**
 
- If you throw a general exception type, such as <xref:System.Exception> or <xref:System.SystemException> in a library or framework, it forces consumers to catch all exceptions, including unknown exceptions that they do not know how to handle.
+  If you throw a general exception type, such as <xref:System.Exception> or <xref:System.SystemException> in a library or framework, it forces consumers to catch all exceptions, including unknown exceptions that they do not know how to handle.
 
- Instead, either throw a more derived type that already exists in the framework, or create your own type that derives from <xref:System.Exception>.
+  Instead, either throw a more derived type that already exists in the framework, or create your own type that derives from <xref:System.Exception>.
 
- **Throw Specific Exceptions**
+  **Throw Specific Exceptions**
 
- The following table shows parameters and which exceptions to throw when you validate the parameter, including the value parameter in the set accessor of a property:
+  The following table shows parameters and which exceptions to throw when you validate the parameter, including the value parameter in the set accessor of a property:
 
 |Parameter Description|Exception|
 |---------------------------|---------------|
@@ -91,6 +84,3 @@ The latest version of this topic can be found at [CA2201: Do not raise reserved 
 
 ## Related Rules
  [CA1031: Do not catch general exception types](../code-quality/ca1031-do-not-catch-general-exception-types.md)
-
-
-

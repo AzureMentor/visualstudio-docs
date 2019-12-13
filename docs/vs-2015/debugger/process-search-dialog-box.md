@@ -1,27 +1,20 @@
 ---
 title: "Process Search Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Process Search"
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Process Search Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Process Search Dialog Box](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Use this dialog box to find and select the node for a specific process in [Processes View](../debugger/processes-view.md). To display this dialog box, move the focus to a **Processes** view window. Then choose **Find Process** from the **Search** menu.  
   
  The following settings are available:  
@@ -53,6 +46,3 @@ Use this dialog box to find and select the node for a specific process in [Proce
   
  [Spy++ Reference](../debugger/spy-increment-reference.md)  
  Includes sections describing each Spy++ menu and dialog box.
-
-
-

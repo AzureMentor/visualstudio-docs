@@ -1,26 +1,19 @@
 ---
 title: "GetScheduledTasksForDebugger Method | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]"
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # GetScheduledTasksForDebugger Method
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [GetScheduledTasksForDebugger Method](https://docs.microsoft.com/visualstudio/extensibility/debugger/getscheduledtasksfordebugger-method).  
-  
 Retrieves an array of all scheduled tasks.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -43,4 +36,3 @@ Retrieves an array of all scheduled tasks.
   
 ## See Also  
  [TaskScheduler Class](../../extensibility/debugger/taskscheduler-class-internal-members.md)
-

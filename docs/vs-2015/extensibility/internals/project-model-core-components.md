@@ -1,27 +1,20 @@
 ---
 title: "Project Model Core Components | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "project models, objects and interfaces"
   - "project models, services"
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Project Model Core Components
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Project Model Core Components](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 The following tables expand on the project model. The tables present brief descriptions of the interfaces and services identified in the model, and the interfaces and services associated with specific objects. Additionally, the tables detail other interfaces that are optional in project creation and maintenance depending on the requirements of your specific project type.  
   
  For more information, see [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
@@ -105,7 +98,6 @@ The following tables expand on the project model. The tables present brief descr
 ## See Also  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Checklist: Creating New Project Types](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elements of a Project Model](../../extensibility/internals/elements-of-a-project-model.md)
-

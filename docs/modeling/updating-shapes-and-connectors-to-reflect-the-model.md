@@ -2,19 +2,17 @@
 title: Updating Shapes and Connectors to Reflect the Model
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ---
 # Update Shapes and Connectors to Reflect the Model
 
 In a domain-specific language in Visual Studio, you can make the appearance of a shape reflect the state of the underlying model.
 
-The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You need these statements in each file:
+The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You need these directives in each file:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -77,7 +75,6 @@ If you want to make the property variable only under program control, and not by
       return types.ToArray();
     }
   }
-
 ```
 
 ## Use OnChildConfigured to initialize a shape's properties
@@ -102,7 +99,6 @@ partial class MyLanguageDiagram
     // else deal with other types of shapes and connectors.
   }
 }
-
 ```
 
 This method can be used both for domain properties and non-store features, such as the size of the shape.

@@ -1,26 +1,19 @@
 ---
 title: "Source Control Plug-in API Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "source control plug-ins, functions"
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Source Control Plug-in API Functions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Source Control Plug-in API Functions](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions).  
-  
 The Source Control Plug-in API provides the following functions, which must be implemented by the source control plug-in in accordance with this API. The signatures of each function and the semantics associated with the bit flags and other parameters are described in detail in this reference.  
   
 ## Initialization and Housekeeping Functions  
@@ -91,4 +84,3 @@ The Source Control Plug-in API provides the following functions, which must be i
 ## See Also  
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)   
  [Creating a Source Control Plug-in](../extensibility/internals/creating-a-source-control-plug-in.md)
-

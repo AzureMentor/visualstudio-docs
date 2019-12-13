@@ -1,14 +1,9 @@
 ---
 title: "Debugger Settings and Preparation | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug"
 dev_langs: 
@@ -21,15 +16,13 @@ helpviewer_keywords:
   - "debug builds, setting up"
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Debugger Settings and Preparation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Debugger Settings and Preparation](https://docs.microsoft.com/visualstudio/debugger/debugger-settings-and-preparation).  
-  
 This section describes the debugger-related property settings, and the preparation needed in order to debug your program with the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugger. If you create your program in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] using the project templates, these settings are set correctly for you in the Debug configuration.  
   
  For more information, see [How to: Set Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md).  
@@ -65,6 +58,3 @@ This section describes the debugger-related property settings, and the preparati
 ## See Also  
  [Debugger Security](../debugger/debugger-security.md)   
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

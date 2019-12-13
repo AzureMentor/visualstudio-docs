@@ -1,8 +1,6 @@
 ---
 title: Watch Command
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
   - "debug.watch"
@@ -10,9 +8,9 @@ helpviewer_keywords:
   - "Watch command"
   - "Debug.Watch command"
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -26,12 +24,13 @@ Debug.Watch[index]
 ```
 
 ## Arguments
- `index`
 
- Required. The instance number of the watch window.
+`index`\
+Required. The instance number of the watch window.
 
 ## Remarks
- The `index` must be an integer. Valid values are 1, 2, 3, or 4.
+
+The `index` must be an integer. Valid values are 1, 2, 3, or 4.
 
 ## Example
 
@@ -39,7 +38,7 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## See Also
+## See also
 
 - [Autos and Locals Windows](../../debugger/autos-and-locals-windows.md)
 - [Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

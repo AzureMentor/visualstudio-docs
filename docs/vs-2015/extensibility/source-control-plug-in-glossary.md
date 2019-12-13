@@ -1,27 +1,20 @@
 ---
 title: "Source Control Plug-in Glossary | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "glossary [Visual Studio SDK]"
   - "source control plug-ins, glossary"
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Source Control Plug-in Glossary
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Source Control Plug-in Glossary](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-glossary).  
-  
 The following helpful terms and definitions pertain to the Source Control Plug-in SDK documentation.  
   
 ## Definitions  
@@ -69,4 +62,3 @@ The following helpful terms and definitions pertain to the Source Control Plug-i
   
 ## See Also  
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
-

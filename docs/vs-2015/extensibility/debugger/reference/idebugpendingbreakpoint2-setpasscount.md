@@ -1,14 +1,9 @@
 ---
 title: "IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugPendingBreakpoint2::SetPassCount"
 helpviewer_keywords: 
@@ -16,27 +11,25 @@ helpviewer_keywords:
   - "IDebugPendingBreakpoint2::SetPassCount method"
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPendingBreakpoint2::SetPassCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount).  
-  
 Sets or changes the pass count associated with the pending breakpoint.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
 ```csharp  
 int SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
@@ -53,4 +46,3 @@ int SetPassCount( 
 ## See Also  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
-

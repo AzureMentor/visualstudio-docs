@@ -1,45 +1,38 @@
 ---
 title: "IEnumCodePaths2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumCodePaths2::Next"
 helpviewer_keywords: 
   - "IEnumCodePaths2::Next"
 ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumCodePaths2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumCodePaths2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-next).  
-  
 Returns the next set of elements from the enumeration.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG       celt,  
-   CODE_PATH** rgelt,  
-   ULONG*      pceltFetched  
+   ULONG       celt,  
+   CODE_PATH** rgelt,  
+   ULONG*      pceltFetched  
 );  
 ```  
   
 ```csharp  
 int Next(  
-   uint        celt,  
-   CODE_PATH[] rgelt,  
-   ref uint    pceltFetched  
+   uint        celt,  
+   CODE_PATH[] rgelt,  
+   ref uint    pceltFetched  
 );  
 ```  
   
@@ -59,4 +52,3 @@ int Next(
 ## See Also  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)
-

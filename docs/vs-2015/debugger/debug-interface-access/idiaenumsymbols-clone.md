@@ -1,36 +1,29 @@
 ---
 title: "IDiaEnumSymbols::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaEnumSymbols::Clone method"
 ms.assetid: 5c542025-98cf-4307-901f-b9430f780cf0
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaEnumSymbols::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaEnumSymbols::Clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbols-clone).  
-  
 Creates an enumerator that contains the same enumeration state as the current enumerator.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone (   
-   IDiaEnumSymbols** ppenum  
+   IDiaEnumSymbols** ppenum  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT Clone ( 
   
 ## See Also  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
-
-
-

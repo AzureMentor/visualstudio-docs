@@ -1,18 +1,18 @@
 ---
-title: "Manage test controllers and test agents in Visual Studio"
+title: "Manage test controllers and test agents"
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
 # Manage test controllers and test agents
 
 If you want to use Visual Studio to run tests remotely, distribute tests across multiple machines, or run load tests, you must configure a test controller, test agents, and test settings file. This topic describes how to manage test controllers and test agents after you install and configure them for the first time.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 If you use Microsoft Test Manager to run tests in lab environments, you manage test controllers and their agents by using the **Test Controller Manager** in the **Lab Center** for Microsoft Test Manager. This topic is applicable only if you use Visual Studio to run tests.
 
@@ -46,7 +46,7 @@ You might want to add a test agent to a different test controller or you might h
       2. Enter the password in **Password**.
 
         |**Important user account information**|
-        |--------------------------------------------|
+        |-|
         |-   Null passwords are not supported for user accounts.|
         |-   If you want to use the IntelliTrace collector or the network emulation, the user account must be a member of the Administrators group.|
         |-   If the agent user name is not in the agent service it will try to add it, which requires permissions on the test controller.|
@@ -109,7 +109,7 @@ A test agent must be set to the offline state before it can be removed.
 The status of the test agent can be any one of the following values:
 
 |Status|Description|
-|------------|-----------------|
+|-|-----------------|
 |Running Test|Running tests|
 |Ready|Available to run tests or collect data and diagnostics|
 |Offline|Unavailable to run tests or collect data and diagnostics|
@@ -135,7 +135,7 @@ You can change the status and other settings for a test agent using the followin
 1. Change the following test agent properties as required:
 
 |Test Agent Property|Description|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Weighting**|Used to distribute load when you use test agents with different performance levels. For example, a test agent with a weighting of 100 receives two times the load as a test agent with a weighting of 50.|
 |**IP Switching**|Used to configure IP switching. IP switching allows a test agent to send requests to a server by using a range of IP addresses. This simulates calls that come from different client computers.<br /><br /> IP Switching is important if your load test is accessing a web farm. Most load balancers establish affinity between a client and a particular web server by using the client's IP address. If all requests seem like they are coming from a single client, the load balancer will not balance the load. To obtain good load balance in the web farm, make sure that requests come from a range of IP addresses. **Note:**  You can specify a network adapter, or use **(All unassigned)** to automatically select one that is currently not being used. <br /><br /> To use the IP switching feature, the Visual Studio Test Agent service must be running as a user in the Administrators group for that agent computer. This user is selected during agent setup, but can be changed by modifying the properties of the service and restarting it.<br /><br /> To verify that IP switching is working correctly, enable IIS logging on the web server, use the IIS logging functionality to verify that requests are coming from the IP addresses that you configured.|
 |**Attributes**|Set of name/value pairs that can be used in test agent selection. For example, a test might require a particular OS. You can add attributes in the **Roles** tab of your test settings file and they can be used to select a test agent that has matching attributes. If you want to run a test on multiple machines, create an attribute in the test settings role that is configured to run your tests, and then configure a matching attribute on each test agent that you want to use in that role.. **Note:**  This setting is only available for test agents that are registered with a test controller that is not registered to a project, because these attributes are only used in test settings for Visual Studio.|
@@ -178,27 +178,27 @@ If you want to register your test controller with your Team Foundation Server pr
 
 When you add roles for your application to your test settings for Visual Studio, you can add agent properties for each of your roles. This determines which test agents are available for this role. When you run your tests using these test settings, the test controller that is selected for the test settings determines the availability of the required agents. These are the following situations that can occur when the agent availability is determined:
 
--   There is no agent available for the role that must run the tests. Your tests cannot be run. You can perform one of the following actions and then rerun your tests:
+- There is no agent available for the role that must run the tests. Your tests cannot be run. You can perform one of the following actions and then rerun your tests:
 
-    -   You can wait for an agent to become available for this role to run the tests.
+  - You can wait for an agent to become available for this role to run the tests.
 
-    -   If there are any agents that are offline that can be used for this role, you can restart the agent so that it is available.
+  - If there are any agents that are offline that can be used for this role, you can restart the agent so that it is available.
 
-    -   You can add another agent with the correct agent properties for that role to the test controller.
+  - You can add another agent with the correct agent properties for that role to the test controller.
 
-    -   You can change the agent properties for this role in the test settings to enable other agents that you want to use.
+  - You can change the agent properties for this role in the test settings to enable other agents that you want to use.
 
--   There is no agent available for one or more roles that run diagnostic data adapters. Your tests can be run, but the diagnostic data adapter cannot be run. You can run your tests without the diagnostic data adapter, or you can perform one of the following actions and rerun your tests:
+- There is no agent available for one or more roles that run diagnostic data adapters. Your tests can be run, but the diagnostic data adapter cannot be run. You can run your tests without the diagnostic data adapter, or you can perform one of the following actions and rerun your tests:
 
-    -   You can wait for an agent to become available for these roles.
+  - You can wait for an agent to become available for these roles.
 
-    -   If there are any agents that are offline that can be used for this role, you must change the state of the agent to online from **Administer Test Controller** on the **Test** menu. In addition, you might have to restart the agent if it has been disconnected from the controller.
+  - If there are any agents that are offline that can be used for this role, you must change the state of the agent to online from **Administer Test Controller** on the **Test** menu. In addition, you might have to restart the agent if it has been disconnected from the controller.
 
-    -   Verify that any agents that you might need for this test run are not busy running tests. You can check the status of any agents from **Administer Test Controller** on the **Test** menu.
+  - Verify that any agents that you might need for this test run are not busy running tests. You can check the status of any agents from **Administer Test Controller** on the **Test** menu.
 
-    -   You can add another agent with the correct agent properties for the role to the test controller.
+  - You can add another agent with the correct agent properties for the role to the test controller.
 
-    -   You can change the agent properties for the role in the test settings to enable other agents that you want to use.
+  - You can change the agent properties for the role in the test settings to enable other agents that you want to use.
 
 ## Load tests from delay-signed assemblies
 

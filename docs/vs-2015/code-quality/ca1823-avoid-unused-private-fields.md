@@ -1,14 +1,9 @@
 ---
 title: "CA1823: Avoid unused private fields | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "AvoidUnusedPrivateFields"
   - "CA1823"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1823"
 ms.assetid: 614f94f6-0dc7-430f-8124-cb889a4a720f
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1823: Avoid unused private fields
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1823: Avoid unused private fields](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).
 
 |||
 |-|-|
@@ -53,6 +46,3 @@ The latest version of this topic can be found at [CA1823: Avoid unused private f
  [CA1804: Remove unused locals](../code-quality/ca1804-remove-unused-locals.md)
 
  [CA1811: Avoid uncalled private code](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-
-

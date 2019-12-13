@@ -1,14 +1,9 @@
 ---
 title: "Miscellaneous Files Project | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "files, adding existing files to solutions"
   - "Miscellaneous Files project"
@@ -16,14 +11,12 @@ helpviewer_keywords:
   - "files, opening with Miscellaneous Files project"
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Miscellaneous Files Project
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Miscellaneous Files Project](https://docs.microsoft.com/visualstudio/extensibility/internals/miscellaneous-files-project).  
-  
 When a user opens project items, the IDE assigns to the Miscellaneous Files project any items that are not members of any projects in a solution.  
   
  Projects play a significant role in determining which editor is used when a user opens a project item. A project can be designed to open certain files by using a project-specific editor or a standard editor.  
@@ -46,4 +39,3 @@ When a user opens project items, the IDE assigns to the Miscellaneous Files proj
  [How to: Open Standard Editors](../../extensibility/how-to-open-standard-editors.md)   
  [Adding Project and Project Item Templates](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Adding Project and Project Item Templates](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

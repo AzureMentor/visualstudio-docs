@@ -1,38 +1,31 @@
 ---
 title: "IDiaSymbol::get_dataBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaSymbol::get_dataBytes method"
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaSymbol::get_dataBytes](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-databytes).  
-  
 Retrieves the data bytes of an OEM symbol.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_dataBytes (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
@@ -50,7 +43,7 @@ HRESULT get_dataBytes ( 
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.  
   
 > [!NOTE]
->  A return value of `S_FALSE` means that the property is not available for the symbol.  
+> A return value of `S_FALSE` means that the property is not available for the symbol.  
   
 ## Requirements  
   
@@ -61,6 +54,3 @@ HRESULT get_dataBytes ( 
   
 ## See Also  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

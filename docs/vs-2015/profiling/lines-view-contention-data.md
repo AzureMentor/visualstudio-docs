@@ -1,46 +1,39 @@
 ---
 title: "Lines View - Contention Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Lines view"
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Lines View - Contention Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Lines View - Contention Data](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data).  
-  
 The Lines view of contention data lists performance data for the statements that were executing when the samples were collected in the profiling run. In a source file, a statement can span more than one line in a source file, and a single line can include more than one statement.  
   
  A statement is identified by the following data:  
   
--   The source file that contains the function statement.  
+- The source file that contains the function statement.  
   
--   The function that contains the statement.  
+- The function that contains the statement.  
   
--   The source line at which the statement starts.  
+- The source line at which the statement starts.  
   
--   The character in the source line at which the statement starts.  
+- The character in the source line at which the statement starts.  
   
--   The source line at which the statement ends.  
+- The source line at which the statement ends.  
   
--   The character in the source line at which the statement ends.  
+- The character in the source line at which the statement ends.  
   
- The Line Name column provides a sortable concatenation of the identifier data.  
+  The Line Name column provides a sortable concatenation of the identifier data.  
   
- The following table describes the columns of the Lines View report.  
+  The following table describes the columns of the Lines View report.  
   
 |Column|Description|  
 |------------|-----------------|  
@@ -71,6 +64,3 @@ The Lines view of contention data lists performance data for the statements that
  [Lines View](../profiling/lines-view.md)   
  [Lines View - Sampling](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Lines View](../profiling/lines-view-sampling-data.md)
-
-
-

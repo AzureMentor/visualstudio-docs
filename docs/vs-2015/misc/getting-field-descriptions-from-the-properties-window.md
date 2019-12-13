@@ -1,19 +1,14 @@
 ---
 title: "Getting Field Descriptions from the Properties Window | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "devlang-csharp"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Properties window, field descriptions"
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
-manager: "douge"
+manager: jillfra
 ---
 # Getting Field Descriptions from the Properties Window
 At the bottom of the **Properties** window, a description area displays information related to the selected property field. This feature is turned on by default. If you want to hide the description field, right-click the **Properties** window and click **Description**. Doing so also removes the check mark next to the **Description** title in the menu window. You can display the field again by following the same steps to toggle **Description** back on.  
@@ -22,18 +17,18 @@ At the bottom of the **Properties** window, a description area displays informat
   
 ### To specify localized help strings  
   
-1.  Add the `helpstringdll` attribute to the library statement in the type library (`typelib`).  
+1. Add the `helpstringdll` attribute to the library statement in the type library (`typelib`).  
   
-    > [!NOTE]
-    >  This step is optional if the type library is in an object library (.olb) file.  
+   > [!NOTE]
+   > This step is optional if the type library is in an object library (.olb) file.  
   
-2.  Specify `helpstringcontext` attributes for the strings. You can also specify `helpstring` attributes.  
+2. Specify `helpstringcontext` attributes for the strings. You can also specify `helpstring` attributes.  
   
-     These attributes are distinct from the `helpfile` and `helpcontext` attributes, which are contained in actual .chm file Help topics.  
+    These attributes are distinct from the `helpfile` and `helpcontext` attributes, which are contained in actual .chm file Help topics.  
   
- To retrieve the description information to be displayed for the highlighted property name, the **Properties** window calls <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> for the property that is selected, specifying the desired `lcid` attribute for the output string. Internally, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> finds the .dll file specified in the `helpstringdll` attribute and calls `DLLGetDocumentation` on that .dll file with the specified context and `lcid` attribute.  
+   To retrieve the description information to be displayed for the highlighted property name, the **Properties** window calls <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> for the property that is selected, specifying the desired `lcid` attribute for the output string. Internally, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> finds the .dll file specified in the `helpstringdll` attribute and calls `DLLGetDocumentation` on that .dll file with the specified context and `lcid` attribute.  
   
- The signature and implementation of `DLLGetDocumentation` are:  
+   The signature and implementation of `DLLGetDocumentation` are:  
   
 ```  
 STDAPI DLLGetDocumentation  
@@ -62,9 +57,9 @@ STDAPI DLLGetDocumentation
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
  [Properties Window Fields and Interfaces](../extensibility/internals/properties-window-fields-and-interfaces.md)   
  [Extending Properties](../extensibility/internals/extending-properties.md)   
- [helpstringdll](http://msdn.microsoft.com/library/121271fa-f061-492b-b87f-bbfcf4b02e7b)   
- [helpstring](http://msdn.microsoft.com/library/0401e905-a63e-4fad-98d0-d1efea111966)   
- [helpstringcontext](http://msdn.microsoft.com/library/d4cd135e-d91c-4aa3-9353-8aeb096f52cf)   
- [helpcontext](http://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
- [helpfile](http://msdn.microsoft.com/library/d75161c1-1363-4019-ae09-e7e3b8a3971e)   
- [lcid](http://msdn.microsoft.com/library/7f248c69-ee1c-42c3-9411-39cf27c9f43d)
+ [helpstringdll](https://msdn.microsoft.com/library/121271fa-f061-492b-b87f-bbfcf4b02e7b)   
+ [helpstring](https://msdn.microsoft.com/library/0401e905-a63e-4fad-98d0-d1efea111966)   
+ [helpstringcontext](https://msdn.microsoft.com/library/d4cd135e-d91c-4aa3-9353-8aeb096f52cf)   
+ [helpcontext](https://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
+ [helpfile](https://msdn.microsoft.com/library/d75161c1-1363-4019-ae09-e7e3b8a3971e)   
+ [lcid](https://msdn.microsoft.com/library/7f248c69-ee1c-42c3-9411-39cf27c9f43d)

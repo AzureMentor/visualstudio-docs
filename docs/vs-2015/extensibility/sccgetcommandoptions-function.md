@@ -1,38 +1,31 @@
 ---
 title: "SccGetCommandOptions Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccGetCommandOptions"
 helpviewer_keywords: 
   - "SccGetCommandOptions function"
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccGetCommandOptions Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccGetCommandOptions Function](https://docs.microsoft.com/visualstudio/extensibility/sccgetcommandoptions-function).  
-  
 This function prompts the user for advanced options for a given command.  
   
 ## Syntax  
   
 ```cpp#  
 SCCRTN SccGetCommandOptions(  
-   LPVOID pvContext,  
-   HWND hWnd,  
-   enum SCCCOMMAND iCommand,  
-   LPCMDOPTS* ppvOptions  
+   LPVOID pvContext,  
+   HWND hWnd,  
+   enum SCCCOMMAND iCommand,  
+   LPCMDOPTS* ppvOptions  
 );  
 ```  
   
@@ -76,9 +69,8 @@ SCCRTN SccGetCommandOptions(
  Finally, when the user clicks **OK** in the IDE's **Get** dialog box, the IDE calls the [SccGet](../extensibility/sccget-function.md), passing the structure returned in `ppvOptions` that contains the advanced options.  
   
 > [!NOTE]
->  The command `SCC_COMMAND_OPTIONS` is used when the IDE displays an **Options** dialog box that lets the user set preferences that control how the integration works. If the source control plug-in wants to supply its own preferences dialog box, it can display it from an **Advanced** button in the IDE's preferences dialog box. The plug-in is solely responsible for getting and persisting this information; the IDE does not use it or modify it.  
+> The command `SCC_COMMAND_OPTIONS` is used when the IDE displays an **Options** dialog box that lets the user set preferences that control how the integration works. If the source control plug-in wants to supply its own preferences dialog box, it can display it from an **Advanced** button in the IDE's preferences dialog box. The plug-in is solely responsible for getting and persisting this information; the IDE does not use it or modify it.  
   
 ## See Also  
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [Command Code](../extensibility/command-code-enumerator.md)
-

@@ -1,44 +1,37 @@
 ---
 title: "Command Code Enumerator | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "command code enumerator"
   - "source control plug-ins, command code enumeration"
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Command Code Enumerator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Command Code Enumerator](https://docs.microsoft.com/visualstudio/extensibility/command-code-enumerator).  
-  
 This enumerator is used in the options for the [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) and the [SccPopulateList](../extensibility/sccpopulatelist-function.md)to indicate the command for which the options are specified.  
   
 ## Syntax  
   
 ```  
 enum SCCCOMMAND {  
-   SCC_COMMAND_GET,  
-   SCC_COMMAND_CHECKOUT,  
-   SCC_COMMAND_CHECKIN,  
-   SCC_COMMAND_UNCHECKOUT,  
-   SCC_COMMAND_ADD,  
-   SCC_COMMAND_REMOVE,  
-   SCC_COMMAND_DIFF,  
-   SCC_COMMAND_HISTORY,  
-   SCC_COMMAND_RENAME,  
-   SCC_COMMAND_PROPERTIES,  
-   SCC_COMMAND_OPTIONS  
+   SCC_COMMAND_GET,  
+   SCC_COMMAND_CHECKOUT,  
+   SCC_COMMAND_CHECKIN,  
+   SCC_COMMAND_UNCHECKOUT,  
+   SCC_COMMAND_ADD,  
+   SCC_COMMAND_REMOVE,  
+   SCC_COMMAND_DIFF,  
+   SCC_COMMAND_HISTORY,  
+   SCC_COMMAND_RENAME,  
+   SCC_COMMAND_PROPERTIES,  
+   SCC_COMMAND_OPTIONS  
 };  
 ```  
   
@@ -80,4 +73,3 @@ enum SCCCOMMAND {
  [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)
-

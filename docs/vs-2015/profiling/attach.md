@@ -1,31 +1,24 @@
 ---
 title: "Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Attach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Attach](https://docs.microsoft.com/visualstudio/profiling/attach).  
-  
 The VSPerfCmd.exe **Attach** option begins sample profiling of the running process specified by the process ID (PID).  
   
  To use the **Attach** option, you must specify the **Sample** method in the Start option.  
   
 > [!NOTE]
->  If the **Start** option was specified with the **Crosssession** option, any calls to **VSPerfCmd /Attach** or to **VSPerfCmd /Detach** must also specify **Crosssession**.  
+> If the **Start** option was specified with the **Crosssession** option, any calls to **VSPerfCmd /Attach** or to **VSPerfCmd /Detach** must also specify **Crosssession**.  
   
 ## Syntax  
   
@@ -58,16 +51,16 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## Interval Options  
  One of the following sampling interval options can be specified on the Attach command line. The default sampling interval is 10,000,000 processor clock cycles.  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
  Specifies the number and type of the sampling interval.  
   
--   **Timer** - Samples every `Cycles` processor clock cycles. If `Cycles` is not specified, 10,000,000 cycles are used.  
+- **Timer** - Samples every `Cycles` processor clock cycles. If `Cycles` is not specified, 10,000,000 cycles are used.  
   
--   **PF** - Samples every `Events` page faults. If `Events` is not specified, 10 page faults are used.  
+- **PF** - Samples every `Events` page faults. If `Events` is not specified, 10 page faults are used.  
   
--   **Sys** - Samples every `Events` calls to the operating system. If `Events` is not specified, 10 system calls are used.  
+- **Sys** - Samples every `Events` calls to the operating system. If `Events` is not specified, 10 system calls are used.  
   
--   **Counter** - Samples every `Reload` number of the CPU performance counter specified by `Name`. Optionally, `FriendlyName` can specify a string to use as the column header in profiler reports.  
+- **Counter** - Samples every `Reload` number of the CPU performance counter specified by `Name`. Optionally, `FriendlyName` can specify a string to use as the column header in profiler reports.  
   
 ## Example  
  This example demonstrates how to attach to a running instance of an application with the process ID of 12345.  
@@ -82,6 +75,3 @@ VSPerfCmd.exe /Attach:12345
  [Profiling Stand-Alone Applications](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profiling ASP.NET Web Applications](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profiling Services](../profiling/command-line-profiling-of-services.md)
-
-
-

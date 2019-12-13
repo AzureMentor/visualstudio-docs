@@ -1,14 +1,9 @@
 ---
 title: "CA1400: P-Invoke entry points should exist | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1400"
   - "PInvokeEntryPointsShouldExist"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1400"
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1400: P/Invoke entry points should exist
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1400: P-Invoke entry points should exist](https://docs.microsoft.com/visualstudio/code-quality/ca1400-p-invoke-entry-points-should-exist).
 
 |||
 |-|-|
@@ -52,6 +45,3 @@ The latest version of this topic can be found at [CA1400: P-Invoke entry points 
 
 ## See Also
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>
-
-
-

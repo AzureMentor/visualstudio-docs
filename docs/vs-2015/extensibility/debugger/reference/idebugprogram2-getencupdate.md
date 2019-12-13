@@ -1,41 +1,34 @@
 ---
 title: "IDebugProgram2::GetENCUpdate | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugProgram2::GetENCUpdate"
 helpviewer_keywords: 
   - "IDebugProgram2::GetENCUpdate"
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugProgram2::GetENCUpdate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugProgram2::GetENCUpdate](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getencupdate).  
-  
 This method gets the Edit and Continue (ENC) update for this program. A custom debug engine always returns `E_NOTIMPL`.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetENCUpdate(   
-   IUnknown** ppUpdate  
+   IUnknown** ppUpdate  
 );  
 ```  
   
 ```csharp  
 int GetENCUpdate(  
-   out object ppUpdate  
+   out object ppUpdate  
 );  
 ```  
   
@@ -47,8 +40,7 @@ int GetENCUpdate(
  If successful, returns `S_OK`; otherwise, returns an error code.  
   
 > [!NOTE]
->  A custom debug engine should always return `E_NOTIMPL`.  
+> A custom debug engine should always return `E_NOTIMPL`.  
   
 ## See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

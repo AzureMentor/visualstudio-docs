@@ -1,26 +1,19 @@
 ---
 title: "Command Handling | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "editors [Visual Studio SDK], legacy - command handling"
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Command Handling
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Command Handling](https://docs.microsoft.com/visualstudio/extensibility/command-handling).  
-  
 Your editor can define new commands. Commands are typically displayed in a menu, on a tool bar, or in a context menu.  
   
  For more information about defining commands and menus, see [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md).  
@@ -52,4 +45,3 @@ Your editor can define new commands. Commands are typically displayed in a menu,
   
 ## See Also  
  [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)
-

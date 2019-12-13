@@ -1,14 +1,9 @@
 ---
 title: "CA1007: Use generics where appropriate | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1007"
   - "UseGenericsWhereAppropriate"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "UseGenericsWhereAppropriate"
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1007: Use generics where appropriate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1007: Use generics where appropriate](https://docs.microsoft.com/visualstudio/code-quality/ca1007-use-generics-where-appropriate).
 
 |||
 |-|-|
@@ -67,7 +60,4 @@ The latest version of this topic can be found at [CA1007: Use generics where app
  [CA1003: Use generic event handler instances](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## See Also
- [Generics](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
-
-
-
+ [Generics](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

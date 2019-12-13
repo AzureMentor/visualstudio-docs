@@ -1,8 +1,6 @@
 ---
 title: Keyboard and Mouse Shortcuts for Class Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
   - "vs.classdetails.window"
@@ -10,9 +8,9 @@ helpviewer_keywords:
   - "class diagrams, keyboard shortcuts"
   - "class diagrams, mouse shortcuts"
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -25,7 +23,7 @@ You can use the keyboard in addition to the mouse to perform navigational action
 The following mouse actions are supported in class diagrams:
 
 |Mouse Combination|Context|Description|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |Double-click|Shape elements|Opens the code editor.|
 |Double-click|Lollipop connector|Expand/collapse lollipop.|
 |Double-click|Lollipop connector label|Invokes **Show Interface** command.|
@@ -99,3 +97,6 @@ Use the following keys to navigate the **Class Details** window:
 ## See also
 
 - [Create and configure type members](creating-and-configuring-type-members.md)
+- [How to use the keyboard exclusively](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Default keyboard shortcuts in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Keyboard shortcuts in Blend](../../xaml-tools/keyboard-shortcuts-in-blend.md)

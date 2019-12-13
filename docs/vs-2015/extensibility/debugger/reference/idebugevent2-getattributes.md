@@ -1,41 +1,34 @@
 ---
 title: "IDebugEvent2::GetAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugEvent2::GetAttributes"
 helpviewer_keywords: 
   - "IDebugEvent2::GetAttributes"
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugEvent2::GetAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugEvent2::GetAttributes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugevent2-getattributes).  
-  
 Gets the attributes for this debug event.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetAttribute(   
-   DWORD* pdwAttrib  
+   DWORD* pdwAttrib  
 );  
 ```  
   
 ```csharp  
 int GetAttribute(   
-   out uint pdwAttrib  
+   out uint pdwAttrib  
 );  
 ```  
   
@@ -52,4 +45,3 @@ int GetAttribute( 
 ## See Also  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)
-

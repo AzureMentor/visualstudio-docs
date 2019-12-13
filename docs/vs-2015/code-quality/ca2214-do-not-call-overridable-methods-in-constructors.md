@@ -1,14 +1,9 @@
 ---
 title: "CA2214: Do not call overridable methods in constructors | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "DoNotCallOverridableMethodsInConstructors"
   - "CA2214"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "DoNotCallOverridableMethodsInConstructors"
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2214: Do not call overridable methods in constructors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2214: Do not call overridable methods in constructors](https://docs.microsoft.com/visualstudio/code-quality/ca2214-do-not-call-overridable-methods-in-constructors).
 
 |||
 |-|-|
@@ -56,6 +49,3 @@ The latest version of this topic can be found at [CA2214: Do not call overridabl
  **Calling base ctor.**
 **Derived DoSomething is called - initialized ? No**
 **Calling derived ctor.**
-
-
-

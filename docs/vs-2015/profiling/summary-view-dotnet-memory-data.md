@@ -1,27 +1,20 @@
 ---
 title: "Summary View - .NET Memory Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Summary view"
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Summary View - .NET Memory Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Summary View - .NET Memory Data](https://docs.microsoft.com/visualstudio/profiling/summary-view-dotnet-memory-data).  
-  
 The Summary view displays information about the .NET functions and types that allocated the most memory, and the types that were created the most times in a profiling run. For more information, including a description of the Notification Links and Report lists, see [Summary View](../profiling/summary-view.md).  
   
 ## Timeline Graph  
@@ -54,6 +47,3 @@ The Summary view displays information about the .NET functions and types that al
 ## See Also  
  [Summary View](../profiling/summary-view-sampling-data.md)   
  [Summary View](../profiling/summary-view-instrumentation-data.md)
-
-
-

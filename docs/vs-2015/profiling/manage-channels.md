@@ -1,29 +1,22 @@
 ---
 title: "Manage Channels | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.cv.threads.tools.managechannels"
 helpviewer_keywords: 
   - "Concurrency Visualizer, Manage Channels"
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Manage Channels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Manage Channels](https://docs.microsoft.com/visualstudio/profiling/manage-channels).  
-  
 In the **Threads View** in the Concurrency Visualizer, you can organize the channels for your process so that you can examine particular patterns. You can sort channels, move them up and down, and hide or show them.  
   
 ## Sort By  
@@ -51,7 +44,7 @@ In the **Threads View** in the Concurrency Visualizer, you can organize the chan
  Choose this control when you want to hide channels. For example, if a thread is 100 percent synchronization for the life of your managed process, you could hide it as you analyze other threads.  
   
 > [!NOTE]
->  Hiding a thread also removes it from the calculation time, which is shown in the active legend and in the profile reports.  
+> Hiding a thread also removes it from the calculation time, which is shown in the active legend and in the profile reports.  
   
 ## Show All Channels  
  This control is active when one or more channels are hidden. If you choose it, all hidden elements are shown and are returned to the calculations of time.  
@@ -66,6 +59,3 @@ In the **Threads View** in the Concurrency Visualizer, you can organize the chan
  [Zoom Control (Threads View)](../profiling/zoom-control-threads-view.md)   
  [Measure Mode On/Off](../profiling/measure-mode-on-off.md)   
  [Threads View](../profiling/threads-view-parallel-performance.md)
-
-
-

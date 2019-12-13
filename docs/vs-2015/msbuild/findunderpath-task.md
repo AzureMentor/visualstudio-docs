@@ -1,14 +1,9 @@
 ---
 title: "FindUnderPath Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath"
 dev_langs: 
@@ -23,14 +18,11 @@ ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # FindUnderPath Task
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [FindUnderPath Task](https://docs.microsoft.com/visualstudio/msbuild/findunderpath-task).  
-  
-  
 Determines which items in the specified item collection have paths that are in or below the specified folder.  
   
 ## Parameters  
@@ -81,6 +73,3 @@ Determines which items in the specified item collection have paths that are in o
  [Task Reference](../msbuild/msbuild-task-reference.md)   
  [Tasks](../msbuild/msbuild-tasks.md)   
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)
-
-
-

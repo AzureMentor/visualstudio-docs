@@ -1,14 +1,9 @@
 ---
 title: "CA2147: Transparent methods may not use security asserts | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "SecurityTransparentCodeShouldNotAssert"
   - "CA2147"
@@ -18,14 +13,12 @@ helpviewer_keywords:
   - "SecurityTransparentCodeShouldNotAssert"
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2147: Transparent methods may not use security asserts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2147: Transparent methods may not use security asserts](https://docs.microsoft.com/visualstudio/code-quality/ca2147-transparent-methods-may-not-use-security-asserts).
 
 |||
 |-|-|
@@ -66,6 +59,3 @@ The latest version of this topic can be found at [CA2147: Transparent methods ma
 
 ## See Also
  [Security Warnings](../code-quality/security-warnings.md)
-
-
-

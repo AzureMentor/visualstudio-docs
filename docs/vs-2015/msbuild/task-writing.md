@@ -1,14 +1,9 @@
 ---
 title: "Task Writing | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "MSBuild, writing tasks"
   - "tasks, creating for MSBuild"
@@ -17,14 +12,11 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Task Writing
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Task Writing](https://docs.microsoft.com/visualstudio/msbuild/task-writing).  
-  
-  
 Tasks provide the code that runs during the build process. Tasks are contained in targets. A library of typical tasks is included with [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], and you can also create your own tasks. For more information about the library of tasks that are included with [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], see [Task Reference](../msbuild/msbuild-task-reference.md).  
   
 ## Tasks  
@@ -32,11 +24,11 @@ Tasks provide the code that runs during the build process. Tasks are contained i
   
  There are two approaches you can use when implementing a task:  
   
--   Implement the <xref:Microsoft.Build.Framework.ITask> interface directly.  
+- Implement the <xref:Microsoft.Build.Framework.ITask> interface directly.  
   
--   Derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which is defined in the Microsoft.Build.Utilities.dll assembly. Task implements ITask and provides default implementations of some ITask members. Additionally, logging is easier.  
+- Derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which is defined in the Microsoft.Build.Utilities.dll assembly. Task implements ITask and provides default implementations of some ITask members. Additionally, logging is easier.  
   
- In both cases, you must add to your class a method named `Execute`, which is the method that is called when the task runs. This method takes no parameters and returns a `Boolean` value: `true` if the task succeeded or `false` if it failed. The following example shows a task that performs no action and returns `true`.  
+  In both cases, you must add to your class a method named `Execute`, which is the method that is called when the task runs. This method takes no parameters and returns a `Boolean` value: `true` if the task succeeded or `false` if it failed. The following example shows a task that performs no action and returns `true`.  
   
 ```  
 using System;  
@@ -107,7 +99,7 @@ namespace MyTasks
  The [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] file Microsoft.Common.Tasks is a project file that contains a list of `UsingTask` elements that register all the tasks that are supplied with [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. This file is automatically included when building every project. If a task that is registered in Microsoft.Common.Tasks is also registered in the current project file, the current project file takes precedence; that is, you can override a default task with your own task that has the same name.  
   
 > [!TIP]
->  You can see a list of the tasks that are supplied with [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] by viewing the contents of Microsoft.Common.Tasks.  
+> You can see a list of the tasks that are supplied with [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] by viewing the contents of Microsoft.Common.Tasks.  
   
 ## Raising Events from a Task  
  If your task derives from the <xref:Microsoft.Build.Utilities.Task> helper class, you can use any of the following helper methods on the <xref:Microsoft.Build.Utilities.Task> class to raise events that will be caught and displayed by any registered loggers:  
@@ -273,6 +265,3 @@ namespace SimpleTask2
 ## See Also  
  [Task Reference](../msbuild/msbuild-task-reference.md)   
  [Task Reference](../msbuild/msbuild-task-reference.md)
-
-
-

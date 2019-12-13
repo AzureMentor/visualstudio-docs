@@ -1,29 +1,22 @@
 ---
 title: "Dia2dump.cpp Source File | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "Dia2dump sample [DIA SDK], sample source"
 ms.assetid: 32fd92f6-3de5-4353-b7cb-66781e03b38f
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Dia2dump.cpp Source File
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Dia2dump.cpp Source File](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-cpp-source-file).  
-  
 The following Dia2dump.cpp source code displays the contents of a .pdb file. This source code is used by [Dia2dump Sample](../../debugger/debug-interface-access/dia2dump-sample.md).  
   
 ```  
@@ -950,6 +943,3 @@ int main(int argc, char* argv[])
 }  
   
 ```
-
-
-

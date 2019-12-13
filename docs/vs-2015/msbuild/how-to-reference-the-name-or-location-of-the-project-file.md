@@ -1,14 +1,9 @@
 ---
 title: "How to: Reference the Name or Location of the Project File | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "locations, referencing"
   - "locations"
@@ -21,14 +16,11 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # How to: Reference the Name or Location of the Project File
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [How to: Reference the Name or Location of the Project File](https://docs.microsoft.com/visualstudio/msbuild/how-to-reference-the-name-or-location-of-the-project-file).  
-  
-  
 You can use the name or location of the project in the project file itself without having to create your own property. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] provides reserved properties that reference the project file name and other properties related to the project. For more information on reserved properties, see [MSBuild Reserved and Well-Known Properties](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## Using the MSBuildProjectName Property  
@@ -36,18 +28,18 @@ You can use the name or location of the project in the project file itself witho
   
 #### To use the MSBuildProjectName Property  
   
--   Reference the property in the project file with the $() notation, just as you would with any property. For example:  
+- Reference the property in the project file with the $() notation, just as you would with any property. For example:  
   
-    ```  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```  
+  ```  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```  
   
- An advantage of using a reserved property is that any changes to the project file name are incorporated automatically. The next time that you build the project, the output file will have the new name with no further action required on your part.  
+  An advantage of using a reserved property is that any changes to the project file name are incorporated automatically. The next time that you build the project, the output file will have the new name with no further action required on your part.  
   
 > [!NOTE]
->  Reserved properties cannot be redefined in the project file.  
+> Reserved properties cannot be redefined in the project file.  
   
 ## Example  
  The following example project file references the project name as a reserved property to specify the name for the output.  
@@ -80,5 +72,3 @@ You can use the name or location of the project in the project file itself witho
 ## See Also  
 [MSBuild](msbuild.md)  
  [MSBuild Reserved and Well-Known Properties](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
-

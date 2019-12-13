@@ -1,28 +1,20 @@
 ---
 title: "MSBuild Targets | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords: 
   - "MSBuild, targets"
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # MSBuild Targets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [MSBuild Targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets).  
-  
-  
 Targets group tasks together in a particular order and allow the build process to be factored into smaller units. For example, one target may delete all files in the output directory to prepare for the build, while another compiles the inputs for the project and places them in the empty directory. For more information on tasks, see [Tasks](../msbuild/msbuild-tasks.md).  
   
 ## Declaring Targets in the Project File  
@@ -50,19 +42,19 @@ Targets group tasks together in a particular order and allow the build process t
 ## Target Build Order  
  Targets must be ordered if the input to one target depends on the output of another target. There are several ways to specify the order in which targets run.  
   
--   Initial targets  
+- Initial targets  
   
--   Default targets  
+- Default targets  
   
--   First target  
+- First target  
   
--   Target dependencies  
+- Target dependencies  
   
--   `BeforeTargets` and `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` and `AfterTargets` (MSBuild 4.0)  
   
- A target never runs twice during a single build, even if a subsequent target in the build depends on it. Once a target runs, its contribution to the build is complete.  
+  A target never runs twice during a single build, even if a subsequent target in the build depends on it. Once a target runs, its contribution to the build is complete.  
   
- For details and more information about the target build order, see [Target Build Order](../msbuild/target-build-order.md).  
+  For details and more information about the target build order, see [Target Build Order](../msbuild/target-build-order.md).  
   
 ## Target Batching  
  A target element may have an `Outputs` attribute which specifies metadata in the form %(Metadata). If so, MSBuild runs the target once for each unique metadata value, grouping or "batching" the items that have that metadata value. For example,  
@@ -103,6 +95,3 @@ Reference: 4.0
 ## See Also  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
  [How to: Use the Same Target in Multiple Project Files](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: "CA2223: Members should differ by more than return type | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "MembersShouldDifferByMoreThanReturnType"
   - "CA2223"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "MembersShouldDifferByMoreThanReturnType"
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2223: Members should differ by more than return type
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2223: Members should differ by more than return type](https://docs.microsoft.com/visualstudio/code-quality/ca2223-members-should-differ-by-more-than-return-type).
 
 |||
 |-|-|
@@ -96,8 +89,4 @@ The latest version of this topic can be found at [CA2223: Members should differ 
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```
-
-
-

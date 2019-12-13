@@ -1,41 +1,34 @@
 ---
 title: "IDebugCustomAttribute::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugCustomAttribute::GetName"
 helpviewer_keywords: 
   - "IDebugCustomAttribute::GetName"
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugCustomAttribute::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugCustomAttribute::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattribute-getname).  
-  
 Gets the name of the custom attribute.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetName(   
-   BSTR* bstrName  
+   BSTR* bstrName  
 );  
 ```  
   
 ```csharp  
 int GetName(  
-   out string bstrName  
+   out string bstrName  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetName(
   
 ## See Also  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
-

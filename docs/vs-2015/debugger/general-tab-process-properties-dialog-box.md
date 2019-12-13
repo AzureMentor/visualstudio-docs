@@ -1,27 +1,20 @@
 ---
 title: "General Tab, Process Properties Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Process properties for Windows NT"
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # General Tab, Process Properties Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [General Tab, Process Properties Dialog Box](https://docs.microsoft.com/visualstudio/debugger/general-tab-process-properties-dialog-box).  
-  
 Use the **General** tab to find out more about a specific process. To display the [Process Properties Dialog Box](../debugger/process-properties-dialog-box.md), move the focus to a [Processes View](../debugger/processes-view.md) window. Select any process node in the tree, then choose **Properties** from the **View** menu.  
   
  The following settings are available on the **General** tab:  
@@ -36,6 +29,3 @@ Use the **General** tab to find out more about a specific process. To display th
 |**User Time**|The cumulative elapsed time that this process's threads have spent executing code in User Mode in non-idle threads. Applications execute in User Mode, as do subsystems such as the window manager and the graphics engine.|  
 |**Privileged Time**|The total elapsed time this process has been running in Privileged Mode in non-idle threads. The service layer, the Executive routines, and the Kernel execute in Privileged Mode. Device drivers for most devices other than graphics adapters and printers also execute in Privileged Mode. Some work that Windows does for your application may appear in other subsystem processes in addition to Privileged Time.|  
 |**Elapsed Time**|The total elapsed time this process has been running.|
-
-
-

@@ -1,36 +1,29 @@
 ---
 title: "IDiaAddressMap::get_addressMapEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaAddressMap::get_addressMapEnabled method"
 ms.assetid: 6183dc5e-befa-4e5a-ae5a-f4aa24f3ed9e
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaAddressMap::get_addressMapEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaAddressMap::get_addressMapEnabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled).  
-  
 Indicates whether an address map has been established for a particular session.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_addressMapEnabled (   
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 );  
 ```  
   
@@ -51,6 +44,3 @@ HRESULT get_addressMapEnabled ( 
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
  [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)
-
-
-

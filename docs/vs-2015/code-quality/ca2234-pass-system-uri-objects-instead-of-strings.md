@@ -1,14 +1,9 @@
 ---
 title: "CA2234: Pass System.Uri objects instead of strings | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "PassSystemUriObjectsInsteadOfStrings"
   - "CA2234"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "PassSystemUriObjectsInsteadOfStrings"
 ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2234: Pass System.Uri objects instead of strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2234: Pass System.Uri objects instead of strings](https://docs.microsoft.com/visualstudio/code-quality/ca2234-pass-system-uri-objects-instead-of-strings).
 
 |||
 |-|-|
@@ -60,6 +53,3 @@ The latest version of this topic can be found at [CA2234: Pass System.Uri object
  [CA1054: URI parameters should not be strings](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
  [CA1055: URI return values should not be strings](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-
-
-

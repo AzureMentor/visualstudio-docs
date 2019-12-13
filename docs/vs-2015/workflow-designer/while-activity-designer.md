@@ -1,19 +1,16 @@
 ---
 title: "While Activity Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: "reference"
 f1_keywords:
   - "System.Activities.Statements.While.UI"
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
-manager: "erikre"
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # While Activity Designer
 

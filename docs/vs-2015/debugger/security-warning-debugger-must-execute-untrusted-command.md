@@ -1,14 +1,9 @@
 ---
 title: "Security Warning: Debugger Must Execute Untrusted Command | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.sourceserver.securityalert"
 dev_langs: 
@@ -18,15 +13,13 @@ dev_langs:
   - "C++"
 ms.assetid: e5c004b3-b364-4098-ac98-770076ca9981
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Security Warning: Debugger Must Execute Untrusted Command
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Security Warning: Debugger Must Execute Untrusted Command](https://docs.microsoft.com/visualstudio/debugger/security-warning-debugger-must-execute-untrusted-command).  
-  
 This warning dialog box appears when you are using Source Server. It indicates that the command the debugger needs to execute to obtain source code is not in the list of trusted commands for Source Server contained in the srcsvr.ini file. If this is a valid command, you can add it to the srcsvr.ini file. Otherwise, you should not run it. For more information, see [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## Message Text  
@@ -49,7 +42,4 @@ This warning dialog box appears when you are using Source Server. It indicates t
 ## See Also  
  [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Debugger Security](../debugger/debugger-security.md)   
- [Source Server](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
-
-
-
+ [Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

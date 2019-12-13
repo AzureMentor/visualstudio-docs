@@ -1,14 +1,9 @@
 ---
 title: "CA1308: Normalize strings to uppercase | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1308"
   - "NormalizeStringsToUppercase"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1308"
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1308: Normalize strings to uppercase
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1308: Normalize strings to uppercase](https://docs.microsoft.com/visualstudio/code-quality/ca1308-normalize-strings-to-uppercase).
 
 |||
 |-|-|
@@ -47,6 +40,3 @@ The latest version of this topic can be found at [CA1308: Normalize strings to u
 
 ## See Also
  [Globalization Warnings](../code-quality/globalization-warnings.md)
-
-
-

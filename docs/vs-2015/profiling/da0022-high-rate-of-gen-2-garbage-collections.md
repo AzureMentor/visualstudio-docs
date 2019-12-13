@@ -1,29 +1,22 @@
 ---
 title: "DA0022: High rate of Gen 2 garbage collections | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 f1_keywords: 
   - "vs.performance.DA0022"
   - "vs.performance.rules.DA0022"
   - "vs.performance.22"
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # DA0022: High rate of Gen 2 garbage collections
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [DA0022: High rate of Gen 2 garbage collections](https://docs.microsoft.com/visualstudio/profiling/da0022-high-rate-of-gen-2-garbage-collections).  
-  
 Rule Id|DA0022|  
 |Category|.NET Framework Usage|  
 |Profiling method|All|  
@@ -51,7 +44,4 @@ Rule Id|DA0022|
   
  To understand the application’s pattern of managed memory usage, profile it again running a.NET Memory allocation profile and select the Object Lifetime profiling option.  
   
- For information about how to improve garbage collection performance, see [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) on the Microsoft Web site. For information about the overhead of automatic garbage collection, see [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-
+ For information about how to improve garbage collection performance, see [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=148226) on the Microsoft Web site. For information about the overhead of automatic garbage collection, see [Large Object Heap Uncovered](https://go.microsoft.com/fwlink/?LinkId=177836).

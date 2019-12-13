@@ -1,58 +1,51 @@
 ---
 title: "ADDRESS_KIND | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "ADDRESS_KIND"
 helpviewer_keywords: 
   - "ADDRESS_KIND enumeration"
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # ADDRESS_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ADDRESS_KIND](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/address-kind).  
-  
 Specifies the kinds of addresses.  
   
 ## Syntax  
   
 ```cpp  
 enum enum_ADDRESS_KIND {  
-   ADDRESS_KIND_NATIVE                  = 0x0001,  
-   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
-   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
-   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
-   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
-   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
-   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
-   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
-   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
+   ADDRESS_KIND_NATIVE                  = 0x0001,  
+   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
+   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
+   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
+   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
+   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
+   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
+   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
+   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
 };  
 typedef DWORD ADDRESS_KIND;  
 ```  
   
 ```csharp  
 public enum enum_ADDRESS_KIND {  
-   ADDRESS_KIND_NATIVE                  = 0x0001,  
-   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
-   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
-   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
-   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
-   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
-   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
-   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
-   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
+   ADDRESS_KIND_NATIVE                  = 0x0001,  
+   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
+   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
+   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
+   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
+   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
+   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
+   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
+   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
 };  
 ```  
   
@@ -99,4 +92,3 @@ public enum enum_ADDRESS_KIND {
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
-

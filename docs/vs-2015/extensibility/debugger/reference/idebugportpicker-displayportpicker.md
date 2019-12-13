@@ -1,42 +1,35 @@
 ---
 title: "IDebugPortPicker::DisplayPortPicker | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 helpviewer_keywords: 
   - "DisplayPortPicker"
   - "IDebugPortPicker::DisplayPortPicker"
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugPortPicker::DisplayPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugPortPicker::DisplayPortPicker](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportpicker-displayportpicker).  
-  
 Displays the specified dialog box that allows the user to select a port.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT DisplayPortPicker(  
-   HWND hwndParentDialog,  
-   BSTR* pbstrPortId  
+   HWND hwndParentDialog,  
+   BSTR* pbstrPortId  
 );  
 ```  
   
 ```csharp  
 public int DisplayPortPicker(  
-   int hwndParentDialog,  
-   out string pbstrPortId  
+   int hwndParentDialog,  
+   out string pbstrPortId  
 );  
 ```  
   
@@ -52,4 +45,3 @@ public int DisplayPortPicker(
   
 ## See Also  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)
-

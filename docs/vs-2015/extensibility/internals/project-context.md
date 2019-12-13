@@ -1,26 +1,19 @@
 ---
 title: "Project Context | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "projects [Visual Studio SDK], opening items"
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Project Context
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Project Context](https://docs.microsoft.com/visualstudio/extensibility/internals/project-context).  
-  
 When the user adds or works with projects and project items, the IDE uses the notion of project context to determine how various operations should be performed.  
   
  Typically, files are the standard project objects that the user explicitly creates by selecting the **New Project** command or makes available by selecting the **Open Project** command on the **File** menu. In these cases, files are created and opened in the context of a project and the project type defines the context for editing the document.  
@@ -32,4 +25,3 @@ When the user adds or works with projects and project items, the IDE uses the no
 ## See Also  
  [Project Priority](../../extensibility/internals/project-priority.md)   
  [Adding Project and Project Item Templates](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

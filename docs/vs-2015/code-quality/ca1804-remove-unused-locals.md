@@ -1,14 +1,9 @@
 ---
 title: "CA1804: Remove unused locals | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA1804"
   - "RemoveUnusedLocals"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1804"
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1804: Remove unused locals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1804: Remove unused locals](https://docs.microsoft.com/visualstudio/code-quality/ca1804-remove-unused-locals).
 
 |||
 |-|-|
@@ -59,6 +52,3 @@ The latest version of this topic can be found at [CA1804: Remove unused locals](
  [CA1812: Avoid uninstantiated internal classes](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
  [CA1801: Review unused parameters](../code-quality/ca1801-review-unused-parameters.md)
-
-
-

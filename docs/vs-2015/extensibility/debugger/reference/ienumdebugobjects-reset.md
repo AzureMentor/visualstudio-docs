@@ -1,28 +1,21 @@
 ---
 title: "IEnumDebugObjects::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugObjects::Reset"
 helpviewer_keywords: 
   - "IEnumDebugObjects::Reset method"
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugObjects::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugObjects::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugobjects-reset).  
-  
 This method resets the enumeration to the first element.  
   
 ## Syntax  
@@ -47,4 +40,3 @@ int Reset();
 ## See Also  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)   
  [Next](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)
-

@@ -1,11 +1,8 @@
 ---
 title: "InvokeDelegate | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: "reference"
 f1_keywords:
   - "InvokeDelegate Designer"
@@ -13,8 +10,8 @@ f1_keywords:
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: "steved0x"
-ms.author: gewarren
-manager: douge
+ms.author: jillfra
+manager: jillfra
 ---
 # InvokeDelegate
 

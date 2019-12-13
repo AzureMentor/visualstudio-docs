@@ -1,40 +1,33 @@
 ---
 title: "SccGet Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "SccGet"
 helpviewer_keywords: 
   - "SccGet function"
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # SccGet Function
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [SccGet Function](https://docs.microsoft.com/visualstudio/extensibility/sccget-function).  
-  
 This function retrieves a copy of one or more files for viewing and compiling but not for editing. In most systems, the files are tagged as read-only.  
   
 ## Syntax  
   
 ```cpp#  
 SCCRTN SccGet(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
@@ -78,7 +71,7 @@ SCCRTN SccGet(
  The `SCC_GET_ALL` flag can be combined with the `SCC_GET_RECURSIVE` flag to retrieve all files in the given directories and all subdirectories as well.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` should never be passed without `SCC_GET_ALL`. Also, note that if directories C:\A and C:\A\B are both passed on a recursive get, C:\A\B and all its subdirectories will actually be retrieved twice. It is the IDE's responsibility—and not the source control plug-in's—to make sure that duplicates such as this are kept out of the array.  
+> `SCC_GET_RECURSIVE` should never be passed without `SCC_GET_ALL`. Also, note that if directories C:\A and C:\A\B are both passed on a recursive get, C:\A\B and all its subdirectories will actually be retrieved twice. It is the IDE's responsibility—and not the source control plug-in's—to make sure that duplicates such as this are kept out of the array.  
   
  Finally, even if a source control plug-in specified the `SCC_CAP_GET_NOUI` flag on initialization, indicating that it does not have a user interface for a Get command, this function may still be called by the IDE to retrieve files. The flag simply means that the IDE does not display a Get menu item and that the plug-in is not expected to provide any UI.  
   
@@ -87,23 +80,22 @@ SCCRTN SccGet(
   
  There are two ways to resolve this situation where the local cache of source control versions becomes out of sync with the source control database:  
   
-1.  Do not allow renaming a file in the source control database that is currently checked out.  
+1. Do not allow renaming a file in the source control database that is currently checked out.  
   
-2.  Do the equivalent of "delete old" followed by "add new". The following algorithm is one way to accomplish this.  
+2. Do the equivalent of "delete old" followed by "add new". The following algorithm is one way to accomplish this.  
   
-    1.  Call the [SccQueryChanges](../extensibility/sccquerychanges-function.md) function to learn about the renaming of a.txt to b.txt in the source control database.  
+    1. Call the [SccQueryChanges](../extensibility/sccquerychanges-function.md) function to learn about the renaming of a.txt to b.txt in the source control database.  
   
-    2.  Rename the local a.txt to b.txt.  
+    2. Rename the local a.txt to b.txt.  
   
-    3.  Call the `SccGet` function for both a.txt and b.txt.  
+    3. Call the `SccGet` function for both a.txt and b.txt.  
   
-    4.  Because a.txt does not exist in the source control database, the local version cache is purged of the missing a.txt version information.  
+    4. Because a.txt does not exist in the source control database, the local version cache is purged of the missing a.txt version information.  
   
-    5.  The b.txt file being checked out is merged with the contents of the local b.txt file.  
+    5. The b.txt file being checked out is merged with the contents of the local b.txt file.  
   
-    6.  The updated b.txt file can now be checked in.  
+    6. The updated b.txt file can now be checked in.  
   
 ## See Also  
  [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)
-

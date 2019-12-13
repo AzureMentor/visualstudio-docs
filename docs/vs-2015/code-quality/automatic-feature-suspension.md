@@ -1,27 +1,20 @@
 ---
 title: "Automatic feature suspension | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
-ms.prod: "visual-studio-tfs-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
   - "full solution analysis"
   - "performance"
   - "low-memory"
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # Automatic feature suspension
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [Automatic feature suspension](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension).
-
 If your available system memory falls to 200MB or less, Visual Studio displays the following message in the code editor.
 
  ![Alert text suspending full solution analysis](../code-quality/media/fsa-alert.png "FSA_Alert")
@@ -30,11 +23,11 @@ If your available system memory falls to 200MB or less, Visual Studio displays t
 
  In a low memory condition, the following occurs:
 
--   Full solution analysis for Visual C# and Visual Basic is disabled.
+- Full solution analysis for Visual C# and Visual Basic is disabled.
 
--   [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) low-latency mode for Visual C# and Visual Basic are disabled.
+- [Garbage Collection](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) low-latency mode for Visual C# and Visual Basic are disabled.
 
--   Visual Studio caches are flushed.
+- Visual Studio caches are flushed.
 
 ## Improve Visual Studio performance
  For tips and tricks on how to improve Visual Studio performance when dealing with large solutions or low-memory conditions, see [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -49,11 +42,11 @@ If your available system memory falls to 200MB or less, Visual Studio displays t
 
 All Visual Studio caches are immediately emptied, but will begin to repopulate if you continue your current development session or restart Visual Studio. The caches flushed include caches for the following features.
 
--   Find all references
+- Find all references
 
--   Navigate To
+- Navigate To
 
--   Add Using
+- Add Using
 
 In addition, caches used for internal Visual Studio operations are also cleared.
 
@@ -63,5 +56,5 @@ In addition, caches used for internal Visual Studio operations are also cleared.
 ## See also
 
 - [How to: Enable and Disable Full Solution Analysis](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Fundamentals of Garbage Collection](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Fundamentals of Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

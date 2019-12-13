@@ -1,41 +1,34 @@
 ---
 title: "IDebugField::GetType | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugField::GetType"
 helpviewer_keywords: 
   - "IDebugField::GetType method"
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugField::GetType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugField::GetType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-gettype).  
-  
 This method gets the type of field.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetType(   
-   IDebugField** ppType  
+   IDebugField** ppType  
 );  
 ```  
   
 ```csharp  
 int GetType(  
-   out IDebugField ppType  
+   out IDebugField ppType  
 );  
 ```  
   
@@ -48,4 +41,3 @@ int GetType(
   
 ## See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

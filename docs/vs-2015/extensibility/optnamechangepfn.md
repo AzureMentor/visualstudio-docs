@@ -1,37 +1,30 @@
 ---
 title: "OPTNAMECHANGEPFN | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 f1_keywords: 
   - "OPTNAMECHANGEPFN"
 helpviewer_keywords: 
   - "OPTNAMECHANGEPFN callback function"
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [OPTNAMECHANGEPFN](https://docs.microsoft.com/visualstudio/extensibility/optnamechangepfn).  
-  
 This is a callback function specified in a call to the [SccSetOption](../extensibility/sccsetoption-function.md) (using option `SCC_OPT_NAMECHANGEPFN`) and is used to communicate name changes made by the source control plug-in back to the IDE.  
   
 ## Signature  
   
 ```cpp#  
 typedef void (*OPTNAMECHANGEPFN)(  
-   LPVOID pvCallerData,  
-   LPCSTR pszOldName,  
-   LPCSTR pszNewName  
+   LPVOID pvCallerData,  
+   LPCSTR pszOldName,  
+   LPCSTR pszNewName  
 );  
 ```  
   
@@ -56,4 +49,3 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## See Also  
  [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

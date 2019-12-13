@@ -1,14 +1,9 @@
 ---
 title: "CA2106: Secure asserts | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "CA2106"
   - "SecureAsserts"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "SecureAsserts"
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA2106: Secure asserts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA2106: Secure asserts](https://docs.microsoft.com/visualstudio/code-quality/ca2106-secure-asserts).
 
 |||
 |-|-|
@@ -47,7 +40,4 @@ The latest version of this topic can be found at [CA2106: Secure asserts](https:
 
 ## See Also
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
- [Secure Coding Guidelines](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
-
-
-
+ [Secure Coding Guidelines](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

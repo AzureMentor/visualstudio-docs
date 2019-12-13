@@ -1,27 +1,20 @@
 ---
 title: "Considerations for Unloading and Reloading Nested Projects | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "nested projects, unloading and reloading"
   - "projects [Visual Studio SDK], unloading and reloading nested"
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Considerations for Unloading and Reloading Nested Projects
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Considerations for Unloading and Reloading Nested Projects](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects).  
-  
 When you implement nested project types, you must perform additional steps when you unload and reload the projects. To correctly notify listeners to solution events, you must correctly raise the `OnBeforeUnloadProject` and `OnAfterLoadProject` events.  
   
  One reason you must raise these events in this manner is that you do not want source code control (SCC) to delete the items from the server and then add them back as something new if there is a `Get` operation from SCC. In that case, a new file would be loaded out of SCC and you have to unload and reload all the files in case they are different. SCC calls `ReloadItem`. Your implementation of that call is to delete the project and re-create it again by implementing `IVsFireSolutionEvents` to call `OnBeforeUnloadProject` and `OnAfterLoadProject`. When you perform this implementation, the SCC is informed that the project was temporarily deleted and added again. Therefore, the SCC does not operate on the project as if the project was actually deleted from the server and then added again.  
@@ -36,4 +29,3 @@ When you implement nested project types, you must perform additional steps when 
 ## See Also  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  [Nesting Projects](../../extensibility/internals/nesting-projects.md)
-

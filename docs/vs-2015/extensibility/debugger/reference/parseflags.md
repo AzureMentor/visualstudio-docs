@@ -1,46 +1,39 @@
 ---
 title: "PARSEFLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "PARSEFLAGS"
 helpviewer_keywords: 
   - "PARSEFLAGS enumeration"
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [PARSEFLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/parseflags).  
-  
 Specifies how to parse an expression.  
   
 ## Syntax  
   
 ```cpp#  
 enum enum_PARSEFLAGS {   
-   PARSE_EXPRESSION            = 0x0001,  
-   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
-   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
+   PARSE_EXPRESSION            = 0x0001,  
+   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
+   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
 };  
 typedef DWORD PARSEFLAGS;  
 ```  
   
 ```csharp  
 public enum enum_PARSEFLAGS {   
-   PARSE_EXPRESSION            = 0x0001,  
-   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
-   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
+   PARSE_EXPRESSION            = 0x0001,  
+   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
+   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
 };  
 ```  
   
@@ -68,4 +61,3 @@ public enum enum_PARSEFLAGS { 
  [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
-

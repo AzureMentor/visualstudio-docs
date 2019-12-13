@@ -1,41 +1,34 @@
 ---
 title: "IEnumDebugPrograms2::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IEnumDebugPrograms2::Clone"
 helpviewer_keywords: 
   - "IEnumDebugPrograms2::Clone"
 ms.assetid: 880846c2-39d3-45cd-85c3-ad5409a3710f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IEnumDebugPrograms2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IEnumDebugPrograms2::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2-clone).  
-  
 Returns a copy of the current enumeration as a separate object.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT Clone(  
-   IEnumDebugPrograms2** ppEnum  
+   IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
 ```csharp  
 int Clone(  
-   out IEnumDebugPrograms2 ppEnum  
+   out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int Clone(
   
 ## See Also  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
-

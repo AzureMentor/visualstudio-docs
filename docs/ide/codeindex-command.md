@@ -1,17 +1,15 @@
 ---
 title: CodeIndex command
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
   - "command-line tools [Team Foundation Server]"
   - "TFSConfig"
   - "CodeIndex command [Team Foundation Server]"
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
   - "multiple"
 ---
@@ -35,13 +33,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### Parameters
 
 |**Argument**|**Description**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Specifies the name of the project collection. If the name has spaces, enclose the name with quotation marks, for example, "Fabrikam Website".|
 |`CollectionId`|Specifies the identification number of the project collection.|
 |`ServerPath`|Specifies the path to a code file.|
 
 |**Option**|**Description**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Show the status and configuration of the code indexing service.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Start indexing all changesets.<br />-   **off**: Stop indexing all changesets.<br />-   **keepupOnly**: Stop indexing previously created changesets and start indexing new changesets only.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> You can use the wildcard character (*) at the start, end, or both ends of the server path.|Specifies a list of code files and their paths that you don't want indexed.<br /><br /> -   **add**: Add the file that you don't want indexed to the ignored file list.<br />-   **remove**: Remove the file that you want indexed from the ignored file list.<br />-   **removeAll**: Clear the ignored file list and start indexing all files.<br />-   **view**: See all the files that aren't being indexed.|
@@ -58,61 +56,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > The example companies, organizations, products, domain names, email addresses, logos, people, places, and events depicted herein are fictitious.  No association with any real company, organization, product, domain name, email address, logo, person, places, or events is intended or should be inferred.
 
- To see the code indexing status and configuration:
+To see the code indexing status and configuration:
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- To start indexing all changesets:
+To start indexing all changesets:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- To stop indexing previously created changesets and start indexing new changesets only:
+To stop indexing previously created changesets and start indexing new changesets only:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- To find up to 50 files that are larger than 10 KB:
+To find up to 50 files that are larger than 10 KB:
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- To exclude a specific file from indexing and add it to the ignored file list:
+To exclude a specific file from indexing and add it to the ignored file list:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- To see all the files that aren't indexed:
+To see all the files that aren't indexed:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- To clear previously indexed data and restart indexing:
+To clear previously indexed data and restart indexing:
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- To save all changeset history:
+To save all changeset history:
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- To remove the size limit on CodeLens temporary data and continue indexing regardless of temporary data size:
+To remove the size limit on CodeLens temporary data and continue indexing regardless of temporary data size:
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- To delete the code index with confirmation:
+To delete the code index with confirmation:
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
@@ -121,4 +119,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ## See also
 
 - [Find code changes and other history with CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Managing server configuration with TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Managing server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

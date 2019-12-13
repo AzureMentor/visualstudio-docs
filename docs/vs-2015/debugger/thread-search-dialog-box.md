@@ -1,27 +1,20 @@
 ---
 title: "Thread Search Dialog Box | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Thread Search"
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Thread Search Dialog Box
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Thread Search Dialog Box](https://docs.microsoft.com/visualstudio/debugger/thread-search-dialog-box).  
-  
 Use this dialog box to find and select the node for a specific thread in [Threads View](../debugger/threads-view.md). To display this dialog box, move the focus to a **Threads** view window. Then choose **Find Thread** from the **Search** menu.  
   
  The following settings are available:  
@@ -53,6 +46,3 @@ Use this dialog box to find and select the node for a specific thread in [Thread
   
  [Using Spy++](../debugger/using-spy-increment.md)  
  Introduces the Spy++ tool and explains how it can be used.
-
-
-

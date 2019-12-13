@@ -1,14 +1,9 @@
 ---
 title: "GenerateDeploymentManifest Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords: 
   - "http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest"
 dev_langs: 
@@ -23,14 +18,11 @@ ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # GenerateDeploymentManifest Task
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [GenerateDeploymentManifest Task](https://docs.microsoft.com/visualstudio/msbuild/generatedeploymentmanifest-task).  
-  
-  
 Generates a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment manifest. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment manifest describes the deployment of an application by defining a unique identity for the deployment, identifying deployment traits such as install or online mode, specifying application update settings and update locations, and indicating the corresponding [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application manifest.  
   
 ## Parameters  
@@ -72,6 +64,3 @@ Generates a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment ma
  [GenerateApplicationManifest Task](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile Task](../msbuild/signfile-task.md)   
  [Task Reference](../msbuild/msbuild-task-reference.md)
-
-
-

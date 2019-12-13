@@ -1,43 +1,36 @@
 ---
 title: "IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugStackFrame2::GetPhysicalStackRange"
 helpviewer_keywords: 
   - "IDebugStackFrame2::GetPhysicalStackRange"
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugStackFrame2::GetPhysicalStackRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugStackFrame2::GetPhysicalStackRange](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange).  
-  
 Gets a machine-dependent representation of the range of physical addresses associated with a stack frame.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT GetPhysicalStackRange (   
-   UINT64* paddrMin,  
-   UINT64* paddrMax  
+   UINT64* paddrMin,  
+   UINT64* paddrMax  
 );  
 ```  
   
 ```csharp  
 int GetPhysicalStackRange (   
-   out ulong paddrMin,  
-   out ulong paddrMax  
+   out ulong paddrMin,  
+   out ulong paddrMax  
 );  
 ```  
   
@@ -58,4 +51,3 @@ int GetPhysicalStackRange ( 
   
 ## See Also  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
-

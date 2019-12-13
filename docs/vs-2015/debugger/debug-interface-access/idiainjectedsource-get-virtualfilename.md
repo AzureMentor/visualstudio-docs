@@ -1,36 +1,29 @@
 ---
 title: "IDiaInjectedSource::get_virtualFilename | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaInjectedSource::get_virtualFilename method"
 ms.assetid: b9977075-8fd1-4b11-bfff-d87e9f2586dc
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaInjectedSource::get_virtualFilename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaInjectedSource::get_virtualFilename](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-virtualfilename).  
-  
 Retrieves the name given to non-file source code; that is, code that was injected.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_virtualFilename (   
-   BSTR* pRetVal  
+   BSTR* pRetVal  
 );  
 ```  
   
@@ -43,6 +36,3 @@ HRESULT get_virtualFilename ( 
   
 ## See Also  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
-
-
-

@@ -1,40 +1,33 @@
 ---
 title: "Performance Session Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Profiling Tools,properties"
   - "property pages,Profiling Tools"
   - "performance tools, performance session properties"
 ms.assetid: c3a86913-172b-488f-a31a-cea01a71b2ea
 caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Performance Session Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Performance Session Properties](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 A **Performance Session** enables you to configure settings that determine how the application is profiled. It also stores reports that are generated for the profiling session.  
   
  **Requirements**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- You create a **Performance Session** by running the **Performance Wizard** or by manually creating a session. The **Performance Session** is displayed in the **Performance Explorer** after the **Performance Session** has been created.  
+  You create a **Performance Session** by running the **Performance Wizard** or by manually creating a session. The **Performance Session** is displayed in the **Performance Explorer** after the **Performance Session** has been created.  
   
- To view **Performance Session** properties, select the session name in **Performance Explorer**, right-click it and then select **Properties**.  
+  To view **Performance Session** properties, select the session name in **Performance Explorer**, right-click it and then select **Properties**.  
   
- The performance session has the following property pages:  
+  The performance session has the following property pages:  
   
 ## General  
  These settings enable you to select the profiling method, to add .NET object collection and lifetime data, and to specify the default report location and naming conventions.  
@@ -55,17 +48,17 @@ A **Performance Session** enables you to configure settings that determine how t
 ## Sampling  
  These settings enable you to select the sample event and sampling interval when sampling is used as the profiling method. A sample event is used to collect profiling data at the specified interval. For example, if the sample event is clock cycles and the sampling interval is set to 10,000,000 then profiling data is collected after every 10 million clock cycles. The following four types of sample events are available:  
   
--   Clock Cycles - for CPU bound problems  
+- Clock Cycles - for CPU bound problems  
   
--   Page Faults - for memory related problems  
+- Page Faults - for memory related problems  
   
--   System Calls - for I/O related problems  
+- System Calls - for I/O related problems  
   
--   Performance Counters - for low-level performance problems  
+- Performance Counters - for low-level performance problems  
   
--   Additional sample events can be specified based on available performance counters  
+- Additional sample events can be specified based on available performance counters  
   
- For more information, see [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)  
+  For more information, see [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)  
   
 ## Binary  
  These settings enable you to specify whether you want to relocate the instrumented binary to another location. For example, if you are profiling My.DLL and choose not to relocate the instrumented binary, a backup copy of My.DLL named My.Orig.DLL is created. Subsequently, My.DLL is modified by inserting probes to collect data. If you decide to relocate the instrumented binary, the original binary is not renamed and the instrumented binary is copied to the specified location for use during instrumentation.  
@@ -90,7 +83,7 @@ A **Performance Session** enables you to configure settings that determine how t
  For more information, see [How to: Collect CPU Counter Data](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## Windows Events  
- During profiling, you can collect data from event trace providers. You can view the data by using the VSPerfReport.exe command line tool `/calltrace` option. For more information about Event Tracing for Windows (ETW), see [About Event Tracing](http://go.microsoft.com/fwlink/?linkid=90752).  
+ During profiling, you can collect data from event trace providers. You can view the data by using the VSPerfReport.exe command line tool `/calltrace` option. For more information about Event Tracing for Windows (ETW), see [About Event Tracing](https://go.microsoft.com/fwlink/?linkid=90752).  
   
  For more information, see:  
   
@@ -116,6 +109,3 @@ A **Performance Session** enables you to configure settings that determine how t
  [Overviews](../profiling/overviews-performance-tools.md)   
  [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)   
  [Controlling Data Collection](../profiling/controlling-data-collection.md)
-
-
-

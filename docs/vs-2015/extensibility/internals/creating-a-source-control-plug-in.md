@@ -1,28 +1,21 @@
 ---
 title: "Creating a Source Control Plug-in | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "plug-ins, source control"
   - "source control plug-ins"
   - "source control [Visual Studio SDK], plug-ins"
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Creating a Source Control Plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Creating a Source Control Plug-in](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-a-source-control-plug-in).  
-  
 The Visual Studio SDK provides resources that enable you to add source control capability to the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE). It lets you use any plug-in DLL that complies with the Source Control Plug-in API outlined in this documentation.  
   
 ## In This Section  
@@ -44,4 +37,3 @@ The Visual Studio SDK provides resources that enable you to add source control c
   
  [Source Control](../../extensibility/internals/source-control.md)  
  Discusses the options for implementing source control as an integrated feature of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
-

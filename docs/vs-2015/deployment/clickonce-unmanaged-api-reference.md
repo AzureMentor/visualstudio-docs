@@ -1,14 +1,9 @@
 ---
 title: "ClickOnce Unmanaged API Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-deployment"
+ms.topic: reference
 dev_langs: 
   - "VB"
   - "CSharp"
@@ -23,13 +18,11 @@ ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: "wpickett"
+manager: jillfra
 ---
 # ClickOnce Unmanaged API Reference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [ClickOnce Unmanaged API Reference](https://docs.microsoft.com/visualstudio/deployment/clickonce-unmanaged-api-reference).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] unmanaged public APIs from dfshim.dll.  
   
 ## CleanOnlineAppCache  
@@ -85,6 +78,3 @@ The latest version of this topic can be found at [ClickOnce Unmanaged API Refere
   
 ## See Also  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>
-
-
-

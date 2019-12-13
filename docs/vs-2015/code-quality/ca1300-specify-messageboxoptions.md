@@ -1,14 +1,9 @@
 ---
 title: "CA1300: Specify MessageBoxOptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
   - "SpecifyMessageBoxOptions"
   - "CA1300"
@@ -17,14 +12,12 @@ helpviewer_keywords:
   - "CA1300"
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: "wpickett"
 ---
 # CA1300: Specify MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-The latest version of this topic can be found at [CA1300: Specify MessageBoxOptions](https://docs.microsoft.com/visualstudio/code-quality/ca1300-specify-messageboxoptions).
 
 |||
 |-|-|
@@ -53,7 +46,4 @@ The latest version of this topic can be found at [CA1300: Specify MessageBoxOpti
 
 ## See Also
  <xref:System.Resources.ResourceManager?displayProperty=fullName>
- [Resources in Desktop Apps](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ [Resources in Desktop Apps](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

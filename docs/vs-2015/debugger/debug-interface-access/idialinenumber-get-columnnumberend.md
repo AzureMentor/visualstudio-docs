@@ -1,36 +1,29 @@
 ---
 title: "IDiaLineNumber::get_columnNumberEnd | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: reference
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "IDiaLineNumber::get_columnNumberEnd method"
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # IDiaLineNumber::get_columnNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDiaLineNumber::get_columnNumberEnd](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-columnnumberend).  
-  
 Retrieves the one-based source column number where the expression or statement ends.  
   
 ## Syntax  
   
 ```cpp#  
 HRESULT get_columnNumberEnd (   
-   DWORD* pRetVal  
+   DWORD* pRetVal  
 );  
 ```  
   
@@ -46,6 +39,3 @@ HRESULT get_columnNumberEnd ( 
   
 ## See Also  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
-
-
-

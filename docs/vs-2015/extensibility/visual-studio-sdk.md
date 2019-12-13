@@ -1,14 +1,9 @@
 ---
 title: "Visual Studio SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: conceptual
 f1_keywords: 
   - "VSSDK.v90.StartPage"
 helpviewer_keywords: 
@@ -17,31 +12,29 @@ helpviewer_keywords:
   - "Visual Studio, SDK"
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk).  
-  
 The Visual Studio SDK helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Gallery. The following are some of the ways in which you can extend Visual Studio:  
   
--   Add commands, buttons, menus, and other UI elements to the IDE  
+- Add commands, buttons, menus, and other UI elements to the IDE  
   
--   Add tool windows for new functionality  
+- Add tool windows for new functionality  
   
--   Extend IntelliSense for a given language, or provide IntelliSense for new programming languages  
+- Extend IntelliSense for a given language, or provide IntelliSense for new programming languages  
   
--   Use light bulbs to provide hints and suggestions that help developers write better code  
+- Use light bulbs to provide hints and suggestions that help developers write better code  
   
--   Enable support for a new language  
+- Enable support for a new language  
   
--   Add a custom project type  
+- Add a custom project type  
   
--   Reach millions of developers via the Visual Studio Gallery  
+- Reach millions of developers via the Visual Studio Marketplace  
   
- If you’ve never written a Visual Studio extension before, you should find more information about these features and at [Starting to Develop Visual Studio Extensions](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  If you’ve never written a Visual Studio extension before, you should find more information about these features and at [Starting to Develop Visual Studio Extensions](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## Installing the Visual Studio SDK  
  Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -57,7 +50,7 @@ The Visual Studio SDK helps you extend Visual Studio features or integrate new f
  Take advantage of the [Image Service and Catalog](../extensibility/image-service-and-catalog.md) for great image management and support for high DPI and theming.  
   
 ## Finding and Installing Existing Visual Studio Extensions  
- You can find Visual Studio extensions in the **Extensions and Updates** dialog on the **Tools** menu. For more information, see [Finding and Using Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md). You can also find extensions in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/)  
+ You can find Visual Studio extensions in the **Extensions and Updates** dialog on the **Tools** menu. For more information, see [Finding and Using Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md). You can also find extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## Visual Studio SDK Reference  
  You can find the Visual Studio SDK API reference at [Visual Studio SDK Reference](../extensibility/visual-studio-sdk-reference.md).  
@@ -68,13 +61,13 @@ The Visual Studio SDK helps you extend Visual Studio features or integrate new f
 ## Other Visual Studio SDK Resources  
  If you have questions about the VSSDK or want to share your experiences developing extensions, you can use the [Visual Studio Extensibility Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) or the [ExtendVS Group Chat](https://gitter.im/Microsoft/extendvs).  
   
- You can find more information in the [VSX Arcana blog](http://blogs.msdn.com/b/vsx/) and an number of blogs written by Microsoft MVPs:  
+ You can find more information in the [VSX Arcana blog](https://blogs.msdn.microsoft.com/vsx/) and an number of blogs written by Microsoft MVPs:  
   
--   [Favorite Visual Studio Extensions](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
+- [Favorite Visual Studio Extensions](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)  
   
--   [Visual Studio Extensibility](http://www.visualstudioextensibility.com/overview/vs/)  
+- [Visual Studio Extensibility](http://www.visualstudioextensibility.com/overview/vs/)  
   
--   [Extending Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
+- [Extending Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## See Also  
  [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md)   
@@ -99,4 +92,3 @@ The Visual Studio SDK helps you extend Visual Studio features or integrate new f
  [Support for the Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archive](../extensibility/archive.md)   
  [Visual Studio SDK Reference](../extensibility/visual-studio-sdk-reference.md)
-

@@ -1,41 +1,34 @@
 ---
 title: "IDebugAlias::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-sdk"
+ms.topic: reference
 f1_keywords: 
   - "IDebugAlias::GetICorDebugValue"
 helpviewer_keywords: 
   - "IDebugAlias::GetICorDebugValue method"
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
+ms.author: gregvanl
+manager: jillfra
 ---
 # IDebugAlias::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [IDebugAlias::GetICorDebugValue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugalias-geticordebugvalue).  
-  
 Retrieves a managed code interface that represents the value associated with this alias.  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+   IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
 int GetICorDebugValue(  
-   out object ppUnk  
+   out object ppUnk  
 );  
 ```  
   
@@ -51,4 +44,3 @@ int GetICorDebugValue(
   
 ## See Also  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-

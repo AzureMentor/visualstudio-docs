@@ -1,14 +1,9 @@
 ---
 title: "Collecting tier interaction data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.performance.property.tierinteraction"
 helpviewer_keywords: 
@@ -18,15 +13,13 @@ helpviewer_keywords:
   - "ADO.NET performance profiling"
 ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Collecting tier interaction data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Collecting tier interaction data](https://docs.microsoft.com/visualstudio/profiling/collecting-tier-interaction-data).  
-  
 Tier interaction profiling provides additional information about the execution times of functions of multi-tiered applications that communicate with databases through ADO.NET services. Data is collected only for synchronous function calls.  
   
  **Visual Studio editions**  
@@ -43,14 +36,11 @@ Tier interaction profiling provides additional information about the execution t
   
 ### To add tier interaction data to a profiling run by using the performance session property pages  
   
-1.  In Performance Explorer, choose **Properties** from the context menu.  
+1. In Performance Explorer, choose **Properties** from the context menu.  
   
-2.  Select **Tier Interactions** page and then check the **Enable tier interaction profiling** check box.  
+2. Select **Tier Interactions** page and then check the **Enable tier interaction profiling** check box.  
   
-3.  In Performance Explorer, select the **Targets** node, and then specify the project, executable, or web site that you want to profile.  
+3. In Performance Explorer, select the **Targets** node, and then specify the project, executable, or web site that you want to profile.  
   
 ## See Also  
  [Tier Interactions View](../profiling/tier-interactions-view.md)
-
-
-

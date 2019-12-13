@@ -1,73 +1,65 @@
 ---
 title: "Property Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords: 
   - "MSBuild, property functions"
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: "ghogen"
+manager: jillfra
 ---
 # Property Functions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Property Functions](https://docs.microsoft.com/visualstudio/msbuild/property-functions).  
-  
-  
 In the .NET Framework versions 4 and 4.5, property functions can be used to evaluate MSBuild scripts. Property functions can be used wherever properties appear. Unlike tasks, property functions can be used outside of targets, and are evaluated before any target runs.  
   
  Without using MSBuild tasks, you can read the system time, compare strings, match regular expressions, and perform other actions in your build script. MSBuild will try to convert string to number and number to string, and make other conversions as required.  
   
  **In this topic:**  
   
--   [Property Function Syntax](#BKMK_Syntax)  
+- [Property Function Syntax](#BKMK_Syntax)  
   
-    -   [String Property Functions](#BKMK_String)  
+  - [String Property Functions](#BKMK_String)  
+
+  - [Static Property Functions](#BKMK_Static)  
+
+  - [Calling Instance Methods on Static Properties](#BKMK_InstanceMethods)  
+
+  - [MSBuild Property Functions](#BKMK_PropertyFunctions)  
   
-    -   [Static Property Functions](#BKMK_Static)  
+- [Nested Property Functions](#BKMK_Nested)  
   
-    -   [Calling Instance Methods on Static Properties](#BKMK_InstanceMethods)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
-    -   [MSBuild Property Functions](#BKMK_PropertyFunctions)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [Nested Property Functions](#BKMK_Nested)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
-  
--   [MSBuild MakeRelative](#BKMK_MakeRelative)  
-  
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
-  
-##  <a name="BKMK_Syntax"></a> Property Function Syntax  
+## <a name="BKMK_Syntax"></a> Property Function Syntax  
  These are three kinds of property functions; each function has a different syntax:  
   
--   String (instance) property functions  
+- String (instance) property functions  
   
--   Static property functions  
+- Static property functions  
   
--   MSBuild property functions  
+- MSBuild property functions  
   
-###  <a name="BKMK_String"></a> String Property Functions  
+### <a name="BKMK_String"></a> String Property Functions  
  All build property values are just string values. You can use string (instance) methods to operate on any property value. For example, you can extract the drive name (the first three characters) from a build property that represents a full path by using this code:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Static Property Functions  
+### <a name="BKMK_Static"></a> Static Property Functions  
  In your build script, you can access the static properties and methods of many system classes. To get the value of a static property, use the following syntax, where *Class* is the name of the system class and *Property* is the name of the property.  
   
  `$([Class]::Property)`  
@@ -86,89 +78,89 @@ In the .NET Framework versions 4 and 4.5, property functions can be used to eval
   
  In static property functions, you can use any static method or property of these system classes:  
   
--   System.Byte  
+- System.Byte  
   
--   System.Char  
+- System.Char  
   
--   System.Convert  
+- System.Convert  
   
--   System.DateTime  
+- System.DateTime  
   
--   System.Decimal  
+- System.Decimal  
   
--   System.Double  
+- System.Double  
   
--   System.Enum  
+- System.Enum  
   
--   System.Guid  
+- System.Guid  
   
--   System.Int16  
+- System.Int16  
   
--   System.Int32  
+- System.Int32  
   
--   System.Int64  
+- System.Int64  
   
--   System.IO.Path  
+- System.IO.Path  
   
--   System.Math  
+- System.Math  
   
--   System.UInt16  
+- System.UInt16  
   
--   System.UInt32  
+- System.UInt32  
   
--   System.UInt64  
+- System.UInt64  
   
--   System.SByte  
+- System.SByte  
   
--   System.Single  
+- System.Single  
   
--   System.String  
+- System.String  
   
--   System.StringComparer  
+- System.StringComparer  
   
--   System.TimeSpan  
+- System.TimeSpan  
   
--   System.Text.RegularExpressions.Regex  
+- System.Text.RegularExpressions.Regex  
   
--   Microsoft.Build.Utilities.ToolLocationHelper  
+- Microsoft.Build.Utilities.ToolLocationHelper  
   
- In addition, you can use the following static methods and properties:  
+  In addition, you can use the following static methods and properties:  
   
--   System.Environment::CommandLine  
+- System.Environment::CommandLine  
   
--   System.Environment::ExpandEnvironmentVariables  
+- System.Environment::ExpandEnvironmentVariables  
   
--   System.Environment::GetEnvironmentVariable  
+- System.Environment::GetEnvironmentVariable  
   
--   System.Environment::GetEnvironmentVariables  
+- System.Environment::GetEnvironmentVariables  
   
--   System.Environment::GetFolderPath  
+- System.Environment::GetFolderPath  
   
--   System.Environment::GetLogicalDrives  
+- System.Environment::GetLogicalDrives  
   
--   System.IO.Directory::GetDirectories  
+- System.IO.Directory::GetDirectories  
   
--   System.IO.Directory::GetFiles  
+- System.IO.Directory::GetFiles  
   
--   System.IO.Directory::GetLastAccessTime  
+- System.IO.Directory::GetLastAccessTime  
   
--   System.IO.Directory::GetLastWriteTime  
+- System.IO.Directory::GetLastWriteTime  
   
--   System.IO.Directory::GetParent  
+- System.IO.Directory::GetParent  
   
--   System.IO.File::Exists  
+- System.IO.File::Exists  
   
--   System.IO.File::GetCreationTime  
+- System.IO.File::GetCreationTime  
   
--   System.IO.File::GetAttributes  
+- System.IO.File::GetAttributes  
   
--   System.IO.File::GetLastAccessTime  
+- System.IO.File::GetLastAccessTime  
   
--   System.IO.File::GetLastWriteTime  
+- System.IO.File::GetLastWriteTime  
   
--   System.IO.File::ReadAllText  
+- System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Calling Instance Methods on Static Properties  
+### <a name="BKMK_InstanceMethods"></a> Calling Instance Methods on Static Properties  
  If you access a static property that returns an object instance, you can invoke the instance methods of that object. To invoke an instance method, use the following syntax, where *Class* is the name of the system class, *Property* is the name of the property, *Method* is the name of the method, and *(Parameters)* is the parameter list for the method:  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -179,7 +171,7 @@ In the .NET Framework versions 4 and 4.5, property functions can be used to eval
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> MSBuild Property Functions  
+### <a name="BKMK_PropertyFunctions"></a> MSBuild Property Functions  
  Several static methods in your build can be accessed to provide arithmetic, bitwise logical, and escape character support. You access these methods by using the following syntax, where *Method* is the name of the method and *Parameters* is the parameter list for the method.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -209,7 +201,7 @@ In the .NET Framework versions 4 and 4.5, property functions can be used to eval
 |int BitwiseXor(int first, int second)|Perform a bitwise `XOR` on the first and second (first ^ second).|  
 |int BitwiseNot(int first)|Perform a bitwise `NOT` (~first).|  
   
-##  <a name="BKMK_Nested"></a> Nested Property Functions  
+## <a name="BKMK_Nested"></a> Nested Property Functions  
  You can combine property functions to form more complex functions, as the following example shows.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -218,7 +210,7 @@ In the .NET Framework versions 4 and 4.5, property functions can be used to eval
   
  Metadata may also appear in nested property functions. For more information, see [Batching](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  The `DoesTaskHostExist` property function in MSBuild returns whether a task host is currently installed for the specified runtime and architecture values.  
   
  This property function has the following syntax:  
@@ -227,7 +219,7 @@ In the .NET Framework versions 4 and 4.5, property functions can be used to eval
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  The MSBuild `GetDirectoryNameOfFileAbove` property function looks for a file in the directories above the current directory in the path.  
   
  This property function has the following syntax:  
@@ -242,7 +234,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  The MSBuild `GetRegistryValue` property function returns the value of a registry key. This function takes two arguments, the key name and the value name, and returns the value from the registry. If you don't specify a value name, the default value is returned.  
   
  The following examples show how this function is used:  
@@ -254,7 +246,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  The MSBuild `GetRegistryValueFromView` property function gets system registry data given the registry key, value, and one or more ordered registry views. The key and value are searched in each registry view in order until they are found.  
   
  The syntax for this property function is:  
@@ -279,7 +271,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  gets the SLRuntimeInstallPath data of the ReferenceAssemblies key, looking first in the 64-bit registry view and then in the 32-bit registry view.  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  The MSBuild `MakeRelative` property function returns the relative path of the second path relative to first path. Each path can be a file or folder.  
   
  This property function has the following syntax:  
@@ -308,7 +300,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  The MSBuild `ValueOrDefault` property function returns the first argument, unless it's null or empty. If the first argument is null or empty, the function returns the second argument.  
   
  The following example shows how this function is used.  
@@ -337,5 +329,3 @@ Output:
 ## See Also
 [MSBuild Properties](msbuild-properties1.md)   
 [MSBuild Overview](msbuild.md)
-
-

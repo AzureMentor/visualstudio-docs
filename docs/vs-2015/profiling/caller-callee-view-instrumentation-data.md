@@ -1,27 +1,20 @@
 ---
 title: "Caller-Callee View - Instrumentation Data | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 helpviewer_keywords: 
   - "Caller/Callee view"
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Caller/Callee View - Instrumentation Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Caller-Callee View - Instrumentation Data](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-instrumentation-data).  
-  
 The Caller/Callee view displays profiling information about a selected function and its parent and child functions in the call tree. The Caller/Callee view contains three grids.  
   
  **Current function** is displayed in the middle grid, and it shows profiling information about the selected function. The values include all calls to the function.  
@@ -98,6 +91,3 @@ The Caller/Callee view displays profiling information about a selected function 
  [Caller / Callee View - Sampling Data](../profiling/caller-callee-view-sampling-data.md)   
  [Caller/Callee View - .NET Memory Sampling Data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Caller/Callee View - NET Memory Instrumentation Data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-
-
-

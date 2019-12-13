@@ -1,14 +1,9 @@
 ---
 title: "Using the Parallel Stacks Window | Microsoft Docs"
-ms.custom: ""
-ms.date: "2018-06-30"
+ms.date: 11/15/2016
 ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: "vs-ide-debug"
+ms.topic: conceptual
 f1_keywords: 
   - "vs.debug.parallelstacks"
 dev_langs: 
@@ -20,16 +15,14 @@ helpviewer_keywords:
   - "debugger, parallel tasks window"
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: MikeJo5000
+ms.author: mikejo
+manager: jillfra
 ---
 # Using the Parallel Stacks Window
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The latest version of this topic can be found at [Using the Parallel Stacks Window](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
-The **Parallel Stacks** window is useful when you are debugging multithreaded applications. Its **Threads View** shows call stack information for all the threads in your application. It lets you navigate between threads and stack frames on those threads. In managed code, the **Tasks View** shows call stacks of <xref:System.Threading.Tasks.Task?displayProperty=fullName> objects. In native code, the **Tasks View** shows call stacks of [task groups](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallel algorithms](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronous agents](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), and [lightweight tasks](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+The **Parallel Stacks** window is useful when you are debugging multithreaded applications. Its **Threads View** shows call stack information for all the threads in your application. It lets you navigate between threads and stack frames on those threads. In managed code, the **Tasks View** shows call stacks of <xref:System.Threading.Tasks.Task?displayProperty=fullName> objects. In native code, the **Tasks View** shows call stacks of [task groups](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallel algorithms](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronous agents](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), and [lightweight tasks](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## Threads View  
  The following illustration shows one thread that went from Main to A to B and then to some external code. Two other threads started from some external code and then went to A, but one of the threads continued to B and then to some external code, and the other thread continued to C and then to some AnonymousMethod.  
@@ -95,21 +88,21 @@ The **Parallel Stacks** window is useful when you are debugging multithreaded ap
 ## Tasks View  
  If your application is using <xref:System.Threading.Tasks.Task?displayProperty=fullName> objects (managed code) or `task_handle` objects (native code) to express parallelism, you can use the combo box in the Parallel Stacks window toolbar to switch to *Tasks View*. Tasks View shows call stacks of tasks instead of threads. Tasks View differs from Threads View as follows:  
   
--   Call stacks of threads that are not running tasks are not shown.  
+- Call stacks of threads that are not running tasks are not shown.  
   
--   Call stacks of threads that are running tasks are visually trimmed at the top and bottom to show the most relevant frames that pertain to tasks.  
+- Call stacks of threads that are running tasks are visually trimmed at the top and bottom to show the most relevant frames that pertain to tasks.  
   
--   When multiple tasks are on one thread, the call stacks of those tasks are split out into separate nodes.  
+- When multiple tasks are on one thread, the call stacks of those tasks are split out into separate nodes.  
   
- The following illustration shows the Parallel Stacks Tasks View on the right and the corresponding Threads View on the left.  
+  The following illustration shows the Parallel Stacks Tasks View on the right and the corresponding Threads View on the left.  
   
- ![Tasks view in Parallel Stacks window](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Tasks view in Parallel Stacks window](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- To see the entire call stack, just switch back to Threads View by right-clicking a stack frame and then clicking **Go to Thread**.  
+  To see the entire call stack, just switch back to Threads View by right-clicking a stack frame and then clicking **Go to Thread**.  
   
- As described in the earlier table, by hovering over a method context, you can see additional information. The following image shows the information in the tooltip for the Threads View and the Tasks View.  
+  As described in the earlier table, by hovering over a method context, you can see additional information. The following image shows the information in the tooltip for the Threads View and the Tasks View.  
   
- ![Tooltips in Parallel Stacks window](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Tooltips in Parallel Stacks window](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## Method View  
  From either Threads View or Tasks View, you can pivot the graph on the current method by clicking the Method View icon on the toolbar. Method View shows at a glance all methods on all threads that either call or are called by the current method. The following illustration shows a Threads View, and also how the same information looks in Method View.  
@@ -122,10 +115,7 @@ The **Parallel Stacks** window is useful when you are debugging multithreaded ap
  [Walkthrough: Debugging a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md)   
  [Debugging Managed Code](../debugger/debugging-managed-code.md)   
- [Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Parallel Programming](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Using the Tasks Window](../debugger/using-the-tasks-window.md)   
  [Walkthrough: Debugging a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task Class](../extensibility/debugger/task-class-internal-members.md)
-
-
-
